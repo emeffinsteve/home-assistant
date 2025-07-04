@@ -2,3 +2,15 @@ home-assistant*.log*
 home-assistant_v2.db
 .storage/
 claude-config/.claude.json
+# Home Assistant exclusions
+home-assistant_v2.db
+home-assistant.log*
+*.log
+*.db
+.storage/
+secrets.yaml
+claude-config/.claude.json
+
+# Python cache
+__pycache__/
+*.pyc
