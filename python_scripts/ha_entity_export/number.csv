@@ -1,0 +1,79 @@
+Device Name,Entity ID,Domain,Area
+UC5 On level,number.uc5_on_level,number,Unassigned
+UC5 On transition time,number.uc5_on_transition_time,number,Unassigned
+UC5 Off transition time,number.uc5_off_transition_time,number,Unassigned
+UC1 On level,number.uc1_on_level,number,Unassigned
+UC1 On transition time,number.uc1_on_transition_time,number,Unassigned
+UC1 Off transition time,number.uc1_off_transition_time,number,Unassigned
+UC6 On level,number.uc6_on_level,number,Unassigned
+UC6 On transition time,number.uc6_on_transition_time,number,Unassigned
+UC6 Off transition time,number.uc6_off_transition_time,number,Unassigned
+UC2 On level,number.uc2_on_level,number,Unassigned
+UC2 On transition time,number.uc2_on_transition_time,number,Unassigned
+UC2 Off transition time,number.uc2_off_transition_time,number,Unassigned
+UC4 On level,number.uc4_on_level,number,Unassigned
+UC4 On transition time,number.uc4_on_transition_time,number,Unassigned
+UC4 Off transition time,number.uc4_off_transition_time,number,Unassigned
+UC3 On level,number.uc3_on_level,number,Unassigned
+UC3 On transition time,number.uc3_on_transition_time,number,Unassigned
+UC3 Off transition time,number.uc3_off_transition_time,number,Unassigned
+Ring - Downstairs Chime Volume,number.ring_downstairs_chime_volume,number,Unassigned
+Ring - Upstairs Chime Volume,number.ring_upstairs_chime_volume,number,Unassigned
+Ring - Downstairs Sofa Volume,number.ring_downstairs_sofa_volume,number,Unassigned
+Ring - Backyard Volume,number.ring_backyard_volume,number,Unassigned
+Ring - Office Volume,number.ring_office_volume,number,Office
+Ring - Foyer Volume,number.ring_foyer_volume,number,Foyer
+Ring - Front Volume,number.ring_front_volume,number,Unassigned
+Ring - Downstairs Doors PTZ Volume,number.ring_downstairs_doors_ptz_volume_2,number,Unassigned
+Ring - Upstairs Volume,number.ring_upstairs_volume_2,number,Unassigned
+Ring - Garage Volume,number.ring_garage_volume,number,Garage
+Ring - Doorbell Volume,number.ring_doorbell_volume,number,Unassigned
+Main Bathroom Light Smooth on,number.main_bathroom_light_smooth_on,number,Main Bathroom
+Main Bathroom Light Smooth off,number.main_bathroom_light_smooth_off,number,Main Bathroom
+Garage Coach Lights Smooth on,number.garage_coach_lights_smooth_on,number,Garage
+Garage Coach Lights Smooth off,number.garage_coach_lights_smooth_off,number,Garage
+Laundry Light Turn off in,number.laundry_light_turn_off_in,number,Laundry Room
+Deck Middle Light Smooth on,number.deck_middle_light_smooth_on,number,Deck
+Deck Middle Light Smooth off,number.deck_middle_light_smooth_off,number,Deck
+Owner’s Bedroom Light Smooth on,number.owner_s_bedroom_light_smooth_on,number,Owner's Bedroom
+Owner’s Bedroom Light Smooth off,number.owner_s_bedroom_light_smooth_off,number,Owner's Bedroom
+Owner's Bathroom Shower Light Smooth on,number.owners_bathroom_shower_light_smooth_on,number,Main Bathroom
+Owner's Bathroom Shower Light Smooth off,number.owners_bathroom_shower_light_smooth_off,number,Main Bathroom
+Storage Light Turn off in,number.storage_light_turn_off_in,number,Storage
+Deck Outer Lights Smooth on,number.deck_outer_lights_smooth_on,number,Deck
+Deck Outer Lights Smooth off,number.deck_outer_lights_smooth_off,number,Deck
+Roborock Vacuum Volume,number.roborock_vacuum_volume,number,Unassigned
+Front Porch Light Smooth on,number.front_porch_light_smooth_on,number,Unassigned
+Front Porch Light Smooth off,number.front_porch_light_smooth_off,number,Unassigned
+Owner’s Closet Turn off in,number.owners_closet_turn_off_in,number,Unassigned
+Owner’s Bathroom Sink Lights Smooth on,number.owner_s_bathroom_sink_lights_smooth_on,number,Main Bathroom
+Owner’s Bathroom Sink Lights Smooth off,number.owner_s_bathroom_sink_lights_smooth_off,number,Main Bathroom
+Genevieve’s Closet Turn off in,number.genevieves_closet_turn_off_in,number,Genevieve's Room
+Owner’s Bathroom Fan Turn off in,number.owner_s_bathroom_fan_turn_off_in,number,Main Bathroom
+Ulrich’s Closet Turn off in,number.ulrichs_closet_turn_off_in,number,Ulrich's Room
+Ulrich Light Smooth on,number.ulrich_light_smooth_on,number,Ulrich's Room
+Ulrich Light Smooth off,number.ulrich_light_smooth_off,number,Ulrich's Room
+Office Light Smooth on,number.office_light_smooth_on,number,Office
+Office Light Smooth off,number.office_light_smooth_off,number,Office
+Genevieve’s Light Smooth on,number.genevieves_light_smooth_on,number,Genevieve's Room
+Genevieve’s Light Smooth off,number.genevieves_light_smooth_off,number,Genevieve's Room
+Kitchen Sink Light Smooth on,number.kitchen_sink_light_smooth_on,number,Kitchen
+Kitchen Sink Light Smooth off,number.kitchen_sink_light_smooth_off,number,Kitchen
+On Air Sign Turn off in,number.on_air_sign_turn_off_in,number,Unassigned
+Sonos Roam Bass,number.sonos_roam_bass,number,Unassigned
+Sonos Roam Balance,number.sonos_roam_balance,number,Unassigned
+Sonos Roam Treble,number.sonos_roam_treble,number,Unassigned
+Basement Bathroom Fan Turn off in,number.basement_bathroom_fan_turn_off_in,number,Main Bathroom
+Garage Light Turn off in,number.garage_light_turn_off_in,number,Garage
+Basement Bathroom Light Smooth on,number.basement_bathroom_light_smooth_on,number,Main Bathroom
+Basement Bathroom Light Smooth off,number.basement_bathroom_light_smooth_off,number,Main Bathroom
+Sonos Arc Audio delay,number.sonos_arc_audio_delay,number,Unassigned
+Sonos Arc Bass,number.sonos_arc_bass,number,Unassigned
+Sonos Arc Balance,number.sonos_arc_balance,number,Unassigned
+Sonos Arc Treble,number.sonos_arc_treble,number,Unassigned
+Sonos Arc Sub gain,number.sonos_arc_sub_gain,number,Unassigned
+Sonos Arc Surround level,number.sonos_arc_surround_level,number,Unassigned
+Sonos Arc Music surround level,number.sonos_arc_music_surround_level,number,Unassigned
+Bass,number.sonos_move_bass,number,Unassigned
+Balance,number.sonos_move_balance,number,Unassigned
+Treble,number.sonos_move_treble,number,Unassigned

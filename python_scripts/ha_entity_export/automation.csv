@@ -1,0 +1,94 @@
+Device Name,Entity ID,Domain,Area
+Kitchen - Lights On,automation.kitchen_lights_on,automation,Kitchen
+Kitchen - Light Off,automation.kitchen_light_off,automation,Kitchen
+Outside - Night - Lights,automation.outside_lights,automation,Unassigned
+Ulrich - School Nights - Lights Off,automation.ulrich_school_night_lights,automation,Ulrich's Room
+Ulrich - Weekend Nights - Lights Off,automation.ulrich_weekend_nights,automation,Ulrich's Room
+Lights Out,automation.lights_out,automation,Unassigned
+Battery Level Monitor,automation.batteries,automation,Unassigned
+Restart HA on Sundays,automation.restart_ha_on_sundays,automation,Unassigned
+Lock Front Door,automation.lock_front_door,automation,Front Door
+Office - Lights On,automation.office_lights_on,automation,Office
+Office - Lights Off,automation.office_lights_off,automation,Office
+Office - On Air Meeting Starts,automation.office_on_air_meetings,automation,Office
+Office - On Air Meeting Ends,automation.office_on_air_meeting_ends,automation,Office
+Basement Bathroom Fan - Auto off,automation.basement_bathroom_fan_auto_off,automation,Main Bathroom
+Owner’s Bathroom Sink Lights - Night Brightness,automation.bathroom_sink_lights_night_brightness,automation,Main Bathroom
+Owner’s Bathroom Sink Lights - Day Brightness,automation.bathroom_sink_lights_day_brightness,automation,Main Bathroom
+Owners Bathroom Shower Light - Night Light On,automation.owners_bathroom_shower_lights_night_light_on,automation,Main Bathroom
+Owner’s Bathroom Shower Light - Night Light Off,automation.owners_bathroom_shower_light_night_light_on,automation,Main Bathroom
+Kitchen - Sync Brightness,automation.kitchen_sync_brightness,automation,Kitchen
+Steve’s Fan Off,automation.steves_fan_off,automation,Unassigned
+Steve’s Fan On,automation.steves_fan_on,automation,Unassigned
+Office Fan On,automation.office_fan_on,automation,Office
+Office Fan Off,automation.office_fan_off,automation,Office
+Office Alarm,automation.office_alarm,automation,Office
+Office On Air Sign Control,automation.office_on_air_sign_automation,automation,Office
+Owner’s Suite Night Light Automation,automation.owner_s_closet_and_shower_light_schedule,automation,Unassigned
+Owner’s Bathroom Sink Lights - Adaptive Brightness with Ramps,automation.owners_bathroom_sink_lights_adaptive_brightness_with_ramps,automation,Main Bathroom
+Unlock Front Door,automation.unlock_front_door,automation,Front Door
+Lock Front Door,automation.unlock_front_door_2,automation,Front Door
+Owner’s Closet Auto-Off Timer,automation.owners_closet_auto_off_timer,automation,Unassigned
+Smart Bathroom Fan - Owner's Bathroom,automation.smart_bathroom_fan_owner_s_bathroom,automation,Main Bathroom
+Lighting Ulrich Bedroom Auto Timeout,automation.ulrich_s_bedroom_lighting_automation,automation,Owner's Bedroom
+Test Simple Schedule,automation.test_simple_schedule,automation,Unassigned
+Test Minimal Schedule 12PM,automation.test_minimal_schedule_12pm,automation,Unassigned
+Weather Forecast Polling System,automation.weather_forecast_polling_system,automation,Rec Room
+Climate Sensor Manager,automation.climate_sensor_manager,automation,Unassigned
+Climate Day Schedule,automation.climate_day_schedule,automation,Unassigned
+Climate Night Schedule,automation.climate_night_schedule,automation,Unassigned
+Climate Weather Intelligence,automation.climate_weather_intelligence,automation,Unassigned
+Climate System Monitor,automation.climate_system_monitor,automation,Unassigned
+Climate Dashboard Controls,automation.climate_dashboard_controls,automation,Unassigned
+Export Entities to File,automation.export_entities_to_file,automation,Unassigned
+Internet: Upstairs/Downstairs Pause at 12PM,automation.internet_upstairs_downstairs_pause_at_12pm,automation,Unassigned
+Internet: Upstairs/Downstairs Resume at 5PM,automation.internet_upstairs_downstairs_resume_at_5pm,automation,Unassigned
+Internet: Upstairs/Downstairs Pause at 10PM,automation.internet_upstairs_downstairs_pause_at_10pm,automation,Unassigned
+Internet: Upstairs/Downstairs Resume at 7AM,automation.internet_upstairs_downstairs_resume_at_7am,automation,Unassigned
+Internet: Upstairs Override Handler,automation.internet_upstairs_override_handler,automation,Unassigned
+Internet: Downstairs Override Handler,automation.internet_downstairs_override_handler,automation,Unassigned
+Internet: Genevieve Override Handler,automation.internet_genevieve_override_handler,automation,Genevieve's Room
+Internet: Verify Upstairs Devices Paused,automation.internet_verify_upstairs_devices_paused,automation,Unassigned
+Internet: Verify Upstairs Devices Resumed,automation.internet_verify_upstairs_devices_resumed,automation,Unassigned
+Internet: Verify Downstairs Devices Paused,automation.internet_verify_downstairs_devices_paused,automation,Unassigned
+Internet: Verify Downstairs Devices Resumed,automation.internet_verify_downstairs_devices_resumed,automation,Unassigned
+Internet: Verify Genevieve Devices Paused,automation.internet_verify_genevieve_devices_paused,automation,Genevieve's Room
+Internet: Verify Genevieve Devices Resumed,automation.internet_verify_genevieve_devices_resumed,automation,Genevieve's Room
+Internet: Genevieve Dog Walk Check,automation.internet_genevieve_dog_walk_check,automation,Genevieve's Room
+Internet: Genevieve Chores Check,automation.internet_genevieve_chores_check,automation,Genevieve's Room
+Internet: Genevieve Task Completion Handler,automation.internet_genevieve_task_completion_handler,automation,Genevieve's Room
+Internet: Ulrich Manual Control,automation.ulrich_manual_control,automation,Ulrich's Room
+Internet: Daily Task Reset,automation.internet_daily_task_reset,automation,Unassigned
+Internet: Clear Temp Overrides at Schedule Changes,automation.internet_clear_temp_overrides_at_schedule_changes,automation,Unassigned
+Internet: Handle Upstairs Temp Override,automation.internet_handle_upstairs_temp_override,automation,Unassigned
+Internet: Handle Downstairs Temp Override,automation.internet_handle_downstairs_temp_override,automation,Unassigned
+Internet: Handle Genevieve Temp Override,automation.internet_handle_genevieve_temp_override,automation,Genevieve's Room
+Internet: Cancel Temp Overrides,automation.internet_cancel_temp_overrides,automation,Unassigned
+Internet: Switch Unavailable Monitor,automation.internet_switch_unavailable_monitor,automation,Unassigned
+Internet: Switch Recovery Monitor,automation.internet_switch_recovery_monitor,automation,Rec Room
+Internet: Ulrich Chores Check (10AM Mon-Sat),automation.internet_ulrich_chores_check_10am_mon_sat,automation,Ulrich's Room
+Internet: Ulrich Dog Walk Check (8PM Daily),automation.internet_ulrich_dog_walk_check_8pm_daily,automation,Ulrich's Room
+Internet: Ulrich Task Completion Handler,automation.internet_ulrich_task_completion_handler,automation,Ulrich's Room
+Internet: Hourly Profile Verification,automation.internet_hourly_profile_verification,automation,Unassigned
+Internet: TV Kill,automation.internet_tv_kill_switch,automation,Unassigned
+Basic Weather Climate Control,automation.basic_weather_climate_control,automation,Unassigned
+Upstairs - Main Control Logic,automation.upstairs_main_control_logic,automation,Unassigned
+Internet: Upstairs Timer Start,automation.upstairs_start_timer,automation,Unassigned
+Internet: Upstairs Add Time,automation.upstairs_add_time_to_timer,automation,Unassigned
+Upstairs - Timer Expiry Check,automation.upstairs_timer_expiry_check,automation,Unassigned
+Downstairs - Main Control Logic,automation.downstairs_main_control_logic,automation,Unassigned
+Internet: Downstairs Timer Start,automation.downstairs_start_timer,automation,Unassigned
+Internet: Downstairs Add Time,automation.downstairs_add_time_to_timer,automation,Unassigned
+Downstairs - Timer Expiry Check,automation.downstairs_timer_expiry_check,automation,Unassigned
+Genevieve - Main Control Logic,automation.genevieve_main_control_logic,automation,Genevieve's Room
+Internet: Genevieve Timer Start,automation.genevieve_start_timer,automation,Genevieve's Room
+Internet: Genevieve Add Time,automation.genevieve_add_time_to_timer,automation,Genevieve's Room
+Genevieve - Timer Expiry Check,automation.genevieve_timer_expiry_check,automation,Genevieve's Room
+Genevieve - Reset Daily Tasks,automation.genevieve_reset_daily_tasks,automation,Genevieve's Room
+Internet: Upstairs Timer Finished,automation.internet_upstairs_timer_finished,automation,Unassigned
+Internet: Downstairs Timer Finished,automation.internet_downstairs_timer_finished,automation,Unassigned
+Internet: Genevieve Timer Finished,automation.internet_genevieve_timer_finished,automation,Genevieve's Room
+Climate Manual Override Detection,automation.climate_manual_override_detection,automation,Unassigned
+Climate Resume Automation,automation.climate_resume_automation_button,automation,Unassigned
+Climate Indoor Only Fallback,automation.climate_indoor_only_fallback,automation,Unassigned
+Weather Forecast Updater,automation.weather_forecast_updater,automation,Rec Room

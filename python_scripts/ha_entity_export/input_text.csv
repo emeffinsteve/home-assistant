@@ -1,0 +1,6 @@
+Device Name,Entity ID,Domain,Area
+Climate Priority Automation,input_text.climate_priority_automation,input_text,Unassigned
+Climate Logic Reason,input_text.climate_logic_reason,input_text,Unassigned
+Last Climate Action,input_text.last_climate_action,input_text,Unassigned
+Climate Sensor Status,input_text.climate_sensor_status,input_text,Unassigned
+Weather Hot Days Ahead,input_text.weather_hot_days_ahead,input_text,Unassigned

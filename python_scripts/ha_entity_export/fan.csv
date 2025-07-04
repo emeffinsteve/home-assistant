@@ -1,0 +1,4 @@
+Device Name,Entity ID,Domain,Area
+Office Fan,fan.office_fan,fan,Office
+Steve’s Fan,fan.steves_fan,fan,Unassigned
+Genevieve’s Fan,fan.genevieves_fan,fan,Genevieve's Room

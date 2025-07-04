@@ -1,0 +1,9 @@
+Device Name,Entity ID,Domain,Area
+Ring - Downstairs Sofa Siren,siren.ring_downstairs_sofa_siren,siren,Unassigned
+Ring - Backyard Siren,siren.ring_backyard_siren,siren,Unassigned
+Ring - Office Siren,siren.ring_office_siren,siren,Office
+Ring - Foyer Siren,siren.ring_foyer_siren,siren,Foyer
+Ring - Front Siren,siren.ring_front_siren,siren,Unassigned
+Ring - Garage Siren,siren.ring_garage_siren,siren,Garage
+Ring - Downstairs Chime Siren,siren.ring_downstairs_chime_siren,siren,Unassigned
+Ring - Upstairs Chime Siren,siren.ring_upstairs_chime_siren,siren,Unassigned

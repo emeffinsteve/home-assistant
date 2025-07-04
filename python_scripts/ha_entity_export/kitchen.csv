@@ -1,0 +1,50 @@
+Device Name,Entity ID,Domain,Area
+Kitchen Sink Light Energy,sensor.kitchen_sink_light_energy,sensor,Kitchen
+Kitchen Light Energy,sensor.kitchen_light_energy,sensor,Kitchen
+Kitchen Light Power,sensor.kitchen_light_power,sensor,Kitchen
+Kitchen Sink Light Power,sensor.kitchen_sink_light_power,sensor,Kitchen
+HomePod - Kitchen,media_player.homepod_kitchen,media_player,Kitchen
+HomePod - Kitchen,remote.homepod_kitchen,remote,Kitchen
+Kitchen Light Cloud connection,binary_sensor.kitchen_light_cloud_connection,binary_sensor,Kitchen
+Kitchen,light.kitchen_light,light,Kitchen
+Kitchen Light LED,switch.kitchen_light_led,switch,Kitchen
+Taylor HomePod - Kitchen (Wireless) Connected,binary_sensor.taylor_homepod_kitchen_wireless_connected,binary_sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Connected,binary_sensor.taylor_ks230_kitchen_dining_light_wireless_connected,binary_sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Connected,binary_sensor.taylor_s505d_kitchen_sink_light_wireless_connected,binary_sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless),device_tracker.taylor_homepod_kitchen_wireless,device_tracker,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless),device_tracker.taylor_ks230_kitchen_dining_light_wireless,device_tracker,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless),device_tracker.taylor_s505d_kitchen_sink_light_wireless,device_tracker,Kitchen
+Taylor HomePod - Kitchen (Wireless) IP Address,sensor.taylor_homepod_kitchen_wireless_ip_address,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Last Active,sensor.taylor_homepod_kitchen_wireless_last_active,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Signal Strength,sensor.taylor_homepod_kitchen_wireless_signal_strength,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Download Rate,sensor.taylor_homepod_kitchen_wireless_download_rate,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Upload Rate,sensor.taylor_homepod_kitchen_wireless_upload_rate,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) IP Address,sensor.taylor_ks230_kitchen_dining_light_wireless_ip_address,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Last Active,sensor.taylor_ks230_kitchen_dining_light_wireless_last_active,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Signal Strength,sensor.taylor_ks230_kitchen_dining_light_wireless_signal_strength,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Download Rate,sensor.taylor_ks230_kitchen_dining_light_wireless_download_rate,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Upload Rate,sensor.taylor_ks230_kitchen_dining_light_wireless_upload_rate,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) IP Address,sensor.taylor_s505d_kitchen_sink_light_wireless_ip_address,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Last Active,sensor.taylor_s505d_kitchen_sink_light_wireless_last_active,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Signal Strength,sensor.taylor_s505d_kitchen_sink_light_wireless_signal_strength,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Download Rate,sensor.taylor_s505d_kitchen_sink_light_wireless_download_rate,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Upload Rate,sensor.taylor_s505d_kitchen_sink_light_wireless_upload_rate,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Paused,switch.taylor_homepod_kitchen_wireless_paused,switch,Kitchen
+Taylor HomePod - Kitchen (Wireless) Allow Internet Backup,switch.taylor_homepod_kitchen_wireless_allow_internet_backup,switch,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Paused,switch.taylor_ks230_kitchen_dining_light_wireless_paused,switch,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Allow Internet Backup,switch.taylor_ks230_kitchen_dining_light_wireless_allow_internet_backup,switch,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Paused,switch.taylor_s505d_kitchen_sink_light_wireless_paused,switch,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Allow Internet Backup,switch.taylor_s505d_kitchen_sink_light_wireless_allow_internet_backup,switch,Kitchen
+Kitchen - Lights On,automation.kitchen_lights_on,automation,Kitchen
+Kitchen - Light Off,automation.kitchen_light_off,automation,Kitchen
+Kitchen - Sync Brightness,automation.kitchen_sync_brightness,automation,Kitchen
+Kitchen Sink Light Cloud connection,binary_sensor.kitchen_sink_light_cloud_connection,binary_sensor,Kitchen
+Kitchen Sink Light Overheated,binary_sensor.kitchen_sink_light_overheated,binary_sensor,Kitchen
+Kitchen Sink,light.kitchen_sink_light,light,Kitchen
+Kitchen Sink Light Smooth on,number.kitchen_sink_light_smooth_on,number,Kitchen
+Kitchen Sink Light Smooth off,number.kitchen_sink_light_smooth_off,number,Kitchen
+Kitchen Sink Light Light preset,select.kitchen_sink_light_light_preset,select,Kitchen
+Kitchen Sink Light Signal level,sensor.kitchen_sink_light_signal_level,sensor,Kitchen
+Kitchen Sink Light Auto-update enabled,switch.kitchen_sink_light_auto_update_enabled,switch,Kitchen
+Kitchen Sink Light LED,switch.kitchen_sink_light_led,switch,Kitchen
+Unknown Device,sensor.kitchen_light_energy_cost,sensor,Kitchen

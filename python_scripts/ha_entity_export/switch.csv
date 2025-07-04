@@ -1,0 +1,424 @@
+Device Name,Entity ID,Domain,Area
+Foyer,switch.foyer_light,switch,Foyer
+Office Fan Horizontally Oscillating,switch.office_fan_horizontally_oscillating,switch,Office
+Office Fan Vertically Oscillating,switch.office_fan_vertically_oscillating,switch,Office
+Office Fan Panel Sound,switch.office_fan_panel_sound,switch,Office
+Steve’s Fan Horizontally Oscillating,switch.steves_fan_horizontally_oscillating,switch,Unassigned
+Steve’s Fan Vertically Oscillating,switch.steves_fan_vertically_oscillating,switch,Unassigned
+Steve’s Fan Panel Sound,switch.steves_fan_panel_sound,switch,Unassigned
+Genevieve’s Fan Display Auto Off,switch.genevieves_fan_display_auto_off,switch,Genevieve's Room
+Genevieve’s Fan Panel Sound,switch.genevieves_fan_panel_sound,switch,Genevieve's Room
+Ring - Downstairs Sofa Motion detection,switch.ring_downstairs_sofa_motion_detection,switch,Unassigned
+Ring - Backyard Motion detection,switch.ring_backyard_motion_detection,switch,Unassigned
+Ring - Office Motion detection,switch.ring_office_motion_detection,switch,Office
+Ring - Foyer Motion detection,switch.ring_foyer_motion_detection,switch,Foyer
+Ring - Front Motion detection,switch.ring_front_motion_detection,switch,Unassigned
+Ring - Garage Motion detection,switch.ring_garage_motion_detection,switch,Garage
+Ring - Doorbell Motion detection,switch.ring_doorbell_motion_detection,switch,Unassigned
+Main Bathroom Light Auto-update enabled,switch.main_bathroom_light_auto_update_enabled,switch,Main Bathroom
+Main Bathroom Light LED,switch.main_bathroom_light_led,switch,Main Bathroom
+Kitchen Light LED,switch.kitchen_light_led,switch,Kitchen
+Garage Coach Lights Auto-update enabled,switch.garage_coach_lights_auto_update_enabled,switch,Garage
+Garage Coach Lights LED,switch.garage_coach_lights_led,switch,Garage
+Hallway Light LED,switch.hallway_light_led,switch,Hallway
+Great Room Light LED,switch.great_room_light_led,switch,Unassigned
+Basement Steps LED,switch.basement_steps_led,switch,Basement
+Laundry,switch.laundry_light,switch,Laundry Room
+Laundry Light Auto-off enabled,switch.laundry_light_auto_off_enabled,switch,Laundry Room
+Laundry Light Auto-update enabled,switch.laundry_light_auto_update_enabled,switch,Laundry Room
+Laundry Light LED,switch.laundry_light_led,switch,Laundry Room
+Deck Middle Light Auto-update enabled,switch.deck_middle_light_auto_update_enabled,switch,Deck
+Deck Middle Light LED,switch.deck_middle_light_led,switch,Deck
+Owner’s Bedroom Light Auto-update enabled,switch.owner_s_bedroom_light_auto_update_enabled,switch,Owner's Bedroom
+Owner’s Bedroom Light LED,switch.owner_s_bedroom_light_led,switch,Owner's Bedroom
+Owner's Bathroom Shower Light Auto-update enabled,switch.owners_bathroom_shower_light_auto_update_enabled,switch,Main Bathroom
+Owner's Bathroom Shower Light LED,switch.owners_bathroom_shower_light_led,switch,Main Bathroom
+Storage,switch.storage_light,switch,Storage
+Storage Light Auto-off enabled,switch.storage_light_auto_off_enabled,switch,Storage
+Storage Light Auto-update enabled,switch.storage_light_auto_update_enabled,switch,Storage
+Storage Light LED,switch.storage_light_led,switch,Storage
+Deck Outer Lights Auto-update enabled,switch.deck_outer_lights_auto_update_enabled,switch,Deck
+Deck Outer Lights LED,switch.deck_outer_lights_led,switch,Deck
+Taylor Ad Blocking,switch.taylor_ad_blocking,switch,Unassigned
+Taylor Backup Internet Enabled,switch.taylor_backup_internet_enabled,switch,Unassigned
+Taylor Band Steering,switch.taylor_band_steering,switch,Unassigned
+Taylor Advanced Security,switch.taylor_advanced_security,switch,Unassigned
+Taylor Dynamic DNS,switch.taylor_dynamic_dns,switch,Unassigned
+Taylor Local DNS Caching,switch.taylor_local_dns_caching,switch,Unassigned
+Taylor Guest Network,switch.taylor_guest_network,switch,Unassigned
+Taylor IPv6 Enabled,switch.taylor_ipv6_enabled,switch,Unassigned
+Taylor 5 GHz Band Paused,switch.taylor_5_ghz_band_paused,switch,Unassigned
+Taylor Smart Queue Management,switch.taylor_smart_queue_management,switch,Unassigned
+Taylor Thread Enabled,switch.taylor_thread_enabled,switch,Unassigned
+Taylor UPnP,switch.taylor_upnp,switch,Unassigned
+Taylor WPA3,switch.taylor_wpa3,switch,Unassigned
+Taylor Locked Down Ad Blocking,switch.taylor_locked_down_ad_blocking,switch,Unassigned
+Taylor Locked Down Gaming Content Filter,switch.taylor_locked_down_gaming_content_filter,switch,Unassigned
+Taylor Locked Down Illegal or Criminal Content Filter,switch.taylor_locked_down_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Locked Down Chat and Messaging Content Filter,switch.taylor_locked_down_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Locked Down Adult Content Filter,switch.taylor_locked_down_adult_content_filter,switch,Unassigned
+Taylor Locked Down Shopping Content Filter,switch.taylor_locked_down_shopping_content_filter,switch,Unassigned
+Taylor Locked Down Social Media Content Filter,switch.taylor_locked_down_social_media_content_filter,switch,Unassigned
+Taylor Locked Down Streaming Content Filter,switch.taylor_locked_down_streaming_content_filter,switch,Unassigned
+Taylor Locked Down Violent Content Filter,switch.taylor_locked_down_violent_content_filter,switch,Unassigned
+Taylor Locked Down Paused,switch.taylor_locked_down_paused,switch,Unassigned
+Taylor Locked Down SafeSearch Content Filter,switch.taylor_locked_down_safesearch_content_filter,switch,Unassigned
+Taylor Locked Down YouTube Restricted Content Filter,switch.taylor_locked_down_youtube_restricted_content_filter,switch,Unassigned
+Taylor Steve Ad Blocking,switch.taylor_steve_ad_blocking,switch,Unassigned
+Taylor Steve Gaming Content Filter,switch.taylor_steve_gaming_content_filter,switch,Unassigned
+Taylor Steve Illegal or Criminal Content Filter,switch.taylor_steve_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Steve Chat and Messaging Content Filter,switch.taylor_steve_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Steve Adult Content Filter,switch.taylor_steve_adult_content_filter,switch,Unassigned
+Taylor Steve Shopping Content Filter,switch.taylor_steve_shopping_content_filter,switch,Unassigned
+Taylor Steve Social Media Content Filter,switch.taylor_steve_social_media_content_filter,switch,Unassigned
+Taylor Steve Streaming Content Filter,switch.taylor_steve_streaming_content_filter,switch,Unassigned
+Taylor Steve Violent Content Filter,switch.taylor_steve_violent_content_filter,switch,Unassigned
+Taylor Steve Paused,switch.taylor_steve_paused,switch,Unassigned
+Taylor Steve SafeSearch Content Filter,switch.taylor_steve_safesearch_content_filter,switch,Unassigned
+Taylor Steve YouTube Restricted Content Filter,switch.taylor_steve_youtube_restricted_content_filter,switch,Unassigned
+Taylor Office Ad Blocking,switch.taylor_office_ad_blocking,switch,Office
+Taylor Office Gaming Content Filter,switch.taylor_office_gaming_content_filter,switch,Office
+Taylor Office Illegal or Criminal Content Filter,switch.taylor_office_illegal_or_criminal_content_filter,switch,Office
+Taylor Office Chat and Messaging Content Filter,switch.taylor_office_chat_and_messaging_content_filter,switch,Office
+Taylor Office Adult Content Filter,switch.taylor_office_adult_content_filter,switch,Office
+Taylor Office Shopping Content Filter,switch.taylor_office_shopping_content_filter,switch,Office
+Taylor Office Social Media Content Filter,switch.taylor_office_social_media_content_filter,switch,Office
+Taylor Office Streaming Content Filter,switch.taylor_office_streaming_content_filter,switch,Office
+Taylor Office Violent Content Filter,switch.taylor_office_violent_content_filter,switch,Office
+Taylor Office Paused,switch.taylor_office_paused,switch,Office
+Taylor Office SafeSearch Content Filter,switch.taylor_office_safesearch_content_filter,switch,Office
+Taylor Office YouTube Restricted Content Filter,switch.taylor_office_youtube_restricted_content_filter,switch,Office
+Taylor Nikki Ad Blocking,switch.taylor_nikki_ad_blocking,switch,Unassigned
+Taylor Nikki Gaming Content Filter,switch.taylor_nikki_gaming_content_filter,switch,Unassigned
+Taylor Nikki Illegal or Criminal Content Filter,switch.taylor_nikki_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Nikki Chat and Messaging Content Filter,switch.taylor_nikki_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Nikki Adult Content Filter,switch.taylor_nikki_adult_content_filter,switch,Unassigned
+Taylor Nikki Shopping Content Filter,switch.taylor_nikki_shopping_content_filter,switch,Unassigned
+Taylor Nikki Social Media Content Filter,switch.taylor_nikki_social_media_content_filter,switch,Unassigned
+Taylor Nikki Streaming Content Filter,switch.taylor_nikki_streaming_content_filter,switch,Unassigned
+Taylor Nikki Violent Content Filter,switch.taylor_nikki_violent_content_filter,switch,Unassigned
+Taylor Nikki Paused,switch.taylor_nikki_paused,switch,Unassigned
+Taylor Nikki SafeSearch Content Filter,switch.taylor_nikki_safesearch_content_filter,switch,Unassigned
+Taylor Nikki YouTube Restricted Content Filter,switch.taylor_nikki_youtube_restricted_content_filter,switch,Unassigned
+Taylor Smart Home Ad Blocking,switch.taylor_smart_home_ad_blocking,switch,Unassigned
+Taylor Smart Home Gaming Content Filter,switch.taylor_smart_home_gaming_content_filter,switch,Unassigned
+Taylor Smart Home Illegal or Criminal Content Filter,switch.taylor_smart_home_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Smart Home Chat and Messaging Content Filter,switch.taylor_smart_home_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Smart Home Adult Content Filter,switch.taylor_smart_home_adult_content_filter,switch,Unassigned
+Taylor Smart Home Shopping Content Filter,switch.taylor_smart_home_shopping_content_filter,switch,Unassigned
+Taylor Smart Home Social Media Content Filter,switch.taylor_smart_home_social_media_content_filter,switch,Unassigned
+Taylor Smart Home Streaming Content Filter,switch.taylor_smart_home_streaming_content_filter,switch,Unassigned
+Taylor Smart Home Violent Content Filter,switch.taylor_smart_home_violent_content_filter,switch,Unassigned
+Taylor Smart Home Paused,switch.taylor_smart_home_paused,switch,Unassigned
+Taylor Smart Home SafeSearch Content Filter,switch.taylor_smart_home_safesearch_content_filter,switch,Unassigned
+Taylor Smart Home YouTube Restricted Content Filter,switch.taylor_smart_home_youtube_restricted_content_filter,switch,Unassigned
+Taylor Ulrich Ad Blocking,switch.taylor_ulrich_ad_blocking,switch,Ulrich's Room
+Taylor Ulrich Gaming Content Filter,switch.taylor_ulrich_gaming_content_filter,switch,Ulrich's Room
+Taylor Ulrich Illegal or Criminal Content Filter,switch.taylor_ulrich_illegal_or_criminal_content_filter,switch,Ulrich's Room
+Taylor Ulrich Chat and Messaging Content Filter,switch.taylor_ulrich_chat_and_messaging_content_filter,switch,Ulrich's Room
+Taylor Ulrich Adult Content Filter,switch.taylor_ulrich_adult_content_filter,switch,Ulrich's Room
+Taylor Ulrich Shopping Content Filter,switch.taylor_ulrich_shopping_content_filter,switch,Ulrich's Room
+Taylor Ulrich Social Media Content Filter,switch.taylor_ulrich_social_media_content_filter,switch,Ulrich's Room
+Taylor Ulrich Streaming Content Filter,switch.taylor_ulrich_streaming_content_filter,switch,Ulrich's Room
+Taylor Ulrich Violent Content Filter,switch.taylor_ulrich_violent_content_filter,switch,Ulrich's Room
+Taylor Ulrich Paused,switch.taylor_ulrich_paused,switch,Ulrich's Room
+Taylor Ulrich SafeSearch Content Filter,switch.taylor_ulrich_safesearch_content_filter,switch,Ulrich's Room
+Taylor Ulrich YouTube Restricted Content Filter,switch.taylor_ulrich_youtube_restricted_content_filter,switch,Ulrich's Room
+Taylor Genevieve Ad Blocking,switch.taylor_genevieve_ad_blocking,switch,Genevieve's Room
+Taylor Genevieve Gaming Content Filter,switch.taylor_genevieve_gaming_content_filter,switch,Genevieve's Room
+Taylor Genevieve Illegal or Criminal Content Filter,switch.taylor_genevieve_illegal_or_criminal_content_filter,switch,Genevieve's Room
+Taylor Genevieve Chat and Messaging Content Filter,switch.taylor_genevieve_chat_and_messaging_content_filter,switch,Genevieve's Room
+Taylor Genevieve Adult Content Filter,switch.taylor_genevieve_adult_content_filter,switch,Genevieve's Room
+Taylor Genevieve Shopping Content Filter,switch.taylor_genevieve_shopping_content_filter,switch,Genevieve's Room
+Taylor Genevieve Social Media Content Filter,switch.taylor_genevieve_social_media_content_filter,switch,Genevieve's Room
+Taylor Genevieve Streaming Content Filter,switch.taylor_genevieve_streaming_content_filter,switch,Genevieve's Room
+Taylor Genevieve Violent Content Filter,switch.taylor_genevieve_violent_content_filter,switch,Genevieve's Room
+Taylor Genevieve Paused,switch.taylor_genevieve_paused,switch,Genevieve's Room
+Taylor Genevieve SafeSearch Content Filter,switch.taylor_genevieve_safesearch_content_filter,switch,Genevieve's Room
+Taylor Genevieve YouTube Restricted Content Filter,switch.taylor_genevieve_youtube_restricted_content_filter,switch,Genevieve's Room
+Taylor Ex - Upstairs Ad Blocking,switch.taylor_ex_upstairs_ad_blocking,switch,Unassigned
+Taylor Ex - Upstairs Gaming Content Filter,switch.taylor_ex_upstairs_gaming_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Illegal or Criminal Content Filter,switch.taylor_ex_upstairs_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Chat and Messaging Content Filter,switch.taylor_ex_upstairs_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Adult Content Filter,switch.taylor_ex_upstairs_adult_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Shopping Content Filter,switch.taylor_ex_upstairs_shopping_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Social Media Content Filter,switch.taylor_ex_upstairs_social_media_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Streaming Content Filter,switch.taylor_ex_upstairs_streaming_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Violent Content Filter,switch.taylor_ex_upstairs_violent_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Paused,switch.taylor_ex_upstairs_paused,switch,Unassigned
+Taylor Ex - Upstairs SafeSearch Content Filter,switch.taylor_ex_upstairs_safesearch_content_filter,switch,Unassigned
+Taylor Ex - Upstairs YouTube Restricted Content Filter,switch.taylor_ex_upstairs_youtube_restricted_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Ad Blocking,switch.taylor_ex_downstairs_ad_blocking,switch,Unassigned
+Taylor Ex - Downstairs Gaming Content Filter,switch.taylor_ex_downstairs_gaming_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Illegal or Criminal Content Filter,switch.taylor_ex_downstairs_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Chat and Messaging Content Filter,switch.taylor_ex_downstairs_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Adult Content Filter,switch.taylor_ex_downstairs_adult_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Shopping Content Filter,switch.taylor_ex_downstairs_shopping_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Social Media Content Filter,switch.taylor_ex_downstairs_social_media_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Streaming Content Filter,switch.taylor_ex_downstairs_streaming_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Violent Content Filter,switch.taylor_ex_downstairs_violent_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Paused,switch.taylor_ex_downstairs_paused,switch,Unassigned
+Taylor Ex - Downstairs SafeSearch Content Filter,switch.taylor_ex_downstairs_safesearch_content_filter,switch,Unassigned
+Taylor Ex - Downstairs YouTube Restricted Content Filter,switch.taylor_ex_downstairs_youtube_restricted_content_filter,switch,Unassigned
+Taylor iPad - Steve Paused,switch.taylor_ipad_steve_paused,switch,Unassigned
+Taylor iPad - Steve Allow Internet Backup,switch.taylor_ipad_steve_allow_internet_backup,switch,Unassigned
+Taylor Steves-Air (Wireless) Paused,switch.taylor_steves_air_wireless_paused,switch,Unassigned
+Taylor Steves-Air (Wireless) Allow Internet Backup,switch.taylor_steves_air_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505 - Basement Storage (Wireless) Paused,switch.taylor_s505_basement_storage_wireless_paused,switch,Basement
+Taylor S505 - Basement Storage (Wireless) Allow Internet Backup,switch.taylor_s505_basement_storage_wireless_allow_internet_backup,switch,Basement
+Taylor Office TV Lights (Wireless) Paused,switch.taylor_office_tv_lights_wireless_paused,switch,Office
+Taylor Office TV Lights (Wireless) Allow Internet Backup,switch.taylor_office_tv_lights_wireless_allow_internet_backup,switch,Office
+Taylor iPhone - Genevieve (Wireless) Paused,switch.taylor_iphone_genevieve_wireless_paused,switch,Genevieve's Room
+Taylor iPhone - Genevieve (Wireless) Allow Internet Backup,switch.taylor_iphone_genevieve_wireless_allow_internet_backup,switch,Genevieve's Room
+Taylor Ring-649a637B2EF5 (Wireless) Paused,switch.taylor_ring_649a637b2ef5_wireless_paused,switch,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Allow Internet Backup,switch.taylor_ring_649a637b2ef5_wireless_allow_internet_backup,switch,Unassigned
+Taylor HomePod - Kitchen (Wireless) Paused,switch.taylor_homepod_kitchen_wireless_paused,switch,Kitchen
+Taylor HomePod - Kitchen (Wireless) Allow Internet Backup,switch.taylor_homepod_kitchen_wireless_allow_internet_backup,switch,Kitchen
+Taylor GE_Light_E32D (Wireless) Paused,switch.taylor_ge_light_e32d_wireless_paused,switch,Unassigned
+Taylor GE_Light_E32D (Wireless) Allow Internet Backup,switch.taylor_ge_light_e32d_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ring-649a636870AB (Wireless) Paused,switch.taylor_ring_649a636870ab_wireless_paused,switch,Unassigned
+Taylor Ring-649a636870AB (Wireless) Allow Internet Backup,switch.taylor_ring_649a636870ab_wireless_allow_internet_backup,switch,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Paused,switch.taylor_ks230_great_room_light_switch_wireless_paused,switch,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Allow Internet Backup,switch.taylor_ks230_great_room_light_switch_wireless_allow_internet_backup,switch,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Paused,switch.taylor_5c_47_5e_8e_2d_00_wireless_paused,switch,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Allow Internet Backup,switch.taylor_5c_47_5e_8e_2d_00_wireless_allow_internet_backup,switch,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Paused,switch.taylor_sonos_38420b3cd790_wireless_paused,switch,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Allow Internet Backup,switch.taylor_sonos_38420b3cd790_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Paused,switch.taylor_s505_ulrichs_closet_switch_wireless_paused,switch,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Allow Internet Backup,switch.taylor_s505_ulrichs_closet_switch_wireless_allow_internet_backup,switch,Ulrich's Room
+Taylor lwip0 (Wireless) Paused,switch.taylor_lwip0_wireless_paused,switch,Unassigned
+Taylor lwip0 (Wireless) Allow Internet Backup,switch.taylor_lwip0_wireless_allow_internet_backup,switch,Unassigned
+Taylor HomePod - Basement Bathroom (Wireless) Paused,switch.taylor_homepod_basement_bathroom_wireless_paused,switch,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Allow Internet Backup,switch.taylor_homepod_basement_bathroom_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor S505D - Office Light (Wireless) Paused,switch.taylor_s505d_office_light_wireless_paused,switch,Office
+Taylor S505D - Office Light (Wireless) Allow Internet Backup,switch.taylor_s505d_office_light_wireless_allow_internet_backup,switch,Office
+Taylor iPhone 16 Pro Max - Steve (Wireless) Paused,switch.taylor_iphone_16_pro_max_steve_wireless_paused,switch,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Allow Internet Backup,switch.taylor_iphone_16_pro_max_steve_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505D - Genevieve’s Light Switch (Wireless) Paused,switch.taylor_s505d_genevieves_light_switch_wireless_paused,switch,Genevieve's Room
+Taylor S505D - Genevieve’s Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505d_genevieves_light_switch_wireless_allow_internet_backup,switch,Genevieve's Room
+Taylor Genie Garage Door Opener (Wireless) Paused,switch.taylor_genie_garage_door_opener_wireless_paused,switch,Garage
+Taylor Genie Garage Door Opener (Wireless) Allow Internet Backup,switch.taylor_genie_garage_door_opener_wireless_allow_internet_backup,switch,Garage
+Taylor KS230 - Hallway Light Switch (Wireless) Paused,switch.taylor_ks230_hallway_light_switch_wireless_paused,switch,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Allow Internet Backup,switch.taylor_ks230_hallway_light_switch_wireless_allow_internet_backup,switch,Hallway
+Taylor S505D - Front Door Outside Light Switch (Wireless) Paused,switch.taylor_s505d_front_door_outside_light_switch_wireless_paused,switch,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505d_front_door_outside_light_switch_wireless_allow_internet_backup,switch,Front Door
+Taylor Switchbot Hub (Wireless) Paused,switch.taylor_switchbot_hub_wireless_paused,switch,Unassigned
+Taylor Switchbot Hub (Wireless) Allow Internet Backup,switch.taylor_switchbot_hub_wireless_allow_internet_backup,switch,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Paused,switch.taylor_5c_47_5e_8e_0a_17_wireless_paused,switch,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Allow Internet Backup,switch.taylor_5c_47_5e_8e_0a_17_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Paused,switch.taylor_s505d_coach_light_switch_wireless_paused,switch,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505d_coach_light_switch_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Paused,switch.taylor_s505d_owners_bathroom_shower_wireless_paused,switch,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Allow Internet Backup,switch.taylor_s505d_owners_bathroom_shower_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor Steves-Mac-Studio (Wireless) Paused,switch.taylor_steves_mac_studio_wireless_paused,switch,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Allow Internet Backup,switch.taylor_steves_mac_studio_wireless_allow_internet_backup,switch,Unassigned
+Taylor Apple TV - Great Room (Wireless) Paused,switch.taylor_apple_tv_great_room_wireless_paused,switch,Unassigned
+Taylor Apple TV - Great Room (Wireless) Allow Internet Backup,switch.taylor_apple_tv_great_room_wireless_allow_internet_backup,switch,Unassigned
+Taylor Sonos Arc (Wireless) Paused,switch.taylor_sonos_arc_sonos_paused,switch,Unassigned
+Taylor Sonos Arc (Wireless) Allow Internet Backup,switch.taylor_sonos_arc_sonos_allow_internet_backup,switch,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Paused,switch.taylor_38_7c_76_ae_66_bb_wired_paused,switch,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Allow Internet Backup,switch.taylor_38_7c_76_ae_66_bb_wired_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_07AB (Wireless) Paused,switch.taylor_ge_light_07ab_wireless_paused,switch,Unassigned
+Taylor GE_Light_07AB (Wireless) Allow Internet Backup,switch.taylor_ge_light_07ab_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Paused,switch.taylor_ring_upstairs_cam_wireless_paused,switch,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Allow Internet Backup,switch.taylor_ring_upstairs_cam_wireless_allow_internet_backup,switch,Unassigned
+Taylor Apple TV - Genevieve (Wireless) Paused,switch.taylor_apple_tv_genevieve_wireless_paused,switch,Genevieve's Room
+Taylor Apple TV - Genevieve (Wireless) Allow Internet Backup,switch.taylor_apple_tv_genevieve_wireless_allow_internet_backup,switch,Genevieve's Room
+Taylor S505 - Owner’s Closet Switch (Wireless) Paused,switch.taylor_s505_owners_closet_switch_wireless_paused,switch,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Allow Internet Backup,switch.taylor_s505_owners_closet_switch_wireless_allow_internet_backup,switch,Unassigned
+Taylor iPhone (Wireless) Paused,switch.taylor_iphone_wireless_paused,switch,Unassigned
+Taylor iPhone (Wireless) Allow Internet Backup,switch.taylor_iphone_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505 - Laundry Light Switch (Wireless) Paused,switch.taylor_s505_laundry_light_switch_wireless_paused,switch,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505_laundry_light_switch_wireless_allow_internet_backup,switch,Laundry Room
+Taylor S505D - Basement Bathroom Light (Wireless) Paused,switch.taylor_s505d_basement_bathroom_light_wireless_paused,switch,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Allow Internet Backup,switch.taylor_s505d_basement_bathroom_light_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor GE_Light_E407 (Wireless) Paused,switch.taylor_ge_light_e407_wireless_paused,switch,Unassigned
+Taylor GE_Light_E407 (Wireless) Allow Internet Backup,switch.taylor_ge_light_e407_wireless_allow_internet_backup,switch,Unassigned
+Taylor Office Floor Lamp Left (Wireless) Paused,switch.taylor_office_floor_lamp_left_wireless_paused,switch,Office
+Taylor Office Floor Lamp Left (Wireless) Allow Internet Backup,switch.taylor_office_floor_lamp_left_wireless_allow_internet_backup,switch,Office
+Taylor KS230 (Wireless) Paused,switch.taylor_ks230_wireless_paused,switch,Unassigned
+Taylor KS230 (Wireless) Allow Internet Backup,switch.taylor_ks230_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505 - Genevieve’s Closet (Wireless) Paused,switch.taylor_s505_genevieves_closet_wireless_paused,switch,Genevieve's Room
+Taylor S505 - Genevieve’s Closet (Wireless) Allow Internet Backup,switch.taylor_s505_genevieves_closet_wireless_allow_internet_backup,switch,Genevieve's Room
+Taylor Steve’s Bedroom Fan (Wireless) Paused,switch.taylor_steves_bedroom_fan_wireless_paused,switch,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Allow Internet Backup,switch.taylor_steves_bedroom_fan_wireless_allow_internet_backup,switch,Owner's Bedroom
+Taylor S505D - Deck Light 1 (Wireless) Paused,switch.taylor_s505d_deck_light_1_wireless_paused,switch,Deck
+Taylor S505D - Deck Light 1 (Wireless) Allow Internet Backup,switch.taylor_s505d_deck_light_1_wireless_allow_internet_backup,switch,Deck
+Taylor Office Floor Lamp Right (Wireless) Paused,switch.taylor_office_floor_lamp_right_wireless_paused,switch,Office
+Taylor Office Floor Lamp Right (Wireless) Allow Internet Backup,switch.taylor_office_floor_lamp_right_wireless_allow_internet_backup,switch,Office
+Taylor Dehumidifier (Wireless) Paused,switch.taylor_dehumidifier_wireless_paused,switch,Unassigned
+Taylor Dehumidifier (Wireless) Allow Internet Backup,switch.taylor_dehumidifier_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505 - Garage Light Switch (Wireless) Paused,switch.taylor_s505_garage_light_switch_wireless_paused,switch,Garage
+Taylor S505 - Garage Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505_garage_light_switch_wireless_allow_internet_backup,switch,Garage
+Taylor Dreo Office Fan (Wireless) Paused,switch.taylor_dreo_office_fan_wireless_paused,switch,Office
+Taylor Dreo Office Fan (Wireless) Allow Internet Backup,switch.taylor_dreo_office_fan_wireless_allow_internet_backup,switch,Office
+Taylor Ecobee Thermostat (Wireless) Paused,switch.taylor_ecobee_thermostat_wireless_paused,switch,Unassigned
+Taylor Ecobee Thermostat (Wireless) Allow Internet Backup,switch.taylor_ecobee_thermostat_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Paused,switch.taylor_s505_owners_bathroom_fan_wireless_paused,switch,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Allow Internet Backup,switch.taylor_s505_owners_bathroom_fan_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor Anker (Wireless) Paused,switch.taylor_anker_wireless_paused,switch,Unassigned
+Taylor Anker (Wireless) Allow Internet Backup,switch.taylor_anker_wireless_allow_internet_backup,switch,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Paused,switch.taylor_38_7c_76_ae_33_be_wired_paused,switch,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Allow Internet Backup,switch.taylor_38_7c_76_ae_33_be_wired_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Paused,switch.taylor_ge_light_d9e1_wireless_paused,switch,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Allow Internet Backup,switch.taylor_ge_light_d9e1_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ring - Office (Wireless) Paused,switch.taylor_ring_office_wireless_paused,switch,Office
+Taylor Ring - Office (Wireless) Allow Internet Backup,switch.taylor_ring_office_wireless_allow_internet_backup,switch,Office
+Taylor Homey Pro (Wireless) Paused,switch.taylor_homey_pro_wireless_paused,switch,Unassigned
+Taylor Homey Pro (Wireless) Allow Internet Backup,switch.taylor_homey_pro_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Paused,switch.taylor_ring_ac9fc343e974_wireless_paused,switch,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Allow Internet Backup,switch.taylor_ring_ac9fc343e974_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505D - Deck Light 2 (Wireless) Paused,switch.taylor_s505d_deck_light_2_wireless_paused,switch,Deck
+Taylor S505D - Deck Light 2 (Wireless) Allow Internet Backup,switch.taylor_s505d_deck_light_2_wireless_allow_internet_backup,switch,Deck
+Taylor Plug - On Air Sign (Wireless) Paused,switch.taylor_plug_on_air_sign_wireless_paused,switch,Unassigned
+Taylor Plug - On Air Sign (Wireless) Allow Internet Backup,switch.taylor_plug_on_air_sign_wireless_allow_internet_backup,switch,Unassigned
+Taylor Nikki iPhone (Wireless) Paused,switch.taylor_nikki_iphone_wireless_paused,switch,Unassigned
+Taylor Nikki iPhone (Wireless) Allow Internet Backup,switch.taylor_nikki_iphone_wireless_allow_internet_backup,switch,Unassigned
+Taylor HomePod - Owner’s Bedroom (Wireless) Paused,switch.taylor_homepod_owners_bedroom_wireless_paused,switch,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Allow Internet Backup,switch.taylor_homepod_owners_bedroom_wireless_allow_internet_backup,switch,Owner's Bedroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Paused,switch.taylor_s505_basement_bathroom_fan_wireless_paused,switch,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Allow Internet Backup,switch.taylor_s505_basement_bathroom_fan_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor KS230 - Kitchen Dining Light (Wireless) Paused,switch.taylor_ks230_kitchen_dining_light_wireless_paused,switch,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Allow Internet Backup,switch.taylor_ks230_kitchen_dining_light_wireless_allow_internet_backup,switch,Kitchen
+Taylor HomePod - Main Bathroom (Wireless) Paused,switch.taylor_homepod_main_bathroom_wireless_paused,switch,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Allow Internet Backup,switch.taylor_homepod_main_bathroom_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Paused,switch.taylor_genevieves_bedroom_fan_wireless_paused,switch,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Allow Internet Backup,switch.taylor_genevieves_bedroom_fan_wireless_allow_internet_backup,switch,Owner's Bedroom
+Taylor Elgato Key Light (Wireless) Paused,switch.taylor_elgato_key_light_wireless_paused,switch,Unassigned
+Taylor Elgato Key Light (Wireless) Allow Internet Backup,switch.taylor_elgato_key_light_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505D - Owner’s Bedroom Light (Wireless) Paused,switch.taylor_s505d_owners_bedroom_light_wireless_paused,switch,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Allow Internet Backup,switch.taylor_s505d_owners_bedroom_light_wireless_allow_internet_backup,switch,Owner's Bedroom
+Taylor S505D - Kitchen Sink Light (Wireless) Paused,switch.taylor_s505d_kitchen_sink_light_wireless_paused,switch,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Allow Internet Backup,switch.taylor_s505d_kitchen_sink_light_wireless_allow_internet_backup,switch,Kitchen
+Taylor Switch - Genevieve (Wireless) Paused,switch.taylor_switch_genevieve_wireless_paused,switch,Genevieve's Room
+Taylor Switch - Genevieve (Wireless) Allow Internet Backup,switch.taylor_switch_genevieve_wireless_allow_internet_backup,switch,Genevieve's Room
+Taylor Aqara Smart Hub M3 (Wireless) Paused,switch.taylor_aqara_smart_hub_m3_wireless_paused,switch,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Allow Internet Backup,switch.taylor_aqara_smart_hub_m3_wireless_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_93B5 (Wireless) Paused,switch.taylor_ge_light_93b5_wireless_paused,switch,Unassigned
+Taylor GE_Light_93B5 (Wireless) Allow Internet Backup,switch.taylor_ge_light_93b5_wireless_allow_internet_backup,switch,Unassigned
+Taylor HA-Server (Wired) Paused,switch.taylor_ha_server_wired_paused,switch,Unassigned
+Taylor HA-Server (Wired) Allow Internet Backup,switch.taylor_ha_server_wired_allow_internet_backup,switch,Unassigned
+Taylor S505D - Ulrich’s Light Switch (Wireless) Paused,switch.taylor_s505d_ulrichs_light_switch_wireless_paused,switch,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505d_ulrichs_light_switch_wireless_allow_internet_backup,switch,Ulrich's Room
+Taylor GE_Light_E49F (Wireless) Paused,switch.taylor_ge_light_e49f_wireless_paused,switch,Unassigned
+Taylor GE_Light_E49F (Wireless) Allow Internet Backup,switch.taylor_ge_light_e49f_wireless_allow_internet_backup,switch,Unassigned
+Taylor Printer (Wireless) Paused,switch.taylor_printer_wireless_paused,switch,Unassigned
+Taylor Printer (Wireless) Allow Internet Backup,switch.taylor_printer_wireless_allow_internet_backup,switch,Unassigned
+Taylor Office TV (Wired) Paused,switch.taylor_office_tv_wired_paused,switch,Office
+Taylor Office TV (Wired) Allow Internet Backup,switch.taylor_office_tv_wired_allow_internet_backup,switch,Office
+Taylor Roborock Vacuum (Wireless) Paused,switch.taylor_roborock_vacuum_wireless_paused,switch,Unassigned
+Taylor Roborock Vacuum (Wireless) Allow Internet Backup,switch.taylor_roborock_vacuum_wireless_allow_internet_backup,switch,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Paused,switch.taylor_steves_mac_studio_2_wired_paused,switch,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Allow Internet Backup,switch.taylor_steves_mac_studio_2_wired_allow_internet_backup,switch,Unassigned
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Paused,switch.taylor_s505d_owners_bathroom_sink_wireless_paused,switch,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Allow Internet Backup,switch.taylor_s505d_owners_bathroom_sink_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor Ring - Rec Room (Wireless) Paused,switch.taylor_ring_rec_room_wireless_paused,switch,Rec Room
+Taylor Ring - Rec Room (Wireless) Allow Internet Backup,switch.taylor_ring_rec_room_wireless_allow_internet_backup,switch,Rec Room
+Taylor Ring - Doorbell (Wireless) Paused,switch.taylor_ring_doorbell_wireless_paused,switch,Unassigned
+Taylor Ring - Doorbell (Wireless) Allow Internet Backup,switch.taylor_ring_doorbell_wireless_allow_internet_backup,switch,Unassigned
+Taylor KS230 - Basement Steps Switch (Wireless) Paused,switch.taylor_ks230_basement_steps_switch_wireless_paused,switch,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Allow Internet Backup,switch.taylor_ks230_basement_steps_switch_wireless_allow_internet_backup,switch,Basement
+Taylor S505D - Main Bathroom Light (Wireless) Paused,switch.taylor_s505d_main_bathroom_light_wireless_paused,switch,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Allow Internet Backup,switch.taylor_s505d_main_bathroom_light_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor iPad - Genevieve? Paused,switch.taylor_ipad_genevieve_paused_2,switch,Genevieve's Room
+Taylor iPad - Genevieve? Allow Internet Backup,switch.taylor_ipad_genevieve_allow_internet_backup_2,switch,Genevieve's Room
+Taylor Apple Watch - Steve (Wireless) Paused,switch.taylor_apple_watch_steve_wireless_paused,switch,Unassigned
+Taylor Apple Watch - Steve (Wireless) Allow Internet Backup,switch.taylor_apple_watch_steve_wireless_allow_internet_backup,switch,Unassigned
+Taylor Eevee’s Laptop (Wireless) Paused,switch.taylor_eevees_laptop_wireless_paused,switch,Unassigned
+Taylor Eevee’s Laptop (Wireless) Allow Internet Backup,switch.taylor_eevees_laptop_wireless_allow_internet_backup,switch,Unassigned
+Taylor TV - Great Room (Wired) Paused,switch.taylor_74_e6_b8_b7_83_68_wired_paused,switch,Unassigned
+Taylor TV - Great Room (Wired) Allow Internet Backup,switch.taylor_74_e6_b8_b7_83_68_wired_allow_internet_backup,switch,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Paused,switch.taylor_apple_watch_nikki_wireless_paused,switch,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Allow Internet Backup,switch.taylor_apple_watch_nikki_wireless_allow_internet_backup,switch,Unassigned
+Taylor RokuTV Basement (Wired) Paused,switch.taylor_rokutv_basement_wired_paused,switch,Basement
+Taylor RokuTV Basement (Wired) Allow Internet Backup,switch.taylor_rokutv_basement_wired_allow_internet_backup,switch,Basement
+Taylor PS5 (Wireless) Paused,switch.taylor_ps5_wireless_paused,switch,Unassigned
+Taylor PS5 (Wireless) Allow Internet Backup,switch.taylor_ps5_wireless_allow_internet_backup,switch,Unassigned
+Taylor Switch - Ulrich (Wireless) Paused,switch.taylor_switch_ulrich_wireless_paused,switch,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Allow Internet Backup,switch.taylor_switch_ulrich_wireless_allow_internet_backup,switch,Ulrich's Room
+Taylor Mac Studio (Wireless) Paused,switch.taylor_mac_studio_wireless_paused,switch,Unassigned
+Taylor Mac Studio (Wireless) Allow Internet Backup,switch.taylor_mac_studio_wireless_allow_internet_backup,switch,Unassigned
+Taylor linux (Wireless) Paused,switch.taylor_linux_wireless_paused,switch,Unassigned
+Taylor linux (Wireless) Allow Internet Backup,switch.taylor_linux_wireless_allow_internet_backup,switch,Unassigned
+Taylor KP125-2 (Wireless) Paused,switch.taylor_kp125_2_wireless_paused,switch,Unassigned
+Taylor KP125-2 (Wireless) Allow Internet Backup,switch.taylor_kp125_2_wireless_allow_internet_backup,switch,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Paused,switch.taylor_28_73_f6_f6_a5_3d_wireless_paused,switch,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Allow Internet Backup,switch.taylor_28_73_f6_f6_a5_3d_wireless_allow_internet_backup,switch,Unassigned
+Taylor SonosZP (Sonos) Paused,switch.taylor_sonos_f0f6c154ce30_wireless_paused,switch,Unassigned
+Taylor SonosZP (Sonos) Allow Internet Backup,switch.taylor_sonos_f0f6c154ce30_wireless_allow_internet_backup,switch,Unassigned
+Taylor Rec room smart tv (Wireless) Paused,switch.taylor_rec_room_smart_tv_wireless_paused,switch,Rec Room
+Taylor Rec room smart tv (Wireless) Allow Internet Backup,switch.taylor_rec_room_smart_tv_wireless_allow_internet_backup,switch,Rec Room
+Taylor SonosZP (Sonos) Paused,switch.taylor_sonoszp_sonos_paused,switch,Unassigned
+Taylor SonosZP (Sonos) Allow Internet Backup,switch.taylor_sonoszp_sonos_allow_internet_backup,switch,Unassigned
+Front Porch Light Auto-update enabled,switch.front_porch_light_auto_update_enabled,switch,Unassigned
+Front Porch Light LED,switch.front_porch_light_led,switch,Unassigned
+Owner’s Closet,switch.owners_closet,switch,Unassigned
+Owner’s Closet Auto-off enabled,switch.owners_closet_auto_off_enabled,switch,Unassigned
+Owner’s Closet Auto-update enabled,switch.owners_closet_auto_update_enabled,switch,Unassigned
+Owner’s Closet LED,switch.owners_closet_led,switch,Unassigned
+Owner’s Bathroom Sink Lights Auto-update enabled,switch.owner_s_bathroom_sink_lights_auto_update_enabled,switch,Main Bathroom
+Owner’s Bathroom Sink Lights LED,switch.owner_s_bathroom_sink_lights_led,switch,Main Bathroom
+Rec Room Lights LED,switch.rec_room_lights_led,switch,Rec Room
+Genevieve’s Closet,switch.genevieves_closet,switch,Genevieve's Room
+Genevieve’s Closet Auto-off enabled,switch.genevieves_closet_auto_off_enabled,switch,Genevieve's Room
+Genevieve’s Closet Auto-update enabled,switch.genevieves_closet_auto_update_enabled,switch,Genevieve's Room
+Genevieve’s Closet LED,switch.genevieves_closet_led,switch,Genevieve's Room
+Owner’s Bathroom Fan,switch.owner_s_bathroom_fan,switch,Main Bathroom
+Owner’s Bathroom Fan Auto-off enabled,switch.owner_s_bathroom_fan_auto_off_enabled,switch,Main Bathroom
+Owner’s Bathroom Fan Auto-update enabled,switch.owner_s_bathroom_fan_auto_update_enabled,switch,Main Bathroom
+Owner’s Bathroom Fan LED,switch.owner_s_bathroom_fan_led,switch,Main Bathroom
+Roborock Dock Child lock,switch.roborock_dock_child_lock,switch,Unassigned
+Roborock Vacuum Do not disturb,switch.roborock_vacuum_do_not_disturb,switch,Unassigned
+Ulrich’s Closet,switch.ulrichs_closet,switch,Ulrich's Room
+Ulrich’s Closet Auto-off enabled,switch.ulrichs_closet_auto_off_enabled,switch,Ulrich's Room
+Ulrich’s Closet Auto-update enabled,switch.ulrichs_closet_auto_update_enabled,switch,Ulrich's Room
+Ulrich’s Closet LED,switch.ulrichs_closet_led,switch,Ulrich's Room
+Ulrich Light Auto-update enabled,switch.ulrich_light_auto_update_enabled,switch,Ulrich's Room
+Ulrich Light LED,switch.ulrich_light_led,switch,Ulrich's Room
+Office Light Auto-update enabled,switch.office_light_auto_update_enabled,switch,Office
+Office Light LED,switch.office_light_led,switch,Office
+Genevieve’s Light Auto-update enabled,switch.genevieves_light_auto_update_enabled,switch,Genevieve's Room
+Genevieve’s Light LED,switch.genevieves_light_led,switch,Genevieve's Room
+Kitchen Sink Light Auto-update enabled,switch.kitchen_sink_light_auto_update_enabled,switch,Kitchen
+Kitchen Sink Light LED,switch.kitchen_sink_light_led,switch,Kitchen
+On Air Sign,switch.on_air_sign,switch,Unassigned
+On Air Sign Auto-off enabled,switch.on_air_sign_auto_off_enabled,switch,Unassigned
+On Air Sign Auto-update enabled,switch.on_air_sign_auto_update_enabled,switch,Unassigned
+On Air Sign LED,switch.on_air_sign_led,switch,Unassigned
+Sonos Roam Crossfade,switch.sonos_roam_crossfade,switch,Unassigned
+Sonos Roam Loudness,switch.sonos_roam_loudness,switch,Unassigned
+Basement Bathroom Fan,switch.basement_bathroom_fan,switch,Main Bathroom
+Basement Bathroom Fan Auto-off enabled,switch.basement_bathroom_fan_auto_off_enabled,switch,Main Bathroom
+Basement Bathroom Fan Auto-update enabled,switch.basement_bathroom_fan_auto_update_enabled,switch,Main Bathroom
+Basement Bathroom Fan LED,switch.basement_bathroom_fan_led,switch,Main Bathroom
+Garage,switch.garage_light,switch,Garage
+Garage Light Auto-off enabled,switch.garage_light_auto_off_enabled,switch,Garage
+Garage Light Auto-update enabled,switch.garage_light_auto_update_enabled,switch,Garage
+Garage Light LED,switch.garage_light_led,switch,Garage
+Basement Bathroom Light Auto-update enabled,switch.basement_bathroom_light_auto_update_enabled,switch,Main Bathroom
+Basement Bathroom Light LED,switch.basement_bathroom_light_led,switch,Main Bathroom
+Sonos Arc Crossfade,switch.sonos_arc_crossfade,switch,Unassigned
+Sonos Arc Loudness,switch.sonos_arc_loudness,switch,Unassigned
+Sonos Arc Surround music full volume,switch.sonos_arc_surround_music_full_volume,switch,Unassigned
+Sonos Arc Night sound,switch.sonos_arc_night_sound,switch,Unassigned
+Sonos Arc Speech enhancement,switch.sonos_arc_speech_enhancement,switch,Unassigned
+Sonos Arc Subwoofer enabled,switch.sonos_arc_subwoofer_enabled,switch,Unassigned
+Sonos Arc Surround enabled,switch.sonos_arc_surround_enabled,switch,Unassigned
+LED,switch.ulrich_s_fan_led,switch,Ulrich's Room
+Unknown Device,switch.ulrich_s_fan,switch,Ulrich's Room
+Crossfade,switch.sonos_move_crossfade,switch,Unassigned
+Loudness,switch.sonos_move_loudness,switch,Unassigned
+Taylor OfficeTV (Wireless) Paused,switch.taylor_officetv_wireless_paused,switch,Office
+Taylor OfficeTV (Wireless) Allow Internet Backup,switch.taylor_officetv_wireless_allow_internet_backup,switch,Office
+Taylor iPhone (Wireless) Paused,switch.taylor_iphone_wireless_paused_2,switch,Unassigned
+Taylor iPhone (Wireless) Allow Internet Backup,switch.taylor_iphone_wireless_allow_internet_backup_2,switch,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Paused,switch.taylor_nikkis_ipad_pro_wireless_paused,switch,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Allow Internet Backup,switch.taylor_nikkis_ipad_pro_wireless_allow_internet_backup,switch,Unassigned
+Taylor Mikes-iPhone (Wireless) Paused,switch.taylor_iphone_wireless_paused_3,switch,Unassigned
+Taylor Mikes-iPhone (Wireless) Allow Internet Backup,switch.taylor_iphone_wireless_allow_internet_backup_3,switch,Unassigned
+Taylor XBOX (Wireless) Paused,switch.taylor_xbox_wireless_paused,switch,Unassigned
+Taylor XBOX (Wireless) Allow Internet Backup,switch.taylor_xbox_wireless_allow_internet_backup,switch,Unassigned
+Taylor coredrummodule (Wireless) Paused,switch.taylor_coredrummodule_wireless_paused,switch,Unassigned
+Taylor coredrummodule (Wireless) Allow Internet Backup,switch.taylor_coredrummodule_wireless_allow_internet_backup,switch,Unassigned
+Taylor iPad (Wireless) Paused,switch.taylor_ipad_wireless_paused,switch,Unassigned
+Taylor iPad (Wireless) Allow Internet Backup,switch.taylor_ipad_wireless_allow_internet_backup,switch,Unassigned

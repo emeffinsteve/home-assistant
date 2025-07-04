@@ -1,0 +1,39 @@
+Device Name,Entity ID,Domain,Area
+Basement Lights,light.basement_lights,light,Basement
+Basement Steps Cloud connection,binary_sensor.basement_steps_cloud_connection,binary_sensor,Basement
+Basement Steps Restart,button.basement_steps_restart,button,Basement
+Basement Steps,light.basement_steps,light,Basement
+Basement Steps Signal strength,sensor.basement_steps_signal_strength,sensor,Basement
+Basement Steps On since,sensor.basement_steps_on_since,sensor,Basement
+Basement Steps LED,switch.basement_steps_led,switch,Basement
+Taylor S505 - Basement Storage (Wireless) Connected,binary_sensor.taylor_s505_basement_storage_wireless_connected,binary_sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Connected,binary_sensor.taylor_ks230_basement_steps_switch_wireless_connected,binary_sensor,Basement
+Taylor RokuTV Basement (Wired) Connected,binary_sensor.taylor_rokutv_basement_wired_connected,binary_sensor,Basement
+Taylor Basement Reboot,button.taylor_basement_reboot,button,Basement
+Taylor S505 - Basement Storage (Wireless),device_tracker.taylor_s505_basement_storage_wireless,device_tracker,Basement
+Taylor KS230 - Basement Steps Switch (Wireless),device_tracker.taylor_ks230_basement_steps_switch_wireless,device_tracker,Basement
+Taylor RokuTV Basement (Wired),device_tracker.taylor_rokutv_basement_wired,device_tracker,Basement
+Taylor Basement Status,light.taylor_basement_status_light,light,Basement
+Taylor Basement Connected Clients,sensor.taylor_basement_connected_clients,sensor,Basement
+Taylor Basement Status,sensor.taylor_basement_status,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) IP Address,sensor.taylor_s505_basement_storage_wireless_ip_address,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Last Active,sensor.taylor_s505_basement_storage_wireless_last_active,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Signal Strength,sensor.taylor_s505_basement_storage_wireless_signal_strength,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Download Rate,sensor.taylor_s505_basement_storage_wireless_download_rate,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Upload Rate,sensor.taylor_s505_basement_storage_wireless_upload_rate,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) IP Address,sensor.taylor_ks230_basement_steps_switch_wireless_ip_address,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Last Active,sensor.taylor_ks230_basement_steps_switch_wireless_last_active,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Signal Strength,sensor.taylor_ks230_basement_steps_switch_wireless_signal_strength,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Download Rate,sensor.taylor_ks230_basement_steps_switch_wireless_download_rate,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Upload Rate,sensor.taylor_ks230_basement_steps_switch_wireless_upload_rate,sensor,Basement
+Taylor RokuTV Basement (Wired) IP Address,sensor.taylor_rokutv_basement_wired_ip_address,sensor,Basement
+Taylor RokuTV Basement (Wired) Last Active,sensor.taylor_rokutv_basement_wired_last_active,sensor,Basement
+Taylor RokuTV Basement (Wired) Download Rate,sensor.taylor_rokutv_basement_wired_download_rate,sensor,Basement
+Taylor RokuTV Basement (Wired) Upload Rate,sensor.taylor_rokutv_basement_wired_upload_rate,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Paused,switch.taylor_s505_basement_storage_wireless_paused,switch,Basement
+Taylor S505 - Basement Storage (Wireless) Allow Internet Backup,switch.taylor_s505_basement_storage_wireless_allow_internet_backup,switch,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Paused,switch.taylor_ks230_basement_steps_switch_wireless_paused,switch,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Allow Internet Backup,switch.taylor_ks230_basement_steps_switch_wireless_allow_internet_backup,switch,Basement
+Taylor RokuTV Basement (Wired) Paused,switch.taylor_rokutv_basement_wired_paused,switch,Basement
+Taylor RokuTV Basement (Wired) Allow Internet Backup,switch.taylor_rokutv_basement_wired_allow_internet_backup,switch,Basement
+Taylor Basement Firmware,update.taylor_basement_firmware,update,Basement

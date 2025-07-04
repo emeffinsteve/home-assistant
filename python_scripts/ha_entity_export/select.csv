@@ -1,0 +1,27 @@
+Device Name,Entity ID,Domain,Area
+UC5 Power-on behavior on startup,select.uc5_power_on_behavior_on_startup,select,Unassigned
+UC1 Power-on behavior on startup,select.uc1_power_on_behavior_on_startup,select,Unassigned
+UC6 Power-on behavior on startup,select.uc6_power_on_behavior_on_startup,select,Unassigned
+UC2 Power-on behavior on startup,select.uc2_power_on_behavior_on_startup,select,Unassigned
+UC4 Power-on behavior on startup,select.uc4_power_on_behavior_on_startup,select,Unassigned
+UC3 Power-on behavior on startup,select.uc3_power_on_behavior_on_startup,select,Unassigned
+Main Bathroom Light Light preset,select.main_bathroom_light_light_preset,select,Main Bathroom
+Garage Coach Lights Light preset,select.garage_coach_lights_light_preset,select,Garage
+Deck Middle Light Light preset,select.deck_middle_light_light_preset,select,Deck
+Owner’s Bedroom Light Light preset,select.owner_s_bedroom_light_light_preset,select,Owner's Bedroom
+Owner's Bathroom Shower Light Light preset,select.owners_bathroom_shower_light_light_preset,select,Main Bathroom
+Deck Outer Lights Light preset,select.deck_outer_lights_light_preset,select,Deck
+Roborock Vacuum Mop intensity,select.roborock_vacuum_mop_intensity,select,Unassigned
+Roborock Vacuum Mop mode,select.roborock_vacuum_mop_mode,select,Unassigned
+Roborock Dock Empty mode,select.roborock_dock_empty_mode,select,Unassigned
+Roborock Vacuum Selected map,select.roborock_vacuum_selected_map,select,Unassigned
+Taylor Preferred Update Time,select.taylor_preferred_update_time,select,Unassigned
+Front Porch Light Light preset,select.front_porch_light_light_preset,select,Unassigned
+Owner’s Bathroom Sink Lights Light preset,select.owner_s_bathroom_sink_lights_light_preset,select,Main Bathroom
+Ulrich Light Light preset,select.ulrich_light_light_preset,select,Ulrich's Room
+Office Light Light preset,select.office_light_light_preset,select,Office
+Genevieve’s Light Light preset,select.genevieves_light_light_preset,select,Genevieve's Room
+Kitchen Sink Light Light preset,select.kitchen_sink_light_light_preset,select,Kitchen
+Basement Bathroom Light Light preset,select.basement_bathroom_light_light_preset,select,Main Bathroom
+My ecobee Temperature Display Units,select.my_ecobee_temperature_display_units,select,Unassigned
+My ecobee Current Mode,select.my_ecobee_current_mode,select,Unassigned

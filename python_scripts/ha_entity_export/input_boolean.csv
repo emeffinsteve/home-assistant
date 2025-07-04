@@ -1,0 +1,26 @@
+Device Name,Entity ID,Domain,Area
+Climate Automation Enabled,input_boolean.climate_automation_enabled,input_boolean,Unassigned
+Climate Manual Override Active,input_boolean.climate_manual_override_active,input_boolean,Unassigned
+Climate Weather Preconditioning Active,input_boolean.climate_weather_preconditioning_active,input_boolean,Rec Room
+Climate Outdoor Sensors Available,input_boolean.climate_outdoor_sensors_available,input_boolean,Unassigned
+Climate Automation Coordination Lock,input_boolean.climate_automation_coordination_lock,input_boolean,Unassigned
+Genevieve Dog Walked Today,input_boolean.genevieve_dog_walked_today,input_boolean,Genevieve's Room
+Genevieve Chores Done Today,input_boolean.genevieve_chores_done_today,input_boolean,Genevieve's Room
+Resume Genevieve's Internet,input_boolean.genevieve_manual_resume,input_boolean,Genevieve's Room
+Ulrich Internet Paused,input_boolean.ulrich_internet_paused,input_boolean,Ulrich's Room
+Ulrich Dog Walked Today,input_boolean.ulrich_dog_walked_today,input_boolean,Ulrich's Room
+Ulrich Chores Done Today,input_boolean.ulrich_chores_done_today,input_boolean,Ulrich's Room
+TV Kill Switch Active,input_boolean.tv_kill_switch_active,input_boolean,Unassigned
+Upstairs Temporary Override,input_boolean.upstairs_temp_override,input_boolean,Unassigned
+Downstairs Temporary Override,input_boolean.downstairs_temp_override,input_boolean,Unassigned
+Genevieve Temporary Override,input_boolean.genevieve_temp_override,input_boolean,Genevieve's Room
+Signal Kids Override,input_boolean.signal_kids_override,input_boolean,Unassigned
+Signal Genevieve Override,input_boolean.signal_genevieve_override,input_boolean,Genevieve's Room
+Signal Ulrich Override,input_boolean.signal_ulrich_override,input_boolean,Ulrich's Room
+Kids Notification System Disabled,input_boolean.kids_notification_system_disabled,input_boolean,Unassigned
+Client Automation Enabled,input_boolean.client_automation_enabled,input_boolean,Unassigned
+Climate Section Open,input_boolean.climate_section_open,input_boolean,Unassigned
+Genevieve Timer Active,input_boolean.genevieve_internet_timer_active,input_boolean,Genevieve's Room
+Kids Light Signal Override,input_boolean.notification_kids_light_signal_override,input_boolean,Unassigned
+Genevieve Light Signal Override,input_boolean.notification_genevieve_light_signal_override,input_boolean,Genevieve's Room
+Ulrich Light Signal Override,input_boolean.notification_ulrich_light_signal_override,input_boolean,Ulrich's Room

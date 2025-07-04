@@ -1,0 +1,1170 @@
+Device Name,Entity ID,Domain,Area
+Home Assistant Supervisor Update,update.home_assistant_supervisor_update,update,Unassigned
+Home Assistant Core Update,update.home_assistant_core_update,update,Unassigned
+Matter Server Update,update.matter_server_update,update,Unassigned
+Advanced SSH & Web Terminal Update,update.advanced_ssh_web_terminal_update,update,Unassigned
+Govee to MQTT Bridge Update,update.govee_to_mqtt_bridge_update,update,Unassigned
+Mosquitto broker Update,update.mosquitto_broker_update,update,Unassigned
+File editor Update,update.file_editor_update,update,Unassigned
+Claude Terminal Update,update.claude_terminal_update,update,Unassigned
+Home Assistant Operating System Update,update.home_assistant_operating_system_update,update,Unassigned
+Home Assistant,conversation.home_assistant,conversation,Unassigned
+Great Room Light Energy,sensor.great_room_light_energy,sensor,Unassigned
+Front Porch Light Energy,sensor.front_porch_light_energy,sensor,Unassigned
+UC1 Energy,sensor.uc1_energy,sensor,Unassigned
+UC2 Energy,sensor.uc2_energy,sensor,Unassigned
+UC3 Energy,sensor.uc3_energy,sensor,Unassigned
+UC4 Energy,sensor.uc4_energy,sensor,Unassigned
+UC5 Energy,sensor.uc5_energy,sensor,Unassigned
+UC6 Energy,sensor.uc6_energy,sensor,Unassigned
+Backup Automatic backup,event.backup_automatic_backup,event,Unassigned
+Backup Backup Manager state,sensor.backup_backup_manager_state,sensor,Unassigned
+Backup Next scheduled automatic backup,sensor.backup_next_scheduled_automatic_backup,sensor,Unassigned
+Backup Last successful automatic backup,sensor.backup_last_successful_automatic_backup,sensor,Unassigned
+Backup Last attempted automatic backup,sensor.backup_last_attempted_automatic_backup,sensor,Unassigned
+Remote UI,binary_sensor.remote_ui,binary_sensor,Unassigned
+Home Assistant Cloud,stt.home_assistant_cloud,stt,Unassigned
+Home Assistant Cloud,tts.home_assistant_cloud,tts,Unassigned
+Owners Suite Lights,light.owners_suite_lights,light,Unassigned
+Outdoor All,light.outdoor_all,light,Unassigned
+Front Entrance Lights,light.front_entrance_lights,light,Unassigned
+Home,zone.home,zone,Unassigned
+Restart Home Assistant,script.restart_home_assistant,script,Unassigned
+Toggle Upstairs Temp Override,script.toggle_upstairs_temp_override,script,Unassigned
+Toggle Upstairs Pause Indefinitely,script.toggle_upstairs_pause_indefinitely,script,Unassigned
+Toggle Upstairs Enable Indefinitely,script.toggle_upstairs_enable_indefinitely,script,Unassigned
+Toggle Downstairs Temp Override,script.toggle_downstairs_temp_override,script,Unassigned
+Toggle Downstairs Pause Indefinitely,script.toggle_downstairs_pause_indefinitely,script,Unassigned
+Toggle Downstairs Enable Indefinitely,script.toggle_downstairs_enable_indefinitely,script,Unassigned
+Owner's Suite All Off,script.owners_suite_all_off,script,Unassigned
+Signal Kids,script.signal_kids,script,Unassigned
+Test Upstairs Override Modes,script.test_upstairs_override_modes,script,Unassigned
+Test Temporary Override System,script.test_temp_override_system,script,Unassigned
+Test Entity Availability,script.test_entity_availability,script,Unassigned
+Test Schedule Logic,script.test_schedule_logic,script,Unassigned
+Undercabinet,light.undercabinet,light,Unassigned
+Climate Current Mode,input_select.climate_current_mode,input_select,Unassigned
+Climate Outdoor Data Source,input_select.climate_outdoor_data_source,input_select,Unassigned
+Upstairs Override Mode,input_select.upstairs_internet_override_mode,input_select,Unassigned
+Downstairs Override Mode,input_select.downstairs_internet_override_mode,input_select,Unassigned
+Climate Best Available Outdoor,input_number.climate_outdoor_temperature_best,input_number,Unassigned
+Manual Override Hours,input_number.manual_override_hours_2,input_number,Unassigned
+Climate Automation Enabled,input_boolean.climate_automation_enabled,input_boolean,Unassigned
+Climate Manual Override Active,input_boolean.climate_manual_override_active,input_boolean,Unassigned
+Climate Outdoor Sensors Available,input_boolean.climate_outdoor_sensors_available,input_boolean,Unassigned
+Climate Automation Coordination Lock,input_boolean.climate_automation_coordination_lock,input_boolean,Unassigned
+TV Kill Switch Active,input_boolean.tv_kill_switch_active,input_boolean,Unassigned
+Upstairs Temporary Override,input_boolean.upstairs_temp_override,input_boolean,Unassigned
+Downstairs Temporary Override,input_boolean.downstairs_temp_override,input_boolean,Unassigned
+Signal Kids Override,input_boolean.signal_kids_override,input_boolean,Unassigned
+Kids Notification System Disabled,input_boolean.kids_notification_system_disabled,input_boolean,Unassigned
+Resume Climate Automation,input_button.climate_resume_automation,input_button,Unassigned
+Force Day Schedule,input_button.climate_force_day_schedule,input_button,Unassigned
+Force Night Schedule,input_button.climate_force_night_schedule,input_button,Unassigned
+Check Sensors Now,input_button.climate_force_sensor_check,input_button,Unassigned
+Export Entities,input_button.export_entities,input_button,Unassigned
+Last Manual Thermostat Change,input_datetime.last_manual_thermostat_change,input_datetime,Unassigned
+Climate Last Outdoor Reading,input_datetime.climate_last_outdoor_reading,input_datetime,Unassigned
+Climate Priority Automation,input_text.climate_priority_automation,input_text,Unassigned
+Climate Logic Reason,input_text.climate_logic_reason,input_text,Unassigned
+Last Climate Action,input_text.last_climate_action,input_text,Unassigned
+Climate Sensor Status,input_text.climate_sensor_status,input_text,Unassigned
+Weather Hot Days Ahead,input_text.weather_hot_days_ahead,input_text,Unassigned
+Manual Override Duration (Hours),input_number.manual_override_hours,input_number,Unassigned
+Client Automation Enabled,input_boolean.client_automation_enabled,input_boolean,Unassigned
+Climate Section Open,input_boolean.climate_section_open,input_boolean,Unassigned
+und,input_button.und,input_button,Unassigned
+Steve Taylor,person.steve_taylor,person,Unassigned
+Nikki Taylor,person.nikki_taylor,person,Unassigned
+Sun,sun.sun,sun,Unassigned
+Sun Next dawn,sensor.sun_next_dawn,sensor,Unassigned
+Sun Next dusk,sensor.sun_next_dusk,sensor,Unassigned
+Sun Next midnight,sensor.sun_next_midnight,sensor,Unassigned
+Sun Next noon,sensor.sun_next_noon,sensor,Unassigned
+Sun Next rising,sensor.sun_next_rising,sensor,Unassigned
+Sun Next setting,sensor.sun_next_setting,sensor,Unassigned
+UC5 Firmware,update.uc5_firmware,update,Unassigned
+UC5 Identify,button.uc5_identify,button,Unassigned
+UC5,light.uc5,light,Unassigned
+UC5 On level,number.uc5_on_level,number,Unassigned
+UC5 On transition time,number.uc5_on_transition_time,number,Unassigned
+UC5 Off transition time,number.uc5_off_transition_time,number,Unassigned
+UC5 Power-on behavior on startup,select.uc5_power_on_behavior_on_startup,select,Unassigned
+UC1 Firmware,update.uc1_firmware,update,Unassigned
+UC1 Identify,button.uc1_identify,button,Unassigned
+UC1,light.uc1,light,Unassigned
+UC1 On level,number.uc1_on_level,number,Unassigned
+UC1 On transition time,number.uc1_on_transition_time,number,Unassigned
+UC1 Off transition time,number.uc1_off_transition_time,number,Unassigned
+UC1 Power-on behavior on startup,select.uc1_power_on_behavior_on_startup,select,Unassigned
+UC6 Firmware,update.uc6_firmware,update,Unassigned
+UC6 Identify,button.uc6_identify,button,Unassigned
+UC6,light.uc6,light,Unassigned
+UC6 On level,number.uc6_on_level,number,Unassigned
+UC6 On transition time,number.uc6_on_transition_time,number,Unassigned
+UC6 Off transition time,number.uc6_off_transition_time,number,Unassigned
+UC6 Power-on behavior on startup,select.uc6_power_on_behavior_on_startup,select,Unassigned
+Aqara Smart Lock U200 Firmware,update.aqara_smart_lock_u200_firmware,update,Unassigned
+Aqara Smart Lock U200 Identify,button.aqara_smart_lock_u200_identify,button,Unassigned
+Aqara Smart Lock U200,lock.aqara_smart_lock_u200,lock,Unassigned
+Aqara Smart Lock U200 Battery,sensor.aqara_smart_lock_u200_battery,sensor,Unassigned
+Aqara Smart Lock U200 Battery voltage,sensor.aqara_smart_lock_u200_voltage,sensor,Unassigned
+UC2 Firmware,update.uc2_firmware,update,Unassigned
+UC2 Identify,button.uc2_identify,button,Unassigned
+UC2,light.uc2,light,Unassigned
+UC2 On level,number.uc2_on_level,number,Unassigned
+UC2 On transition time,number.uc2_on_transition_time,number,Unassigned
+UC2 Off transition time,number.uc2_off_transition_time,number,Unassigned
+UC2 Power-on behavior on startup,select.uc2_power_on_behavior_on_startup,select,Unassigned
+UC4 Firmware,update.uc4_firmware,update,Unassigned
+UC4 Identify,button.uc4_identify,button,Unassigned
+UC4,light.uc4,light,Unassigned
+UC4 On level,number.uc4_on_level,number,Unassigned
+UC4 On transition time,number.uc4_on_transition_time,number,Unassigned
+UC4 Off transition time,number.uc4_off_transition_time,number,Unassigned
+UC4 Power-on behavior on startup,select.uc4_power_on_behavior_on_startup,select,Unassigned
+UC3 Firmware,update.uc3_firmware,update,Unassigned
+UC3 Identify,button.uc3_identify,button,Unassigned
+UC3,light.uc3,light,Unassigned
+UC3 On level,number.uc3_on_level,number,Unassigned
+UC3 On transition time,number.uc3_on_transition_time,number,Unassigned
+UC3 Off transition time,number.uc3_off_transition_time,number,Unassigned
+UC3 Power-on behavior on startup,select.uc3_power_on_behavior_on_startup,select,Unassigned
+Shopping List,todo.shopping_list,todo,Unassigned
+Great Room Light Power,sensor.great_room_light_power,sensor,Unassigned
+Front Porch Light Power,sensor.front_porch_light_power,sensor,Unassigned
+UC1 Power,sensor.uc1_power,sensor,Unassigned
+UC2 Power,sensor.uc2_power,sensor,Unassigned
+UC3 Power,sensor.uc3_power,sensor,Unassigned
+UC4 Power,sensor.uc4_power,sensor,Unassigned
+UC5 Power,sensor.uc5_power,sensor,Unassigned
+UC6 Power,sensor.uc6_power,sensor,Unassigned
+Climate System Status,sensor.climate_system_status,sensor,Unassigned
+Entity Export Data,sensor.entity_export_data,sensor,Unassigned
+Upstairs Internet Status,sensor.upstairs_internet_status,sensor,Unassigned
+Upstairs Next Schedule Change,sensor.upstairs_next_schedule_change,sensor,Unassigned
+Downstairs Internet Status,sensor.downstairs_internet_status,sensor,Unassigned
+Downstairs Next Schedule Change,sensor.downstairs_next_schedule_change,sensor,Unassigned
+Bubble Card Modules,sensor.bubble_card_modules,sensor,Unassigned
+Google Translate en com,tts.google_translate_en_com,tts,Unassigned
+iPad (2),device_tracker.ipad_2,device_tracker,Unassigned
+iPad (2) Connection Type,sensor.ipad_2_connection_type,sensor,Unassigned
+iPad (2) Battery State,sensor.ipad_2_battery_state,sensor,Unassigned
+iPad (2) Geocoded Location,sensor.ipad_2_geocoded_location,sensor,Unassigned
+iPad (2) SIM 1,sensor.ipad_2_sim_1,sensor,Unassigned
+iPad (2) SSID,sensor.ipad_2_ssid,sensor,Unassigned
+iPad (2) BSSID,sensor.ipad_2_bssid,sensor,Unassigned
+iPad (2) Battery Level,sensor.ipad_2_battery_level,sensor,Unassigned
+iPad (2) Last Update Trigger,sensor.ipad_2_last_update_trigger,sensor,Unassigned
+iPad (2) Location permission,sensor.ipad_2_location_permission,sensor,Unassigned
+iPad (2) App Version,sensor.ipad_2_app_version,sensor,Unassigned
+iPad (2) Audio Output,sensor.ipad_2_audio_output,sensor,Unassigned
+iPhone,device_tracker.iphone,device_tracker,Unassigned
+iPhone Battery Level,sensor.iphone_battery_level,sensor,Unassigned
+iPhone SIM 2,sensor.iphone_sim_2,sensor,Unassigned
+iPhone SIM 1,sensor.iphone_sim_1,sensor,Unassigned
+iPhone Geocoded Location,sensor.iphone_geocoded_location,sensor,Unassigned
+iPhone Last Update Trigger,sensor.iphone_last_update_trigger,sensor,Unassigned
+iPhone App Version,sensor.iphone_app_version,sensor,Unassigned
+iPhone Location permission,sensor.iphone_location_permission,sensor,Unassigned
+iPhone Audio Output,sensor.iphone_audio_output,sensor,Unassigned
+iPhone Battery State,sensor.iphone_battery_state,sensor,Unassigned
+iPhone SSID,sensor.iphone_ssid,sensor,Unassigned
+iPhone Connection Type,sensor.iphone_connection_type,sensor,Unassigned
+iPhone BSSID,sensor.iphone_bssid,sensor,Unassigned
+iPhone Watch Battery State,sensor.iphone_watch_battery_state,sensor,Unassigned
+iPhone Watch Battery Level,sensor.iphone_watch_battery_level,sensor,Unassigned
+Nikki Iphone Focus,binary_sensor.nikki_iphone_focus,binary_sensor,Unassigned
+Nikki Iphone,device_tracker.nikki_iphone,device_tracker,Unassigned
+Nikki Iphone Activity,sensor.nikki_iphone_activity,sensor,Unassigned
+Nikki Iphone Battery Level,sensor.nikki_iphone_battery_level,sensor,Unassigned
+Nikki Iphone Battery State,sensor.nikki_iphone_battery_state,sensor,Unassigned
+Nikki Iphone SSID,sensor.nikki_iphone_ssid,sensor,Unassigned
+Nikki Iphone Connection Type,sensor.nikki_iphone_connection_type,sensor,Unassigned
+Nikki Iphone BSSID,sensor.nikki_iphone_bssid,sensor,Unassigned
+Nikki Iphone SIM 1,sensor.nikki_iphone_sim_1,sensor,Unassigned
+Nikki Iphone SIM 2,sensor.nikki_iphone_sim_2,sensor,Unassigned
+Nikki Iphone Geocoded Location,sensor.nikki_iphone_geocoded_location,sensor,Unassigned
+Nikki Iphone Last Update Trigger,sensor.nikki_iphone_last_update_trigger,sensor,Unassigned
+Nikki Iphone App Version,sensor.nikki_iphone_app_version,sensor,Unassigned
+Nikki Iphone Location permission,sensor.nikki_iphone_location_permission,sensor,Unassigned
+Nikki Iphone Audio Output,sensor.nikki_iphone_audio_output,sensor,Unassigned
+Nikki Iphone Distance,sensor.nikki_iphone_distance,sensor,Unassigned
+Nikki Iphone Floors Ascended,sensor.nikki_iphone_floors_ascended,sensor,Unassigned
+Nikki Iphone Floors Descended,sensor.nikki_iphone_floors_descended,sensor,Unassigned
+Nikki Iphone Steps,sensor.nikki_iphone_steps,sensor,Unassigned
+Nikki Iphone Average Active Pace,sensor.nikki_iphone_average_active_pace,sensor,Unassigned
+Front Door Meter,sensor.meter_pro_21_temperature,sensor,Unassigned
+Front Door Meter,sensor.meter_pro_21_humidity,sensor,Unassigned
+Front Door Meter Battery,sensor.meter_pro_21_battery,sensor,Unassigned
+Outdoor Sensor,sensor.outdoor_sensor_temperature,sensor,Unassigned
+Outdoor Sensor,sensor.outdoor_sensor_humidity,sensor,Unassigned
+Outdoor Sensor Battery,sensor.outdoor_sensor_battery,sensor,Unassigned
+eero WAN status,binary_sensor.eero_wan_status,binary_sensor,Unassigned
+eero External IP,sensor.eero_external_ip,sensor,Unassigned
+eero Uptime,sensor.eero_uptime,sensor,Unassigned
+eero WAN status,sensor.eero_wan_status,sensor,Unassigned
+Desk Light Identify,button.desk_light_identify,button,Unassigned
+Desk Light Restart,button.desk_light_restart,button,Unassigned
+Desk,light.desk_light,light,Unassigned
+Steve’s Fan temperature,sensor.steves_fan_temperature,sensor,Unassigned
+Steve’s Fan,fan.steves_fan,fan,Unassigned
+Steve’s Fan Horizontally Oscillating,switch.steves_fan_horizontally_oscillating,switch,Unassigned
+Steve’s Fan Vertically Oscillating,switch.steves_fan_vertically_oscillating,switch,Unassigned
+Steve’s Fan Panel Sound,switch.steves_fan_panel_sound,switch,Unassigned
+HomePod - Master,media_player.homepod_master,media_player,Unassigned
+HomePod - Master,remote.homepod_master,remote,Unassigned
+Unknown Device,govee.state,govee,Unassigned
+Weather Cloud ceiling,sensor.weather_cloud_ceiling,sensor,Unassigned
+Weather Cloud cover,sensor.weather_cloud_cover,sensor,Unassigned
+Weather RealFeel temperature,sensor.weather_realfeel_temperature,sensor,Unassigned
+Weather,sensor.weather_humidity,sensor,Unassigned
+Weather Pressure tendency,sensor.weather_pressure_tendency,sensor,Unassigned
+Weather,sensor.weather_temperature,sensor,Unassigned
+Weather Wind speed,sensor.weather_wind_speed,sensor,Unassigned
+Weather Air quality day 0,sensor.weather_air_quality_day_0,sensor,Unassigned
+Weather Hours of sun day 0,sensor.weather_hours_of_sun_day_0,sensor,Unassigned
+Weather Condition day 0,sensor.weather_condition_day_0,sensor,Unassigned
+Weather Condition night 0,sensor.weather_condition_night_0,sensor,Unassigned
+Weather RealFeel temperature max day 0,sensor.weather_realfeel_temperature_max_day_0,sensor,Unassigned
+Weather RealFeel temperature min day 0,sensor.weather_realfeel_temperature_min_day_0,sensor,Unassigned
+Weather Thunderstorm probability day 0,sensor.weather_thunderstorm_probability_day_0,sensor,Unassigned
+Weather Thunderstorm probability night 0,sensor.weather_thunderstorm_probability_night_0,sensor,Unassigned
+Weather UV index day 0,sensor.weather_uv_index_day_0,sensor,Unassigned
+Weather Wind speed day 0,sensor.weather_wind_speed_day_0,sensor,Unassigned
+Weather Wind speed night 0,sensor.weather_wind_speed_night_0,sensor,Unassigned
+Weather Air quality day 1,sensor.weather_air_quality_day_1,sensor,Unassigned
+Weather Hours of sun day 1,sensor.weather_hours_of_sun_day_1,sensor,Unassigned
+Weather Condition day 1,sensor.weather_condition_day_1,sensor,Unassigned
+Weather Condition night 1,sensor.weather_condition_night_1,sensor,Unassigned
+Weather RealFeel temperature max day 1,sensor.weather_realfeel_temperature_max_day_1,sensor,Unassigned
+Weather RealFeel temperature min day 1,sensor.weather_realfeel_temperature_min_day_1,sensor,Unassigned
+Weather Thunderstorm probability day 1,sensor.weather_thunderstorm_probability_day_1,sensor,Unassigned
+Weather Thunderstorm probability night 1,sensor.weather_thunderstorm_probability_night_1,sensor,Unassigned
+Weather UV index day 1,sensor.weather_uv_index_day_1,sensor,Unassigned
+Weather Wind speed day 1,sensor.weather_wind_speed_day_1,sensor,Unassigned
+Weather Wind speed night 1,sensor.weather_wind_speed_night_1,sensor,Unassigned
+Weather Air quality day 2,sensor.weather_air_quality_day_2,sensor,Unassigned
+Weather Hours of sun day 2,sensor.weather_hours_of_sun_day_2,sensor,Unassigned
+Weather Condition day 2,sensor.weather_condition_day_2,sensor,Unassigned
+Weather Condition night 2,sensor.weather_condition_night_2,sensor,Unassigned
+Weather RealFeel temperature max day 2,sensor.weather_realfeel_temperature_max_day_2,sensor,Unassigned
+Weather RealFeel temperature min day 2,sensor.weather_realfeel_temperature_min_day_2,sensor,Unassigned
+Weather Thunderstorm probability day 2,sensor.weather_thunderstorm_probability_day_2,sensor,Unassigned
+Weather Thunderstorm probability night 2,sensor.weather_thunderstorm_probability_night_2,sensor,Unassigned
+Weather UV index day 2,sensor.weather_uv_index_day_2,sensor,Unassigned
+Weather Wind speed day 2,sensor.weather_wind_speed_day_2,sensor,Unassigned
+Weather Wind speed night 2,sensor.weather_wind_speed_night_2,sensor,Unassigned
+Weather Air quality day 3,sensor.weather_air_quality_day_3,sensor,Unassigned
+Weather Hours of sun day 3,sensor.weather_hours_of_sun_day_3,sensor,Unassigned
+Weather Condition day 3,sensor.weather_condition_day_3,sensor,Unassigned
+Weather Condition night 3,sensor.weather_condition_night_3,sensor,Unassigned
+Weather RealFeel temperature max day 3,sensor.weather_realfeel_temperature_max_day_3,sensor,Unassigned
+Weather RealFeel temperature min day 3,sensor.weather_realfeel_temperature_min_day_3,sensor,Unassigned
+Weather Thunderstorm probability day 3,sensor.weather_thunderstorm_probability_day_3,sensor,Unassigned
+Weather Thunderstorm probability night 3,sensor.weather_thunderstorm_probability_night_3,sensor,Unassigned
+Weather UV index day 3,sensor.weather_uv_index_day_3,sensor,Unassigned
+Weather Wind speed day 3,sensor.weather_wind_speed_day_3,sensor,Unassigned
+Weather Wind speed night 3,sensor.weather_wind_speed_night_3,sensor,Unassigned
+Weather Air quality day 4,sensor.weather_air_quality_day_4,sensor,Unassigned
+Weather Hours of sun day 4,sensor.weather_hours_of_sun_day_4,sensor,Unassigned
+Weather Condition day 4,sensor.weather_condition_day_4,sensor,Unassigned
+Weather Condition night 4,sensor.weather_condition_night_4,sensor,Unassigned
+Weather RealFeel temperature max day 4,sensor.weather_realfeel_temperature_max_day_4,sensor,Unassigned
+Weather RealFeel temperature min day 4,sensor.weather_realfeel_temperature_min_day_4,sensor,Unassigned
+Weather Thunderstorm probability day 4,sensor.weather_thunderstorm_probability_day_4,sensor,Unassigned
+Weather Thunderstorm probability night 4,sensor.weather_thunderstorm_probability_night_4,sensor,Unassigned
+Weather UV index day 4,sensor.weather_uv_index_day_4,sensor,Unassigned
+Weather Wind speed day 4,sensor.weather_wind_speed_day_4,sensor,Unassigned
+Weather Wind speed night 4,sensor.weather_wind_speed_night_4,sensor,Unassigned
+Weather,weather.weather,weather,Unassigned
+KAKR,weather.kakr,weather,Unassigned
+Ring - Doorbell Live view,camera.ring_doorbell_live_view,camera,Unassigned
+Ring - Downstairs Sofa Live view,camera.ring_downstairs_sofa_live_view,camera,Unassigned
+Ring - Backyard Live view,camera.ring_backyard_live_view,camera,Unassigned
+Ring - Front Live view,camera.ring_front_live_view,camera,Unassigned
+Ring - Downstairs Doors PTZ Live view,camera.ring_downstairs_doors_ptz_live_view,camera,Unassigned
+Ring - Upstairs Live view,camera.ring_upstairs_live_view,camera,Unassigned
+Ring - Doorbell Ding,event.ring_doorbell_ding,event,Unassigned
+Ring - Downstairs Sofa Motion,event.ring_downstairs_sofa_motion,event,Unassigned
+Ring - Backyard Motion,event.ring_backyard_motion,event,Unassigned
+Ring - Front Motion,event.ring_front_motion,event,Unassigned
+Ring - Doorbell Motion,event.ring_doorbell_motion,event,Unassigned
+Ring - Downstairs Chime Volume,number.ring_downstairs_chime_volume,number,Unassigned
+Ring - Upstairs Chime Volume,number.ring_upstairs_chime_volume,number,Unassigned
+Ring - Downstairs Sofa Volume,number.ring_downstairs_sofa_volume,number,Unassigned
+Ring - Backyard Volume,number.ring_backyard_volume,number,Unassigned
+Ring - Front Volume,number.ring_front_volume,number,Unassigned
+Ring - Downstairs Doors PTZ Volume,number.ring_downstairs_doors_ptz_volume_2,number,Unassigned
+Ring - Upstairs Volume,number.ring_upstairs_volume_2,number,Unassigned
+Ring - Doorbell Volume,number.ring_doorbell_volume,number,Unassigned
+Ring - Downstairs Sofa Battery,sensor.ring_downstairs_sofa_battery,sensor,Unassigned
+Ring - Backyard Battery,sensor.ring_backyard_battery,sensor,Unassigned
+Ring - Front Battery,sensor.ring_front_battery,sensor,Unassigned
+Ring - Downstairs Doors PTZ Battery,sensor.ring_downstairs_doors_ptz_battery,sensor,Unassigned
+Ring - Upstairs Battery,sensor.ring_upstairs_battery,sensor,Unassigned
+Ring - Doorbell Battery,sensor.ring_doorbell_battery,sensor,Unassigned
+Ring - Downstairs Sofa Last activity,sensor.ring_downstairs_sofa_last_activity,sensor,Unassigned
+Ring - Backyard Last activity,sensor.ring_backyard_last_activity,sensor,Unassigned
+Ring - Front Last activity,sensor.ring_front_last_activity,sensor,Unassigned
+Ring - Downstairs Doors PTZ Last activity,sensor.ring_downstairs_doors_ptz_last_activity,sensor,Unassigned
+Ring - Upstairs Last activity,sensor.ring_upstairs_last_activity,sensor,Unassigned
+Ring - Doorbell Last activity,sensor.ring_doorbell_last_activity,sensor,Unassigned
+Ring - Downstairs Chime Wi-Fi signal category,sensor.ring_downstairs_chime_wi_fi_signal_category_2,sensor,Unassigned
+Ring - Upstairs Chime Wi-Fi signal category,sensor.ring_upstairs_chime_wi_fi_signal_category_2,sensor,Unassigned
+Ring - Downstairs Chime Signal strength,sensor.ring_downstairs_chime_signal_strength_2,sensor,Unassigned
+Ring - Upstairs Chime Signal strength,sensor.ring_upstairs_chime_signal_strength_2,sensor,Unassigned
+Ring - Downstairs Sofa Siren,siren.ring_downstairs_sofa_siren,siren,Unassigned
+Ring - Backyard Siren,siren.ring_backyard_siren,siren,Unassigned
+Ring - Front Siren,siren.ring_front_siren,siren,Unassigned
+Ring - Downstairs Chime Siren,siren.ring_downstairs_chime_siren,siren,Unassigned
+Ring - Upstairs Chime Siren,siren.ring_upstairs_chime_siren,siren,Unassigned
+Ring - Downstairs Sofa Motion detection,switch.ring_downstairs_sofa_motion_detection,switch,Unassigned
+Ring - Backyard Motion detection,switch.ring_backyard_motion_detection,switch,Unassigned
+Ring - Front Motion detection,switch.ring_front_motion_detection,switch,Unassigned
+Ring - Doorbell Motion detection,switch.ring_doorbell_motion_detection,switch,Unassigned
+Great Room TV,media_player.great_room,media_player,Unassigned
+slider-entity-row update,update.slider_entity_row_update,update,Unassigned
+Mushroom update,update.mushroom_update,update,Unassigned
+eero update,update.eero_update,update,Unassigned
+Dreo Smart Device Integration update,update.dreo_smart_device_integration_update,update,Unassigned
+govee update,update.govee_update,update,Unassigned
+Gradual Volume Control update,update.gradual_volume_control_update,update,Unassigned
+Bubble Card update,update.bubble_card_update,update,Unassigned
+Bubble update,update.bubble_update,update,Unassigned
+card-mod update,update.card_mod_update,update,Unassigned
+HACS update,update.hacs_update,update,Unassigned
+Mini Media Player update,update.mini_media_player_update,update,Unassigned
+Custom Features for Home Assistant Cards update,update.custom_features_for_home_assistant_cards_update,update,Unassigned
+Great Room Light Cloud connection,binary_sensor.great_room_light_cloud_connection,binary_sensor,Unassigned
+Great Room,light.great_room_light,light,Unassigned
+Great Room Light LED,switch.great_room_light_led,switch,Unassigned
+Roborock Dock Mop drying,binary_sensor.roborock_dock_mop_drying,binary_sensor,Unassigned
+Roborock Vacuum Mop attached,binary_sensor.roborock_vacuum_mop_attached,binary_sensor,Unassigned
+Roborock Vacuum Water box attached,binary_sensor.roborock_vacuum_water_box_attached,binary_sensor,Unassigned
+Roborock Vacuum Water shortage,binary_sensor.roborock_vacuum_water_shortage,binary_sensor,Unassigned
+Roborock Vacuum Cleaning,binary_sensor.roborock_vacuum_cleaning,binary_sensor,Unassigned
+Roborock Vacuum Charging,binary_sensor.roborock_vacuum_charging,binary_sensor,Unassigned
+Roborock Vacuum Main Floor,image.roborock_vacuum_main_floor,image,Unassigned
+Roborock Vacuum Mop intensity,select.roborock_vacuum_mop_intensity,select,Unassigned
+Roborock Vacuum Mop mode,select.roborock_vacuum_mop_mode,select,Unassigned
+Roborock Dock Empty mode,select.roborock_dock_empty_mode,select,Unassigned
+Roborock Vacuum Selected map,select.roborock_vacuum_selected_map,select,Unassigned
+Roborock Vacuum Main brush time left,sensor.roborock_vacuum_main_brush_time_left,sensor,Unassigned
+Roborock Vacuum Side brush time left,sensor.roborock_vacuum_side_brush_time_left,sensor,Unassigned
+Roborock Vacuum Filter time left,sensor.roborock_vacuum_filter_time_left,sensor,Unassigned
+Roborock Vacuum Sensor time left,sensor.roborock_vacuum_sensor_time_left,sensor,Unassigned
+Roborock Vacuum Cleaning time,sensor.roborock_vacuum_cleaning_time,sensor,Unassigned
+Roborock Vacuum Total cleaning time,sensor.roborock_vacuum_total_cleaning_time,sensor,Unassigned
+Roborock Vacuum Total cleaning count,sensor.roborock_vacuum_total_cleaning_count,sensor,Unassigned
+Roborock Vacuum Status,sensor.roborock_vacuum_status,sensor,Unassigned
+Roborock Vacuum Cleaning area,sensor.roborock_vacuum_cleaning_area,sensor,Unassigned
+Roborock Vacuum Total cleaning area,sensor.roborock_vacuum_total_cleaning_area,sensor,Unassigned
+Roborock Vacuum Vacuum error,sensor.roborock_vacuum_vacuum_error,sensor,Unassigned
+Roborock Vacuum Battery,sensor.roborock_vacuum_battery,sensor,Unassigned
+Roborock Vacuum Last clean begin,sensor.roborock_vacuum_last_clean_begin,sensor,Unassigned
+Roborock Vacuum Last clean end,sensor.roborock_vacuum_last_clean_end,sensor,Unassigned
+Roborock Vacuum Cleaning progress,sensor.roborock_vacuum_cleaning_progress,sensor,Unassigned
+Roborock Dock Dock error,sensor.roborock_dock_dock_error,sensor,Unassigned
+Roborock Dock Mop drying remaining time,sensor.roborock_dock_mop_drying_remaining_time,sensor,Unassigned
+Roborock Vacuum Current room,sensor.roborock_vacuum_current_room,sensor,Unassigned
+Roborock Vacuum,vacuum.roborock_vacuum,vacuum,Unassigned
+Roborock Vacuum Volume,number.roborock_vacuum_volume,number,Unassigned
+Taylor Locked Down Block Apps,binary_sensor.taylor_locked_down_block_apps,binary_sensor,Unassigned
+Taylor Locked Down Connected,binary_sensor.taylor_locked_down_connected,binary_sensor,Unassigned
+Taylor Steve Block Apps,binary_sensor.taylor_steve_block_apps,binary_sensor,Unassigned
+Taylor Steve Connected,binary_sensor.taylor_steve_connected,binary_sensor,Unassigned
+Taylor Nikki Block Apps,binary_sensor.taylor_nikki_block_apps,binary_sensor,Unassigned
+Taylor Nikki Connected,binary_sensor.taylor_nikki_connected,binary_sensor,Unassigned
+Taylor Smart Home Block Apps,binary_sensor.taylor_smart_home_block_apps,binary_sensor,Unassigned
+Taylor Smart Home Connected,binary_sensor.taylor_smart_home_connected,binary_sensor,Unassigned
+Taylor Ex - Upstairs Block Apps,binary_sensor.taylor_ex_upstairs_block_apps,binary_sensor,Unassigned
+Taylor Ex - Upstairs Connected,binary_sensor.taylor_ex_upstairs_connected,binary_sensor,Unassigned
+Taylor Ex - Downstairs Block Apps,binary_sensor.taylor_ex_downstairs_block_apps,binary_sensor,Unassigned
+Taylor Ex - Downstairs Connected,binary_sensor.taylor_ex_downstairs_connected,binary_sensor,Unassigned
+Taylor iPad - Steve Connected,binary_sensor.taylor_ipad_steve_connected,binary_sensor,Unassigned
+Taylor Steves-Air (Wireless) Connected,binary_sensor.taylor_steves_air_wireless_connected,binary_sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Connected,binary_sensor.taylor_ring_649a637b2ef5_wireless_connected,binary_sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Connected,binary_sensor.taylor_ge_light_e32d_wireless_connected,binary_sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Connected,binary_sensor.taylor_ring_649a636870ab_wireless_connected,binary_sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Connected,binary_sensor.taylor_ks230_great_room_light_switch_wireless_connected,binary_sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Connected,binary_sensor.taylor_5c_47_5e_8e_2d_00_wireless_connected,binary_sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Connected,binary_sensor.taylor_sonos_38420b3cd790_wireless_connected,binary_sensor,Unassigned
+Taylor lwip0 (Wireless) Connected,binary_sensor.taylor_lwip0_wireless_connected,binary_sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Connected,binary_sensor.taylor_iphone_16_pro_max_steve_wireless_connected,binary_sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Connected,binary_sensor.taylor_switchbot_hub_wireless_connected,binary_sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Connected,binary_sensor.taylor_5c_47_5e_8e_0a_17_wireless_connected,binary_sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Connected,binary_sensor.taylor_s505d_coach_light_switch_wireless_connected,binary_sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Connected,binary_sensor.taylor_steves_mac_studio_wireless_connected,binary_sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Connected,binary_sensor.taylor_apple_tv_great_room_wireless_connected,binary_sensor,Unassigned
+Taylor Sonos Arc (Wireless) Connected,binary_sensor.taylor_sonos_arc_sonos_connected,binary_sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Connected,binary_sensor.taylor_38_7c_76_ae_66_bb_wired_connected,binary_sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Connected,binary_sensor.taylor_ge_light_07ab_wireless_connected,binary_sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Connected,binary_sensor.taylor_ring_upstairs_cam_wireless_connected,binary_sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Connected,binary_sensor.taylor_s505_owners_closet_switch_wireless_connected,binary_sensor,Unassigned
+Taylor iPhone (Wireless) Connected,binary_sensor.taylor_iphone_wireless_connected,binary_sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Connected,binary_sensor.taylor_ge_light_e407_wireless_connected,binary_sensor,Unassigned
+Taylor KS230 (Wireless) Connected,binary_sensor.taylor_ks230_wireless_connected,binary_sensor,Unassigned
+Taylor Dehumidifier (Wireless) Connected,binary_sensor.taylor_dehumidifier_wireless_connected,binary_sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Connected,binary_sensor.taylor_ecobee_thermostat_wireless_connected,binary_sensor,Unassigned
+Taylor Anker (Wireless) Connected,binary_sensor.taylor_anker_wireless_connected,binary_sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Connected,binary_sensor.taylor_38_7c_76_ae_33_be_wired_connected,binary_sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Connected,binary_sensor.taylor_ge_light_d9e1_wireless_connected,binary_sensor,Unassigned
+Taylor Homey Pro (Wireless) Connected,binary_sensor.taylor_homey_pro_wireless_connected,binary_sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Connected,binary_sensor.taylor_ring_ac9fc343e974_wireless_connected,binary_sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Connected,binary_sensor.taylor_plug_on_air_sign_wireless_connected,binary_sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Connected,binary_sensor.taylor_nikki_iphone_wireless_connected,binary_sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Connected,binary_sensor.taylor_elgato_key_light_wireless_connected,binary_sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Connected,binary_sensor.taylor_aqara_smart_hub_m3_wireless_connected,binary_sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Connected,binary_sensor.taylor_ge_light_93b5_wireless_connected,binary_sensor,Unassigned
+Taylor HA-Server (Wired) Connected,binary_sensor.taylor_ha_server_wired_connected,binary_sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Connected,binary_sensor.taylor_ge_light_e49f_wireless_connected,binary_sensor,Unassigned
+Taylor Printer (Wireless) Connected,binary_sensor.taylor_printer_wireless_connected,binary_sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Connected,binary_sensor.taylor_roborock_vacuum_wireless_connected,binary_sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Connected,binary_sensor.taylor_steves_mac_studio_2_wired_connected,binary_sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Connected,binary_sensor.taylor_ring_doorbell_wireless_connected,binary_sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Connected,binary_sensor.taylor_apple_watch_steve_wireless_connected,binary_sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Connected,binary_sensor.taylor_eevees_laptop_wireless_connected,binary_sensor,Unassigned
+Taylor TV - Great Room (Wired) Connected,binary_sensor.taylor_74_e6_b8_b7_83_68_wired_connected,binary_sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Connected,binary_sensor.taylor_apple_watch_nikki_wireless_connected,binary_sensor,Unassigned
+Taylor PS5 (Wireless) Connected,binary_sensor.taylor_ps5_wireless_connected,binary_sensor,Unassigned
+Taylor Mac Studio (Wireless) Connected,binary_sensor.taylor_mac_studio_wireless_connected,binary_sensor,Unassigned
+Taylor linux (Wireless) Connected,binary_sensor.taylor_linux_wireless_connected,binary_sensor,Unassigned
+Taylor KP125-2 (Wireless) Connected,binary_sensor.taylor_kp125_2_wireless_connected,binary_sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Connected,binary_sensor.taylor_28_73_f6_f6_a5_3d_wireless_connected,binary_sensor,Unassigned
+Taylor SonosZP (Sonos) Connected,binary_sensor.taylor_sonos_f0f6c154ce30_wireless_connected,binary_sensor,Unassigned
+Taylor SonosZP (Sonos) Connected,binary_sensor.taylor_sonoszp_sonos_connected,binary_sensor,Unassigned
+Taylor Reboot,button.taylor_reboot,button,Unassigned
+Taylor Run Internet Backup Test,button.taylor_run_internet_backup_test,button,Unassigned
+Taylor Run Speed Test,button.taylor_run_speed_test,button,Unassigned
+Taylor Locked Down,device_tracker.taylor_locked_down,device_tracker,Unassigned
+Taylor Steve,device_tracker.taylor_steve,device_tracker,Unassigned
+Taylor Nikki,device_tracker.taylor_nikki,device_tracker,Unassigned
+Taylor Smart Home,device_tracker.taylor_smart_home,device_tracker,Unassigned
+Taylor Ex - Upstairs,device_tracker.taylor_ex_upstairs,device_tracker,Unassigned
+Taylor Ex - Downstairs,device_tracker.taylor_ex_downstairs,device_tracker,Unassigned
+Taylor iPad - Steve,device_tracker.taylor_ipad_steve,device_tracker,Unassigned
+Taylor Steves-Air (Wireless),device_tracker.taylor_steves_air_wireless,device_tracker,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless),device_tracker.taylor_ring_649a637b2ef5_wireless,device_tracker,Unassigned
+Taylor GE_Light_E32D (Wireless),device_tracker.taylor_ge_light_e32d_wireless,device_tracker,Unassigned
+Taylor Ring-649a636870AB (Wireless),device_tracker.taylor_ring_649a636870ab_wireless,device_tracker,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless),device_tracker.taylor_ks230_great_room_light_switch_wireless,device_tracker,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless),device_tracker.taylor_5c_47_5e_8e_2d_00_wireless,device_tracker,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless),device_tracker.taylor_sonos_38420b3cd790_wireless,device_tracker,Unassigned
+Taylor lwip0 (Wireless),device_tracker.taylor_lwip0_wireless,device_tracker,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless),device_tracker.taylor_iphone_16_pro_max_steve_wireless,device_tracker,Unassigned
+Taylor Switchbot Hub (Wireless),device_tracker.taylor_switchbot_hub_wireless,device_tracker,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless),device_tracker.taylor_5c_47_5e_8e_0a_17_wireless,device_tracker,Unassigned
+Taylor S505D - Coach Light Switch (Wireless),device_tracker.taylor_s505d_coach_light_switch_wireless,device_tracker,Unassigned
+Taylor Steves-Mac-Studio (Wireless),device_tracker.taylor_steves_mac_studio_wireless,device_tracker,Unassigned
+Taylor Apple TV - Great Room (Wireless),device_tracker.taylor_apple_tv_great_room_wireless,device_tracker,Unassigned
+Taylor Sonos Arc (Wireless),device_tracker.taylor_sonos_arc_sonos,device_tracker,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired),device_tracker.taylor_38_7c_76_ae_66_bb_wired,device_tracker,Unassigned
+Taylor GE_Light_07AB (Wireless),device_tracker.taylor_ge_light_07ab_wireless,device_tracker,Unassigned
+Taylor Ring - Upstairs Cam (Wireless),device_tracker.taylor_ring_upstairs_cam_wireless,device_tracker,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless),device_tracker.taylor_s505_owners_closet_switch_wireless,device_tracker,Unassigned
+Taylor iPhone (Wireless),device_tracker.taylor_iphone_wireless,device_tracker,Unassigned
+Taylor GE_Light_E407 (Wireless),device_tracker.taylor_ge_light_e407_wireless,device_tracker,Unassigned
+Taylor KS230 (Wireless),device_tracker.taylor_ks230_wireless,device_tracker,Unassigned
+Taylor Dehumidifier (Wireless),device_tracker.taylor_dehumidifier_wireless,device_tracker,Unassigned
+Taylor Ecobee Thermostat (Wireless),device_tracker.taylor_ecobee_thermostat_wireless,device_tracker,Unassigned
+Taylor Anker (Wireless),device_tracker.taylor_anker_wireless,device_tracker,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired),device_tracker.taylor_38_7c_76_ae_33_be_wired,device_tracker,Unassigned
+Taylor GE_Light_D9E1 (Wireless),device_tracker.taylor_ge_light_d9e1_wireless,device_tracker,Unassigned
+Taylor Homey Pro (Wireless),device_tracker.taylor_homey_pro_wireless,device_tracker,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless),device_tracker.taylor_ring_ac9fc343e974_wireless,device_tracker,Unassigned
+Taylor Plug - On Air Sign (Wireless),device_tracker.taylor_plug_on_air_sign_wireless,device_tracker,Unassigned
+Taylor Nikki iPhone (Wireless),device_tracker.taylor_nikki_iphone_wireless,device_tracker,Unassigned
+Taylor Elgato Key Light (Wireless),device_tracker.taylor_elgato_key_light_wireless,device_tracker,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless),device_tracker.taylor_aqara_smart_hub_m3_wireless,device_tracker,Unassigned
+Taylor GE_Light_93B5 (Wireless),device_tracker.taylor_ge_light_93b5_wireless,device_tracker,Unassigned
+Taylor HA-Server (Wired),device_tracker.taylor_ha_server_wired,device_tracker,Unassigned
+Taylor GE_Light_E49F (Wireless),device_tracker.taylor_ge_light_e49f_wireless,device_tracker,Unassigned
+Taylor Printer (Wireless),device_tracker.taylor_printer_wireless,device_tracker,Unassigned
+Taylor Roborock Vacuum (Wireless),device_tracker.taylor_roborock_vacuum_wireless,device_tracker,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired),device_tracker.taylor_steves_mac_studio_2_wired,device_tracker,Unassigned
+Taylor Ring - Doorbell (Wireless),device_tracker.taylor_ring_doorbell_wireless,device_tracker,Unassigned
+Taylor Apple Watch - Steve (Wireless),device_tracker.taylor_apple_watch_steve_wireless,device_tracker,Unassigned
+Taylor Eevee’s Laptop (Wireless),device_tracker.taylor_eevees_laptop_wireless,device_tracker,Unassigned
+Taylor TV - Great Room (Wired),device_tracker.taylor_74_e6_b8_b7_83_68_wired,device_tracker,Unassigned
+Taylor Apple Watch - Nikki (Wireless),device_tracker.taylor_apple_watch_nikki_wireless,device_tracker,Unassigned
+Taylor PS5 (Wireless),device_tracker.taylor_ps5_wireless,device_tracker,Unassigned
+Taylor Mac Studio (Wireless),device_tracker.taylor_mac_studio_wireless,device_tracker,Unassigned
+Taylor linux (Wireless),device_tracker.taylor_linux_wireless,device_tracker,Unassigned
+Taylor KP125-2 (Wireless),device_tracker.taylor_kp125_2_wireless,device_tracker,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless),device_tracker.taylor_28_73_f6_f6_a5_3d_wireless,device_tracker,Unassigned
+Taylor SonosZP (Sonos),device_tracker.taylor_sonos_f0f6c154ce30_wireless,device_tracker,Unassigned
+Taylor SonosZP (Sonos),device_tracker.taylor_sonoszp_sonos,device_tracker,Unassigned
+Taylor Preferred Update Time,select.taylor_preferred_update_time,select,Unassigned
+Taylor Ad Blocking Status,sensor.taylor_ad_blocking_status,sensor,Unassigned
+Taylor Connected Clients,sensor.taylor_connected_clients,sensor,Unassigned
+Taylor Connected Guest Clients,sensor.taylor_connected_guest_clients,sensor,Unassigned
+Taylor Gateway IP,sensor.taylor_gateway_ip,sensor,Unassigned
+Taylor Public IP,sensor.taylor_public_ip,sensor,Unassigned
+Taylor Download Speed,sensor.taylor_download_speed,sensor,Unassigned
+Taylor Upload Speed,sensor.taylor_upload_speed,sensor,Unassigned
+Taylor Status,sensor.taylor_status,sensor,Unassigned
+Taylor WAN Router IP,sensor.taylor_wan_router_ip,sensor,Unassigned
+Taylor Locked Down Connected Clients,sensor.taylor_locked_down_connected_clients,sensor,Unassigned
+Taylor Locked Down Last Active,sensor.taylor_locked_down_last_active,sensor,Unassigned
+Taylor Steve Connected Clients,sensor.taylor_steve_connected_clients,sensor,Unassigned
+Taylor Steve Last Active,sensor.taylor_steve_last_active,sensor,Unassigned
+Taylor Nikki Connected Clients,sensor.taylor_nikki_connected_clients,sensor,Unassigned
+Taylor Nikki Last Active,sensor.taylor_nikki_last_active,sensor,Unassigned
+Taylor Smart Home Connected Clients,sensor.taylor_smart_home_connected_clients,sensor,Unassigned
+Taylor Smart Home Last Active,sensor.taylor_smart_home_last_active,sensor,Unassigned
+Taylor Ex - Upstairs Connected Clients,sensor.taylor_ex_upstairs_connected_clients,sensor,Unassigned
+Taylor Ex - Upstairs Last Active,sensor.taylor_ex_upstairs_last_active,sensor,Unassigned
+Taylor Ex - Downstairs Connected Clients,sensor.taylor_ex_downstairs_connected_clients,sensor,Unassigned
+Taylor Ex - Downstairs Last Active,sensor.taylor_ex_downstairs_last_active,sensor,Unassigned
+Taylor iPad - Steve IP Address,sensor.taylor_ipad_steve_ip_address,sensor,Unassigned
+Taylor iPad - Steve Last Active,sensor.taylor_ipad_steve_last_active,sensor,Unassigned
+Taylor iPad - Steve Signal Strength,sensor.taylor_ipad_steve_signal_strength,sensor,Unassigned
+Taylor iPad - Steve Download Rate,sensor.taylor_ipad_steve_download_rate,sensor,Unassigned
+Taylor iPad - Steve Upload Rate,sensor.taylor_ipad_steve_upload_rate,sensor,Unassigned
+Taylor Steves-Air (Wireless) IP Address,sensor.taylor_steves_air_wireless_ip_address,sensor,Unassigned
+Taylor Steves-Air (Wireless) Last Active,sensor.taylor_steves_air_wireless_last_active,sensor,Unassigned
+Taylor Steves-Air (Wireless) Signal Strength,sensor.taylor_steves_air_wireless_signal_strength,sensor,Unassigned
+Taylor Steves-Air (Wireless) Download Rate,sensor.taylor_steves_air_wireless_download_rate,sensor,Unassigned
+Taylor Steves-Air (Wireless) Upload Rate,sensor.taylor_steves_air_wireless_upload_rate,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) IP Address,sensor.taylor_ring_649a637b2ef5_wireless_ip_address,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Last Active,sensor.taylor_ring_649a637b2ef5_wireless_last_active,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Signal Strength,sensor.taylor_ring_649a637b2ef5_wireless_signal_strength,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Download Rate,sensor.taylor_ring_649a637b2ef5_wireless_download_rate,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Upload Rate,sensor.taylor_ring_649a637b2ef5_wireless_upload_rate,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) IP Address,sensor.taylor_ge_light_e32d_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Last Active,sensor.taylor_ge_light_e32d_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Signal Strength,sensor.taylor_ge_light_e32d_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Download Rate,sensor.taylor_ge_light_e32d_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Upload Rate,sensor.taylor_ge_light_e32d_wireless_upload_rate,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) IP Address,sensor.taylor_ring_649a636870ab_wireless_ip_address,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Last Active,sensor.taylor_ring_649a636870ab_wireless_last_active,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Signal Strength,sensor.taylor_ring_649a636870ab_wireless_signal_strength,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Download Rate,sensor.taylor_ring_649a636870ab_wireless_download_rate,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Upload Rate,sensor.taylor_ring_649a636870ab_wireless_upload_rate,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) IP Address,sensor.taylor_ks230_great_room_light_switch_wireless_ip_address,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Last Active,sensor.taylor_ks230_great_room_light_switch_wireless_last_active,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Signal Strength,sensor.taylor_ks230_great_room_light_switch_wireless_signal_strength,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Download Rate,sensor.taylor_ks230_great_room_light_switch_wireless_download_rate,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Upload Rate,sensor.taylor_ks230_great_room_light_switch_wireless_upload_rate,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) IP Address,sensor.taylor_5c_47_5e_8e_2d_00_wireless_ip_address,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Last Active,sensor.taylor_5c_47_5e_8e_2d_00_wireless_last_active,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Signal Strength,sensor.taylor_5c_47_5e_8e_2d_00_wireless_signal_strength,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Download Rate,sensor.taylor_5c_47_5e_8e_2d_00_wireless_download_rate,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Upload Rate,sensor.taylor_5c_47_5e_8e_2d_00_wireless_upload_rate,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) IP Address,sensor.taylor_sonos_38420b3cd790_wireless_ip_address,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Last Active,sensor.taylor_sonos_38420b3cd790_wireless_last_active,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Signal Strength,sensor.taylor_sonos_38420b3cd790_wireless_signal_strength,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Download Rate,sensor.taylor_sonos_38420b3cd790_wireless_download_rate,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Upload Rate,sensor.taylor_sonos_38420b3cd790_wireless_upload_rate,sensor,Unassigned
+Taylor lwip0 (Wireless) IP Address,sensor.taylor_lwip0_wireless_ip_address,sensor,Unassigned
+Taylor lwip0 (Wireless) Last Active,sensor.taylor_lwip0_wireless_last_active,sensor,Unassigned
+Taylor lwip0 (Wireless) Signal Strength,sensor.taylor_lwip0_wireless_signal_strength,sensor,Unassigned
+Taylor lwip0 (Wireless) Download Rate,sensor.taylor_lwip0_wireless_download_rate,sensor,Unassigned
+Taylor lwip0 (Wireless) Upload Rate,sensor.taylor_lwip0_wireless_upload_rate,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) IP Address,sensor.taylor_iphone_16_pro_max_steve_wireless_ip_address,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Last Active,sensor.taylor_iphone_16_pro_max_steve_wireless_last_active,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Signal Strength,sensor.taylor_iphone_16_pro_max_steve_wireless_signal_strength,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Download Rate,sensor.taylor_iphone_16_pro_max_steve_wireless_download_rate,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Upload Rate,sensor.taylor_iphone_16_pro_max_steve_wireless_upload_rate,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) IP Address,sensor.taylor_switchbot_hub_wireless_ip_address,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Last Active,sensor.taylor_switchbot_hub_wireless_last_active,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Signal Strength,sensor.taylor_switchbot_hub_wireless_signal_strength,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Download Rate,sensor.taylor_switchbot_hub_wireless_download_rate,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Upload Rate,sensor.taylor_switchbot_hub_wireless_upload_rate,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) IP Address,sensor.taylor_5c_47_5e_8e_0a_17_wireless_ip_address,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Last Active,sensor.taylor_5c_47_5e_8e_0a_17_wireless_last_active,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Signal Strength,sensor.taylor_5c_47_5e_8e_0a_17_wireless_signal_strength,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Download Rate,sensor.taylor_5c_47_5e_8e_0a_17_wireless_download_rate,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Upload Rate,sensor.taylor_5c_47_5e_8e_0a_17_wireless_upload_rate,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) IP Address,sensor.taylor_s505d_coach_light_switch_wireless_ip_address,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Last Active,sensor.taylor_s505d_coach_light_switch_wireless_last_active,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Signal Strength,sensor.taylor_s505d_coach_light_switch_wireless_signal_strength,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Download Rate,sensor.taylor_s505d_coach_light_switch_wireless_download_rate,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Upload Rate,sensor.taylor_s505d_coach_light_switch_wireless_upload_rate,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) IP Address,sensor.taylor_steves_mac_studio_wireless_ip_address,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Last Active,sensor.taylor_steves_mac_studio_wireless_last_active,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Signal Strength,sensor.taylor_steves_mac_studio_wireless_signal_strength,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Download Rate,sensor.taylor_steves_mac_studio_wireless_download_rate,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Upload Rate,sensor.taylor_steves_mac_studio_wireless_upload_rate,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) IP Address,sensor.taylor_apple_tv_great_room_wireless_ip_address,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Last Active,sensor.taylor_apple_tv_great_room_wireless_last_active,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Signal Strength,sensor.taylor_apple_tv_great_room_wireless_signal_strength,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Download Rate,sensor.taylor_apple_tv_great_room_wireless_download_rate,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Upload Rate,sensor.taylor_apple_tv_great_room_wireless_upload_rate,sensor,Unassigned
+Taylor Sonos Arc (Wireless) IP Address,sensor.taylor_sonos_arc_sonos_ip_address,sensor,Unassigned
+Taylor Sonos Arc (Wireless) Last Active,sensor.taylor_sonos_arc_sonos_last_active,sensor,Unassigned
+Taylor Sonos Arc (Wireless) Signal Strength,sensor.taylor_sonos_arc_wireless_signal_strength,sensor,Unassigned
+Taylor Sonos Arc (Wireless) Download Rate,sensor.taylor_sonos_arc_sonos_download_rate,sensor,Unassigned
+Taylor Sonos Arc (Wireless) Upload Rate,sensor.taylor_sonos_arc_sonos_upload_rate,sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) IP Address,sensor.taylor_38_7c_76_ae_66_bb_wired_ip_address,sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Last Active,sensor.taylor_38_7c_76_ae_66_bb_wired_last_active,sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Download Rate,sensor.taylor_38_7c_76_ae_66_bb_wired_download_rate,sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Upload Rate,sensor.taylor_38_7c_76_ae_66_bb_wired_upload_rate,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) IP Address,sensor.taylor_ge_light_07ab_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Last Active,sensor.taylor_ge_light_07ab_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Signal Strength,sensor.taylor_ge_light_07ab_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Download Rate,sensor.taylor_ge_light_07ab_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Upload Rate,sensor.taylor_ge_light_07ab_wireless_upload_rate,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) IP Address,sensor.taylor_ring_upstairs_cam_wireless_ip_address,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Last Active,sensor.taylor_ring_upstairs_cam_wireless_last_active,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Signal Strength,sensor.taylor_ring_upstairs_cam_wireless_signal_strength,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Download Rate,sensor.taylor_ring_upstairs_cam_wireless_download_rate,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Upload Rate,sensor.taylor_ring_upstairs_cam_wireless_upload_rate,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) IP Address,sensor.taylor_s505_owners_closet_switch_wireless_ip_address,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Last Active,sensor.taylor_s505_owners_closet_switch_wireless_last_active,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Signal Strength,sensor.taylor_s505_owners_closet_switch_wireless_signal_strength,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Download Rate,sensor.taylor_s505_owners_closet_switch_wireless_download_rate,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Upload Rate,sensor.taylor_s505_owners_closet_switch_wireless_upload_rate,sensor,Unassigned
+Taylor iPhone (Wireless) IP Address,sensor.taylor_iphone_wireless_ip_address,sensor,Unassigned
+Taylor iPhone (Wireless) Last Active,sensor.taylor_iphone_wireless_last_active,sensor,Unassigned
+Taylor iPhone (Wireless) Signal Strength,sensor.taylor_iphone_wireless_signal_strength,sensor,Unassigned
+Taylor iPhone (Wireless) Download Rate,sensor.taylor_iphone_wireless_download_rate,sensor,Unassigned
+Taylor iPhone (Wireless) Upload Rate,sensor.taylor_iphone_wireless_upload_rate,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) IP Address,sensor.taylor_ge_light_e407_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Last Active,sensor.taylor_ge_light_e407_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Signal Strength,sensor.taylor_ge_light_e407_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Download Rate,sensor.taylor_ge_light_e407_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Upload Rate,sensor.taylor_ge_light_e407_wireless_upload_rate,sensor,Unassigned
+Taylor KS230 (Wireless) IP Address,sensor.taylor_ks230_wireless_ip_address,sensor,Unassigned
+Taylor KS230 (Wireless) Last Active,sensor.taylor_ks230_wireless_last_active,sensor,Unassigned
+Taylor KS230 (Wireless) Signal Strength,sensor.taylor_ks230_wireless_signal_strength,sensor,Unassigned
+Taylor KS230 (Wireless) Download Rate,sensor.taylor_ks230_wireless_download_rate,sensor,Unassigned
+Taylor KS230 (Wireless) Upload Rate,sensor.taylor_ks230_wireless_upload_rate,sensor,Unassigned
+Taylor Dehumidifier (Wireless) IP Address,sensor.taylor_dehumidifier_wireless_ip_address,sensor,Unassigned
+Taylor Dehumidifier (Wireless) Last Active,sensor.taylor_dehumidifier_wireless_last_active,sensor,Unassigned
+Taylor Dehumidifier (Wireless) Signal Strength,sensor.taylor_dehumidifier_wireless_signal_strength,sensor,Unassigned
+Taylor Dehumidifier (Wireless) Download Rate,sensor.taylor_dehumidifier_wireless_download_rate,sensor,Unassigned
+Taylor Dehumidifier (Wireless) Upload Rate,sensor.taylor_dehumidifier_wireless_upload_rate,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) IP Address,sensor.taylor_ecobee_thermostat_wireless_ip_address,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Last Active,sensor.taylor_ecobee_thermostat_wireless_last_active,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Signal Strength,sensor.taylor_ecobee_thermostat_wireless_signal_strength,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Download Rate,sensor.taylor_ecobee_thermostat_wireless_download_rate,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Upload Rate,sensor.taylor_ecobee_thermostat_wireless_upload_rate,sensor,Unassigned
+Taylor Anker (Wireless) IP Address,sensor.taylor_anker_wireless_ip_address,sensor,Unassigned
+Taylor Anker (Wireless) Last Active,sensor.taylor_anker_wireless_last_active,sensor,Unassigned
+Taylor Anker (Wireless) Signal Strength,sensor.taylor_anker_wireless_signal_strength,sensor,Unassigned
+Taylor Anker (Wireless) Download Rate,sensor.taylor_anker_wireless_download_rate,sensor,Unassigned
+Taylor Anker (Wireless) Upload Rate,sensor.taylor_anker_wireless_upload_rate,sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) IP Address,sensor.taylor_38_7c_76_ae_33_be_wired_ip_address,sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Last Active,sensor.taylor_38_7c_76_ae_33_be_wired_last_active,sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Download Rate,sensor.taylor_38_7c_76_ae_33_be_wired_download_rate,sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Upload Rate,sensor.taylor_38_7c_76_ae_33_be_wired_upload_rate,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) IP Address,sensor.taylor_ge_light_d9e1_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Last Active,sensor.taylor_ge_light_d9e1_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Signal Strength,sensor.taylor_ge_light_d9e1_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Download Rate,sensor.taylor_ge_light_d9e1_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Upload Rate,sensor.taylor_ge_light_d9e1_wireless_upload_rate,sensor,Unassigned
+Taylor Homey Pro (Wireless) IP Address,sensor.taylor_homey_pro_wireless_ip_address,sensor,Unassigned
+Taylor Homey Pro (Wireless) Last Active,sensor.taylor_homey_pro_wireless_last_active,sensor,Unassigned
+Taylor Homey Pro (Wireless) Signal Strength,sensor.taylor_homey_pro_wireless_signal_strength,sensor,Unassigned
+Taylor Homey Pro (Wireless) Download Rate,sensor.taylor_homey_pro_wireless_download_rate,sensor,Unassigned
+Taylor Homey Pro (Wireless) Upload Rate,sensor.taylor_homey_pro_wireless_upload_rate,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) IP Address,sensor.taylor_ring_ac9fc343e974_wireless_ip_address,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Last Active,sensor.taylor_ring_ac9fc343e974_wireless_last_active,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Signal Strength,sensor.taylor_ring_ac9fc343e974_wireless_signal_strength,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Download Rate,sensor.taylor_ring_ac9fc343e974_wireless_download_rate,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Upload Rate,sensor.taylor_ring_ac9fc343e974_wireless_upload_rate,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) IP Address,sensor.taylor_plug_on_air_sign_wireless_ip_address,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Last Active,sensor.taylor_plug_on_air_sign_wireless_last_active,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Signal Strength,sensor.taylor_plug_on_air_sign_wireless_signal_strength,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Download Rate,sensor.taylor_plug_on_air_sign_wireless_download_rate,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Upload Rate,sensor.taylor_plug_on_air_sign_wireless_upload_rate,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) IP Address,sensor.taylor_nikki_iphone_wireless_ip_address,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Last Active,sensor.taylor_nikki_iphone_wireless_last_active,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Signal Strength,sensor.taylor_nikki_iphone_wireless_signal_strength,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Download Rate,sensor.taylor_nikki_iphone_wireless_download_rate,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Upload Rate,sensor.taylor_nikki_iphone_wireless_upload_rate,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) IP Address,sensor.taylor_elgato_key_light_wireless_ip_address,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Last Active,sensor.taylor_elgato_key_light_wireless_last_active,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Signal Strength,sensor.taylor_elgato_key_light_wireless_signal_strength,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Download Rate,sensor.taylor_elgato_key_light_wireless_download_rate,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Upload Rate,sensor.taylor_elgato_key_light_wireless_upload_rate,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) IP Address,sensor.taylor_aqara_smart_hub_m3_wireless_ip_address,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Last Active,sensor.taylor_aqara_smart_hub_m3_wireless_last_active,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Signal Strength,sensor.taylor_aqara_smart_hub_m3_wireless_signal_strength,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Download Rate,sensor.taylor_aqara_smart_hub_m3_wireless_download_rate,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Upload Rate,sensor.taylor_aqara_smart_hub_m3_wireless_upload_rate,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) IP Address,sensor.taylor_ge_light_93b5_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Last Active,sensor.taylor_ge_light_93b5_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Signal Strength,sensor.taylor_ge_light_93b5_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Download Rate,sensor.taylor_ge_light_93b5_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Upload Rate,sensor.taylor_ge_light_93b5_wireless_upload_rate,sensor,Unassigned
+Taylor HA-Server (Wired) IP Address,sensor.taylor_ha_server_wired_ip_address,sensor,Unassigned
+Taylor HA-Server (Wired) Last Active,sensor.taylor_ha_server_wired_last_active,sensor,Unassigned
+Taylor HA-Server (Wired) Download Rate,sensor.taylor_ha_server_wired_download_rate,sensor,Unassigned
+Taylor HA-Server (Wired) Upload Rate,sensor.taylor_ha_server_wired_upload_rate,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) IP Address,sensor.taylor_ge_light_e49f_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Last Active,sensor.taylor_ge_light_e49f_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Signal Strength,sensor.taylor_ge_light_e49f_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Download Rate,sensor.taylor_ge_light_e49f_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Upload Rate,sensor.taylor_ge_light_e49f_wireless_upload_rate,sensor,Unassigned
+Taylor Printer (Wireless) IP Address,sensor.taylor_printer_wireless_ip_address,sensor,Unassigned
+Taylor Printer (Wireless) Last Active,sensor.taylor_printer_wireless_last_active,sensor,Unassigned
+Taylor Printer (Wireless) Signal Strength,sensor.taylor_printer_wireless_signal_strength,sensor,Unassigned
+Taylor Printer (Wireless) Download Rate,sensor.taylor_printer_wireless_download_rate,sensor,Unassigned
+Taylor Printer (Wireless) Upload Rate,sensor.taylor_printer_wireless_upload_rate,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) IP Address,sensor.taylor_roborock_vacuum_wireless_ip_address,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Last Active,sensor.taylor_roborock_vacuum_wireless_last_active,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Signal Strength,sensor.taylor_roborock_vacuum_wireless_signal_strength,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Download Rate,sensor.taylor_roborock_vacuum_wireless_download_rate,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Upload Rate,sensor.taylor_roborock_vacuum_wireless_upload_rate,sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) IP Address,sensor.taylor_steves_mac_studio_2_wired_ip_address,sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Last Active,sensor.taylor_steves_mac_studio_2_wired_last_active,sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Download Rate,sensor.taylor_steves_mac_studio_2_wired_download_rate,sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Upload Rate,sensor.taylor_steves_mac_studio_2_wired_upload_rate,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) IP Address,sensor.taylor_ring_doorbell_wireless_ip_address,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Last Active,sensor.taylor_ring_doorbell_wireless_last_active,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Signal Strength,sensor.taylor_ring_doorbell_wireless_signal_strength,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Download Rate,sensor.taylor_ring_doorbell_wireless_download_rate,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Upload Rate,sensor.taylor_ring_doorbell_wireless_upload_rate,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) IP Address,sensor.taylor_apple_watch_steve_wireless_ip_address,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Last Active,sensor.taylor_apple_watch_steve_wireless_last_active,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Signal Strength,sensor.taylor_apple_watch_steve_wireless_signal_strength,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Download Rate,sensor.taylor_apple_watch_steve_wireless_download_rate,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Upload Rate,sensor.taylor_apple_watch_steve_wireless_upload_rate,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) IP Address,sensor.taylor_eevees_laptop_wireless_ip_address,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Last Active,sensor.taylor_eevees_laptop_wireless_last_active,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Signal Strength,sensor.taylor_eevees_laptop_wireless_signal_strength,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Download Rate,sensor.taylor_eevees_laptop_wireless_download_rate,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Upload Rate,sensor.taylor_eevees_laptop_wireless_upload_rate,sensor,Unassigned
+Taylor TV - Great Room (Wired) IP Address,sensor.taylor_74_e6_b8_b7_83_68_wired_ip_address,sensor,Unassigned
+Taylor TV - Great Room (Wired) Last Active,sensor.taylor_74_e6_b8_b7_83_68_wired_last_active,sensor,Unassigned
+Taylor TV - Great Room (Wired) Download Rate,sensor.taylor_74_e6_b8_b7_83_68_wired_download_rate,sensor,Unassigned
+Taylor TV - Great Room (Wired) Upload Rate,sensor.taylor_74_e6_b8_b7_83_68_wired_upload_rate,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) IP Address,sensor.taylor_apple_watch_nikki_wireless_ip_address,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Last Active,sensor.taylor_apple_watch_nikki_wireless_last_active,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Signal Strength,sensor.taylor_apple_watch_nikki_wireless_signal_strength,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Download Rate,sensor.taylor_apple_watch_nikki_wireless_download_rate,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Upload Rate,sensor.taylor_apple_watch_nikki_wireless_upload_rate,sensor,Unassigned
+Taylor PS5 (Wireless) IP Address,sensor.taylor_ps5_wireless_ip_address,sensor,Unassigned
+Taylor PS5 (Wireless) Last Active,sensor.taylor_ps5_wireless_last_active,sensor,Unassigned
+Taylor PS5 (Wireless) Signal Strength,sensor.taylor_ps5_wireless_signal_strength,sensor,Unassigned
+Taylor PS5 (Wireless) Download Rate,sensor.taylor_ps5_wireless_download_rate,sensor,Unassigned
+Taylor PS5 (Wireless) Upload Rate,sensor.taylor_ps5_wireless_upload_rate,sensor,Unassigned
+Taylor Mac Studio (Wireless) IP Address,sensor.taylor_mac_studio_wireless_ip_address,sensor,Unassigned
+Taylor Mac Studio (Wireless) Last Active,sensor.taylor_mac_studio_wireless_last_active,sensor,Unassigned
+Taylor Mac Studio (Wireless) Signal Strength,sensor.taylor_mac_studio_wireless_signal_strength,sensor,Unassigned
+Taylor Mac Studio (Wireless) Download Rate,sensor.taylor_mac_studio_wireless_download_rate,sensor,Unassigned
+Taylor Mac Studio (Wireless) Upload Rate,sensor.taylor_mac_studio_wireless_upload_rate,sensor,Unassigned
+Taylor linux (Wireless) IP Address,sensor.taylor_linux_wireless_ip_address,sensor,Unassigned
+Taylor linux (Wireless) Last Active,sensor.taylor_linux_wireless_last_active,sensor,Unassigned
+Taylor linux (Wireless) Signal Strength,sensor.taylor_linux_wireless_signal_strength,sensor,Unassigned
+Taylor linux (Wireless) Download Rate,sensor.taylor_linux_wireless_download_rate,sensor,Unassigned
+Taylor linux (Wireless) Upload Rate,sensor.taylor_linux_wireless_upload_rate,sensor,Unassigned
+Taylor KP125-2 (Wireless) IP Address,sensor.taylor_kp125_2_wireless_ip_address,sensor,Unassigned
+Taylor KP125-2 (Wireless) Last Active,sensor.taylor_kp125_2_wireless_last_active,sensor,Unassigned
+Taylor KP125-2 (Wireless) Signal Strength,sensor.taylor_kp125_2_wireless_signal_strength,sensor,Unassigned
+Taylor KP125-2 (Wireless) Download Rate,sensor.taylor_kp125_2_wireless_download_rate,sensor,Unassigned
+Taylor KP125-2 (Wireless) Upload Rate,sensor.taylor_kp125_2_wireless_upload_rate,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) IP Address,sensor.taylor_28_73_f6_f6_a5_3d_wireless_ip_address,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Last Active,sensor.taylor_28_73_f6_f6_a5_3d_wireless_last_active,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Signal Strength,sensor.taylor_28_73_f6_f6_a5_3d_wireless_signal_strength,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Download Rate,sensor.taylor_28_73_f6_f6_a5_3d_wireless_download_rate,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Upload Rate,sensor.taylor_28_73_f6_f6_a5_3d_wireless_upload_rate,sensor,Unassigned
+Taylor SonosZP (Sonos) IP Address,sensor.taylor_sonos_f0f6c154ce30_wireless_ip_address,sensor,Unassigned
+Taylor SonosZP (Sonos) Last Active,sensor.taylor_sonos_f0f6c154ce30_wireless_last_active,sensor,Unassigned
+Taylor SonosZP (Sonos) Download Rate,sensor.taylor_sonos_f0f6c154ce30_wireless_download_rate,sensor,Unassigned
+Taylor SonosZP (Sonos) Upload Rate,sensor.taylor_sonos_f0f6c154ce30_wireless_upload_rate,sensor,Unassigned
+Taylor SonosZP (Sonos) IP Address,sensor.taylor_sonoszp_sonos_ip_address,sensor,Unassigned
+Taylor SonosZP (Sonos) Last Active,sensor.taylor_sonoszp_sonos_last_active,sensor,Unassigned
+Taylor SonosZP (Sonos) Download Rate,sensor.taylor_sonoszp_sonos_download_rate,sensor,Unassigned
+Taylor SonosZP (Sonos) Upload Rate,sensor.taylor_sonoszp_sonos_upload_rate,sensor,Unassigned
+Taylor Ad Blocking,switch.taylor_ad_blocking,switch,Unassigned
+Taylor Backup Internet Enabled,switch.taylor_backup_internet_enabled,switch,Unassigned
+Taylor Band Steering,switch.taylor_band_steering,switch,Unassigned
+Taylor Advanced Security,switch.taylor_advanced_security,switch,Unassigned
+Taylor Dynamic DNS,switch.taylor_dynamic_dns,switch,Unassigned
+Taylor Local DNS Caching,switch.taylor_local_dns_caching,switch,Unassigned
+Taylor Guest Network,switch.taylor_guest_network,switch,Unassigned
+Taylor IPv6 Enabled,switch.taylor_ipv6_enabled,switch,Unassigned
+Taylor 5 GHz Band Paused,switch.taylor_5_ghz_band_paused,switch,Unassigned
+Taylor Smart Queue Management,switch.taylor_smart_queue_management,switch,Unassigned
+Taylor Thread Enabled,switch.taylor_thread_enabled,switch,Unassigned
+Taylor UPnP,switch.taylor_upnp,switch,Unassigned
+Taylor WPA3,switch.taylor_wpa3,switch,Unassigned
+Taylor Locked Down Ad Blocking,switch.taylor_locked_down_ad_blocking,switch,Unassigned
+Taylor Locked Down Gaming Content Filter,switch.taylor_locked_down_gaming_content_filter,switch,Unassigned
+Taylor Locked Down Illegal or Criminal Content Filter,switch.taylor_locked_down_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Locked Down Chat and Messaging Content Filter,switch.taylor_locked_down_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Locked Down Adult Content Filter,switch.taylor_locked_down_adult_content_filter,switch,Unassigned
+Taylor Locked Down Shopping Content Filter,switch.taylor_locked_down_shopping_content_filter,switch,Unassigned
+Taylor Locked Down Social Media Content Filter,switch.taylor_locked_down_social_media_content_filter,switch,Unassigned
+Taylor Locked Down Streaming Content Filter,switch.taylor_locked_down_streaming_content_filter,switch,Unassigned
+Taylor Locked Down Violent Content Filter,switch.taylor_locked_down_violent_content_filter,switch,Unassigned
+Taylor Locked Down Paused,switch.taylor_locked_down_paused,switch,Unassigned
+Taylor Locked Down SafeSearch Content Filter,switch.taylor_locked_down_safesearch_content_filter,switch,Unassigned
+Taylor Locked Down YouTube Restricted Content Filter,switch.taylor_locked_down_youtube_restricted_content_filter,switch,Unassigned
+Taylor Steve Ad Blocking,switch.taylor_steve_ad_blocking,switch,Unassigned
+Taylor Steve Gaming Content Filter,switch.taylor_steve_gaming_content_filter,switch,Unassigned
+Taylor Steve Illegal or Criminal Content Filter,switch.taylor_steve_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Steve Chat and Messaging Content Filter,switch.taylor_steve_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Steve Adult Content Filter,switch.taylor_steve_adult_content_filter,switch,Unassigned
+Taylor Steve Shopping Content Filter,switch.taylor_steve_shopping_content_filter,switch,Unassigned
+Taylor Steve Social Media Content Filter,switch.taylor_steve_social_media_content_filter,switch,Unassigned
+Taylor Steve Streaming Content Filter,switch.taylor_steve_streaming_content_filter,switch,Unassigned
+Taylor Steve Violent Content Filter,switch.taylor_steve_violent_content_filter,switch,Unassigned
+Taylor Steve Paused,switch.taylor_steve_paused,switch,Unassigned
+Taylor Steve SafeSearch Content Filter,switch.taylor_steve_safesearch_content_filter,switch,Unassigned
+Taylor Steve YouTube Restricted Content Filter,switch.taylor_steve_youtube_restricted_content_filter,switch,Unassigned
+Taylor Nikki Ad Blocking,switch.taylor_nikki_ad_blocking,switch,Unassigned
+Taylor Nikki Gaming Content Filter,switch.taylor_nikki_gaming_content_filter,switch,Unassigned
+Taylor Nikki Illegal or Criminal Content Filter,switch.taylor_nikki_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Nikki Chat and Messaging Content Filter,switch.taylor_nikki_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Nikki Adult Content Filter,switch.taylor_nikki_adult_content_filter,switch,Unassigned
+Taylor Nikki Shopping Content Filter,switch.taylor_nikki_shopping_content_filter,switch,Unassigned
+Taylor Nikki Social Media Content Filter,switch.taylor_nikki_social_media_content_filter,switch,Unassigned
+Taylor Nikki Streaming Content Filter,switch.taylor_nikki_streaming_content_filter,switch,Unassigned
+Taylor Nikki Violent Content Filter,switch.taylor_nikki_violent_content_filter,switch,Unassigned
+Taylor Nikki Paused,switch.taylor_nikki_paused,switch,Unassigned
+Taylor Nikki SafeSearch Content Filter,switch.taylor_nikki_safesearch_content_filter,switch,Unassigned
+Taylor Nikki YouTube Restricted Content Filter,switch.taylor_nikki_youtube_restricted_content_filter,switch,Unassigned
+Taylor Smart Home Ad Blocking,switch.taylor_smart_home_ad_blocking,switch,Unassigned
+Taylor Smart Home Gaming Content Filter,switch.taylor_smart_home_gaming_content_filter,switch,Unassigned
+Taylor Smart Home Illegal or Criminal Content Filter,switch.taylor_smart_home_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Smart Home Chat and Messaging Content Filter,switch.taylor_smart_home_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Smart Home Adult Content Filter,switch.taylor_smart_home_adult_content_filter,switch,Unassigned
+Taylor Smart Home Shopping Content Filter,switch.taylor_smart_home_shopping_content_filter,switch,Unassigned
+Taylor Smart Home Social Media Content Filter,switch.taylor_smart_home_social_media_content_filter,switch,Unassigned
+Taylor Smart Home Streaming Content Filter,switch.taylor_smart_home_streaming_content_filter,switch,Unassigned
+Taylor Smart Home Violent Content Filter,switch.taylor_smart_home_violent_content_filter,switch,Unassigned
+Taylor Smart Home Paused,switch.taylor_smart_home_paused,switch,Unassigned
+Taylor Smart Home SafeSearch Content Filter,switch.taylor_smart_home_safesearch_content_filter,switch,Unassigned
+Taylor Smart Home YouTube Restricted Content Filter,switch.taylor_smart_home_youtube_restricted_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Ad Blocking,switch.taylor_ex_upstairs_ad_blocking,switch,Unassigned
+Taylor Ex - Upstairs Gaming Content Filter,switch.taylor_ex_upstairs_gaming_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Illegal or Criminal Content Filter,switch.taylor_ex_upstairs_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Chat and Messaging Content Filter,switch.taylor_ex_upstairs_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Adult Content Filter,switch.taylor_ex_upstairs_adult_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Shopping Content Filter,switch.taylor_ex_upstairs_shopping_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Social Media Content Filter,switch.taylor_ex_upstairs_social_media_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Streaming Content Filter,switch.taylor_ex_upstairs_streaming_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Violent Content Filter,switch.taylor_ex_upstairs_violent_content_filter,switch,Unassigned
+Taylor Ex - Upstairs Paused,switch.taylor_ex_upstairs_paused,switch,Unassigned
+Taylor Ex - Upstairs SafeSearch Content Filter,switch.taylor_ex_upstairs_safesearch_content_filter,switch,Unassigned
+Taylor Ex - Upstairs YouTube Restricted Content Filter,switch.taylor_ex_upstairs_youtube_restricted_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Ad Blocking,switch.taylor_ex_downstairs_ad_blocking,switch,Unassigned
+Taylor Ex - Downstairs Gaming Content Filter,switch.taylor_ex_downstairs_gaming_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Illegal or Criminal Content Filter,switch.taylor_ex_downstairs_illegal_or_criminal_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Chat and Messaging Content Filter,switch.taylor_ex_downstairs_chat_and_messaging_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Adult Content Filter,switch.taylor_ex_downstairs_adult_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Shopping Content Filter,switch.taylor_ex_downstairs_shopping_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Social Media Content Filter,switch.taylor_ex_downstairs_social_media_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Streaming Content Filter,switch.taylor_ex_downstairs_streaming_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Violent Content Filter,switch.taylor_ex_downstairs_violent_content_filter,switch,Unassigned
+Taylor Ex - Downstairs Paused,switch.taylor_ex_downstairs_paused,switch,Unassigned
+Taylor Ex - Downstairs SafeSearch Content Filter,switch.taylor_ex_downstairs_safesearch_content_filter,switch,Unassigned
+Taylor Ex - Downstairs YouTube Restricted Content Filter,switch.taylor_ex_downstairs_youtube_restricted_content_filter,switch,Unassigned
+Taylor iPad - Steve Paused,switch.taylor_ipad_steve_paused,switch,Unassigned
+Taylor iPad - Steve Allow Internet Backup,switch.taylor_ipad_steve_allow_internet_backup,switch,Unassigned
+Taylor Steves-Air (Wireless) Paused,switch.taylor_steves_air_wireless_paused,switch,Unassigned
+Taylor Steves-Air (Wireless) Allow Internet Backup,switch.taylor_steves_air_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Paused,switch.taylor_ring_649a637b2ef5_wireless_paused,switch,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Allow Internet Backup,switch.taylor_ring_649a637b2ef5_wireless_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_E32D (Wireless) Paused,switch.taylor_ge_light_e32d_wireless_paused,switch,Unassigned
+Taylor GE_Light_E32D (Wireless) Allow Internet Backup,switch.taylor_ge_light_e32d_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ring-649a636870AB (Wireless) Paused,switch.taylor_ring_649a636870ab_wireless_paused,switch,Unassigned
+Taylor Ring-649a636870AB (Wireless) Allow Internet Backup,switch.taylor_ring_649a636870ab_wireless_allow_internet_backup,switch,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Paused,switch.taylor_ks230_great_room_light_switch_wireless_paused,switch,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Allow Internet Backup,switch.taylor_ks230_great_room_light_switch_wireless_allow_internet_backup,switch,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Paused,switch.taylor_5c_47_5e_8e_2d_00_wireless_paused,switch,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Allow Internet Backup,switch.taylor_5c_47_5e_8e_2d_00_wireless_allow_internet_backup,switch,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Paused,switch.taylor_sonos_38420b3cd790_wireless_paused,switch,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Allow Internet Backup,switch.taylor_sonos_38420b3cd790_wireless_allow_internet_backup,switch,Unassigned
+Taylor lwip0 (Wireless) Paused,switch.taylor_lwip0_wireless_paused,switch,Unassigned
+Taylor lwip0 (Wireless) Allow Internet Backup,switch.taylor_lwip0_wireless_allow_internet_backup,switch,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Paused,switch.taylor_iphone_16_pro_max_steve_wireless_paused,switch,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Allow Internet Backup,switch.taylor_iphone_16_pro_max_steve_wireless_allow_internet_backup,switch,Unassigned
+Taylor Switchbot Hub (Wireless) Paused,switch.taylor_switchbot_hub_wireless_paused,switch,Unassigned
+Taylor Switchbot Hub (Wireless) Allow Internet Backup,switch.taylor_switchbot_hub_wireless_allow_internet_backup,switch,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Paused,switch.taylor_5c_47_5e_8e_0a_17_wireless_paused,switch,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Allow Internet Backup,switch.taylor_5c_47_5e_8e_0a_17_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Paused,switch.taylor_s505d_coach_light_switch_wireless_paused,switch,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505d_coach_light_switch_wireless_allow_internet_backup,switch,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Paused,switch.taylor_steves_mac_studio_wireless_paused,switch,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Allow Internet Backup,switch.taylor_steves_mac_studio_wireless_allow_internet_backup,switch,Unassigned
+Taylor Apple TV - Great Room (Wireless) Paused,switch.taylor_apple_tv_great_room_wireless_paused,switch,Unassigned
+Taylor Apple TV - Great Room (Wireless) Allow Internet Backup,switch.taylor_apple_tv_great_room_wireless_allow_internet_backup,switch,Unassigned
+Taylor Sonos Arc (Wireless) Paused,switch.taylor_sonos_arc_sonos_paused,switch,Unassigned
+Taylor Sonos Arc (Wireless) Allow Internet Backup,switch.taylor_sonos_arc_sonos_allow_internet_backup,switch,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Paused,switch.taylor_38_7c_76_ae_66_bb_wired_paused,switch,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Allow Internet Backup,switch.taylor_38_7c_76_ae_66_bb_wired_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_07AB (Wireless) Paused,switch.taylor_ge_light_07ab_wireless_paused,switch,Unassigned
+Taylor GE_Light_07AB (Wireless) Allow Internet Backup,switch.taylor_ge_light_07ab_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Paused,switch.taylor_ring_upstairs_cam_wireless_paused,switch,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Allow Internet Backup,switch.taylor_ring_upstairs_cam_wireless_allow_internet_backup,switch,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Paused,switch.taylor_s505_owners_closet_switch_wireless_paused,switch,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Allow Internet Backup,switch.taylor_s505_owners_closet_switch_wireless_allow_internet_backup,switch,Unassigned
+Taylor iPhone (Wireless) Paused,switch.taylor_iphone_wireless_paused,switch,Unassigned
+Taylor iPhone (Wireless) Allow Internet Backup,switch.taylor_iphone_wireless_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_E407 (Wireless) Paused,switch.taylor_ge_light_e407_wireless_paused,switch,Unassigned
+Taylor GE_Light_E407 (Wireless) Allow Internet Backup,switch.taylor_ge_light_e407_wireless_allow_internet_backup,switch,Unassigned
+Taylor KS230 (Wireless) Paused,switch.taylor_ks230_wireless_paused,switch,Unassigned
+Taylor KS230 (Wireless) Allow Internet Backup,switch.taylor_ks230_wireless_allow_internet_backup,switch,Unassigned
+Taylor Dehumidifier (Wireless) Paused,switch.taylor_dehumidifier_wireless_paused,switch,Unassigned
+Taylor Dehumidifier (Wireless) Allow Internet Backup,switch.taylor_dehumidifier_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ecobee Thermostat (Wireless) Paused,switch.taylor_ecobee_thermostat_wireless_paused,switch,Unassigned
+Taylor Ecobee Thermostat (Wireless) Allow Internet Backup,switch.taylor_ecobee_thermostat_wireless_allow_internet_backup,switch,Unassigned
+Taylor Anker (Wireless) Paused,switch.taylor_anker_wireless_paused,switch,Unassigned
+Taylor Anker (Wireless) Allow Internet Backup,switch.taylor_anker_wireless_allow_internet_backup,switch,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Paused,switch.taylor_38_7c_76_ae_33_be_wired_paused,switch,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Allow Internet Backup,switch.taylor_38_7c_76_ae_33_be_wired_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Paused,switch.taylor_ge_light_d9e1_wireless_paused,switch,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Allow Internet Backup,switch.taylor_ge_light_d9e1_wireless_allow_internet_backup,switch,Unassigned
+Taylor Homey Pro (Wireless) Paused,switch.taylor_homey_pro_wireless_paused,switch,Unassigned
+Taylor Homey Pro (Wireless) Allow Internet Backup,switch.taylor_homey_pro_wireless_allow_internet_backup,switch,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Paused,switch.taylor_ring_ac9fc343e974_wireless_paused,switch,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Allow Internet Backup,switch.taylor_ring_ac9fc343e974_wireless_allow_internet_backup,switch,Unassigned
+Taylor Plug - On Air Sign (Wireless) Paused,switch.taylor_plug_on_air_sign_wireless_paused,switch,Unassigned
+Taylor Plug - On Air Sign (Wireless) Allow Internet Backup,switch.taylor_plug_on_air_sign_wireless_allow_internet_backup,switch,Unassigned
+Taylor Nikki iPhone (Wireless) Paused,switch.taylor_nikki_iphone_wireless_paused,switch,Unassigned
+Taylor Nikki iPhone (Wireless) Allow Internet Backup,switch.taylor_nikki_iphone_wireless_allow_internet_backup,switch,Unassigned
+Taylor Elgato Key Light (Wireless) Paused,switch.taylor_elgato_key_light_wireless_paused,switch,Unassigned
+Taylor Elgato Key Light (Wireless) Allow Internet Backup,switch.taylor_elgato_key_light_wireless_allow_internet_backup,switch,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Paused,switch.taylor_aqara_smart_hub_m3_wireless_paused,switch,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Allow Internet Backup,switch.taylor_aqara_smart_hub_m3_wireless_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_93B5 (Wireless) Paused,switch.taylor_ge_light_93b5_wireless_paused,switch,Unassigned
+Taylor GE_Light_93B5 (Wireless) Allow Internet Backup,switch.taylor_ge_light_93b5_wireless_allow_internet_backup,switch,Unassigned
+Taylor HA-Server (Wired) Paused,switch.taylor_ha_server_wired_paused,switch,Unassigned
+Taylor HA-Server (Wired) Allow Internet Backup,switch.taylor_ha_server_wired_allow_internet_backup,switch,Unassigned
+Taylor GE_Light_E49F (Wireless) Paused,switch.taylor_ge_light_e49f_wireless_paused,switch,Unassigned
+Taylor GE_Light_E49F (Wireless) Allow Internet Backup,switch.taylor_ge_light_e49f_wireless_allow_internet_backup,switch,Unassigned
+Taylor Printer (Wireless) Paused,switch.taylor_printer_wireless_paused,switch,Unassigned
+Taylor Printer (Wireless) Allow Internet Backup,switch.taylor_printer_wireless_allow_internet_backup,switch,Unassigned
+Taylor Roborock Vacuum (Wireless) Paused,switch.taylor_roborock_vacuum_wireless_paused,switch,Unassigned
+Taylor Roborock Vacuum (Wireless) Allow Internet Backup,switch.taylor_roborock_vacuum_wireless_allow_internet_backup,switch,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Paused,switch.taylor_steves_mac_studio_2_wired_paused,switch,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Allow Internet Backup,switch.taylor_steves_mac_studio_2_wired_allow_internet_backup,switch,Unassigned
+Taylor Ring - Doorbell (Wireless) Paused,switch.taylor_ring_doorbell_wireless_paused,switch,Unassigned
+Taylor Ring - Doorbell (Wireless) Allow Internet Backup,switch.taylor_ring_doorbell_wireless_allow_internet_backup,switch,Unassigned
+Taylor Apple Watch - Steve (Wireless) Paused,switch.taylor_apple_watch_steve_wireless_paused,switch,Unassigned
+Taylor Apple Watch - Steve (Wireless) Allow Internet Backup,switch.taylor_apple_watch_steve_wireless_allow_internet_backup,switch,Unassigned
+Taylor Eevee’s Laptop (Wireless) Paused,switch.taylor_eevees_laptop_wireless_paused,switch,Unassigned
+Taylor Eevee’s Laptop (Wireless) Allow Internet Backup,switch.taylor_eevees_laptop_wireless_allow_internet_backup,switch,Unassigned
+Taylor TV - Great Room (Wired) Paused,switch.taylor_74_e6_b8_b7_83_68_wired_paused,switch,Unassigned
+Taylor TV - Great Room (Wired) Allow Internet Backup,switch.taylor_74_e6_b8_b7_83_68_wired_allow_internet_backup,switch,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Paused,switch.taylor_apple_watch_nikki_wireless_paused,switch,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Allow Internet Backup,switch.taylor_apple_watch_nikki_wireless_allow_internet_backup,switch,Unassigned
+Taylor PS5 (Wireless) Paused,switch.taylor_ps5_wireless_paused,switch,Unassigned
+Taylor PS5 (Wireless) Allow Internet Backup,switch.taylor_ps5_wireless_allow_internet_backup,switch,Unassigned
+Taylor Mac Studio (Wireless) Paused,switch.taylor_mac_studio_wireless_paused,switch,Unassigned
+Taylor Mac Studio (Wireless) Allow Internet Backup,switch.taylor_mac_studio_wireless_allow_internet_backup,switch,Unassigned
+Taylor linux (Wireless) Paused,switch.taylor_linux_wireless_paused,switch,Unassigned
+Taylor linux (Wireless) Allow Internet Backup,switch.taylor_linux_wireless_allow_internet_backup,switch,Unassigned
+Taylor KP125-2 (Wireless) Paused,switch.taylor_kp125_2_wireless_paused,switch,Unassigned
+Taylor KP125-2 (Wireless) Allow Internet Backup,switch.taylor_kp125_2_wireless_allow_internet_backup,switch,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Paused,switch.taylor_28_73_f6_f6_a5_3d_wireless_paused,switch,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Allow Internet Backup,switch.taylor_28_73_f6_f6_a5_3d_wireless_allow_internet_backup,switch,Unassigned
+Taylor SonosZP (Sonos) Paused,switch.taylor_sonos_f0f6c154ce30_wireless_paused,switch,Unassigned
+Taylor SonosZP (Sonos) Allow Internet Backup,switch.taylor_sonos_f0f6c154ce30_wireless_allow_internet_backup,switch,Unassigned
+Taylor SonosZP (Sonos) Paused,switch.taylor_sonoszp_sonos_paused,switch,Unassigned
+Taylor SonosZP (Sonos) Allow Internet Backup,switch.taylor_sonoszp_sonos_allow_internet_backup,switch,Unassigned
+Roborock Vacuum Reset sensor consumable,button.roborock_vacuum_reset_sensor_consumable,button,Unassigned
+Roborock Vacuum Reset air filter consumable,button.roborock_vacuum_reset_air_filter_consumable,button,Unassigned
+Roborock Vacuum Reset side brush consumable,button.roborock_vacuum_reset_side_brush_consumable,button,Unassigned
+Roborock Vacuum Reset main brush consumable,button.roborock_vacuum_reset_main_brush_consumable,button,Unassigned
+Front Porch Light Cloud connection,binary_sensor.front_porch_light_cloud_connection,binary_sensor,Unassigned
+Front Porch Light Overheated,binary_sensor.front_porch_light_overheated,binary_sensor,Unassigned
+Front Porch,light.front_porch_light,light,Unassigned
+Front Porch Light Smooth on,number.front_porch_light_smooth_on,number,Unassigned
+Front Porch Light Smooth off,number.front_porch_light_smooth_off,number,Unassigned
+Front Porch Light Light preset,select.front_porch_light_light_preset,select,Unassigned
+Front Porch Light Signal level,sensor.front_porch_light_signal_level,sensor,Unassigned
+Front Porch Light Auto-update enabled,switch.front_porch_light_auto_update_enabled,switch,Unassigned
+Front Porch Light LED,switch.front_porch_light_led,switch,Unassigned
+Owner’s Closet Cloud connection,binary_sensor.owners_closet_cloud_connection,binary_sensor,Unassigned
+Owner’s Closet Overheated,binary_sensor.owners_closet_overheated,binary_sensor,Unassigned
+Owner’s Closet Turn off in,number.owners_closet_turn_off_in,number,Unassigned
+Owner’s Closet Signal level,sensor.owners_closet_signal_level,sensor,Unassigned
+Owner’s Closet Auto-off at,sensor.owners_closet_auto_off_at,sensor,Unassigned
+Owner’s Closet,switch.owners_closet,switch,Unassigned
+Owner’s Closet Auto-off enabled,switch.owners_closet_auto_off_enabled,switch,Unassigned
+Owner’s Closet Auto-update enabled,switch.owners_closet_auto_update_enabled,switch,Unassigned
+Owner’s Closet LED,switch.owners_closet_led,switch,Unassigned
+Roborock Dock Child lock,switch.roborock_dock_child_lock,switch,Unassigned
+Roborock Vacuum Do not disturb,switch.roborock_vacuum_do_not_disturb,switch,Unassigned
+Taylor Guest Network QR Code,image.taylor_guest_network_qr_code,image,Unassigned
+Roborock Vacuum Do not disturb begin,time.roborock_vacuum_do_not_disturb_begin,time,Unassigned
+Roborock Vacuum Do not disturb end,time.roborock_vacuum_do_not_disturb_end,time,Unassigned
+Taylor QR Code,image.taylor_qr_code,image,Unassigned
+Outside - Night - Lights,automation.outside_lights,automation,Unassigned
+Lights Out,automation.lights_out,automation,Unassigned
+Battery Level Monitor,automation.batteries,automation,Unassigned
+Restart HA on Sundays,automation.restart_ha_on_sundays,automation,Unassigned
+Steve’s Fan Off,automation.steves_fan_off,automation,Unassigned
+Steve’s Fan On,automation.steves_fan_on,automation,Unassigned
+Owner’s Suite Night Light Automation,automation.owner_s_closet_and_shower_light_schedule,automation,Unassigned
+Owner’s Closet Auto-Off Timer,automation.owners_closet_auto_off_timer,automation,Unassigned
+Test Simple Schedule,automation.test_simple_schedule,automation,Unassigned
+Test Minimal Schedule 12PM,automation.test_minimal_schedule_12pm,automation,Unassigned
+Climate Sensor Manager,automation.climate_sensor_manager,automation,Unassigned
+Climate Day Schedule,automation.climate_day_schedule,automation,Unassigned
+Climate Night Schedule,automation.climate_night_schedule,automation,Unassigned
+Climate Weather Intelligence,automation.climate_weather_intelligence,automation,Unassigned
+Climate System Monitor,automation.climate_system_monitor,automation,Unassigned
+Climate Dashboard Controls,automation.climate_dashboard_controls,automation,Unassigned
+Export Entities to File,automation.export_entities_to_file,automation,Unassigned
+Internet: Upstairs/Downstairs Pause at 12PM,automation.internet_upstairs_downstairs_pause_at_12pm,automation,Unassigned
+Internet: Upstairs/Downstairs Resume at 5PM,automation.internet_upstairs_downstairs_resume_at_5pm,automation,Unassigned
+Internet: Upstairs/Downstairs Pause at 10PM,automation.internet_upstairs_downstairs_pause_at_10pm,automation,Unassigned
+Internet: Upstairs/Downstairs Resume at 7AM,automation.internet_upstairs_downstairs_resume_at_7am,automation,Unassigned
+Internet: Upstairs Override Handler,automation.internet_upstairs_override_handler,automation,Unassigned
+Internet: Downstairs Override Handler,automation.internet_downstairs_override_handler,automation,Unassigned
+Internet: Verify Upstairs Devices Paused,automation.internet_verify_upstairs_devices_paused,automation,Unassigned
+Internet: Verify Upstairs Devices Resumed,automation.internet_verify_upstairs_devices_resumed,automation,Unassigned
+Internet: Verify Downstairs Devices Paused,automation.internet_verify_downstairs_devices_paused,automation,Unassigned
+Internet: Verify Downstairs Devices Resumed,automation.internet_verify_downstairs_devices_resumed,automation,Unassigned
+Internet: Daily Task Reset,automation.internet_daily_task_reset,automation,Unassigned
+Internet: Clear Temp Overrides at Schedule Changes,automation.internet_clear_temp_overrides_at_schedule_changes,automation,Unassigned
+Internet: Handle Upstairs Temp Override,automation.internet_handle_upstairs_temp_override,automation,Unassigned
+Internet: Handle Downstairs Temp Override,automation.internet_handle_downstairs_temp_override,automation,Unassigned
+Internet: Cancel Temp Overrides,automation.internet_cancel_temp_overrides,automation,Unassigned
+Internet: Switch Unavailable Monitor,automation.internet_switch_unavailable_monitor,automation,Unassigned
+Internet: Hourly Profile Verification,automation.internet_hourly_profile_verification,automation,Unassigned
+Internet: TV Kill,automation.internet_tv_kill_switch,automation,Unassigned
+Sonos Roam Charging,binary_sensor.sonos_roam_charging,binary_sensor,Unassigned
+Sonos Roam Battery,sensor.sonos_roam_battery,sensor,Unassigned
+Sonos Roam Microphone,binary_sensor.sonos_roam_microphone,binary_sensor,Unassigned
+Sonos Roam,media_player.sonos_roam,media_player,Unassigned
+On Air Sign Cloud connection,binary_sensor.on_air_sign_cloud_connection,binary_sensor,Unassigned
+On Air Sign Turn off in,number.on_air_sign_turn_off_in,number,Unassigned
+On Air Sign Signal level,sensor.on_air_sign_signal_level,sensor,Unassigned
+On Air Sign Auto-off at,sensor.on_air_sign_auto_off_at,sensor,Unassigned
+On Air Sign,switch.on_air_sign,switch,Unassigned
+On Air Sign Auto-off enabled,switch.on_air_sign_auto_off_enabled,switch,Unassigned
+On Air Sign Auto-update enabled,switch.on_air_sign_auto_update_enabled,switch,Unassigned
+On Air Sign LED,switch.on_air_sign_led,switch,Unassigned
+Sonos Roam Crossfade,switch.sonos_roam_crossfade,switch,Unassigned
+Sonos Roam Loudness,switch.sonos_roam_loudness,switch,Unassigned
+Sonos Roam Bass,number.sonos_roam_bass,number,Unassigned
+Sonos Roam Balance,number.sonos_roam_balance,number,Unassigned
+Sonos Roam Treble,number.sonos_roam_treble,number,Unassigned
+Stevet@alternativepayments.io,calendar.stevet_alternativepayments_io,calendar,Unassigned
+Sonos Arc Audio input format,sensor.sonos_arc_audio_input_format,sensor,Unassigned
+Sonos Arc,media_player.sonos_arc,media_player,Unassigned
+Sonos Arc Microphone,binary_sensor.sonos_arc_microphone,binary_sensor,Unassigned
+Lexmark B2236dw Uptime,sensor.lexmark_b2236dw_uptime,sensor,Unassigned
+Lexmark B2236dw Black,sensor.lexmark_b2236dw_black,sensor,Unassigned
+Sonos Arc Crossfade,switch.sonos_arc_crossfade,switch,Unassigned
+Sonos Arc Loudness,switch.sonos_arc_loudness,switch,Unassigned
+Sonos Arc Surround music full volume,switch.sonos_arc_surround_music_full_volume,switch,Unassigned
+Sonos Arc Night sound,switch.sonos_arc_night_sound,switch,Unassigned
+Sonos Arc Speech enhancement,switch.sonos_arc_speech_enhancement,switch,Unassigned
+Sonos Arc Subwoofer enabled,switch.sonos_arc_subwoofer_enabled,switch,Unassigned
+Sonos Arc Surround enabled,switch.sonos_arc_surround_enabled,switch,Unassigned
+Sonos Arc Audio delay,number.sonos_arc_audio_delay,number,Unassigned
+Sonos Arc Bass,number.sonos_arc_bass,number,Unassigned
+Sonos Arc Balance,number.sonos_arc_balance,number,Unassigned
+Sonos Arc Treble,number.sonos_arc_treble,number,Unassigned
+Sonos Arc Sub gain,number.sonos_arc_sub_gain,number,Unassigned
+Sonos Arc Surround level,number.sonos_arc_surround_level,number,Unassigned
+Sonos Arc Music surround level,number.sonos_arc_music_surround_level,number,Unassigned
+Lexmark B2236dw,sensor.lexmark_b2236dw,sensor,Unassigned
+My ecobee,climate.my_ecobee,climate,Unassigned
+My ecobee Current,sensor.my_ecobee_current_temperature,sensor,Unassigned
+My ecobee Current,sensor.my_ecobee_current_humidity,sensor,Unassigned
+My ecobee Identify,button.my_ecobee_identify,button,Unassigned
+My ecobee Clear Hold,button.my_ecobee_clear_hold,button,Unassigned
+My ecobee Temperature Display Units,select.my_ecobee_temperature_display_units,select,Unassigned
+My ecobee Current Mode,select.my_ecobee_current_mode,select,Unassigned
+Family,calendar.family,calendar,Unassigned
+RGBIC TV Light Bars,light.rgbic_tv_light_bars,light,Unassigned
+Govee to MQTT Version,sensor.govee_to_mqtt_version,sensor,Unassigned
+Govee to MQTT Purge Caches,button.govee_to_mqtt_purge_caches,button,Unassigned
+TV Light Bars,light.tv_light_bars,light,Unassigned
+TV Light Bars Request Platform API State,button.tv_light_bars_request_platform_api_state,button,Unassigned
+TV Light Bars Status,sensor.tv_light_bars_status,sensor,Unassigned
+Floor Lamp Right,light.floor_lamp_right,light,Unassigned
+Floor Lamp Right Request Platform API State,button.floor_lamp_right_request_platform_api_state,button,Unassigned
+Floor Lamp Right Status,sensor.floor_lamp_right_status,sensor,Unassigned
+Floor Lamp Left,light.floor_lamp_left,light,Unassigned
+Floor Lamp Left Request Platform API State,button.floor_lamp_left_request_platform_api_state,button,Unassigned
+Floor Lamp Left Status,sensor.floor_lamp_left_status,sensor,Unassigned
+Charging,binary_sensor.sonos_move_charging,binary_sensor,Unassigned
+Battery,sensor.sonos_move_battery,sensor,Unassigned
+Unknown Device,media_player.sonos_move,media_player,Unassigned
+Microphone,binary_sensor.sonos_move_microphone,binary_sensor,Unassigned
+Bass,number.sonos_move_bass,number,Unassigned
+Balance,number.sonos_move_balance,number,Unassigned
+Treble,number.sonos_move_treble,number,Unassigned
+Crossfade,switch.sonos_move_crossfade,switch,Unassigned
+Loudness,switch.sonos_move_loudness,switch,Unassigned
+Basic Weather Climate Control,automation.basic_weather_climate_control,automation,Unassigned
+Taylor iPhone (Wireless) Connected,binary_sensor.taylor_iphone_wireless_connected_2,binary_sensor,Unassigned
+Taylor iPhone (Wireless),device_tracker.taylor_iphone_wireless_2,device_tracker,Unassigned
+Taylor iPhone (Wireless) IP Address,sensor.taylor_iphone_wireless_ip_address_2,sensor,Unassigned
+Taylor iPhone (Wireless) Last Active,sensor.taylor_iphone_wireless_last_active_2,sensor,Unassigned
+Taylor iPhone (Wireless) Signal Strength,sensor.taylor_iphone_wireless_signal_strength_2,sensor,Unassigned
+Taylor iPhone (Wireless) Download Rate,sensor.taylor_iphone_wireless_download_rate_2,sensor,Unassigned
+Taylor iPhone (Wireless) Upload Rate,sensor.taylor_iphone_wireless_upload_rate_2,sensor,Unassigned
+Taylor iPhone (Wireless) Paused,switch.taylor_iphone_wireless_paused_2,switch,Unassigned
+Taylor iPhone (Wireless) Allow Internet Backup,switch.taylor_iphone_wireless_allow_internet_backup_2,switch,Unassigned
+Upstairs Timer Duration,input_select.upstairs_internet_timer_duration,input_select,Unassigned
+Upstairs Add Time,input_select.upstairs_internet_add_time,input_select,Unassigned
+Upstairs Timer Remaining,sensor.upstairs_timer_remaining,sensor,Unassigned
+Downstairs Timer Remaining,sensor.downstairs_timer_remaining,sensor,Unassigned
+Upstairs - Main Control Logic,automation.upstairs_main_control_logic,automation,Unassigned
+Internet: Upstairs Timer Start,automation.upstairs_start_timer,automation,Unassigned
+Internet: Upstairs Add Time,automation.upstairs_add_time_to_timer,automation,Unassigned
+Upstairs - Timer Expiry Check,automation.upstairs_timer_expiry_check,automation,Unassigned
+Downstairs - Main Control Logic,automation.downstairs_main_control_logic,automation,Unassigned
+Internet: Downstairs Timer Start,automation.downstairs_start_timer,automation,Unassigned
+Internet: Downstairs Add Time,automation.downstairs_add_time_to_timer,automation,Unassigned
+Downstairs - Timer Expiry Check,automation.downstairs_timer_expiry_check,automation,Unassigned
+Downstairs Timer Duration,input_select.downstairs_internet_timer_duration,input_select,Unassigned
+Downstairs Add Time,input_select.downstairs_internet_add_time,input_select,Unassigned
+Upstairs Internet Timer,timer.upstairs_internet_timer,timer,Unassigned
+Downstairs Internet Timer,timer.downstairs_internet_timer,timer,Unassigned
+Internet: Upstairs Timer Finished,automation.internet_upstairs_timer_finished,automation,Unassigned
+Internet: Downstairs Timer Finished,automation.internet_downstairs_timer_finished,automation,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Connected,binary_sensor.taylor_nikkis_ipad_pro_wireless_connected,binary_sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Connected,binary_sensor.taylor_iphone_wireless_connected_3,binary_sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless),device_tracker.taylor_nikkis_ipad_pro_wireless,device_tracker,Unassigned
+Taylor Mikes-iPhone (Wireless),device_tracker.taylor_iphone_wireless_3,device_tracker,Unassigned
+Taylor Sonos-F0F6C154CE30 (Wireless) Signal Strength,sensor.taylor_sonos_f0f6c154ce30_wireless_signal_strength,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) IP Address,sensor.taylor_nikkis_ipad_pro_wireless_ip_address,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Last Active,sensor.taylor_nikkis_ipad_pro_wireless_last_active,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Signal Strength,sensor.taylor_nikkis_ipad_pro_wireless_signal_strength,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Download Rate,sensor.taylor_nikkis_ipad_pro_wireless_download_rate,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Upload Rate,sensor.taylor_nikkis_ipad_pro_wireless_upload_rate,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) IP Address,sensor.taylor_iphone_wireless_ip_address_3,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Last Active,sensor.taylor_iphone_wireless_last_active_3,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Signal Strength,sensor.taylor_iphone_wireless_signal_strength_3,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Download Rate,sensor.taylor_iphone_wireless_download_rate_3,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Upload Rate,sensor.taylor_iphone_wireless_upload_rate_3,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Paused,switch.taylor_nikkis_ipad_pro_wireless_paused,switch,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Allow Internet Backup,switch.taylor_nikkis_ipad_pro_wireless_allow_internet_backup,switch,Unassigned
+Taylor Mikes-iPhone (Wireless) Paused,switch.taylor_iphone_wireless_paused_3,switch,Unassigned
+Taylor Mikes-iPhone (Wireless) Allow Internet Backup,switch.taylor_iphone_wireless_allow_internet_backup_3,switch,Unassigned
+Taylor XBOX (Wireless) Connected,binary_sensor.taylor_xbox_wireless_connected,binary_sensor,Unassigned
+Taylor coredrummodule (Wireless) Connected,binary_sensor.taylor_coredrummodule_wireless_connected,binary_sensor,Unassigned
+Taylor XBOX (Wireless),device_tracker.taylor_xbox_wireless,device_tracker,Unassigned
+Taylor coredrummodule (Wireless),device_tracker.taylor_coredrummodule_wireless,device_tracker,Unassigned
+Taylor XBOX (Wireless) IP Address,sensor.taylor_xbox_wireless_ip_address,sensor,Unassigned
+Taylor XBOX (Wireless) Last Active,sensor.taylor_xbox_wireless_last_active,sensor,Unassigned
+Taylor XBOX (Wireless) Signal Strength,sensor.taylor_xbox_wireless_signal_strength,sensor,Unassigned
+Taylor XBOX (Wireless) Download Rate,sensor.taylor_xbox_wireless_download_rate,sensor,Unassigned
+Taylor XBOX (Wireless) Upload Rate,sensor.taylor_xbox_wireless_upload_rate,sensor,Unassigned
+Taylor coredrummodule (Wireless) IP Address,sensor.taylor_coredrummodule_wireless_ip_address,sensor,Unassigned
+Taylor coredrummodule (Wireless) Last Active,sensor.taylor_coredrummodule_wireless_last_active,sensor,Unassigned
+Taylor coredrummodule (Wireless) Signal Strength,sensor.taylor_coredrummodule_wireless_signal_strength,sensor,Unassigned
+Taylor coredrummodule (Wireless) Download Rate,sensor.taylor_coredrummodule_wireless_download_rate,sensor,Unassigned
+Taylor coredrummodule (Wireless) Upload Rate,sensor.taylor_coredrummodule_wireless_upload_rate,sensor,Unassigned
+Taylor XBOX (Wireless) Paused,switch.taylor_xbox_wireless_paused,switch,Unassigned
+Taylor XBOX (Wireless) Allow Internet Backup,switch.taylor_xbox_wireless_allow_internet_backup,switch,Unassigned
+Taylor coredrummodule (Wireless) Paused,switch.taylor_coredrummodule_wireless_paused,switch,Unassigned
+Taylor coredrummodule (Wireless) Allow Internet Backup,switch.taylor_coredrummodule_wireless_allow_internet_backup,switch,Unassigned
+Taylor iPad (Wireless) Connected,binary_sensor.taylor_ipad_wireless_connected,binary_sensor,Unassigned
+Taylor iPad (Wireless),device_tracker.taylor_ipad_wireless,device_tracker,Unassigned
+Taylor iPad (Wireless) IP Address,sensor.taylor_ipad_wireless_ip_address,sensor,Unassigned
+Taylor iPad (Wireless) Last Active,sensor.taylor_ipad_wireless_last_active,sensor,Unassigned
+Taylor iPad (Wireless) Signal Strength,sensor.taylor_ipad_wireless_signal_strength,sensor,Unassigned
+Taylor iPad (Wireless) Download Rate,sensor.taylor_ipad_wireless_download_rate,sensor,Unassigned
+Taylor iPad (Wireless) Upload Rate,sensor.taylor_ipad_wireless_upload_rate,sensor,Unassigned
+Taylor iPad (Wireless) Paused,switch.taylor_ipad_wireless_paused,switch,Unassigned
+Taylor iPad (Wireless) Allow Internet Backup,switch.taylor_ipad_wireless_allow_internet_backup,switch,Unassigned
+Climate Manual Override Detection,automation.climate_manual_override_detection,automation,Unassigned
+Climate Resume Automation,automation.climate_resume_automation_button,automation,Unassigned
+Signal All Kids,script.notification_kids_light_signal,script,Unassigned
+Kids Light Signal Override,input_boolean.notification_kids_light_signal_override,input_boolean,Unassigned
+Climate Indoor Only Fallback,automation.climate_indoor_only_fallback,automation,Unassigned

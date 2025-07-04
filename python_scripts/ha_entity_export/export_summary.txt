@@ -1,0 +1,77 @@
+Home Assistant CSV Export Summary
+Generated: 2025-07-02 21:34:30
+Source: https://fwch7ombgixhvotfrixymjjcyokmdjvz.ui.nabu.casa
+============================================================
+
+DOMAIN EXPORTS:
+--------------------
+  automation.csv: 93 entities
+  binary_sensor.csv: 194 entities
+  button.csv: 31 entities
+  calendar.csv: 2 entities
+  camera.csv: 11 entities
+  climate.csv: 1 entities
+  conversation.csv: 1 entities
+  cover.csv: 1 entities
+  device_tracker.csv: 114 entities
+  event.csv: 9 entities
+  fan.csv: 3 entities
+  govee.csv: 1 entities
+  image.csv: 3 entities
+  input_boolean.csv: 25 entities
+  input_button.csv: 6 entities
+  input_datetime.csv: 3 entities
+  input_number.csv: 4 entities
+  input_select.csv: 11 entities
+  input_text.csv: 5 entities
+  light.csv: 43 entities
+  lock.csv: 1 entities
+  media_player.csv: 12 entities
+  number.csv: 78 entities
+  person.csv: 2 entities
+  remote.csv: 8 entities
+  script.csv: 28 entities
+  select.csv: 26 entities
+  sensor.csv: 840 entities
+  siren.csv: 8 entities
+  stt.csv: 1 entities
+  sun.csv: 1 entities
+  switch.csv: 423 entities
+  time.csv: 2 entities
+  timer.csv: 3 entities
+  todo.csv: 1 entities
+  tts.csv: 2 entities
+  update.csv: 34 entities
+  vacuum.csv: 1 entities
+  weather.csv: 3 entities
+  zone.csv: 1 entities
+
+AREA EXPORTS:
+--------------------
+  basement.csv: 38 entities (Basement)
+  deck.csv: 39 entities (Deck)
+  foyer.csv: 14 entities (Foyer)
+  front_door.csv: 14 entities (Front Door)
+  garage.csv: 46 entities (Garage)
+  genevieves_room.csv: 133 entities (Genevieve's Room)
+  great_room.csv: 4 entities (Great Room)
+  hallway.csv: 19 entities (Hallway)
+  kitchen.csv: 49 entities (Kitchen)
+  laundry_room.csv: 18 entities (Laundry Room)
+  main_bathroom.csv: 156 entities (Main Bathroom)
+  office.csv: 135 entities (Office)
+  owners_bedroom.csv: 48 entities (Owner's Bedroom)
+  rec_room.csv: 49 entities (Rec Room)
+  storage.csv: 14 entities (Storage)
+  ulrichs_room.csv: 91 entities (Ulrich's Room)
+
+UNASSIGNED ENTITIES:
+--------------------
+  unassigned.csv: 1169 entities
+
+SUMMARY:
+--------------------
+Total entities processed: 2036
+Domain CSV files created: 40
+Area CSV files created: 16
+Export location: /Users/stevetaylor/Desktop/ha_entity_export

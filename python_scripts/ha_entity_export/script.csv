@@ -1,0 +1,29 @@
+Device Name,Entity ID,Domain,Area
+Restart Home Assistant,script.restart_home_assistant,script,Unassigned
+Lock Front Door,script.lock_front_door,script,Front Door
+Unlock Front Door,script.unlock_front_door,script,Front Door
+Toggle Upstairs Temp Override,script.toggle_upstairs_temp_override,script,Unassigned
+Toggle Upstairs Pause Indefinitely,script.toggle_upstairs_pause_indefinitely,script,Unassigned
+Toggle Upstairs Enable Indefinitely,script.toggle_upstairs_enable_indefinitely,script,Unassigned
+Toggle Downstairs Temp Override,script.toggle_downstairs_temp_override,script,Unassigned
+Toggle Downstairs Pause Indefinitely,script.toggle_downstairs_pause_indefinitely,script,Unassigned
+Toggle Downstairs Enable Indefinitely,script.toggle_downstairs_enable_indefinitely,script,Unassigned
+Toggle Genevieve Temp Override,script.toggle_genevieve_temp_override,script,Genevieve's Room
+Toggle Genevieve Pause Indefinitely,script.toggle_genevieve_pause_indefinitely,script,Genevieve's Room
+Toggle Genevieve Enable Indefinitely,script.toggle_genevieve_enable_indefinitely,script,Genevieve's Room
+Owner's Suite All Off,script.owners_suite_all_off,script,Unassigned
+Office All Off,script.office_all_off,script,Office
+Ulrich Area All Off,script.ulrich_area_all_off,script,Ulrich's Room
+Genevieve Area All Off,script.genevieve_area_all_off,script,Genevieve's Room
+Signal Kids,script.signal_kids,script,Unassigned
+Signal Genevieve,script.signal_genevieve,script,Genevieve's Room
+Signal Ulrich,script.signal_ulrich,script,Ulrich's Room
+Test Upstairs Override Modes,script.test_upstairs_override_modes,script,Unassigned
+Test Genevieve Task System,script.test_genevieve_task_system,script,Genevieve's Room
+Test Ulrich Task System,script.test_ulrich_task_system,script,Ulrich's Room
+Test Temporary Override System,script.test_temp_override_system,script,Unassigned
+Test Entity Availability,script.test_entity_availability,script,Unassigned
+Test Schedule Logic,script.test_schedule_logic,script,Unassigned
+Signal All Kids,script.notification_kids_light_signal,script,Unassigned
+Signal Genevieve,script.notification_genevieve_light_signal,script,Genevieve's Room
+Signal Ulrich,script.notification_ulrich_light_signal,script,Ulrich's Room

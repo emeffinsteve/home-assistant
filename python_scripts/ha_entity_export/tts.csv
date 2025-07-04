@@ -1,0 +1,3 @@
+Device Name,Entity ID,Domain,Area
+Home Assistant Cloud,tts.home_assistant_cloud,tts,Unassigned
+Google Translate en com,tts.google_translate_en_com,tts,Unassigned

@@ -1,0 +1,4 @@
+Device Name,Entity ID,Domain,Area
+Upstairs Internet Timer,timer.upstairs_internet_timer,timer,Unassigned
+Downstairs Internet Timer,timer.downstairs_internet_timer,timer,Unassigned
+Genevieve Internet Timer,timer.genevieve_internet_timer,timer,Genevieve's Room

@@ -1,0 +1,9 @@
+Device Name,Entity ID,Domain,Area
+HomePod - Main Bathroom,remote.homepod_main_bathroom,remote,Main Bathroom
+HomePod - Kitchen,remote.homepod_kitchen,remote,Kitchen
+HomePod - Basement Bathroom,remote.homepod_basement_bathroom,remote,Main Bathroom
+Apple TV - Genevieve,remote.apple_tv_genevieve,remote,Genevieve's Room
+HomePod - Master,remote.homepod_master,remote,Unassigned
+Office TV,remote.office_tv,remote,Office
+Unknown Device,remote.apple_tv_living_room,remote,Great Room
+Unknown Device,remote.rec_room_tv,remote,Rec Room

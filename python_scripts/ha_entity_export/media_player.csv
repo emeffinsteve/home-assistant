@@ -1,0 +1,13 @@
+Device Name,Entity ID,Domain,Area
+HomePod - Main Bathroom,media_player.homepod_main_bathroom,media_player,Main Bathroom
+HomePod - Kitchen,media_player.homepod_kitchen,media_player,Kitchen
+HomePod - Basement Bathroom,media_player.homepod_basement_bathroom,media_player,Main Bathroom
+Apple TV - Genevieve,media_player.apple_tv_genevieve,media_player,Genevieve's Room
+HomePod - Master,media_player.homepod_master,media_player,Unassigned
+Office TV,media_player.office_tv,media_player,Office
+Great Room TV,media_player.great_room,media_player,Unassigned
+Sonos Roam,media_player.sonos_roam,media_player,Unassigned
+Sonos Arc,media_player.sonos_arc,media_player,Unassigned
+Unknown Device,media_player.apple_tv_living_room,media_player,Great Room
+Unknown Device,media_player.sonos_move,media_player,Unassigned
+Unknown Device,media_player.rec_room_tv,media_player,Rec Room

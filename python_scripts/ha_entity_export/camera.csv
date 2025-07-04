@@ -1,0 +1,12 @@
+Device Name,Entity ID,Domain,Area
+Ring - Doorbell Live view,camera.ring_doorbell_live_view,camera,Unassigned
+Ring - Downstairs Sofa Live view,camera.ring_downstairs_sofa_live_view,camera,Unassigned
+Ring - Backyard Live view,camera.ring_backyard_live_view,camera,Unassigned
+Ring - Office Live view,camera.ring_office_live_view,camera,Office
+Ring - Foyer Live view,camera.ring_foyer_live_view,camera,Foyer
+Ring - Front Live view,camera.ring_front_live_view,camera,Unassigned
+Ring - Downstairs Doors PTZ Live view,camera.ring_downstairs_doors_ptz_live_view,camera,Unassigned
+Ring - Upstairs Live view,camera.ring_upstairs_live_view,camera,Unassigned
+Ring - Garage Live view,camera.ring_garage_live_view,camera,Garage
+Ring - Downstairs Doors PTZ Last recording,camera.ring_downstairs_doors_ptz_last_recording,camera,Rec Room
+Ring - Upstairs Last recording,camera.ring_upstairs_last_recording,camera,Rec Room

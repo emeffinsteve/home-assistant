@@ -1,0 +1,92 @@
+Device Name,Entity ID,Domain,Area
+Ulrich Light Energy,sensor.ulrich_light_energy,sensor,Ulrich's Room
+Ulrich Lights,light.ulrich_lights,light,Ulrich's Room
+Ulrich Area All Off,script.ulrich_area_all_off,script,Ulrich's Room
+Signal Ulrich,script.signal_ulrich,script,Ulrich's Room
+Test Ulrich Task System,script.test_ulrich_task_system,script,Ulrich's Room
+Ulrich Internet Paused,input_boolean.ulrich_internet_paused,input_boolean,Ulrich's Room
+Ulrich Dog Walked Today,input_boolean.ulrich_dog_walked_today,input_boolean,Ulrich's Room
+Ulrich Chores Done Today,input_boolean.ulrich_chores_done_today,input_boolean,Ulrich's Room
+Signal Ulrich Override,input_boolean.signal_ulrich_override,input_boolean,Ulrich's Room
+Ulrich Light Power,sensor.ulrich_light_power,sensor,Ulrich's Room
+Ulrich Internet Status,sensor.ulrich_internet_status,sensor,Ulrich's Room
+Ulrich Task Status,sensor.ulrich_task_status,sensor,Ulrich's Room
+Taylor Ulrich Block Apps,binary_sensor.taylor_ulrich_block_apps,binary_sensor,Ulrich's Room
+Taylor Ulrich Connected,binary_sensor.taylor_ulrich_connected,binary_sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Connected,binary_sensor.taylor_s505_ulrichs_closet_switch_wireless_connected,binary_sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Connected,binary_sensor.taylor_s505d_ulrichs_light_switch_wireless_connected,binary_sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Connected,binary_sensor.taylor_switch_ulrich_wireless_connected,binary_sensor,Ulrich's Room
+Taylor Ulrich,device_tracker.taylor_ulrich,device_tracker,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless),device_tracker.taylor_s505_ulrichs_closet_switch_wireless,device_tracker,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless),device_tracker.taylor_s505d_ulrichs_light_switch_wireless,device_tracker,Ulrich's Room
+Taylor Switch - Ulrich (Wireless),device_tracker.taylor_switch_ulrich_wireless,device_tracker,Ulrich's Room
+Taylor Ulrich Connected Clients,sensor.taylor_ulrich_connected_clients,sensor,Ulrich's Room
+Taylor Ulrich Last Active,sensor.taylor_ulrich_last_active,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) IP Address,sensor.taylor_s505_ulrichs_closet_switch_wireless_ip_address,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Last Active,sensor.taylor_s505_ulrichs_closet_switch_wireless_last_active,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Signal Strength,sensor.taylor_s505_ulrichs_closet_switch_wireless_signal_strength,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Download Rate,sensor.taylor_s505_ulrichs_closet_switch_wireless_download_rate,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Upload Rate,sensor.taylor_s505_ulrichs_closet_switch_wireless_upload_rate,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) IP Address,sensor.taylor_s505d_ulrichs_light_switch_wireless_ip_address,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Last Active,sensor.taylor_s505d_ulrichs_light_switch_wireless_last_active,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Signal Strength,sensor.taylor_s505d_ulrichs_light_switch_wireless_signal_strength,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Download Rate,sensor.taylor_s505d_ulrichs_light_switch_wireless_download_rate,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Upload Rate,sensor.taylor_s505d_ulrichs_light_switch_wireless_upload_rate,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) IP Address,sensor.taylor_switch_ulrich_wireless_ip_address,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Last Active,sensor.taylor_switch_ulrich_wireless_last_active,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Signal Strength,sensor.taylor_switch_ulrich_wireless_signal_strength,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Download Rate,sensor.taylor_switch_ulrich_wireless_download_rate,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Upload Rate,sensor.taylor_switch_ulrich_wireless_upload_rate,sensor,Ulrich's Room
+Taylor Ulrich Ad Blocking,switch.taylor_ulrich_ad_blocking,switch,Ulrich's Room
+Taylor Ulrich Gaming Content Filter,switch.taylor_ulrich_gaming_content_filter,switch,Ulrich's Room
+Taylor Ulrich Illegal or Criminal Content Filter,switch.taylor_ulrich_illegal_or_criminal_content_filter,switch,Ulrich's Room
+Taylor Ulrich Chat and Messaging Content Filter,switch.taylor_ulrich_chat_and_messaging_content_filter,switch,Ulrich's Room
+Taylor Ulrich Adult Content Filter,switch.taylor_ulrich_adult_content_filter,switch,Ulrich's Room
+Taylor Ulrich Shopping Content Filter,switch.taylor_ulrich_shopping_content_filter,switch,Ulrich's Room
+Taylor Ulrich Social Media Content Filter,switch.taylor_ulrich_social_media_content_filter,switch,Ulrich's Room
+Taylor Ulrich Streaming Content Filter,switch.taylor_ulrich_streaming_content_filter,switch,Ulrich's Room
+Taylor Ulrich Violent Content Filter,switch.taylor_ulrich_violent_content_filter,switch,Ulrich's Room
+Taylor Ulrich Paused,switch.taylor_ulrich_paused,switch,Ulrich's Room
+Taylor Ulrich SafeSearch Content Filter,switch.taylor_ulrich_safesearch_content_filter,switch,Ulrich's Room
+Taylor Ulrich YouTube Restricted Content Filter,switch.taylor_ulrich_youtube_restricted_content_filter,switch,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Paused,switch.taylor_s505_ulrichs_closet_switch_wireless_paused,switch,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Allow Internet Backup,switch.taylor_s505_ulrichs_closet_switch_wireless_allow_internet_backup,switch,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Paused,switch.taylor_s505d_ulrichs_light_switch_wireless_paused,switch,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505d_ulrichs_light_switch_wireless_allow_internet_backup,switch,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Paused,switch.taylor_switch_ulrich_wireless_paused,switch,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Allow Internet Backup,switch.taylor_switch_ulrich_wireless_allow_internet_backup,switch,Ulrich's Room
+Ulrich’s Closet Cloud connection,binary_sensor.ulrichs_closet_cloud_connection,binary_sensor,Ulrich's Room
+Ulrich’s Closet Overheated,binary_sensor.ulrichs_closet_overheated,binary_sensor,Ulrich's Room
+Ulrich’s Closet Turn off in,number.ulrichs_closet_turn_off_in,number,Ulrich's Room
+Ulrich’s Closet Signal level,sensor.ulrichs_closet_signal_level,sensor,Ulrich's Room
+Ulrich’s Closet Auto-off at,sensor.ulrichs_closet_auto_off_at,sensor,Ulrich's Room
+Ulrich’s Closet,switch.ulrichs_closet,switch,Ulrich's Room
+Ulrich’s Closet Auto-off enabled,switch.ulrichs_closet_auto_off_enabled,switch,Ulrich's Room
+Ulrich’s Closet Auto-update enabled,switch.ulrichs_closet_auto_update_enabled,switch,Ulrich's Room
+Ulrich’s Closet LED,switch.ulrichs_closet_led,switch,Ulrich's Room
+Ulrich - School Nights - Lights Off,automation.ulrich_school_night_lights,automation,Ulrich's Room
+Ulrich - Weekend Nights - Lights Off,automation.ulrich_weekend_nights,automation,Ulrich's Room
+Internet: Ulrich Manual Control,automation.ulrich_manual_control,automation,Ulrich's Room
+Internet: Ulrich Chores Check (10AM Mon-Sat),automation.internet_ulrich_chores_check_10am_mon_sat,automation,Ulrich's Room
+Internet: Ulrich Dog Walk Check (8PM Daily),automation.internet_ulrich_dog_walk_check_8pm_daily,automation,Ulrich's Room
+Internet: Ulrich Task Completion Handler,automation.internet_ulrich_task_completion_handler,automation,Ulrich's Room
+Ulrich Light Cloud connection,binary_sensor.ulrich_light_cloud_connection,binary_sensor,Ulrich's Room
+Ulrich Light Overheated,binary_sensor.ulrich_light_overheated,binary_sensor,Ulrich's Room
+Ulrich,light.ulrich_light,light,Ulrich's Room
+Ulrich Light Smooth on,number.ulrich_light_smooth_on,number,Ulrich's Room
+Ulrich Light Smooth off,number.ulrich_light_smooth_off,number,Ulrich's Room
+Ulrich Light Light preset,select.ulrich_light_light_preset,select,Ulrich's Room
+Ulrich Light Signal level,sensor.ulrich_light_signal_level,sensor,Ulrich's Room
+Ulrich Light Auto-update enabled,switch.ulrich_light_auto_update_enabled,switch,Ulrich's Room
+Ulrich Light LED,switch.ulrich_light_led,switch,Ulrich's Room
+Cloud connection,binary_sensor.ulrich_s_fan_cloud_connection,binary_sensor,Ulrich's Room
+Current,sensor.ulrich_s_fan_current,sensor,Ulrich's Room
+Current consumption,sensor.ulrich_s_fan_current_consumption,sensor,Ulrich's Room
+LED,switch.ulrich_s_fan_led,switch,Ulrich's Room
+This month's consumption,sensor.ulrich_s_fan_this_month_s_consumption,sensor,Ulrich's Room
+Today's consumption,sensor.ulrich_s_fan_today_s_consumption,sensor,Ulrich's Room
+Total consumption,sensor.ulrich_s_fan_total_consumption,sensor,Ulrich's Room
+Unknown Device,switch.ulrich_s_fan,switch,Ulrich's Room
+Voltage,sensor.ulrich_s_fan_voltage,sensor,Ulrich's Room
+Signal Ulrich,script.notification_ulrich_light_signal,script,Ulrich's Room
+Ulrich Light Signal Override,input_boolean.notification_ulrich_light_signal_override,input_boolean,Ulrich's Room

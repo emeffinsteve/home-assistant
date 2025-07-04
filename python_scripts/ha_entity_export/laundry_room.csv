@@ -1,0 +1,19 @@
+Device Name,Entity ID,Domain,Area
+Laundry Light Cloud connection,binary_sensor.laundry_light_cloud_connection,binary_sensor,Laundry Room
+Laundry Light Overheated,binary_sensor.laundry_light_overheated,binary_sensor,Laundry Room
+Laundry Light Turn off in,number.laundry_light_turn_off_in,number,Laundry Room
+Laundry Light Signal level,sensor.laundry_light_signal_level,sensor,Laundry Room
+Laundry Light Auto-off at,sensor.laundry_light_auto_off_at,sensor,Laundry Room
+Laundry,switch.laundry_light,switch,Laundry Room
+Laundry Light Auto-off enabled,switch.laundry_light_auto_off_enabled,switch,Laundry Room
+Laundry Light Auto-update enabled,switch.laundry_light_auto_update_enabled,switch,Laundry Room
+Laundry Light LED,switch.laundry_light_led,switch,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Connected,binary_sensor.taylor_s505_laundry_light_switch_wireless_connected,binary_sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless),device_tracker.taylor_s505_laundry_light_switch_wireless,device_tracker,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) IP Address,sensor.taylor_s505_laundry_light_switch_wireless_ip_address,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Last Active,sensor.taylor_s505_laundry_light_switch_wireless_last_active,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Signal Strength,sensor.taylor_s505_laundry_light_switch_wireless_signal_strength,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Download Rate,sensor.taylor_s505_laundry_light_switch_wireless_download_rate,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Upload Rate,sensor.taylor_s505_laundry_light_switch_wireless_upload_rate,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Paused,switch.taylor_s505_laundry_light_switch_wireless_paused,switch,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505_laundry_light_switch_wireless_allow_internet_backup,switch,Laundry Room

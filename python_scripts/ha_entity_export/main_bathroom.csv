@@ -1,0 +1,157 @@
+Device Name,Entity ID,Domain,Area
+Main Bathroom Light Energy,sensor.main_bathroom_light_energy,sensor,Main Bathroom
+Owner's Bathroom Sink Lights Energy,sensor.owner_s_bathroom_sink_lights_energy,sensor,Main Bathroom
+Owner's Bathroom Fan Energy,sensor.owner_s_bathroom_fan_energy,sensor,Main Bathroom
+Basement Bathroom Fan Energy,sensor.basement_bathroom_fan_energy,sensor,Main Bathroom
+Motion - Main Bathroom Firmware,update.motion_main_bathroom_firmware,update,Main Bathroom
+Motion - Main Bathroom Occupancy,binary_sensor.motion_main_bathroom_occupancy,binary_sensor,Main Bathroom
+Motion - Main Bathroom Identify (1),button.motion_main_bathroom_identify_1,button,Main Bathroom
+Motion - Main Bathroom Identify (2),button.motion_main_bathroom_identify_2,button,Main Bathroom
+Motion - Main Bathroom Illuminance,sensor.motion_main_bathroom_illuminance,sensor,Main Bathroom
+Motion - Main Bathroom Battery,sensor.motion_main_bathroom_battery,sensor,Main Bathroom
+Motion - Main Bathroom Battery voltage,sensor.motion_main_bathroom_voltage,sensor,Main Bathroom
+Motion - Main Bathroom Battery type,sensor.motion_main_bathroom_battery_type,sensor,Main Bathroom
+Main Bathroom Light Power,sensor.main_bathroom_light_power,sensor,Main Bathroom
+Owner's Bathroom Sink Lights Power,sensor.owner_s_bathroom_sink_lights_power,sensor,Main Bathroom
+Owner's Bathroom Fan Power,sensor.owner_s_bathroom_fan_power,sensor,Main Bathroom
+Basement Bathroom Fan Power,sensor.basement_bathroom_fan_power,sensor,Main Bathroom
+HomePod - Main Bathroom,media_player.homepod_main_bathroom,media_player,Main Bathroom
+HomePod - Main Bathroom,remote.homepod_main_bathroom,remote,Main Bathroom
+HomePod - Basement Bathroom,media_player.homepod_basement_bathroom,media_player,Main Bathroom
+HomePod - Basement Bathroom,remote.homepod_basement_bathroom,remote,Main Bathroom
+Owner’s Bathroom Sensor,sensor.owner_s_bathroom_sensor_temperature,sensor,Main Bathroom
+Owner’s Bathroom Sensor,sensor.owner_s_bathroom_sensor_humidity,sensor,Main Bathroom
+Owner’s Bathroom Sensor Battery,sensor.owner_s_bathroom_sensor_battery,sensor,Main Bathroom
+Main Bathroom Light Cloud connection,binary_sensor.main_bathroom_light_cloud_connection,binary_sensor,Main Bathroom
+Main Bathroom Light Overheated,binary_sensor.main_bathroom_light_overheated,binary_sensor,Main Bathroom
+Main Bathroom,light.main_bathroom_light,light,Main Bathroom
+Main Bathroom Light Smooth on,number.main_bathroom_light_smooth_on,number,Main Bathroom
+Main Bathroom Light Smooth off,number.main_bathroom_light_smooth_off,number,Main Bathroom
+Main Bathroom Light Light preset,select.main_bathroom_light_light_preset,select,Main Bathroom
+Main Bathroom Light Signal level,sensor.main_bathroom_light_signal_level,sensor,Main Bathroom
+Main Bathroom Light Auto-update enabled,switch.main_bathroom_light_auto_update_enabled,switch,Main Bathroom
+Main Bathroom Light LED,switch.main_bathroom_light_led,switch,Main Bathroom
+Owner's Bathroom Shower Light Cloud connection,binary_sensor.owners_bathroom_shower_light_cloud_connection,binary_sensor,Main Bathroom
+Owner's Bathroom Shower Light Overheated,binary_sensor.owners_bathroom_shower_light_overheated,binary_sensor,Main Bathroom
+Owner's Bathroom Shower,light.owners_bathroom_shower_light,light,Main Bathroom
+Owner's Bathroom Shower Light Smooth on,number.owners_bathroom_shower_light_smooth_on,number,Main Bathroom
+Owner's Bathroom Shower Light Smooth off,number.owners_bathroom_shower_light_smooth_off,number,Main Bathroom
+Owner's Bathroom Shower Light Light preset,select.owners_bathroom_shower_light_light_preset,select,Main Bathroom
+Owner's Bathroom Shower Light Signal level,sensor.owners_bathroom_shower_light_signal_level,sensor,Main Bathroom
+Owner's Bathroom Shower Light Auto-update enabled,switch.owners_bathroom_shower_light_auto_update_enabled,switch,Main Bathroom
+Owner's Bathroom Shower Light LED,switch.owners_bathroom_shower_light_led,switch,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Connected,binary_sensor.taylor_homepod_basement_bathroom_wireless_connected,binary_sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Connected,binary_sensor.taylor_s505d_owners_bathroom_shower_wireless_connected,binary_sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Connected,binary_sensor.taylor_s505d_basement_bathroom_light_wireless_connected,binary_sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Connected,binary_sensor.taylor_s505_owners_bathroom_fan_wireless_connected,binary_sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Connected,binary_sensor.taylor_s505_basement_bathroom_fan_wireless_connected,binary_sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Connected,binary_sensor.taylor_homepod_main_bathroom_wireless_connected,binary_sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Connected,binary_sensor.taylor_s505d_owners_bathroom_sink_wireless_connected,binary_sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Connected,binary_sensor.taylor_s505d_main_bathroom_light_wireless_connected,binary_sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless),device_tracker.taylor_homepod_basement_bathroom_wireless,device_tracker,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless),device_tracker.taylor_s505d_owners_bathroom_shower_wireless,device_tracker,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless),device_tracker.taylor_s505d_basement_bathroom_light_wireless,device_tracker,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless),device_tracker.taylor_s505_owners_bathroom_fan_wireless,device_tracker,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless),device_tracker.taylor_s505_basement_bathroom_fan_wireless,device_tracker,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless),device_tracker.taylor_homepod_main_bathroom_wireless,device_tracker,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless),device_tracker.taylor_s505d_owners_bathroom_sink_wireless,device_tracker,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless),device_tracker.taylor_s505d_main_bathroom_light_wireless,device_tracker,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) IP Address,sensor.taylor_homepod_basement_bathroom_wireless_ip_address,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Last Active,sensor.taylor_homepod_basement_bathroom_wireless_last_active,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Signal Strength,sensor.taylor_homepod_basement_bathroom_wireless_signal_strength,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Download Rate,sensor.taylor_homepod_basement_bathroom_wireless_download_rate,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Upload Rate,sensor.taylor_homepod_basement_bathroom_wireless_upload_rate,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) IP Address,sensor.taylor_s505d_owners_bathroom_shower_wireless_ip_address,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Last Active,sensor.taylor_s505d_owners_bathroom_shower_wireless_last_active,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Signal Strength,sensor.taylor_s505d_owners_bathroom_shower_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Download Rate,sensor.taylor_s505d_owners_bathroom_shower_wireless_download_rate,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Upload Rate,sensor.taylor_s505d_owners_bathroom_shower_wireless_upload_rate,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) IP Address,sensor.taylor_s505d_basement_bathroom_light_wireless_ip_address,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Last Active,sensor.taylor_s505d_basement_bathroom_light_wireless_last_active,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Signal Strength,sensor.taylor_s505d_basement_bathroom_light_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Download Rate,sensor.taylor_s505d_basement_bathroom_light_wireless_download_rate,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Upload Rate,sensor.taylor_s505d_basement_bathroom_light_wireless_upload_rate,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) IP Address,sensor.taylor_s505_owners_bathroom_fan_wireless_ip_address,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Last Active,sensor.taylor_s505_owners_bathroom_fan_wireless_last_active,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Signal Strength,sensor.taylor_s505_owners_bathroom_fan_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Download Rate,sensor.taylor_s505_owners_bathroom_fan_wireless_download_rate,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Upload Rate,sensor.taylor_s505_owners_bathroom_fan_wireless_upload_rate,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) IP Address,sensor.taylor_s505_basement_bathroom_fan_wireless_ip_address,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Last Active,sensor.taylor_s505_basement_bathroom_fan_wireless_last_active,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Signal Strength,sensor.taylor_s505_basement_bathroom_fan_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Download Rate,sensor.taylor_s505_basement_bathroom_fan_wireless_download_rate,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Upload Rate,sensor.taylor_s505_basement_bathroom_fan_wireless_upload_rate,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) IP Address,sensor.taylor_homepod_main_bathroom_wireless_ip_address,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Last Active,sensor.taylor_homepod_main_bathroom_wireless_last_active,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Signal Strength,sensor.taylor_homepod_main_bathroom_wireless_signal_strength,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Download Rate,sensor.taylor_homepod_main_bathroom_wireless_download_rate,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Upload Rate,sensor.taylor_homepod_main_bathroom_wireless_upload_rate,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) IP Address,sensor.taylor_s505d_owners_bathroom_sink_wireless_ip_address,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Last Active,sensor.taylor_s505d_owners_bathroom_sink_wireless_last_active,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Signal Strength,sensor.taylor_s505d_owners_bathroom_sink_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Download Rate,sensor.taylor_s505d_owners_bathroom_sink_wireless_download_rate,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Upload Rate,sensor.taylor_s505d_owners_bathroom_sink_wireless_upload_rate,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) IP Address,sensor.taylor_s505d_main_bathroom_light_wireless_ip_address,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Last Active,sensor.taylor_s505d_main_bathroom_light_wireless_last_active,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Signal Strength,sensor.taylor_s505d_main_bathroom_light_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Download Rate,sensor.taylor_s505d_main_bathroom_light_wireless_download_rate,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Upload Rate,sensor.taylor_s505d_main_bathroom_light_wireless_upload_rate,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Paused,switch.taylor_homepod_basement_bathroom_wireless_paused,switch,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Allow Internet Backup,switch.taylor_homepod_basement_bathroom_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Paused,switch.taylor_s505d_owners_bathroom_shower_wireless_paused,switch,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Allow Internet Backup,switch.taylor_s505d_owners_bathroom_shower_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Paused,switch.taylor_s505d_basement_bathroom_light_wireless_paused,switch,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Allow Internet Backup,switch.taylor_s505d_basement_bathroom_light_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Paused,switch.taylor_s505_owners_bathroom_fan_wireless_paused,switch,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Allow Internet Backup,switch.taylor_s505_owners_bathroom_fan_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Paused,switch.taylor_s505_basement_bathroom_fan_wireless_paused,switch,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Allow Internet Backup,switch.taylor_s505_basement_bathroom_fan_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Paused,switch.taylor_homepod_main_bathroom_wireless_paused,switch,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Allow Internet Backup,switch.taylor_homepod_main_bathroom_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Paused,switch.taylor_s505d_owners_bathroom_sink_wireless_paused,switch,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Allow Internet Backup,switch.taylor_s505d_owners_bathroom_sink_wireless_allow_internet_backup,switch,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Paused,switch.taylor_s505d_main_bathroom_light_wireless_paused,switch,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Allow Internet Backup,switch.taylor_s505d_main_bathroom_light_wireless_allow_internet_backup,switch,Main Bathroom
+Owner’s Bathroom Sink Lights Cloud connection,binary_sensor.owner_s_bathroom_sink_lights_cloud_connection,binary_sensor,Main Bathroom
+Owner’s Bathroom Sink Lights Overheated,binary_sensor.owner_s_bathroom_sink_lights_overheated,binary_sensor,Main Bathroom
+Owner’s Bathroom Sink Lights,light.owner_s_bathroom_sink_lights,light,Main Bathroom
+Owner’s Bathroom Sink Lights Smooth on,number.owner_s_bathroom_sink_lights_smooth_on,number,Main Bathroom
+Owner’s Bathroom Sink Lights Smooth off,number.owner_s_bathroom_sink_lights_smooth_off,number,Main Bathroom
+Owner’s Bathroom Sink Lights Light preset,select.owner_s_bathroom_sink_lights_light_preset,select,Main Bathroom
+Owner’s Bathroom Sink Lights Signal level,sensor.owner_s_bathroom_sink_lights_signal_level,sensor,Main Bathroom
+Owner’s Bathroom Sink Lights Auto-update enabled,switch.owner_s_bathroom_sink_lights_auto_update_enabled,switch,Main Bathroom
+Owner’s Bathroom Sink Lights LED,switch.owner_s_bathroom_sink_lights_led,switch,Main Bathroom
+Owner’s Bathroom Fan Cloud connection,binary_sensor.owner_s_bathroom_fan_cloud_connection,binary_sensor,Main Bathroom
+Owner’s Bathroom Fan Overheated,binary_sensor.owner_s_bathroom_fan_overheated,binary_sensor,Main Bathroom
+Owner’s Bathroom Fan Turn off in,number.owner_s_bathroom_fan_turn_off_in,number,Main Bathroom
+Owner’s Bathroom Fan Signal level,sensor.owner_s_bathroom_fan_signal_level,sensor,Main Bathroom
+Owner’s Bathroom Fan Auto-off at,sensor.owner_s_bathroom_fan_auto_off_at,sensor,Main Bathroom
+Owner’s Bathroom Fan,switch.owner_s_bathroom_fan,switch,Main Bathroom
+Owner’s Bathroom Fan Auto-off enabled,switch.owner_s_bathroom_fan_auto_off_enabled,switch,Main Bathroom
+Owner’s Bathroom Fan Auto-update enabled,switch.owner_s_bathroom_fan_auto_update_enabled,switch,Main Bathroom
+Owner’s Bathroom Fan LED,switch.owner_s_bathroom_fan_led,switch,Main Bathroom
+Basement Bathroom Fan - Auto off,automation.basement_bathroom_fan_auto_off,automation,Main Bathroom
+Owner’s Bathroom Sink Lights - Night Brightness,automation.bathroom_sink_lights_night_brightness,automation,Main Bathroom
+Owner’s Bathroom Sink Lights - Day Brightness,automation.bathroom_sink_lights_day_brightness,automation,Main Bathroom
+Owners Bathroom Shower Light - Night Light On,automation.owners_bathroom_shower_lights_night_light_on,automation,Main Bathroom
+Owner’s Bathroom Shower Light - Night Light Off,automation.owners_bathroom_shower_light_night_light_on,automation,Main Bathroom
+Owner’s Bathroom Sink Lights - Adaptive Brightness with Ramps,automation.owners_bathroom_sink_lights_adaptive_brightness_with_ramps,automation,Main Bathroom
+Smart Bathroom Fan - Owner's Bathroom,automation.smart_bathroom_fan_owner_s_bathroom,automation,Main Bathroom
+Basement Bathroom Fan Cloud connection,binary_sensor.basement_bathroom_fan_cloud_connection,binary_sensor,Main Bathroom
+Basement Bathroom Fan Overheated,binary_sensor.basement_bathroom_fan_overheated,binary_sensor,Main Bathroom
+Basement Bathroom Fan Turn off in,number.basement_bathroom_fan_turn_off_in,number,Main Bathroom
+Basement Bathroom Fan Signal level,sensor.basement_bathroom_fan_signal_level,sensor,Main Bathroom
+Basement Bathroom Fan Auto-off at,sensor.basement_bathroom_fan_auto_off_at,sensor,Main Bathroom
+Basement Bathroom Fan,switch.basement_bathroom_fan,switch,Main Bathroom
+Basement Bathroom Fan Auto-off enabled,switch.basement_bathroom_fan_auto_off_enabled,switch,Main Bathroom
+Basement Bathroom Fan Auto-update enabled,switch.basement_bathroom_fan_auto_update_enabled,switch,Main Bathroom
+Basement Bathroom Fan LED,switch.basement_bathroom_fan_led,switch,Main Bathroom
+Basement Bathroom Light Cloud connection,binary_sensor.basement_bathroom_light_cloud_connection,binary_sensor,Main Bathroom
+Basement Bathroom Light Overheated,binary_sensor.basement_bathroom_light_overheated,binary_sensor,Main Bathroom
+Basement Bathroom,light.basement_bathroom_light,light,Main Bathroom
+Basement Bathroom Light Smooth on,number.basement_bathroom_light_smooth_on,number,Main Bathroom
+Basement Bathroom Light Smooth off,number.basement_bathroom_light_smooth_off,number,Main Bathroom
+Basement Bathroom Light Light preset,select.basement_bathroom_light_light_preset,select,Main Bathroom
+Basement Bathroom Light Signal level,sensor.basement_bathroom_light_signal_level,sensor,Main Bathroom
+Basement Bathroom Light Auto-update enabled,switch.basement_bathroom_light_auto_update_enabled,switch,Main Bathroom
+Basement Bathroom Light LED,switch.basement_bathroom_light_led,switch,Main Bathroom

@@ -1,0 +1,49 @@
+Device Name,Entity ID,Domain,Area
+Owner's Bedroom Light Energy,sensor.owner_s_bedroom_light_energy,sensor,Owner's Bedroom
+Owner's Bedroom Light Power,sensor.owner_s_bedroom_light_power,sensor,Owner's Bedroom
+Owner’s Bedroom Light Cloud connection,binary_sensor.owner_s_bedroom_light_cloud_connection,binary_sensor,Owner's Bedroom
+Owner’s Bedroom Light Overheated,binary_sensor.owner_s_bedroom_light_overheated,binary_sensor,Owner's Bedroom
+Owner’s Bedroom,light.owner_s_bedroom_light,light,Owner's Bedroom
+Owner’s Bedroom Light Smooth on,number.owner_s_bedroom_light_smooth_on,number,Owner's Bedroom
+Owner’s Bedroom Light Smooth off,number.owner_s_bedroom_light_smooth_off,number,Owner's Bedroom
+Owner’s Bedroom Light Light preset,select.owner_s_bedroom_light_light_preset,select,Owner's Bedroom
+Owner’s Bedroom Light Signal level,sensor.owner_s_bedroom_light_signal_level,sensor,Owner's Bedroom
+Owner’s Bedroom Light Auto-update enabled,switch.owner_s_bedroom_light_auto_update_enabled,switch,Owner's Bedroom
+Owner’s Bedroom Light LED,switch.owner_s_bedroom_light_led,switch,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Connected,binary_sensor.taylor_steves_bedroom_fan_wireless_connected,binary_sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Connected,binary_sensor.taylor_homepod_owners_bedroom_wireless_connected,binary_sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Connected,binary_sensor.taylor_genevieves_bedroom_fan_wireless_connected,binary_sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Connected,binary_sensor.taylor_s505d_owners_bedroom_light_wireless_connected,binary_sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless),device_tracker.taylor_steves_bedroom_fan_wireless,device_tracker,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless),device_tracker.taylor_homepod_owners_bedroom_wireless,device_tracker,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless),device_tracker.taylor_genevieves_bedroom_fan_wireless,device_tracker,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless),device_tracker.taylor_s505d_owners_bedroom_light_wireless,device_tracker,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) IP Address,sensor.taylor_steves_bedroom_fan_wireless_ip_address,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Last Active,sensor.taylor_steves_bedroom_fan_wireless_last_active,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Signal Strength,sensor.taylor_steves_bedroom_fan_wireless_signal_strength,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Download Rate,sensor.taylor_steves_bedroom_fan_wireless_download_rate,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Upload Rate,sensor.taylor_steves_bedroom_fan_wireless_upload_rate,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) IP Address,sensor.taylor_homepod_owners_bedroom_wireless_ip_address,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Last Active,sensor.taylor_homepod_owners_bedroom_wireless_last_active,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Signal Strength,sensor.taylor_homepod_owners_bedroom_wireless_signal_strength,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Download Rate,sensor.taylor_homepod_owners_bedroom_wireless_download_rate,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Upload Rate,sensor.taylor_homepod_owners_bedroom_wireless_upload_rate,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) IP Address,sensor.taylor_genevieves_bedroom_fan_wireless_ip_address,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Last Active,sensor.taylor_genevieves_bedroom_fan_wireless_last_active,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Signal Strength,sensor.taylor_genevieves_bedroom_fan_wireless_signal_strength,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Download Rate,sensor.taylor_genevieves_bedroom_fan_wireless_download_rate,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Upload Rate,sensor.taylor_genevieves_bedroom_fan_wireless_upload_rate,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) IP Address,sensor.taylor_s505d_owners_bedroom_light_wireless_ip_address,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Last Active,sensor.taylor_s505d_owners_bedroom_light_wireless_last_active,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Signal Strength,sensor.taylor_s505d_owners_bedroom_light_wireless_signal_strength,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Download Rate,sensor.taylor_s505d_owners_bedroom_light_wireless_download_rate,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Upload Rate,sensor.taylor_s505d_owners_bedroom_light_wireless_upload_rate,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Paused,switch.taylor_steves_bedroom_fan_wireless_paused,switch,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Allow Internet Backup,switch.taylor_steves_bedroom_fan_wireless_allow_internet_backup,switch,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Paused,switch.taylor_homepod_owners_bedroom_wireless_paused,switch,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Allow Internet Backup,switch.taylor_homepod_owners_bedroom_wireless_allow_internet_backup,switch,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Paused,switch.taylor_genevieves_bedroom_fan_wireless_paused,switch,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Allow Internet Backup,switch.taylor_genevieves_bedroom_fan_wireless_allow_internet_backup,switch,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Paused,switch.taylor_s505d_owners_bedroom_light_wireless_paused,switch,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Allow Internet Backup,switch.taylor_s505d_owners_bedroom_light_wireless_allow_internet_backup,switch,Owner's Bedroom
+Lighting Ulrich Bedroom Auto Timeout,automation.ulrich_s_bedroom_lighting_automation,automation,Owner's Bedroom

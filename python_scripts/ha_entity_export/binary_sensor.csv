@@ -1,0 +1,195 @@
+Device Name,Entity ID,Domain,Area
+Remote UI,binary_sensor.remote_ui,binary_sensor,Unassigned
+Motion - Rec Room Occupancy,binary_sensor.motion_rec_room_occupancy,binary_sensor,Rec Room
+Motion - Main Bathroom Occupancy,binary_sensor.motion_main_bathroom_occupancy,binary_sensor,Main Bathroom
+Contact - Office Door Door,binary_sensor.contact_office_door_door,binary_sensor,Office
+Nikki Iphone Focus,binary_sensor.nikki_iphone_focus,binary_sensor,Unassigned
+eero WAN status,binary_sensor.eero_wan_status,binary_sensor,Unassigned
+Office TV Headphones connected,binary_sensor.office_tv_headphones_connected,binary_sensor,Office
+Office TV Supports AirPlay,binary_sensor.office_tv_supports_airplay,binary_sensor,Office
+Office TV Supports Ethernet,binary_sensor.office_tv_supports_ethernet,binary_sensor,Office
+Office TV Supports find remote,binary_sensor.office_tv_supports_find_remote,binary_sensor,Office
+Main Bathroom Light Cloud connection,binary_sensor.main_bathroom_light_cloud_connection,binary_sensor,Main Bathroom
+Main Bathroom Light Overheated,binary_sensor.main_bathroom_light_overheated,binary_sensor,Main Bathroom
+Kitchen Light Cloud connection,binary_sensor.kitchen_light_cloud_connection,binary_sensor,Kitchen
+Garage Coach Lights Cloud connection,binary_sensor.garage_coach_lights_cloud_connection,binary_sensor,Garage
+Garage Coach Lights Overheated,binary_sensor.garage_coach_lights_overheated,binary_sensor,Garage
+Hallway Light Cloud connection,binary_sensor.hallway_light_cloud_connection,binary_sensor,Hallway
+Great Room Light Cloud connection,binary_sensor.great_room_light_cloud_connection,binary_sensor,Unassigned
+Basement Steps Cloud connection,binary_sensor.basement_steps_cloud_connection,binary_sensor,Basement
+Laundry Light Cloud connection,binary_sensor.laundry_light_cloud_connection,binary_sensor,Laundry Room
+Laundry Light Overheated,binary_sensor.laundry_light_overheated,binary_sensor,Laundry Room
+Deck Middle Light Cloud connection,binary_sensor.deck_middle_light_cloud_connection,binary_sensor,Deck
+Deck Middle Light Overheated,binary_sensor.deck_middle_light_overheated,binary_sensor,Deck
+Owner’s Bedroom Light Cloud connection,binary_sensor.owner_s_bedroom_light_cloud_connection,binary_sensor,Owner's Bedroom
+Owner’s Bedroom Light Overheated,binary_sensor.owner_s_bedroom_light_overheated,binary_sensor,Owner's Bedroom
+Owner's Bathroom Shower Light Cloud connection,binary_sensor.owners_bathroom_shower_light_cloud_connection,binary_sensor,Main Bathroom
+Owner's Bathroom Shower Light Overheated,binary_sensor.owners_bathroom_shower_light_overheated,binary_sensor,Main Bathroom
+Storage Light Cloud connection,binary_sensor.storage_light_cloud_connection,binary_sensor,Storage
+Storage Light Overheated,binary_sensor.storage_light_overheated,binary_sensor,Storage
+Deck Outer Lights Cloud connection,binary_sensor.deck_outer_lights_cloud_connection,binary_sensor,Deck
+Deck Outer Lights Overheated,binary_sensor.deck_outer_lights_overheated,binary_sensor,Deck
+Roborock Dock Mop drying,binary_sensor.roborock_dock_mop_drying,binary_sensor,Unassigned
+Roborock Vacuum Mop attached,binary_sensor.roborock_vacuum_mop_attached,binary_sensor,Unassigned
+Roborock Vacuum Water box attached,binary_sensor.roborock_vacuum_water_box_attached,binary_sensor,Unassigned
+Roborock Vacuum Water shortage,binary_sensor.roborock_vacuum_water_shortage,binary_sensor,Unassigned
+Roborock Vacuum Cleaning,binary_sensor.roborock_vacuum_cleaning,binary_sensor,Unassigned
+Roborock Vacuum Charging,binary_sensor.roborock_vacuum_charging,binary_sensor,Unassigned
+Taylor Locked Down Block Apps,binary_sensor.taylor_locked_down_block_apps,binary_sensor,Unassigned
+Taylor Locked Down Connected,binary_sensor.taylor_locked_down_connected,binary_sensor,Unassigned
+Taylor Steve Block Apps,binary_sensor.taylor_steve_block_apps,binary_sensor,Unassigned
+Taylor Steve Connected,binary_sensor.taylor_steve_connected,binary_sensor,Unassigned
+Taylor Office Block Apps,binary_sensor.taylor_office_block_apps,binary_sensor,Office
+Taylor Office Connected,binary_sensor.taylor_office_connected,binary_sensor,Office
+Taylor Nikki Block Apps,binary_sensor.taylor_nikki_block_apps,binary_sensor,Unassigned
+Taylor Nikki Connected,binary_sensor.taylor_nikki_connected,binary_sensor,Unassigned
+Taylor Smart Home Block Apps,binary_sensor.taylor_smart_home_block_apps,binary_sensor,Unassigned
+Taylor Smart Home Connected,binary_sensor.taylor_smart_home_connected,binary_sensor,Unassigned
+Taylor Ulrich Block Apps,binary_sensor.taylor_ulrich_block_apps,binary_sensor,Ulrich's Room
+Taylor Ulrich Connected,binary_sensor.taylor_ulrich_connected,binary_sensor,Ulrich's Room
+Taylor Genevieve Block Apps,binary_sensor.taylor_genevieve_block_apps,binary_sensor,Genevieve's Room
+Taylor Genevieve Connected,binary_sensor.taylor_genevieve_connected,binary_sensor,Genevieve's Room
+Taylor Ex - Upstairs Block Apps,binary_sensor.taylor_ex_upstairs_block_apps,binary_sensor,Unassigned
+Taylor Ex - Upstairs Connected,binary_sensor.taylor_ex_upstairs_connected,binary_sensor,Unassigned
+Taylor Ex - Downstairs Block Apps,binary_sensor.taylor_ex_downstairs_block_apps,binary_sensor,Unassigned
+Taylor Ex - Downstairs Connected,binary_sensor.taylor_ex_downstairs_connected,binary_sensor,Unassigned
+Taylor iPad - Steve Connected,binary_sensor.taylor_ipad_steve_connected,binary_sensor,Unassigned
+Taylor Steves-Air (Wireless) Connected,binary_sensor.taylor_steves_air_wireless_connected,binary_sensor,Unassigned
+Taylor S505 - Basement Storage (Wireless) Connected,binary_sensor.taylor_s505_basement_storage_wireless_connected,binary_sensor,Basement
+Taylor Office TV Lights (Wireless) Connected,binary_sensor.taylor_office_tv_lights_wireless_connected,binary_sensor,Office
+Taylor iPhone - Genevieve (Wireless) Connected,binary_sensor.taylor_iphone_genevieve_wireless_connected,binary_sensor,Genevieve's Room
+Taylor Ring-649a637B2EF5 (Wireless) Connected,binary_sensor.taylor_ring_649a637b2ef5_wireless_connected,binary_sensor,Unassigned
+Taylor HomePod - Kitchen (Wireless) Connected,binary_sensor.taylor_homepod_kitchen_wireless_connected,binary_sensor,Kitchen
+Taylor GE_Light_E32D (Wireless) Connected,binary_sensor.taylor_ge_light_e32d_wireless_connected,binary_sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Connected,binary_sensor.taylor_ring_649a636870ab_wireless_connected,binary_sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Connected,binary_sensor.taylor_ks230_great_room_light_switch_wireless_connected,binary_sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Connected,binary_sensor.taylor_5c_47_5e_8e_2d_00_wireless_connected,binary_sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Connected,binary_sensor.taylor_sonos_38420b3cd790_wireless_connected,binary_sensor,Unassigned
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Connected,binary_sensor.taylor_s505_ulrichs_closet_switch_wireless_connected,binary_sensor,Ulrich's Room
+Taylor lwip0 (Wireless) Connected,binary_sensor.taylor_lwip0_wireless_connected,binary_sensor,Unassigned
+Taylor HomePod - Basement Bathroom (Wireless) Connected,binary_sensor.taylor_homepod_basement_bathroom_wireless_connected,binary_sensor,Main Bathroom
+Taylor S505D - Office Light (Wireless) Connected,binary_sensor.taylor_s505d_office_light_wireless_connected,binary_sensor,Office
+Taylor iPhone 16 Pro Max - Steve (Wireless) Connected,binary_sensor.taylor_iphone_16_pro_max_steve_wireless_connected,binary_sensor,Unassigned
+Taylor S505D - Genevieve’s Light Switch (Wireless) Connected,binary_sensor.taylor_s505d_genevieves_light_switch_wireless_connected,binary_sensor,Genevieve's Room
+Taylor Genie Garage Door Opener (Wireless) Connected,binary_sensor.taylor_genie_garage_door_opener_wireless_connected,binary_sensor,Garage
+Taylor KS230 - Hallway Light Switch (Wireless) Connected,binary_sensor.taylor_ks230_hallway_light_switch_wireless_connected,binary_sensor,Hallway
+Taylor S505D - Front Door Outside Light Switch (Wireless) Connected,binary_sensor.taylor_s505d_front_door_outside_light_switch_wireless_connected,binary_sensor,Front Door
+Taylor Switchbot Hub (Wireless) Connected,binary_sensor.taylor_switchbot_hub_wireless_connected,binary_sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Connected,binary_sensor.taylor_5c_47_5e_8e_0a_17_wireless_connected,binary_sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Connected,binary_sensor.taylor_s505d_coach_light_switch_wireless_connected,binary_sensor,Unassigned
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Connected,binary_sensor.taylor_s505d_owners_bathroom_shower_wireless_connected,binary_sensor,Main Bathroom
+Taylor Steves-Mac-Studio (Wireless) Connected,binary_sensor.taylor_steves_mac_studio_wireless_connected,binary_sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Connected,binary_sensor.taylor_apple_tv_great_room_wireless_connected,binary_sensor,Unassigned
+Taylor Sonos Arc (Wireless) Connected,binary_sensor.taylor_sonos_arc_sonos_connected,binary_sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Connected,binary_sensor.taylor_38_7c_76_ae_66_bb_wired_connected,binary_sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Connected,binary_sensor.taylor_ge_light_07ab_wireless_connected,binary_sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Connected,binary_sensor.taylor_ring_upstairs_cam_wireless_connected,binary_sensor,Unassigned
+Taylor Apple TV - Genevieve (Wireless) Connected,binary_sensor.taylor_apple_tv_genevieve_wireless_connected,binary_sensor,Genevieve's Room
+Taylor S505 - Owner’s Closet Switch (Wireless) Connected,binary_sensor.taylor_s505_owners_closet_switch_wireless_connected,binary_sensor,Unassigned
+Taylor iPhone (Wireless) Connected,binary_sensor.taylor_iphone_wireless_connected,binary_sensor,Unassigned
+Taylor S505 - Laundry Light Switch (Wireless) Connected,binary_sensor.taylor_s505_laundry_light_switch_wireless_connected,binary_sensor,Laundry Room
+Taylor S505D - Basement Bathroom Light (Wireless) Connected,binary_sensor.taylor_s505d_basement_bathroom_light_wireless_connected,binary_sensor,Main Bathroom
+Taylor GE_Light_E407 (Wireless) Connected,binary_sensor.taylor_ge_light_e407_wireless_connected,binary_sensor,Unassigned
+Taylor Office Floor Lamp Left (Wireless) Connected,binary_sensor.taylor_office_floor_lamp_left_wireless_connected,binary_sensor,Office
+Taylor KS230 (Wireless) Connected,binary_sensor.taylor_ks230_wireless_connected,binary_sensor,Unassigned
+Taylor S505 - Genevieve’s Closet (Wireless) Connected,binary_sensor.taylor_s505_genevieves_closet_wireless_connected,binary_sensor,Genevieve's Room
+Taylor Steve’s Bedroom Fan (Wireless) Connected,binary_sensor.taylor_steves_bedroom_fan_wireless_connected,binary_sensor,Owner's Bedroom
+Taylor S505D - Deck Light 1 (Wireless) Connected,binary_sensor.taylor_s505d_deck_light_1_wireless_connected,binary_sensor,Deck
+Taylor Office Floor Lamp Right (Wireless) Connected,binary_sensor.taylor_office_floor_lamp_right_wireless_connected,binary_sensor,Office
+Taylor Dehumidifier (Wireless) Connected,binary_sensor.taylor_dehumidifier_wireless_connected,binary_sensor,Unassigned
+Taylor S505 - Garage Light Switch (Wireless) Connected,binary_sensor.taylor_s505_garage_light_switch_wireless_connected,binary_sensor,Garage
+Taylor Dreo Office Fan (Wireless) Connected,binary_sensor.taylor_dreo_office_fan_wireless_connected,binary_sensor,Office
+Taylor Ecobee Thermostat (Wireless) Connected,binary_sensor.taylor_ecobee_thermostat_wireless_connected,binary_sensor,Unassigned
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Connected,binary_sensor.taylor_s505_owners_bathroom_fan_wireless_connected,binary_sensor,Main Bathroom
+Taylor Anker (Wireless) Connected,binary_sensor.taylor_anker_wireless_connected,binary_sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Connected,binary_sensor.taylor_38_7c_76_ae_33_be_wired_connected,binary_sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Connected,binary_sensor.taylor_ge_light_d9e1_wireless_connected,binary_sensor,Unassigned
+Taylor Ring - Office (Wireless) Connected,binary_sensor.taylor_ring_office_wireless_connected,binary_sensor,Office
+Taylor Homey Pro (Wireless) Connected,binary_sensor.taylor_homey_pro_wireless_connected,binary_sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Connected,binary_sensor.taylor_ring_ac9fc343e974_wireless_connected,binary_sensor,Unassigned
+Taylor S505D - Deck Light 2 (Wireless) Connected,binary_sensor.taylor_s505d_deck_light_2_wireless_connected,binary_sensor,Deck
+Taylor Plug - On Air Sign (Wireless) Connected,binary_sensor.taylor_plug_on_air_sign_wireless_connected,binary_sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Connected,binary_sensor.taylor_nikki_iphone_wireless_connected,binary_sensor,Unassigned
+Taylor HomePod - Owner’s Bedroom (Wireless) Connected,binary_sensor.taylor_homepod_owners_bedroom_wireless_connected,binary_sensor,Owner's Bedroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Connected,binary_sensor.taylor_s505_basement_bathroom_fan_wireless_connected,binary_sensor,Main Bathroom
+Taylor KS230 - Kitchen Dining Light (Wireless) Connected,binary_sensor.taylor_ks230_kitchen_dining_light_wireless_connected,binary_sensor,Kitchen
+Taylor HomePod - Main Bathroom (Wireless) Connected,binary_sensor.taylor_homepod_main_bathroom_wireless_connected,binary_sensor,Main Bathroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Connected,binary_sensor.taylor_genevieves_bedroom_fan_wireless_connected,binary_sensor,Owner's Bedroom
+Taylor Elgato Key Light (Wireless) Connected,binary_sensor.taylor_elgato_key_light_wireless_connected,binary_sensor,Unassigned
+Taylor S505D - Owner’s Bedroom Light (Wireless) Connected,binary_sensor.taylor_s505d_owners_bedroom_light_wireless_connected,binary_sensor,Owner's Bedroom
+Taylor S505D - Kitchen Sink Light (Wireless) Connected,binary_sensor.taylor_s505d_kitchen_sink_light_wireless_connected,binary_sensor,Kitchen
+Taylor Switch - Genevieve (Wireless) Connected,binary_sensor.taylor_switch_genevieve_wireless_connected,binary_sensor,Genevieve's Room
+Taylor Aqara Smart Hub M3 (Wireless) Connected,binary_sensor.taylor_aqara_smart_hub_m3_wireless_connected,binary_sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Connected,binary_sensor.taylor_ge_light_93b5_wireless_connected,binary_sensor,Unassigned
+Taylor HA-Server (Wired) Connected,binary_sensor.taylor_ha_server_wired_connected,binary_sensor,Unassigned
+Taylor S505D - Ulrich’s Light Switch (Wireless) Connected,binary_sensor.taylor_s505d_ulrichs_light_switch_wireless_connected,binary_sensor,Ulrich's Room
+Taylor GE_Light_E49F (Wireless) Connected,binary_sensor.taylor_ge_light_e49f_wireless_connected,binary_sensor,Unassigned
+Taylor Printer (Wireless) Connected,binary_sensor.taylor_printer_wireless_connected,binary_sensor,Unassigned
+Taylor Office TV (Wired) Connected,binary_sensor.taylor_office_tv_wired_connected,binary_sensor,Office
+Taylor Roborock Vacuum (Wireless) Connected,binary_sensor.taylor_roborock_vacuum_wireless_connected,binary_sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Connected,binary_sensor.taylor_steves_mac_studio_2_wired_connected,binary_sensor,Unassigned
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Connected,binary_sensor.taylor_s505d_owners_bathroom_sink_wireless_connected,binary_sensor,Main Bathroom
+Taylor Ring - Rec Room (Wireless) Connected,binary_sensor.taylor_ring_rec_room_wireless_connected,binary_sensor,Rec Room
+Taylor Ring - Doorbell (Wireless) Connected,binary_sensor.taylor_ring_doorbell_wireless_connected,binary_sensor,Unassigned
+Taylor KS230 - Basement Steps Switch (Wireless) Connected,binary_sensor.taylor_ks230_basement_steps_switch_wireless_connected,binary_sensor,Basement
+Taylor S505D - Main Bathroom Light (Wireless) Connected,binary_sensor.taylor_s505d_main_bathroom_light_wireless_connected,binary_sensor,Main Bathroom
+Taylor iPad - Genevieve? Connected,binary_sensor.taylor_ipad_genevieve_connected_2,binary_sensor,Genevieve's Room
+Taylor Apple Watch - Steve (Wireless) Connected,binary_sensor.taylor_apple_watch_steve_wireless_connected,binary_sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Connected,binary_sensor.taylor_eevees_laptop_wireless_connected,binary_sensor,Unassigned
+Taylor TV - Great Room (Wired) Connected,binary_sensor.taylor_74_e6_b8_b7_83_68_wired_connected,binary_sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Connected,binary_sensor.taylor_apple_watch_nikki_wireless_connected,binary_sensor,Unassigned
+Taylor RokuTV Basement (Wired) Connected,binary_sensor.taylor_rokutv_basement_wired_connected,binary_sensor,Basement
+Taylor PS5 (Wireless) Connected,binary_sensor.taylor_ps5_wireless_connected,binary_sensor,Unassigned
+Taylor Switch - Ulrich (Wireless) Connected,binary_sensor.taylor_switch_ulrich_wireless_connected,binary_sensor,Ulrich's Room
+Taylor Mac Studio (Wireless) Connected,binary_sensor.taylor_mac_studio_wireless_connected,binary_sensor,Unassigned
+Taylor linux (Wireless) Connected,binary_sensor.taylor_linux_wireless_connected,binary_sensor,Unassigned
+Taylor KP125-2 (Wireless) Connected,binary_sensor.taylor_kp125_2_wireless_connected,binary_sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Connected,binary_sensor.taylor_28_73_f6_f6_a5_3d_wireless_connected,binary_sensor,Unassigned
+Taylor SonosZP (Sonos) Connected,binary_sensor.taylor_sonos_f0f6c154ce30_wireless_connected,binary_sensor,Unassigned
+Taylor Rec room smart tv (Wireless) Connected,binary_sensor.taylor_rec_room_smart_tv_wireless_connected,binary_sensor,Rec Room
+Taylor SonosZP (Sonos) Connected,binary_sensor.taylor_sonoszp_sonos_connected,binary_sensor,Unassigned
+Front Porch Light Cloud connection,binary_sensor.front_porch_light_cloud_connection,binary_sensor,Unassigned
+Front Porch Light Overheated,binary_sensor.front_porch_light_overheated,binary_sensor,Unassigned
+Owner’s Closet Cloud connection,binary_sensor.owners_closet_cloud_connection,binary_sensor,Unassigned
+Owner’s Closet Overheated,binary_sensor.owners_closet_overheated,binary_sensor,Unassigned
+Owner’s Bathroom Sink Lights Cloud connection,binary_sensor.owner_s_bathroom_sink_lights_cloud_connection,binary_sensor,Main Bathroom
+Owner’s Bathroom Sink Lights Overheated,binary_sensor.owner_s_bathroom_sink_lights_overheated,binary_sensor,Main Bathroom
+Rec Room Lights Cloud connection,binary_sensor.rec_room_lights_cloud_connection,binary_sensor,Rec Room
+Genevieve’s Closet Cloud connection,binary_sensor.genevieves_closet_cloud_connection,binary_sensor,Genevieve's Room
+Genevieve’s Closet Overheated,binary_sensor.genevieves_closet_overheated,binary_sensor,Genevieve's Room
+Owner’s Bathroom Fan Cloud connection,binary_sensor.owner_s_bathroom_fan_cloud_connection,binary_sensor,Main Bathroom
+Owner’s Bathroom Fan Overheated,binary_sensor.owner_s_bathroom_fan_overheated,binary_sensor,Main Bathroom
+Ulrich’s Closet Cloud connection,binary_sensor.ulrichs_closet_cloud_connection,binary_sensor,Ulrich's Room
+Ulrich’s Closet Overheated,binary_sensor.ulrichs_closet_overheated,binary_sensor,Ulrich's Room
+Ulrich Light Cloud connection,binary_sensor.ulrich_light_cloud_connection,binary_sensor,Ulrich's Room
+Ulrich Light Overheated,binary_sensor.ulrich_light_overheated,binary_sensor,Ulrich's Room
+Office Light Cloud connection,binary_sensor.office_light_cloud_connection,binary_sensor,Office
+Office Light Overheated,binary_sensor.office_light_overheated,binary_sensor,Office
+Genevieve’s Light Cloud connection,binary_sensor.genevieves_light_cloud_connection,binary_sensor,Genevieve's Room
+Genevieve’s Light Overheated,binary_sensor.genevieves_light_overheated,binary_sensor,Genevieve's Room
+Kitchen Sink Light Cloud connection,binary_sensor.kitchen_sink_light_cloud_connection,binary_sensor,Kitchen
+Kitchen Sink Light Overheated,binary_sensor.kitchen_sink_light_overheated,binary_sensor,Kitchen
+Sonos Roam Charging,binary_sensor.sonos_roam_charging,binary_sensor,Unassigned
+Sonos Roam Microphone,binary_sensor.sonos_roam_microphone,binary_sensor,Unassigned
+On Air Sign Cloud connection,binary_sensor.on_air_sign_cloud_connection,binary_sensor,Unassigned
+Basement Bathroom Fan Cloud connection,binary_sensor.basement_bathroom_fan_cloud_connection,binary_sensor,Main Bathroom
+Basement Bathroom Fan Overheated,binary_sensor.basement_bathroom_fan_overheated,binary_sensor,Main Bathroom
+Garage Light Cloud connection,binary_sensor.garage_light_cloud_connection,binary_sensor,Garage
+Garage Light Overheated,binary_sensor.garage_light_overheated,binary_sensor,Garage
+Basement Bathroom Light Cloud connection,binary_sensor.basement_bathroom_light_cloud_connection,binary_sensor,Main Bathroom
+Basement Bathroom Light Overheated,binary_sensor.basement_bathroom_light_overheated,binary_sensor,Main Bathroom
+Sonos Arc Microphone,binary_sensor.sonos_arc_microphone,binary_sensor,Unassigned
+Cloud connection,binary_sensor.ulrich_s_fan_cloud_connection,binary_sensor,Ulrich's Room
+Charging,binary_sensor.sonos_move_charging,binary_sensor,Unassigned
+Microphone,binary_sensor.sonos_move_microphone,binary_sensor,Unassigned
+Taylor OfficeTV (Wireless) Connected,binary_sensor.taylor_officetv_wireless_connected,binary_sensor,Office
+Taylor iPhone (Wireless) Connected,binary_sensor.taylor_iphone_wireless_connected_2,binary_sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Connected,binary_sensor.taylor_nikkis_ipad_pro_wireless_connected,binary_sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Connected,binary_sensor.taylor_iphone_wireless_connected_3,binary_sensor,Unassigned
+Taylor XBOX (Wireless) Connected,binary_sensor.taylor_xbox_wireless_connected,binary_sensor,Unassigned
+Taylor coredrummodule (Wireless) Connected,binary_sensor.taylor_coredrummodule_wireless_connected,binary_sensor,Unassigned
+Taylor iPad (Wireless) Connected,binary_sensor.taylor_ipad_wireless_connected,binary_sensor,Unassigned
+Headphones connected,binary_sensor.rec_room_tv_headphones_connected,binary_sensor,Rec Room
+Supports AirPlay,binary_sensor.rec_room_tv_supports_airplay,binary_sensor,Rec Room
+Supports Ethernet,binary_sensor.rec_room_tv_supports_ethernet,binary_sensor,Rec Room
+Supports find remote,binary_sensor.rec_room_tv_supports_find_remote,binary_sensor,Rec Room

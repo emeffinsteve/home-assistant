@@ -1,0 +1,40 @@
+Device Name,Entity ID,Domain,Area
+Deck Outer Lights Energy,sensor.deck_outer_lights_energy,sensor,Deck
+Deck Lights,light.deck_lights,light,Deck
+Deck Outer Lights Power,sensor.deck_outer_lights_power,sensor,Deck
+Deck Middle Light Cloud connection,binary_sensor.deck_middle_light_cloud_connection,binary_sensor,Deck
+Deck Middle Light Overheated,binary_sensor.deck_middle_light_overheated,binary_sensor,Deck
+Deck Middle,light.deck_middle_light,light,Deck
+Deck Middle Light Smooth on,number.deck_middle_light_smooth_on,number,Deck
+Deck Middle Light Smooth off,number.deck_middle_light_smooth_off,number,Deck
+Deck Middle Light Light preset,select.deck_middle_light_light_preset,select,Deck
+Deck Middle Light Signal level,sensor.deck_middle_light_signal_level,sensor,Deck
+Deck Middle Light Auto-update enabled,switch.deck_middle_light_auto_update_enabled,switch,Deck
+Deck Middle Light LED,switch.deck_middle_light_led,switch,Deck
+Deck Outer Lights Cloud connection,binary_sensor.deck_outer_lights_cloud_connection,binary_sensor,Deck
+Deck Outer Lights Overheated,binary_sensor.deck_outer_lights_overheated,binary_sensor,Deck
+Deck Outer Lights,light.deck_outer_lights,light,Deck
+Deck Outer Lights Smooth on,number.deck_outer_lights_smooth_on,number,Deck
+Deck Outer Lights Smooth off,number.deck_outer_lights_smooth_off,number,Deck
+Deck Outer Lights Light preset,select.deck_outer_lights_light_preset,select,Deck
+Deck Outer Lights Signal level,sensor.deck_outer_lights_signal_level,sensor,Deck
+Deck Outer Lights Auto-update enabled,switch.deck_outer_lights_auto_update_enabled,switch,Deck
+Deck Outer Lights LED,switch.deck_outer_lights_led,switch,Deck
+Taylor S505D - Deck Light 1 (Wireless) Connected,binary_sensor.taylor_s505d_deck_light_1_wireless_connected,binary_sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Connected,binary_sensor.taylor_s505d_deck_light_2_wireless_connected,binary_sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless),device_tracker.taylor_s505d_deck_light_1_wireless,device_tracker,Deck
+Taylor S505D - Deck Light 2 (Wireless),device_tracker.taylor_s505d_deck_light_2_wireless,device_tracker,Deck
+Taylor S505D - Deck Light 1 (Wireless) IP Address,sensor.taylor_s505d_deck_light_1_wireless_ip_address,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Last Active,sensor.taylor_s505d_deck_light_1_wireless_last_active,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Signal Strength,sensor.taylor_s505d_deck_light_1_wireless_signal_strength,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Download Rate,sensor.taylor_s505d_deck_light_1_wireless_download_rate,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Upload Rate,sensor.taylor_s505d_deck_light_1_wireless_upload_rate,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) IP Address,sensor.taylor_s505d_deck_light_2_wireless_ip_address,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Last Active,sensor.taylor_s505d_deck_light_2_wireless_last_active,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Signal Strength,sensor.taylor_s505d_deck_light_2_wireless_signal_strength,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Download Rate,sensor.taylor_s505d_deck_light_2_wireless_download_rate,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Upload Rate,sensor.taylor_s505d_deck_light_2_wireless_upload_rate,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Paused,switch.taylor_s505d_deck_light_1_wireless_paused,switch,Deck
+Taylor S505D - Deck Light 1 (Wireless) Allow Internet Backup,switch.taylor_s505d_deck_light_1_wireless_allow_internet_backup,switch,Deck
+Taylor S505D - Deck Light 2 (Wireless) Paused,switch.taylor_s505d_deck_light_2_wireless_paused,switch,Deck
+Taylor S505D - Deck Light 2 (Wireless) Allow Internet Backup,switch.taylor_s505d_deck_light_2_wireless_allow_internet_backup,switch,Deck

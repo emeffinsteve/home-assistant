@@ -1,0 +1,15 @@
+Device Name,Entity ID,Domain,Area
+Storage Light Energy,sensor.storage_light_energy,sensor,Storage
+Storage Light Power,sensor.storage_light_power,sensor,Storage
+iPad (2) Storage,sensor.ipad_2_storage,sensor,Storage
+iPhone Storage,sensor.iphone_storage,sensor,Storage
+Nikki Iphone Storage,sensor.nikki_iphone_storage,sensor,Storage
+Storage Light Cloud connection,binary_sensor.storage_light_cloud_connection,binary_sensor,Storage
+Storage Light Overheated,binary_sensor.storage_light_overheated,binary_sensor,Storage
+Storage Light Turn off in,number.storage_light_turn_off_in,number,Storage
+Storage Light Signal level,sensor.storage_light_signal_level,sensor,Storage
+Storage Light Auto-off at,sensor.storage_light_auto_off_at,sensor,Storage
+Storage,switch.storage_light,switch,Storage
+Storage Light Auto-off enabled,switch.storage_light_auto_off_enabled,switch,Storage
+Storage Light Auto-update enabled,switch.storage_light_auto_update_enabled,switch,Storage
+Storage Light LED,switch.storage_light_led,switch,Storage

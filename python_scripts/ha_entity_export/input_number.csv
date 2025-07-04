@@ -1,0 +1,5 @@
+Device Name,Entity ID,Domain,Area
+Climate Best Available Outdoor,input_number.climate_outdoor_temperature_best,input_number,Unassigned
+Manual Override Hours,input_number.manual_override_hours_2,input_number,Unassigned
+Weather Forecast Today High,input_number.weather_forecast_today_high,input_number,Rec Room
+Manual Override Duration (Hours),input_number.manual_override_hours,input_number,Unassigned

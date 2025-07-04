@@ -1,0 +1,4 @@
+Device Name,Entity ID,Domain,Area
+Last Manual Thermostat Change,input_datetime.last_manual_thermostat_change,input_datetime,Unassigned
+Climate Last Outdoor Reading,input_datetime.climate_last_outdoor_reading,input_datetime,Unassigned
+Genevieve Timer End,input_datetime.genevieve_internet_timer_end,input_datetime,Genevieve's Room

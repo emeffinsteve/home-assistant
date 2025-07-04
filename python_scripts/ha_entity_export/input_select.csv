@@ -1,0 +1,12 @@
+Device Name,Entity ID,Domain,Area
+Climate Current Mode,input_select.climate_current_mode,input_select,Unassigned
+Climate Outdoor Data Source,input_select.climate_outdoor_data_source,input_select,Unassigned
+Upstairs Override Mode,input_select.upstairs_internet_override_mode,input_select,Unassigned
+Downstairs Override Mode,input_select.downstairs_internet_override_mode,input_select,Unassigned
+Genevieve Override Mode,input_select.genevieve_internet_override_mode,input_select,Genevieve's Room
+Upstairs Timer Duration,input_select.upstairs_internet_timer_duration,input_select,Unassigned
+Upstairs Add Time,input_select.upstairs_internet_add_time,input_select,Unassigned
+Downstairs Timer Duration,input_select.downstairs_internet_timer_duration,input_select,Unassigned
+Downstairs Add Time,input_select.downstairs_internet_add_time,input_select,Unassigned
+Genevieve Timer Duration,input_select.genevieve_internet_timer_duration,input_select,Genevieve's Room
+Genevieve Add Time,input_select.genevieve_internet_add_time,input_select,Genevieve's Room

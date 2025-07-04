@@ -1,0 +1,10 @@
+Device Name,Entity ID,Domain,Area
+Backup Automatic backup,event.backup_automatic_backup,event,Unassigned
+Ring - Doorbell Ding,event.ring_doorbell_ding,event,Unassigned
+Ring - Downstairs Sofa Motion,event.ring_downstairs_sofa_motion,event,Unassigned
+Ring - Backyard Motion,event.ring_backyard_motion,event,Unassigned
+Ring - Office Motion,event.ring_office_motion,event,Office
+Ring - Foyer Motion,event.ring_foyer_motion,event,Foyer
+Ring - Front Motion,event.ring_front_motion,event,Unassigned
+Ring - Garage Motion,event.ring_garage_motion,event,Garage
+Ring - Doorbell Motion,event.ring_doorbell_motion,event,Unassigned

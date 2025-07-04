@@ -1,0 +1,7 @@
+Device Name,Entity ID,Domain,Area
+Resume Climate Automation,input_button.climate_resume_automation,input_button,Unassigned
+Force Day Schedule,input_button.climate_force_day_schedule,input_button,Unassigned
+Force Night Schedule,input_button.climate_force_night_schedule,input_button,Unassigned
+Check Sensors Now,input_button.climate_force_sensor_check,input_button,Unassigned
+Export Entities,input_button.export_entities,input_button,Unassigned
+und,input_button.und,input_button,Unassigned

@@ -1,0 +1,3 @@
+Device Name,Entity ID,Domain,Area
+Roborock Vacuum Do not disturb begin,time.roborock_vacuum_do_not_disturb_begin,time,Unassigned
+Roborock Vacuum Do not disturb end,time.roborock_vacuum_do_not_disturb_end,time,Unassigned

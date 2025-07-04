@@ -1,0 +1,115 @@
+Device Name,Entity ID,Domain,Area
+iPad (2),device_tracker.ipad_2,device_tracker,Unassigned
+iPhone,device_tracker.iphone,device_tracker,Unassigned
+Nikki Iphone,device_tracker.nikki_iphone,device_tracker,Unassigned
+Taylor Locked Down,device_tracker.taylor_locked_down,device_tracker,Unassigned
+Taylor Steve,device_tracker.taylor_steve,device_tracker,Unassigned
+Taylor Office,device_tracker.taylor_office,device_tracker,Office
+Taylor Nikki,device_tracker.taylor_nikki,device_tracker,Unassigned
+Taylor Smart Home,device_tracker.taylor_smart_home,device_tracker,Unassigned
+Taylor Ulrich,device_tracker.taylor_ulrich,device_tracker,Ulrich's Room
+Taylor Genevieve,device_tracker.taylor_genevieve,device_tracker,Genevieve's Room
+Taylor Ex - Upstairs,device_tracker.taylor_ex_upstairs,device_tracker,Unassigned
+Taylor Ex - Downstairs,device_tracker.taylor_ex_downstairs,device_tracker,Unassigned
+Taylor iPad - Steve,device_tracker.taylor_ipad_steve,device_tracker,Unassigned
+Taylor Steves-Air (Wireless),device_tracker.taylor_steves_air_wireless,device_tracker,Unassigned
+Taylor S505 - Basement Storage (Wireless),device_tracker.taylor_s505_basement_storage_wireless,device_tracker,Basement
+Taylor Office TV Lights (Wireless),device_tracker.taylor_office_tv_lights_wireless,device_tracker,Office
+Taylor iPhone - Genevieve (Wireless),device_tracker.taylor_iphone_genevieve_wireless,device_tracker,Genevieve's Room
+Taylor Ring-649a637B2EF5 (Wireless),device_tracker.taylor_ring_649a637b2ef5_wireless,device_tracker,Unassigned
+Taylor HomePod - Kitchen (Wireless),device_tracker.taylor_homepod_kitchen_wireless,device_tracker,Kitchen
+Taylor GE_Light_E32D (Wireless),device_tracker.taylor_ge_light_e32d_wireless,device_tracker,Unassigned
+Taylor Ring-649a636870AB (Wireless),device_tracker.taylor_ring_649a636870ab_wireless,device_tracker,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless),device_tracker.taylor_ks230_great_room_light_switch_wireless,device_tracker,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless),device_tracker.taylor_5c_47_5e_8e_2d_00_wireless,device_tracker,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless),device_tracker.taylor_sonos_38420b3cd790_wireless,device_tracker,Unassigned
+Taylor S505 - Ulrich’s Closet Switch (Wireless),device_tracker.taylor_s505_ulrichs_closet_switch_wireless,device_tracker,Ulrich's Room
+Taylor lwip0 (Wireless),device_tracker.taylor_lwip0_wireless,device_tracker,Unassigned
+Taylor HomePod - Basement Bathroom (Wireless),device_tracker.taylor_homepod_basement_bathroom_wireless,device_tracker,Main Bathroom
+Taylor S505D - Office Light (Wireless),device_tracker.taylor_s505d_office_light_wireless,device_tracker,Office
+Taylor iPhone 16 Pro Max - Steve (Wireless),device_tracker.taylor_iphone_16_pro_max_steve_wireless,device_tracker,Unassigned
+Taylor S505D - Genevieve’s Light Switch (Wireless),device_tracker.taylor_s505d_genevieves_light_switch_wireless,device_tracker,Genevieve's Room
+Taylor Genie Garage Door Opener (Wireless),device_tracker.taylor_genie_garage_door_opener_wireless,device_tracker,Garage
+Taylor KS230 - Hallway Light Switch (Wireless),device_tracker.taylor_ks230_hallway_light_switch_wireless,device_tracker,Hallway
+Taylor S505D - Front Door Outside Light Switch (Wireless),device_tracker.taylor_s505d_front_door_outside_light_switch_wireless,device_tracker,Front Door
+Taylor Switchbot Hub (Wireless),device_tracker.taylor_switchbot_hub_wireless,device_tracker,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless),device_tracker.taylor_5c_47_5e_8e_0a_17_wireless,device_tracker,Unassigned
+Taylor S505D - Coach Light Switch (Wireless),device_tracker.taylor_s505d_coach_light_switch_wireless,device_tracker,Unassigned
+Taylor S505D - Owner’s Bathroom Shower (Wireless),device_tracker.taylor_s505d_owners_bathroom_shower_wireless,device_tracker,Main Bathroom
+Taylor Steves-Mac-Studio (Wireless),device_tracker.taylor_steves_mac_studio_wireless,device_tracker,Unassigned
+Taylor Apple TV - Great Room (Wireless),device_tracker.taylor_apple_tv_great_room_wireless,device_tracker,Unassigned
+Taylor Sonos Arc (Wireless),device_tracker.taylor_sonos_arc_sonos,device_tracker,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired),device_tracker.taylor_38_7c_76_ae_66_bb_wired,device_tracker,Unassigned
+Taylor GE_Light_07AB (Wireless),device_tracker.taylor_ge_light_07ab_wireless,device_tracker,Unassigned
+Taylor Ring - Upstairs Cam (Wireless),device_tracker.taylor_ring_upstairs_cam_wireless,device_tracker,Unassigned
+Taylor Apple TV - Genevieve (Wireless),device_tracker.taylor_apple_tv_genevieve_wireless,device_tracker,Genevieve's Room
+Taylor S505 - Owner’s Closet Switch (Wireless),device_tracker.taylor_s505_owners_closet_switch_wireless,device_tracker,Unassigned
+Taylor iPhone (Wireless),device_tracker.taylor_iphone_wireless,device_tracker,Unassigned
+Taylor S505 - Laundry Light Switch (Wireless),device_tracker.taylor_s505_laundry_light_switch_wireless,device_tracker,Laundry Room
+Taylor S505D - Basement Bathroom Light (Wireless),device_tracker.taylor_s505d_basement_bathroom_light_wireless,device_tracker,Main Bathroom
+Taylor GE_Light_E407 (Wireless),device_tracker.taylor_ge_light_e407_wireless,device_tracker,Unassigned
+Taylor Office Floor Lamp Left (Wireless),device_tracker.taylor_office_floor_lamp_left_wireless,device_tracker,Office
+Taylor KS230 (Wireless),device_tracker.taylor_ks230_wireless,device_tracker,Unassigned
+Taylor S505 - Genevieve’s Closet (Wireless),device_tracker.taylor_s505_genevieves_closet_wireless,device_tracker,Genevieve's Room
+Taylor Steve’s Bedroom Fan (Wireless),device_tracker.taylor_steves_bedroom_fan_wireless,device_tracker,Owner's Bedroom
+Taylor S505D - Deck Light 1 (Wireless),device_tracker.taylor_s505d_deck_light_1_wireless,device_tracker,Deck
+Taylor Office Floor Lamp Right (Wireless),device_tracker.taylor_office_floor_lamp_right_wireless,device_tracker,Office
+Taylor Dehumidifier (Wireless),device_tracker.taylor_dehumidifier_wireless,device_tracker,Unassigned
+Taylor S505 - Garage Light Switch (Wireless),device_tracker.taylor_s505_garage_light_switch_wireless,device_tracker,Garage
+Taylor Dreo Office Fan (Wireless),device_tracker.taylor_dreo_office_fan_wireless,device_tracker,Office
+Taylor Ecobee Thermostat (Wireless),device_tracker.taylor_ecobee_thermostat_wireless,device_tracker,Unassigned
+Taylor S505 - Owner’s Bathroom Fan (Wireless),device_tracker.taylor_s505_owners_bathroom_fan_wireless,device_tracker,Main Bathroom
+Taylor Anker (Wireless),device_tracker.taylor_anker_wireless,device_tracker,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired),device_tracker.taylor_38_7c_76_ae_33_be_wired,device_tracker,Unassigned
+Taylor GE_Light_D9E1 (Wireless),device_tracker.taylor_ge_light_d9e1_wireless,device_tracker,Unassigned
+Taylor Ring - Office (Wireless),device_tracker.taylor_ring_office_wireless,device_tracker,Office
+Taylor Homey Pro (Wireless),device_tracker.taylor_homey_pro_wireless,device_tracker,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless),device_tracker.taylor_ring_ac9fc343e974_wireless,device_tracker,Unassigned
+Taylor S505D - Deck Light 2 (Wireless),device_tracker.taylor_s505d_deck_light_2_wireless,device_tracker,Deck
+Taylor Plug - On Air Sign (Wireless),device_tracker.taylor_plug_on_air_sign_wireless,device_tracker,Unassigned
+Taylor Nikki iPhone (Wireless),device_tracker.taylor_nikki_iphone_wireless,device_tracker,Unassigned
+Taylor HomePod - Owner’s Bedroom (Wireless),device_tracker.taylor_homepod_owners_bedroom_wireless,device_tracker,Owner's Bedroom
+Taylor S505 - Basement Bathroom Fan (Wireless),device_tracker.taylor_s505_basement_bathroom_fan_wireless,device_tracker,Main Bathroom
+Taylor KS230 - Kitchen Dining Light (Wireless),device_tracker.taylor_ks230_kitchen_dining_light_wireless,device_tracker,Kitchen
+Taylor HomePod - Main Bathroom (Wireless),device_tracker.taylor_homepod_main_bathroom_wireless,device_tracker,Main Bathroom
+Taylor Genevieve’s Bedroom Fan (Wireless),device_tracker.taylor_genevieves_bedroom_fan_wireless,device_tracker,Owner's Bedroom
+Taylor Elgato Key Light (Wireless),device_tracker.taylor_elgato_key_light_wireless,device_tracker,Unassigned
+Taylor S505D - Owner’s Bedroom Light (Wireless),device_tracker.taylor_s505d_owners_bedroom_light_wireless,device_tracker,Owner's Bedroom
+Taylor S505D - Kitchen Sink Light (Wireless),device_tracker.taylor_s505d_kitchen_sink_light_wireless,device_tracker,Kitchen
+Taylor Switch - Genevieve (Wireless),device_tracker.taylor_switch_genevieve_wireless,device_tracker,Genevieve's Room
+Taylor Aqara Smart Hub M3 (Wireless),device_tracker.taylor_aqara_smart_hub_m3_wireless,device_tracker,Unassigned
+Taylor GE_Light_93B5 (Wireless),device_tracker.taylor_ge_light_93b5_wireless,device_tracker,Unassigned
+Taylor HA-Server (Wired),device_tracker.taylor_ha_server_wired,device_tracker,Unassigned
+Taylor S505D - Ulrich’s Light Switch (Wireless),device_tracker.taylor_s505d_ulrichs_light_switch_wireless,device_tracker,Ulrich's Room
+Taylor GE_Light_E49F (Wireless),device_tracker.taylor_ge_light_e49f_wireless,device_tracker,Unassigned
+Taylor Printer (Wireless),device_tracker.taylor_printer_wireless,device_tracker,Unassigned
+Taylor Office TV (Wired),device_tracker.taylor_office_tv_wired,device_tracker,Office
+Taylor Roborock Vacuum (Wireless),device_tracker.taylor_roborock_vacuum_wireless,device_tracker,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired),device_tracker.taylor_steves_mac_studio_2_wired,device_tracker,Unassigned
+Taylor S505D - Owner’s Bathroom Sink (Wireless),device_tracker.taylor_s505d_owners_bathroom_sink_wireless,device_tracker,Main Bathroom
+Taylor Ring - Rec Room (Wireless),device_tracker.taylor_ring_rec_room_wireless,device_tracker,Rec Room
+Taylor Ring - Doorbell (Wireless),device_tracker.taylor_ring_doorbell_wireless,device_tracker,Unassigned
+Taylor KS230 - Basement Steps Switch (Wireless),device_tracker.taylor_ks230_basement_steps_switch_wireless,device_tracker,Basement
+Taylor S505D - Main Bathroom Light (Wireless),device_tracker.taylor_s505d_main_bathroom_light_wireless,device_tracker,Main Bathroom
+Taylor iPad - Genevieve?,device_tracker.taylor_ipad_genevieve_2,device_tracker,Genevieve's Room
+Taylor Apple Watch - Steve (Wireless),device_tracker.taylor_apple_watch_steve_wireless,device_tracker,Unassigned
+Taylor Eevee’s Laptop (Wireless),device_tracker.taylor_eevees_laptop_wireless,device_tracker,Unassigned
+Taylor TV - Great Room (Wired),device_tracker.taylor_74_e6_b8_b7_83_68_wired,device_tracker,Unassigned
+Taylor Apple Watch - Nikki (Wireless),device_tracker.taylor_apple_watch_nikki_wireless,device_tracker,Unassigned
+Taylor RokuTV Basement (Wired),device_tracker.taylor_rokutv_basement_wired,device_tracker,Basement
+Taylor PS5 (Wireless),device_tracker.taylor_ps5_wireless,device_tracker,Unassigned
+Taylor Switch - Ulrich (Wireless),device_tracker.taylor_switch_ulrich_wireless,device_tracker,Ulrich's Room
+Taylor Mac Studio (Wireless),device_tracker.taylor_mac_studio_wireless,device_tracker,Unassigned
+Taylor linux (Wireless),device_tracker.taylor_linux_wireless,device_tracker,Unassigned
+Taylor KP125-2 (Wireless),device_tracker.taylor_kp125_2_wireless,device_tracker,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless),device_tracker.taylor_28_73_f6_f6_a5_3d_wireless,device_tracker,Unassigned
+Taylor SonosZP (Sonos),device_tracker.taylor_sonos_f0f6c154ce30_wireless,device_tracker,Unassigned
+Taylor Rec room smart tv (Wireless),device_tracker.taylor_rec_room_smart_tv_wireless,device_tracker,Rec Room
+Taylor SonosZP (Sonos),device_tracker.taylor_sonoszp_sonos,device_tracker,Unassigned
+Taylor OfficeTV (Wireless),device_tracker.taylor_officetv_wireless,device_tracker,Office
+Taylor iPhone (Wireless),device_tracker.taylor_iphone_wireless_2,device_tracker,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless),device_tracker.taylor_nikkis_ipad_pro_wireless,device_tracker,Unassigned
+Taylor Mikes-iPhone (Wireless),device_tracker.taylor_iphone_wireless_3,device_tracker,Unassigned
+Taylor XBOX (Wireless),device_tracker.taylor_xbox_wireless,device_tracker,Unassigned
+Taylor coredrummodule (Wireless),device_tracker.taylor_coredrummodule_wireless,device_tracker,Unassigned
+Taylor iPad (Wireless),device_tracker.taylor_ipad_wireless,device_tracker,Unassigned

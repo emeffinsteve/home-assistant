@@ -1,0 +1,841 @@
+Device Name,Entity ID,Domain,Area
+Great Room Light Energy,sensor.great_room_light_energy,sensor,Unassigned
+Rec Room Lights Energy,sensor.rec_room_lights_energy,sensor,Rec Room
+Kitchen Sink Light Energy,sensor.kitchen_sink_light_energy,sensor,Kitchen
+Front Porch Light Energy,sensor.front_porch_light_energy,sensor,Unassigned
+Owner's Bedroom Light Energy,sensor.owner_s_bedroom_light_energy,sensor,Owner's Bedroom
+Office Light Energy,sensor.office_light_energy,sensor,Office
+Genevieve's Light Energy,sensor.genevieve_s_light_energy,sensor,Genevieve's Room
+Ulrich Light Energy,sensor.ulrich_light_energy,sensor,Ulrich's Room
+Hallway Light Energy,sensor.hallway_light_energy,sensor,Hallway
+Main Bathroom Light Energy,sensor.main_bathroom_light_energy,sensor,Main Bathroom
+UC1 Energy,sensor.uc1_energy,sensor,Unassigned
+UC2 Energy,sensor.uc2_energy,sensor,Unassigned
+UC3 Energy,sensor.uc3_energy,sensor,Unassigned
+UC4 Energy,sensor.uc4_energy,sensor,Unassigned
+UC5 Energy,sensor.uc5_energy,sensor,Unassigned
+UC6 Energy,sensor.uc6_energy,sensor,Unassigned
+Owner's Bathroom Sink Lights Energy,sensor.owner_s_bathroom_sink_lights_energy,sensor,Main Bathroom
+Owner's Bathroom Fan Energy,sensor.owner_s_bathroom_fan_energy,sensor,Main Bathroom
+Basement Bathroom Fan Energy,sensor.basement_bathroom_fan_energy,sensor,Main Bathroom
+Storage Light Energy,sensor.storage_light_energy,sensor,Storage
+Garage Coach Lights Energy,sensor.garage_coach_lights_energy,sensor,Garage
+Deck Outer Lights Energy,sensor.deck_outer_lights_energy,sensor,Deck
+Kitchen Light Energy,sensor.kitchen_light_energy,sensor,Kitchen
+Backup Backup Manager state,sensor.backup_backup_manager_state,sensor,Unassigned
+Backup Next scheduled automatic backup,sensor.backup_next_scheduled_automatic_backup,sensor,Unassigned
+Backup Last successful automatic backup,sensor.backup_last_successful_automatic_backup,sensor,Unassigned
+Backup Last attempted automatic backup,sensor.backup_last_attempted_automatic_backup,sensor,Unassigned
+Sun Next dawn,sensor.sun_next_dawn,sensor,Unassigned
+Sun Next dusk,sensor.sun_next_dusk,sensor,Unassigned
+Sun Next midnight,sensor.sun_next_midnight,sensor,Unassigned
+Sun Next noon,sensor.sun_next_noon,sensor,Unassigned
+Sun Next rising,sensor.sun_next_rising,sensor,Unassigned
+Sun Next setting,sensor.sun_next_setting,sensor,Unassigned
+Aqara Smart Lock U200 Battery,sensor.aqara_smart_lock_u200_battery,sensor,Unassigned
+Aqara Smart Lock U200 Battery voltage,sensor.aqara_smart_lock_u200_voltage,sensor,Unassigned
+Motion - Rec Room Illuminance,sensor.motion_rec_room_illuminance,sensor,Rec Room
+Motion - Rec Room Battery,sensor.motion_rec_room_battery,sensor,Rec Room
+Motion - Rec Room Battery voltage,sensor.motion_rec_room_voltage,sensor,Rec Room
+Motion - Rec Room Battery type,sensor.motion_rec_room_battery_type,sensor,Rec Room
+Motion - Main Bathroom Illuminance,sensor.motion_main_bathroom_illuminance,sensor,Main Bathroom
+Motion - Main Bathroom Battery,sensor.motion_main_bathroom_battery,sensor,Main Bathroom
+Motion - Main Bathroom Battery voltage,sensor.motion_main_bathroom_voltage,sensor,Main Bathroom
+Motion - Main Bathroom Battery type,sensor.motion_main_bathroom_battery_type,sensor,Main Bathroom
+Contact - Office Door Battery,sensor.contact_office_door_battery,sensor,Office
+Contact - Office Door Battery voltage,sensor.contact_office_door_voltage,sensor,Office
+Contact - Office Door Battery type,sensor.contact_office_door_battery_type,sensor,Office
+Kitchen Light Power,sensor.kitchen_light_power,sensor,Kitchen
+Great Room Light Power,sensor.great_room_light_power,sensor,Unassigned
+Rec Room Lights Power,sensor.rec_room_lights_power,sensor,Rec Room
+Kitchen Sink Light Power,sensor.kitchen_sink_light_power,sensor,Kitchen
+Front Porch Light Power,sensor.front_porch_light_power,sensor,Unassigned
+Owner's Bedroom Light Power,sensor.owner_s_bedroom_light_power,sensor,Owner's Bedroom
+Office Light Power,sensor.office_light_power,sensor,Office
+Genevieve's Light Power,sensor.genevieve_s_light_power,sensor,Genevieve's Room
+Ulrich Light Power,sensor.ulrich_light_power,sensor,Ulrich's Room
+Hallway Light Power,sensor.hallway_light_power,sensor,Hallway
+Main Bathroom Light Power,sensor.main_bathroom_light_power,sensor,Main Bathroom
+UC1 Power,sensor.uc1_power,sensor,Unassigned
+UC2 Power,sensor.uc2_power,sensor,Unassigned
+UC3 Power,sensor.uc3_power,sensor,Unassigned
+UC4 Power,sensor.uc4_power,sensor,Unassigned
+UC5 Power,sensor.uc5_power,sensor,Unassigned
+UC6 Power,sensor.uc6_power,sensor,Unassigned
+Owner's Bathroom Sink Lights Power,sensor.owner_s_bathroom_sink_lights_power,sensor,Main Bathroom
+Owner's Bathroom Fan Power,sensor.owner_s_bathroom_fan_power,sensor,Main Bathroom
+Basement Bathroom Fan Power,sensor.basement_bathroom_fan_power,sensor,Main Bathroom
+Storage Light Power,sensor.storage_light_power,sensor,Storage
+Garage Coach Lights Power,sensor.garage_coach_lights_power,sensor,Garage
+Deck Outer Lights Power,sensor.deck_outer_lights_power,sensor,Deck
+Weather Forecast Today High,sensor.weather_forecast_today_high,sensor,Rec Room
+Climate System Status,sensor.climate_system_status,sensor,Unassigned
+Entity Export Data,sensor.entity_export_data,sensor,Unassigned
+Upstairs Internet Status,sensor.upstairs_internet_status,sensor,Unassigned
+Upstairs Next Schedule Change,sensor.upstairs_next_schedule_change,sensor,Unassigned
+Downstairs Internet Status,sensor.downstairs_internet_status,sensor,Unassigned
+Downstairs Next Schedule Change,sensor.downstairs_next_schedule_change,sensor,Unassigned
+Genevieve Internet Status,sensor.genevieve_internet_status,sensor,Genevieve's Room
+Genevieve Task Status,sensor.genevieve_task_status,sensor,Genevieve's Room
+Ulrich Internet Status,sensor.ulrich_internet_status,sensor,Ulrich's Room
+Ulrich Task Status,sensor.ulrich_task_status,sensor,Ulrich's Room
+Bubble Card Modules,sensor.bubble_card_modules,sensor,Unassigned
+iPad (2) Connection Type,sensor.ipad_2_connection_type,sensor,Unassigned
+iPad (2) Battery State,sensor.ipad_2_battery_state,sensor,Unassigned
+iPad (2) Storage,sensor.ipad_2_storage,sensor,Storage
+iPad (2) Geocoded Location,sensor.ipad_2_geocoded_location,sensor,Unassigned
+iPad (2) SIM 1,sensor.ipad_2_sim_1,sensor,Unassigned
+iPad (2) SSID,sensor.ipad_2_ssid,sensor,Unassigned
+iPad (2) BSSID,sensor.ipad_2_bssid,sensor,Unassigned
+iPad (2) Battery Level,sensor.ipad_2_battery_level,sensor,Unassigned
+iPad (2) Last Update Trigger,sensor.ipad_2_last_update_trigger,sensor,Unassigned
+iPad (2) Location permission,sensor.ipad_2_location_permission,sensor,Unassigned
+iPad (2) App Version,sensor.ipad_2_app_version,sensor,Unassigned
+iPad (2) Audio Output,sensor.ipad_2_audio_output,sensor,Unassigned
+iPhone Battery Level,sensor.iphone_battery_level,sensor,Unassigned
+iPhone SIM 2,sensor.iphone_sim_2,sensor,Unassigned
+iPhone SIM 1,sensor.iphone_sim_1,sensor,Unassigned
+iPhone Geocoded Location,sensor.iphone_geocoded_location,sensor,Unassigned
+iPhone Last Update Trigger,sensor.iphone_last_update_trigger,sensor,Unassigned
+iPhone App Version,sensor.iphone_app_version,sensor,Unassigned
+iPhone Location permission,sensor.iphone_location_permission,sensor,Unassigned
+iPhone Audio Output,sensor.iphone_audio_output,sensor,Unassigned
+iPhone Battery State,sensor.iphone_battery_state,sensor,Unassigned
+iPhone SSID,sensor.iphone_ssid,sensor,Unassigned
+iPhone Connection Type,sensor.iphone_connection_type,sensor,Unassigned
+iPhone Storage,sensor.iphone_storage,sensor,Storage
+iPhone BSSID,sensor.iphone_bssid,sensor,Unassigned
+iPhone Watch Battery State,sensor.iphone_watch_battery_state,sensor,Unassigned
+iPhone Watch Battery Level,sensor.iphone_watch_battery_level,sensor,Unassigned
+Nikki Iphone Activity,sensor.nikki_iphone_activity,sensor,Unassigned
+Nikki Iphone Battery Level,sensor.nikki_iphone_battery_level,sensor,Unassigned
+Nikki Iphone Battery State,sensor.nikki_iphone_battery_state,sensor,Unassigned
+Nikki Iphone SSID,sensor.nikki_iphone_ssid,sensor,Unassigned
+Nikki Iphone Storage,sensor.nikki_iphone_storage,sensor,Storage
+Nikki Iphone Connection Type,sensor.nikki_iphone_connection_type,sensor,Unassigned
+Nikki Iphone BSSID,sensor.nikki_iphone_bssid,sensor,Unassigned
+Nikki Iphone SIM 1,sensor.nikki_iphone_sim_1,sensor,Unassigned
+Nikki Iphone SIM 2,sensor.nikki_iphone_sim_2,sensor,Unassigned
+Nikki Iphone Geocoded Location,sensor.nikki_iphone_geocoded_location,sensor,Unassigned
+Nikki Iphone Last Update Trigger,sensor.nikki_iphone_last_update_trigger,sensor,Unassigned
+Nikki Iphone App Version,sensor.nikki_iphone_app_version,sensor,Unassigned
+Nikki Iphone Location permission,sensor.nikki_iphone_location_permission,sensor,Unassigned
+Nikki Iphone Audio Output,sensor.nikki_iphone_audio_output,sensor,Unassigned
+Nikki Iphone Distance,sensor.nikki_iphone_distance,sensor,Unassigned
+Nikki Iphone Floors Ascended,sensor.nikki_iphone_floors_ascended,sensor,Unassigned
+Nikki Iphone Floors Descended,sensor.nikki_iphone_floors_descended,sensor,Unassigned
+Nikki Iphone Steps,sensor.nikki_iphone_steps,sensor,Unassigned
+Nikki Iphone Average Active Pace,sensor.nikki_iphone_average_active_pace,sensor,Unassigned
+Front Door Meter,sensor.meter_pro_21_temperature,sensor,Unassigned
+Front Door Meter,sensor.meter_pro_21_humidity,sensor,Unassigned
+Front Door Meter Battery,sensor.meter_pro_21_battery,sensor,Unassigned
+Outdoor Sensor,sensor.outdoor_sensor_temperature,sensor,Unassigned
+Outdoor Sensor,sensor.outdoor_sensor_humidity,sensor,Unassigned
+Outdoor Sensor Battery,sensor.outdoor_sensor_battery,sensor,Unassigned
+Owner’s Bathroom Sensor,sensor.owner_s_bathroom_sensor_temperature,sensor,Main Bathroom
+Owner’s Bathroom Sensor,sensor.owner_s_bathroom_sensor_humidity,sensor,Main Bathroom
+Owner’s Bathroom Sensor Battery,sensor.owner_s_bathroom_sensor_battery,sensor,Main Bathroom
+Foyer Light Battery,sensor.foyer_light_battery,sensor,Foyer
+eero External IP,sensor.eero_external_ip,sensor,Unassigned
+eero Uptime,sensor.eero_uptime,sensor,Unassigned
+eero WAN status,sensor.eero_wan_status,sensor,Unassigned
+Office Fan temperature,sensor.office_fan_temperature,sensor,Office
+Steve’s Fan temperature,sensor.steves_fan_temperature,sensor,Unassigned
+Genevieve’s Fan temperature,sensor.genevieves_fan_temperature,sensor,Genevieve's Room
+Office TV Active app,sensor.office_tv_active_app,sensor,Office
+Office TV Active app ID,sensor.office_tv_active_app_id,sensor,Office
+Weather Cloud ceiling,sensor.weather_cloud_ceiling,sensor,Unassigned
+Weather Cloud cover,sensor.weather_cloud_cover,sensor,Unassigned
+Weather RealFeel temperature,sensor.weather_realfeel_temperature,sensor,Unassigned
+Weather,sensor.weather_humidity,sensor,Unassigned
+Weather Precipitation,sensor.weather_precipitation,sensor,Rec Room
+Weather Pressure tendency,sensor.weather_pressure_tendency,sensor,Unassigned
+Weather,sensor.weather_temperature,sensor,Unassigned
+Weather Wind speed,sensor.weather_wind_speed,sensor,Unassigned
+Weather Air quality day 0,sensor.weather_air_quality_day_0,sensor,Unassigned
+Weather Hours of sun day 0,sensor.weather_hours_of_sun_day_0,sensor,Unassigned
+Weather Condition day 0,sensor.weather_condition_day_0,sensor,Unassigned
+Weather Condition night 0,sensor.weather_condition_night_0,sensor,Unassigned
+Weather RealFeel temperature max day 0,sensor.weather_realfeel_temperature_max_day_0,sensor,Unassigned
+Weather RealFeel temperature min day 0,sensor.weather_realfeel_temperature_min_day_0,sensor,Unassigned
+Weather Thunderstorm probability day 0,sensor.weather_thunderstorm_probability_day_0,sensor,Unassigned
+Weather Thunderstorm probability night 0,sensor.weather_thunderstorm_probability_night_0,sensor,Unassigned
+Weather UV index day 0,sensor.weather_uv_index_day_0,sensor,Unassigned
+Weather Wind speed day 0,sensor.weather_wind_speed_day_0,sensor,Unassigned
+Weather Wind speed night 0,sensor.weather_wind_speed_night_0,sensor,Unassigned
+Weather Air quality day 1,sensor.weather_air_quality_day_1,sensor,Unassigned
+Weather Hours of sun day 1,sensor.weather_hours_of_sun_day_1,sensor,Unassigned
+Weather Condition day 1,sensor.weather_condition_day_1,sensor,Unassigned
+Weather Condition night 1,sensor.weather_condition_night_1,sensor,Unassigned
+Weather RealFeel temperature max day 1,sensor.weather_realfeel_temperature_max_day_1,sensor,Unassigned
+Weather RealFeel temperature min day 1,sensor.weather_realfeel_temperature_min_day_1,sensor,Unassigned
+Weather Thunderstorm probability day 1,sensor.weather_thunderstorm_probability_day_1,sensor,Unassigned
+Weather Thunderstorm probability night 1,sensor.weather_thunderstorm_probability_night_1,sensor,Unassigned
+Weather UV index day 1,sensor.weather_uv_index_day_1,sensor,Unassigned
+Weather Wind speed day 1,sensor.weather_wind_speed_day_1,sensor,Unassigned
+Weather Wind speed night 1,sensor.weather_wind_speed_night_1,sensor,Unassigned
+Weather Air quality day 2,sensor.weather_air_quality_day_2,sensor,Unassigned
+Weather Hours of sun day 2,sensor.weather_hours_of_sun_day_2,sensor,Unassigned
+Weather Condition day 2,sensor.weather_condition_day_2,sensor,Unassigned
+Weather Condition night 2,sensor.weather_condition_night_2,sensor,Unassigned
+Weather RealFeel temperature max day 2,sensor.weather_realfeel_temperature_max_day_2,sensor,Unassigned
+Weather RealFeel temperature min day 2,sensor.weather_realfeel_temperature_min_day_2,sensor,Unassigned
+Weather Thunderstorm probability day 2,sensor.weather_thunderstorm_probability_day_2,sensor,Unassigned
+Weather Thunderstorm probability night 2,sensor.weather_thunderstorm_probability_night_2,sensor,Unassigned
+Weather UV index day 2,sensor.weather_uv_index_day_2,sensor,Unassigned
+Weather Wind speed day 2,sensor.weather_wind_speed_day_2,sensor,Unassigned
+Weather Wind speed night 2,sensor.weather_wind_speed_night_2,sensor,Unassigned
+Weather Air quality day 3,sensor.weather_air_quality_day_3,sensor,Unassigned
+Weather Hours of sun day 3,sensor.weather_hours_of_sun_day_3,sensor,Unassigned
+Weather Condition day 3,sensor.weather_condition_day_3,sensor,Unassigned
+Weather Condition night 3,sensor.weather_condition_night_3,sensor,Unassigned
+Weather RealFeel temperature max day 3,sensor.weather_realfeel_temperature_max_day_3,sensor,Unassigned
+Weather RealFeel temperature min day 3,sensor.weather_realfeel_temperature_min_day_3,sensor,Unassigned
+Weather Thunderstorm probability day 3,sensor.weather_thunderstorm_probability_day_3,sensor,Unassigned
+Weather Thunderstorm probability night 3,sensor.weather_thunderstorm_probability_night_3,sensor,Unassigned
+Weather UV index day 3,sensor.weather_uv_index_day_3,sensor,Unassigned
+Weather Wind speed day 3,sensor.weather_wind_speed_day_3,sensor,Unassigned
+Weather Wind speed night 3,sensor.weather_wind_speed_night_3,sensor,Unassigned
+Weather Air quality day 4,sensor.weather_air_quality_day_4,sensor,Unassigned
+Weather Hours of sun day 4,sensor.weather_hours_of_sun_day_4,sensor,Unassigned
+Weather Condition day 4,sensor.weather_condition_day_4,sensor,Unassigned
+Weather Condition night 4,sensor.weather_condition_night_4,sensor,Unassigned
+Weather RealFeel temperature max day 4,sensor.weather_realfeel_temperature_max_day_4,sensor,Unassigned
+Weather RealFeel temperature min day 4,sensor.weather_realfeel_temperature_min_day_4,sensor,Unassigned
+Weather Thunderstorm probability day 4,sensor.weather_thunderstorm_probability_day_4,sensor,Unassigned
+Weather Thunderstorm probability night 4,sensor.weather_thunderstorm_probability_night_4,sensor,Unassigned
+Weather UV index day 4,sensor.weather_uv_index_day_4,sensor,Unassigned
+Weather Wind speed day 4,sensor.weather_wind_speed_day_4,sensor,Unassigned
+Weather Wind speed night 4,sensor.weather_wind_speed_night_4,sensor,Unassigned
+Ring - Downstairs Sofa Battery,sensor.ring_downstairs_sofa_battery,sensor,Unassigned
+Ring - Backyard Battery,sensor.ring_backyard_battery,sensor,Unassigned
+Ring - Office Battery,sensor.ring_office_battery,sensor,Office
+Ring - Foyer Battery,sensor.ring_foyer_battery,sensor,Foyer
+Ring - Front Battery,sensor.ring_front_battery,sensor,Unassigned
+Ring - Downstairs Doors PTZ Battery,sensor.ring_downstairs_doors_ptz_battery,sensor,Unassigned
+Ring - Upstairs Battery,sensor.ring_upstairs_battery,sensor,Unassigned
+Ring - Garage Battery,sensor.ring_garage_battery,sensor,Garage
+Ring - Doorbell Battery,sensor.ring_doorbell_battery,sensor,Unassigned
+Ring - Downstairs Sofa Last activity,sensor.ring_downstairs_sofa_last_activity,sensor,Unassigned
+Ring - Backyard Last activity,sensor.ring_backyard_last_activity,sensor,Unassigned
+Ring - Office Last activity,sensor.ring_office_last_activity,sensor,Office
+Ring - Foyer Last activity,sensor.ring_foyer_last_activity,sensor,Foyer
+Ring - Front Last activity,sensor.ring_front_last_activity,sensor,Unassigned
+Ring - Downstairs Doors PTZ Last activity,sensor.ring_downstairs_doors_ptz_last_activity,sensor,Unassigned
+Ring - Upstairs Last activity,sensor.ring_upstairs_last_activity,sensor,Unassigned
+Ring - Garage Last activity,sensor.ring_garage_last_activity,sensor,Garage
+Ring - Doorbell Last activity,sensor.ring_doorbell_last_activity,sensor,Unassigned
+Ring - Downstairs Chime Wi-Fi signal category,sensor.ring_downstairs_chime_wi_fi_signal_category_2,sensor,Unassigned
+Ring - Upstairs Chime Wi-Fi signal category,sensor.ring_upstairs_chime_wi_fi_signal_category_2,sensor,Unassigned
+Ring - Downstairs Chime Signal strength,sensor.ring_downstairs_chime_signal_strength_2,sensor,Unassigned
+Ring - Upstairs Chime Signal strength,sensor.ring_upstairs_chime_signal_strength_2,sensor,Unassigned
+Main Bathroom Light Signal level,sensor.main_bathroom_light_signal_level,sensor,Main Bathroom
+Garage Coach Lights Signal level,sensor.garage_coach_lights_signal_level,sensor,Garage
+Basement Steps Signal strength,sensor.basement_steps_signal_strength,sensor,Basement
+Basement Steps On since,sensor.basement_steps_on_since,sensor,Basement
+Laundry Light Signal level,sensor.laundry_light_signal_level,sensor,Laundry Room
+Laundry Light Auto-off at,sensor.laundry_light_auto_off_at,sensor,Laundry Room
+Deck Middle Light Signal level,sensor.deck_middle_light_signal_level,sensor,Deck
+Owner’s Bedroom Light Signal level,sensor.owner_s_bedroom_light_signal_level,sensor,Owner's Bedroom
+Owner's Bathroom Shower Light Signal level,sensor.owners_bathroom_shower_light_signal_level,sensor,Main Bathroom
+Storage Light Signal level,sensor.storage_light_signal_level,sensor,Storage
+Storage Light Auto-off at,sensor.storage_light_auto_off_at,sensor,Storage
+Deck Outer Lights Signal level,sensor.deck_outer_lights_signal_level,sensor,Deck
+Roborock Vacuum Main brush time left,sensor.roborock_vacuum_main_brush_time_left,sensor,Unassigned
+Roborock Vacuum Side brush time left,sensor.roborock_vacuum_side_brush_time_left,sensor,Unassigned
+Roborock Vacuum Filter time left,sensor.roborock_vacuum_filter_time_left,sensor,Unassigned
+Roborock Vacuum Sensor time left,sensor.roborock_vacuum_sensor_time_left,sensor,Unassigned
+Roborock Vacuum Cleaning time,sensor.roborock_vacuum_cleaning_time,sensor,Unassigned
+Roborock Vacuum Total cleaning time,sensor.roborock_vacuum_total_cleaning_time,sensor,Unassigned
+Roborock Vacuum Total cleaning count,sensor.roborock_vacuum_total_cleaning_count,sensor,Unassigned
+Roborock Vacuum Status,sensor.roborock_vacuum_status,sensor,Unassigned
+Roborock Vacuum Cleaning area,sensor.roborock_vacuum_cleaning_area,sensor,Unassigned
+Roborock Vacuum Total cleaning area,sensor.roborock_vacuum_total_cleaning_area,sensor,Unassigned
+Roborock Vacuum Vacuum error,sensor.roborock_vacuum_vacuum_error,sensor,Unassigned
+Roborock Vacuum Battery,sensor.roborock_vacuum_battery,sensor,Unassigned
+Roborock Vacuum Last clean begin,sensor.roborock_vacuum_last_clean_begin,sensor,Unassigned
+Roborock Vacuum Last clean end,sensor.roborock_vacuum_last_clean_end,sensor,Unassigned
+Roborock Vacuum Cleaning progress,sensor.roborock_vacuum_cleaning_progress,sensor,Unassigned
+Roborock Dock Dock error,sensor.roborock_dock_dock_error,sensor,Unassigned
+Roborock Dock Mop drying remaining time,sensor.roborock_dock_mop_drying_remaining_time,sensor,Unassigned
+Roborock Vacuum Current room,sensor.roborock_vacuum_current_room,sensor,Unassigned
+Taylor Ad Blocking Status,sensor.taylor_ad_blocking_status,sensor,Unassigned
+Taylor Connected Clients,sensor.taylor_connected_clients,sensor,Unassigned
+Taylor Connected Guest Clients,sensor.taylor_connected_guest_clients,sensor,Unassigned
+Taylor Gateway IP,sensor.taylor_gateway_ip,sensor,Unassigned
+Taylor Public IP,sensor.taylor_public_ip,sensor,Unassigned
+Taylor Download Speed,sensor.taylor_download_speed,sensor,Unassigned
+Taylor Upload Speed,sensor.taylor_upload_speed,sensor,Unassigned
+Taylor Status,sensor.taylor_status,sensor,Unassigned
+Taylor WAN Router IP,sensor.taylor_wan_router_ip,sensor,Unassigned
+Taylor Basement Connected Clients,sensor.taylor_basement_connected_clients,sensor,Basement
+Taylor Basement Status,sensor.taylor_basement_status,sensor,Basement
+Taylor Back Hallway Connected Clients,sensor.taylor_back_hallway_connected_clients,sensor,Hallway
+Taylor Back Hallway Status,sensor.taylor_back_hallway_status,sensor,Hallway
+Taylor Foyer Connected Clients,sensor.taylor_foyer_connected_clients,sensor,Foyer
+Taylor Foyer Status,sensor.taylor_foyer_status,sensor,Foyer
+Taylor Locked Down Connected Clients,sensor.taylor_locked_down_connected_clients,sensor,Unassigned
+Taylor Locked Down Last Active,sensor.taylor_locked_down_last_active,sensor,Unassigned
+Taylor Steve Connected Clients,sensor.taylor_steve_connected_clients,sensor,Unassigned
+Taylor Steve Last Active,sensor.taylor_steve_last_active,sensor,Unassigned
+Taylor Office Connected Clients,sensor.taylor_office_connected_clients,sensor,Office
+Taylor Office Last Active,sensor.taylor_office_last_active,sensor,Office
+Taylor Nikki Connected Clients,sensor.taylor_nikki_connected_clients,sensor,Unassigned
+Taylor Nikki Last Active,sensor.taylor_nikki_last_active,sensor,Unassigned
+Taylor Smart Home Connected Clients,sensor.taylor_smart_home_connected_clients,sensor,Unassigned
+Taylor Smart Home Last Active,sensor.taylor_smart_home_last_active,sensor,Unassigned
+Taylor Ulrich Connected Clients,sensor.taylor_ulrich_connected_clients,sensor,Ulrich's Room
+Taylor Ulrich Last Active,sensor.taylor_ulrich_last_active,sensor,Ulrich's Room
+Taylor Genevieve Connected Clients,sensor.taylor_genevieve_connected_clients,sensor,Genevieve's Room
+Taylor Genevieve Last Active,sensor.taylor_genevieve_last_active,sensor,Genevieve's Room
+Taylor Ex - Upstairs Connected Clients,sensor.taylor_ex_upstairs_connected_clients,sensor,Unassigned
+Taylor Ex - Upstairs Last Active,sensor.taylor_ex_upstairs_last_active,sensor,Unassigned
+Taylor Ex - Downstairs Connected Clients,sensor.taylor_ex_downstairs_connected_clients,sensor,Unassigned
+Taylor Ex - Downstairs Last Active,sensor.taylor_ex_downstairs_last_active,sensor,Unassigned
+Taylor iPad - Steve IP Address,sensor.taylor_ipad_steve_ip_address,sensor,Unassigned
+Taylor iPad - Steve Last Active,sensor.taylor_ipad_steve_last_active,sensor,Unassigned
+Taylor iPad - Steve Signal Strength,sensor.taylor_ipad_steve_signal_strength,sensor,Unassigned
+Taylor iPad - Steve Download Rate,sensor.taylor_ipad_steve_download_rate,sensor,Unassigned
+Taylor iPad - Steve Upload Rate,sensor.taylor_ipad_steve_upload_rate,sensor,Unassigned
+Taylor Steves-Air (Wireless) IP Address,sensor.taylor_steves_air_wireless_ip_address,sensor,Unassigned
+Taylor Steves-Air (Wireless) Last Active,sensor.taylor_steves_air_wireless_last_active,sensor,Unassigned
+Taylor Steves-Air (Wireless) Signal Strength,sensor.taylor_steves_air_wireless_signal_strength,sensor,Unassigned
+Taylor Steves-Air (Wireless) Download Rate,sensor.taylor_steves_air_wireless_download_rate,sensor,Unassigned
+Taylor Steves-Air (Wireless) Upload Rate,sensor.taylor_steves_air_wireless_upload_rate,sensor,Unassigned
+Taylor S505 - Basement Storage (Wireless) IP Address,sensor.taylor_s505_basement_storage_wireless_ip_address,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Last Active,sensor.taylor_s505_basement_storage_wireless_last_active,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Signal Strength,sensor.taylor_s505_basement_storage_wireless_signal_strength,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Download Rate,sensor.taylor_s505_basement_storage_wireless_download_rate,sensor,Basement
+Taylor S505 - Basement Storage (Wireless) Upload Rate,sensor.taylor_s505_basement_storage_wireless_upload_rate,sensor,Basement
+Taylor Office TV Lights (Wireless) IP Address,sensor.taylor_office_tv_lights_wireless_ip_address,sensor,Office
+Taylor Office TV Lights (Wireless) Last Active,sensor.taylor_office_tv_lights_wireless_last_active,sensor,Office
+Taylor Office TV Lights (Wireless) Signal Strength,sensor.taylor_office_tv_lights_wireless_signal_strength,sensor,Office
+Taylor Office TV Lights (Wireless) Download Rate,sensor.taylor_office_tv_lights_wireless_download_rate,sensor,Office
+Taylor Office TV Lights (Wireless) Upload Rate,sensor.taylor_office_tv_lights_wireless_upload_rate,sensor,Office
+Taylor iPhone - Genevieve (Wireless) IP Address,sensor.taylor_iphone_genevieve_wireless_ip_address,sensor,Genevieve's Room
+Taylor iPhone - Genevieve (Wireless) Last Active,sensor.taylor_iphone_genevieve_wireless_last_active,sensor,Genevieve's Room
+Taylor iPhone - Genevieve (Wireless) Signal Strength,sensor.taylor_iphone_genevieve_wireless_signal_strength,sensor,Genevieve's Room
+Taylor iPhone - Genevieve (Wireless) Download Rate,sensor.taylor_iphone_genevieve_wireless_download_rate,sensor,Genevieve's Room
+Taylor iPhone - Genevieve (Wireless) Upload Rate,sensor.taylor_iphone_genevieve_wireless_upload_rate,sensor,Genevieve's Room
+Taylor Ring-649a637B2EF5 (Wireless) IP Address,sensor.taylor_ring_649a637b2ef5_wireless_ip_address,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Last Active,sensor.taylor_ring_649a637b2ef5_wireless_last_active,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Signal Strength,sensor.taylor_ring_649a637b2ef5_wireless_signal_strength,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Download Rate,sensor.taylor_ring_649a637b2ef5_wireless_download_rate,sensor,Unassigned
+Taylor Ring-649a637B2EF5 (Wireless) Upload Rate,sensor.taylor_ring_649a637b2ef5_wireless_upload_rate,sensor,Unassigned
+Taylor HomePod - Kitchen (Wireless) IP Address,sensor.taylor_homepod_kitchen_wireless_ip_address,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Last Active,sensor.taylor_homepod_kitchen_wireless_last_active,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Signal Strength,sensor.taylor_homepod_kitchen_wireless_signal_strength,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Download Rate,sensor.taylor_homepod_kitchen_wireless_download_rate,sensor,Kitchen
+Taylor HomePod - Kitchen (Wireless) Upload Rate,sensor.taylor_homepod_kitchen_wireless_upload_rate,sensor,Kitchen
+Taylor GE_Light_E32D (Wireless) IP Address,sensor.taylor_ge_light_e32d_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Last Active,sensor.taylor_ge_light_e32d_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Signal Strength,sensor.taylor_ge_light_e32d_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Download Rate,sensor.taylor_ge_light_e32d_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_E32D (Wireless) Upload Rate,sensor.taylor_ge_light_e32d_wireless_upload_rate,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) IP Address,sensor.taylor_ring_649a636870ab_wireless_ip_address,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Last Active,sensor.taylor_ring_649a636870ab_wireless_last_active,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Signal Strength,sensor.taylor_ring_649a636870ab_wireless_signal_strength,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Download Rate,sensor.taylor_ring_649a636870ab_wireless_download_rate,sensor,Unassigned
+Taylor Ring-649a636870AB (Wireless) Upload Rate,sensor.taylor_ring_649a636870ab_wireless_upload_rate,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) IP Address,sensor.taylor_ks230_great_room_light_switch_wireless_ip_address,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Last Active,sensor.taylor_ks230_great_room_light_switch_wireless_last_active,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Signal Strength,sensor.taylor_ks230_great_room_light_switch_wireless_signal_strength,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Download Rate,sensor.taylor_ks230_great_room_light_switch_wireless_download_rate,sensor,Unassigned
+Taylor KS230 - Great Room Light Switch (Wireless) Upload Rate,sensor.taylor_ks230_great_room_light_switch_wireless_upload_rate,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) IP Address,sensor.taylor_5c_47_5e_8e_2d_00_wireless_ip_address,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Last Active,sensor.taylor_5c_47_5e_8e_2d_00_wireless_last_active,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Signal Strength,sensor.taylor_5c_47_5e_8e_2d_00_wireless_signal_strength,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Download Rate,sensor.taylor_5c_47_5e_8e_2d_00_wireless_download_rate,sensor,Unassigned
+Taylor 5c:47:5e:8e:2d:00 (Wireless) Upload Rate,sensor.taylor_5c_47_5e_8e_2d_00_wireless_upload_rate,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) IP Address,sensor.taylor_sonos_38420b3cd790_wireless_ip_address,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Last Active,sensor.taylor_sonos_38420b3cd790_wireless_last_active,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Signal Strength,sensor.taylor_sonos_38420b3cd790_wireless_signal_strength,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Download Rate,sensor.taylor_sonos_38420b3cd790_wireless_download_rate,sensor,Unassigned
+Taylor Sonos-38420B3CD790 (Wireless) Upload Rate,sensor.taylor_sonos_38420b3cd790_wireless_upload_rate,sensor,Unassigned
+Taylor S505 - Ulrich’s Closet Switch (Wireless) IP Address,sensor.taylor_s505_ulrichs_closet_switch_wireless_ip_address,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Last Active,sensor.taylor_s505_ulrichs_closet_switch_wireless_last_active,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Signal Strength,sensor.taylor_s505_ulrichs_closet_switch_wireless_signal_strength,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Download Rate,sensor.taylor_s505_ulrichs_closet_switch_wireless_download_rate,sensor,Ulrich's Room
+Taylor S505 - Ulrich’s Closet Switch (Wireless) Upload Rate,sensor.taylor_s505_ulrichs_closet_switch_wireless_upload_rate,sensor,Ulrich's Room
+Taylor lwip0 (Wireless) IP Address,sensor.taylor_lwip0_wireless_ip_address,sensor,Unassigned
+Taylor lwip0 (Wireless) Last Active,sensor.taylor_lwip0_wireless_last_active,sensor,Unassigned
+Taylor lwip0 (Wireless) Signal Strength,sensor.taylor_lwip0_wireless_signal_strength,sensor,Unassigned
+Taylor lwip0 (Wireless) Download Rate,sensor.taylor_lwip0_wireless_download_rate,sensor,Unassigned
+Taylor lwip0 (Wireless) Upload Rate,sensor.taylor_lwip0_wireless_upload_rate,sensor,Unassigned
+Taylor HomePod - Basement Bathroom (Wireless) IP Address,sensor.taylor_homepod_basement_bathroom_wireless_ip_address,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Last Active,sensor.taylor_homepod_basement_bathroom_wireless_last_active,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Signal Strength,sensor.taylor_homepod_basement_bathroom_wireless_signal_strength,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Download Rate,sensor.taylor_homepod_basement_bathroom_wireless_download_rate,sensor,Main Bathroom
+Taylor HomePod - Basement Bathroom (Wireless) Upload Rate,sensor.taylor_homepod_basement_bathroom_wireless_upload_rate,sensor,Main Bathroom
+Taylor S505D - Office Light (Wireless) IP Address,sensor.taylor_s505d_office_light_wireless_ip_address,sensor,Office
+Taylor S505D - Office Light (Wireless) Last Active,sensor.taylor_s505d_office_light_wireless_last_active,sensor,Office
+Taylor S505D - Office Light (Wireless) Signal Strength,sensor.taylor_s505d_office_light_wireless_signal_strength,sensor,Office
+Taylor S505D - Office Light (Wireless) Download Rate,sensor.taylor_s505d_office_light_wireless_download_rate,sensor,Office
+Taylor S505D - Office Light (Wireless) Upload Rate,sensor.taylor_s505d_office_light_wireless_upload_rate,sensor,Office
+Taylor iPhone 16 Pro Max - Steve (Wireless) IP Address,sensor.taylor_iphone_16_pro_max_steve_wireless_ip_address,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Last Active,sensor.taylor_iphone_16_pro_max_steve_wireless_last_active,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Signal Strength,sensor.taylor_iphone_16_pro_max_steve_wireless_signal_strength,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Download Rate,sensor.taylor_iphone_16_pro_max_steve_wireless_download_rate,sensor,Unassigned
+Taylor iPhone 16 Pro Max - Steve (Wireless) Upload Rate,sensor.taylor_iphone_16_pro_max_steve_wireless_upload_rate,sensor,Unassigned
+Taylor S505D - Genevieve’s Light Switch (Wireless) IP Address,sensor.taylor_s505d_genevieves_light_switch_wireless_ip_address,sensor,Genevieve's Room
+Taylor S505D - Genevieve’s Light Switch (Wireless) Last Active,sensor.taylor_s505d_genevieves_light_switch_wireless_last_active,sensor,Genevieve's Room
+Taylor S505D - Genevieve’s Light Switch (Wireless) Signal Strength,sensor.taylor_s505d_genevieves_light_switch_wireless_signal_strength,sensor,Genevieve's Room
+Taylor S505D - Genevieve’s Light Switch (Wireless) Download Rate,sensor.taylor_s505d_genevieves_light_switch_wireless_download_rate,sensor,Genevieve's Room
+Taylor S505D - Genevieve’s Light Switch (Wireless) Upload Rate,sensor.taylor_s505d_genevieves_light_switch_wireless_upload_rate,sensor,Genevieve's Room
+Taylor Genie Garage Door Opener (Wireless) IP Address,sensor.taylor_genie_garage_door_opener_wireless_ip_address,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Last Active,sensor.taylor_genie_garage_door_opener_wireless_last_active,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Signal Strength,sensor.taylor_genie_garage_door_opener_wireless_signal_strength,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Download Rate,sensor.taylor_genie_garage_door_opener_wireless_download_rate,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Upload Rate,sensor.taylor_genie_garage_door_opener_wireless_upload_rate,sensor,Garage
+Taylor KS230 - Hallway Light Switch (Wireless) IP Address,sensor.taylor_ks230_hallway_light_switch_wireless_ip_address,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Last Active,sensor.taylor_ks230_hallway_light_switch_wireless_last_active,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Signal Strength,sensor.taylor_ks230_hallway_light_switch_wireless_signal_strength,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Download Rate,sensor.taylor_ks230_hallway_light_switch_wireless_download_rate,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Upload Rate,sensor.taylor_ks230_hallway_light_switch_wireless_upload_rate,sensor,Hallway
+Taylor S505D - Front Door Outside Light Switch (Wireless) IP Address,sensor.taylor_s505d_front_door_outside_light_switch_wireless_ip_address,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Last Active,sensor.taylor_s505d_front_door_outside_light_switch_wireless_last_active,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Signal Strength,sensor.taylor_s505d_front_door_outside_light_switch_wireless_signal_strength,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Download Rate,sensor.taylor_s505d_front_door_outside_light_switch_wireless_download_rate,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Upload Rate,sensor.taylor_s505d_front_door_outside_light_switch_wireless_upload_rate,sensor,Front Door
+Taylor Switchbot Hub (Wireless) IP Address,sensor.taylor_switchbot_hub_wireless_ip_address,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Last Active,sensor.taylor_switchbot_hub_wireless_last_active,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Signal Strength,sensor.taylor_switchbot_hub_wireless_signal_strength,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Download Rate,sensor.taylor_switchbot_hub_wireless_download_rate,sensor,Unassigned
+Taylor Switchbot Hub (Wireless) Upload Rate,sensor.taylor_switchbot_hub_wireless_upload_rate,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) IP Address,sensor.taylor_5c_47_5e_8e_0a_17_wireless_ip_address,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Last Active,sensor.taylor_5c_47_5e_8e_0a_17_wireless_last_active,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Signal Strength,sensor.taylor_5c_47_5e_8e_0a_17_wireless_signal_strength,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Download Rate,sensor.taylor_5c_47_5e_8e_0a_17_wireless_download_rate,sensor,Unassigned
+Taylor 5c:47:5e:8e:0a:17 (Wireless) Upload Rate,sensor.taylor_5c_47_5e_8e_0a_17_wireless_upload_rate,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) IP Address,sensor.taylor_s505d_coach_light_switch_wireless_ip_address,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Last Active,sensor.taylor_s505d_coach_light_switch_wireless_last_active,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Signal Strength,sensor.taylor_s505d_coach_light_switch_wireless_signal_strength,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Download Rate,sensor.taylor_s505d_coach_light_switch_wireless_download_rate,sensor,Unassigned
+Taylor S505D - Coach Light Switch (Wireless) Upload Rate,sensor.taylor_s505d_coach_light_switch_wireless_upload_rate,sensor,Unassigned
+Taylor S505D - Owner’s Bathroom Shower (Wireless) IP Address,sensor.taylor_s505d_owners_bathroom_shower_wireless_ip_address,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Last Active,sensor.taylor_s505d_owners_bathroom_shower_wireless_last_active,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Signal Strength,sensor.taylor_s505d_owners_bathroom_shower_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Download Rate,sensor.taylor_s505d_owners_bathroom_shower_wireless_download_rate,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Shower (Wireless) Upload Rate,sensor.taylor_s505d_owners_bathroom_shower_wireless_upload_rate,sensor,Main Bathroom
+Taylor Steves-Mac-Studio (Wireless) IP Address,sensor.taylor_steves_mac_studio_wireless_ip_address,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Last Active,sensor.taylor_steves_mac_studio_wireless_last_active,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Signal Strength,sensor.taylor_steves_mac_studio_wireless_signal_strength,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Download Rate,sensor.taylor_steves_mac_studio_wireless_download_rate,sensor,Unassigned
+Taylor Steves-Mac-Studio (Wireless) Upload Rate,sensor.taylor_steves_mac_studio_wireless_upload_rate,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) IP Address,sensor.taylor_apple_tv_great_room_wireless_ip_address,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Last Active,sensor.taylor_apple_tv_great_room_wireless_last_active,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Signal Strength,sensor.taylor_apple_tv_great_room_wireless_signal_strength,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Download Rate,sensor.taylor_apple_tv_great_room_wireless_download_rate,sensor,Unassigned
+Taylor Apple TV - Great Room (Wireless) Upload Rate,sensor.taylor_apple_tv_great_room_wireless_upload_rate,sensor,Unassigned
+Taylor Sonos Arc (Wireless) IP Address,sensor.taylor_sonos_arc_sonos_ip_address,sensor,Unassigned
+Taylor Sonos Arc (Wireless) Last Active,sensor.taylor_sonos_arc_sonos_last_active,sensor,Unassigned
+Taylor Sonos Arc (Wireless) Signal Strength,sensor.taylor_sonos_arc_wireless_signal_strength,sensor,Unassigned
+Taylor Sonos Arc (Wireless) Download Rate,sensor.taylor_sonos_arc_sonos_download_rate,sensor,Unassigned
+Taylor Sonos Arc (Wireless) Upload Rate,sensor.taylor_sonos_arc_sonos_upload_rate,sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) IP Address,sensor.taylor_38_7c_76_ae_66_bb_wired_ip_address,sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Last Active,sensor.taylor_38_7c_76_ae_66_bb_wired_last_active,sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Download Rate,sensor.taylor_38_7c_76_ae_66_bb_wired_download_rate,sensor,Unassigned
+Taylor 38:7c:76:ae:66:bb (Wired) Upload Rate,sensor.taylor_38_7c_76_ae_66_bb_wired_upload_rate,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) IP Address,sensor.taylor_ge_light_07ab_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Last Active,sensor.taylor_ge_light_07ab_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Signal Strength,sensor.taylor_ge_light_07ab_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Download Rate,sensor.taylor_ge_light_07ab_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_07AB (Wireless) Upload Rate,sensor.taylor_ge_light_07ab_wireless_upload_rate,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) IP Address,sensor.taylor_ring_upstairs_cam_wireless_ip_address,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Last Active,sensor.taylor_ring_upstairs_cam_wireless_last_active,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Signal Strength,sensor.taylor_ring_upstairs_cam_wireless_signal_strength,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Download Rate,sensor.taylor_ring_upstairs_cam_wireless_download_rate,sensor,Unassigned
+Taylor Ring - Upstairs Cam (Wireless) Upload Rate,sensor.taylor_ring_upstairs_cam_wireless_upload_rate,sensor,Unassigned
+Taylor Apple TV - Genevieve (Wireless) IP Address,sensor.taylor_apple_tv_genevieve_wireless_ip_address,sensor,Genevieve's Room
+Taylor Apple TV - Genevieve (Wireless) Last Active,sensor.taylor_apple_tv_genevieve_wireless_last_active,sensor,Genevieve's Room
+Taylor Apple TV - Genevieve (Wireless) Signal Strength,sensor.taylor_apple_tv_genevieve_wireless_signal_strength,sensor,Genevieve's Room
+Taylor Apple TV - Genevieve (Wireless) Download Rate,sensor.taylor_apple_tv_genevieve_wireless_download_rate,sensor,Genevieve's Room
+Taylor Apple TV - Genevieve (Wireless) Upload Rate,sensor.taylor_apple_tv_genevieve_wireless_upload_rate,sensor,Genevieve's Room
+Taylor S505 - Owner’s Closet Switch (Wireless) IP Address,sensor.taylor_s505_owners_closet_switch_wireless_ip_address,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Last Active,sensor.taylor_s505_owners_closet_switch_wireless_last_active,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Signal Strength,sensor.taylor_s505_owners_closet_switch_wireless_signal_strength,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Download Rate,sensor.taylor_s505_owners_closet_switch_wireless_download_rate,sensor,Unassigned
+Taylor S505 - Owner’s Closet Switch (Wireless) Upload Rate,sensor.taylor_s505_owners_closet_switch_wireless_upload_rate,sensor,Unassigned
+Taylor iPhone (Wireless) IP Address,sensor.taylor_iphone_wireless_ip_address,sensor,Unassigned
+Taylor iPhone (Wireless) Last Active,sensor.taylor_iphone_wireless_last_active,sensor,Unassigned
+Taylor iPhone (Wireless) Signal Strength,sensor.taylor_iphone_wireless_signal_strength,sensor,Unassigned
+Taylor iPhone (Wireless) Download Rate,sensor.taylor_iphone_wireless_download_rate,sensor,Unassigned
+Taylor iPhone (Wireless) Upload Rate,sensor.taylor_iphone_wireless_upload_rate,sensor,Unassigned
+Taylor S505 - Laundry Light Switch (Wireless) IP Address,sensor.taylor_s505_laundry_light_switch_wireless_ip_address,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Last Active,sensor.taylor_s505_laundry_light_switch_wireless_last_active,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Signal Strength,sensor.taylor_s505_laundry_light_switch_wireless_signal_strength,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Download Rate,sensor.taylor_s505_laundry_light_switch_wireless_download_rate,sensor,Laundry Room
+Taylor S505 - Laundry Light Switch (Wireless) Upload Rate,sensor.taylor_s505_laundry_light_switch_wireless_upload_rate,sensor,Laundry Room
+Taylor S505D - Basement Bathroom Light (Wireless) IP Address,sensor.taylor_s505d_basement_bathroom_light_wireless_ip_address,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Last Active,sensor.taylor_s505d_basement_bathroom_light_wireless_last_active,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Signal Strength,sensor.taylor_s505d_basement_bathroom_light_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Download Rate,sensor.taylor_s505d_basement_bathroom_light_wireless_download_rate,sensor,Main Bathroom
+Taylor S505D - Basement Bathroom Light (Wireless) Upload Rate,sensor.taylor_s505d_basement_bathroom_light_wireless_upload_rate,sensor,Main Bathroom
+Taylor GE_Light_E407 (Wireless) IP Address,sensor.taylor_ge_light_e407_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Last Active,sensor.taylor_ge_light_e407_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Signal Strength,sensor.taylor_ge_light_e407_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Download Rate,sensor.taylor_ge_light_e407_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_E407 (Wireless) Upload Rate,sensor.taylor_ge_light_e407_wireless_upload_rate,sensor,Unassigned
+Taylor Office Floor Lamp Left (Wireless) IP Address,sensor.taylor_office_floor_lamp_left_wireless_ip_address,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Last Active,sensor.taylor_office_floor_lamp_left_wireless_last_active,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Signal Strength,sensor.taylor_office_floor_lamp_left_wireless_signal_strength,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Download Rate,sensor.taylor_office_floor_lamp_left_wireless_download_rate,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Upload Rate,sensor.taylor_office_floor_lamp_left_wireless_upload_rate,sensor,Office
+Taylor KS230 (Wireless) IP Address,sensor.taylor_ks230_wireless_ip_address,sensor,Unassigned
+Taylor KS230 (Wireless) Last Active,sensor.taylor_ks230_wireless_last_active,sensor,Unassigned
+Taylor KS230 (Wireless) Signal Strength,sensor.taylor_ks230_wireless_signal_strength,sensor,Unassigned
+Taylor KS230 (Wireless) Download Rate,sensor.taylor_ks230_wireless_download_rate,sensor,Unassigned
+Taylor KS230 (Wireless) Upload Rate,sensor.taylor_ks230_wireless_upload_rate,sensor,Unassigned
+Taylor S505 - Genevieve’s Closet (Wireless) IP Address,sensor.taylor_s505_genevieves_closet_wireless_ip_address,sensor,Genevieve's Room
+Taylor S505 - Genevieve’s Closet (Wireless) Last Active,sensor.taylor_s505_genevieves_closet_wireless_last_active,sensor,Genevieve's Room
+Taylor S505 - Genevieve’s Closet (Wireless) Signal Strength,sensor.taylor_s505_genevieves_closet_wireless_signal_strength,sensor,Genevieve's Room
+Taylor S505 - Genevieve’s Closet (Wireless) Download Rate,sensor.taylor_s505_genevieves_closet_wireless_download_rate,sensor,Genevieve's Room
+Taylor S505 - Genevieve’s Closet (Wireless) Upload Rate,sensor.taylor_s505_genevieves_closet_wireless_upload_rate,sensor,Genevieve's Room
+Taylor Steve’s Bedroom Fan (Wireless) IP Address,sensor.taylor_steves_bedroom_fan_wireless_ip_address,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Last Active,sensor.taylor_steves_bedroom_fan_wireless_last_active,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Signal Strength,sensor.taylor_steves_bedroom_fan_wireless_signal_strength,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Download Rate,sensor.taylor_steves_bedroom_fan_wireless_download_rate,sensor,Owner's Bedroom
+Taylor Steve’s Bedroom Fan (Wireless) Upload Rate,sensor.taylor_steves_bedroom_fan_wireless_upload_rate,sensor,Owner's Bedroom
+Taylor S505D - Deck Light 1 (Wireless) IP Address,sensor.taylor_s505d_deck_light_1_wireless_ip_address,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Last Active,sensor.taylor_s505d_deck_light_1_wireless_last_active,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Signal Strength,sensor.taylor_s505d_deck_light_1_wireless_signal_strength,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Download Rate,sensor.taylor_s505d_deck_light_1_wireless_download_rate,sensor,Deck
+Taylor S505D - Deck Light 1 (Wireless) Upload Rate,sensor.taylor_s505d_deck_light_1_wireless_upload_rate,sensor,Deck
+Taylor Office Floor Lamp Right (Wireless) IP Address,sensor.taylor_office_floor_lamp_right_wireless_ip_address,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Last Active,sensor.taylor_office_floor_lamp_right_wireless_last_active,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Signal Strength,sensor.taylor_office_floor_lamp_right_wireless_signal_strength,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Download Rate,sensor.taylor_office_floor_lamp_right_wireless_download_rate,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Upload Rate,sensor.taylor_office_floor_lamp_right_wireless_upload_rate,sensor,Office
+Taylor Dehumidifier (Wireless) IP Address,sensor.taylor_dehumidifier_wireless_ip_address,sensor,Unassigned
+Taylor Dehumidifier (Wireless) Last Active,sensor.taylor_dehumidifier_wireless_last_active,sensor,Unassigned
+Taylor Dehumidifier (Wireless) Signal Strength,sensor.taylor_dehumidifier_wireless_signal_strength,sensor,Unassigned
+Taylor Dehumidifier (Wireless) Download Rate,sensor.taylor_dehumidifier_wireless_download_rate,sensor,Unassigned
+Taylor Dehumidifier (Wireless) Upload Rate,sensor.taylor_dehumidifier_wireless_upload_rate,sensor,Unassigned
+Taylor S505 - Garage Light Switch (Wireless) IP Address,sensor.taylor_s505_garage_light_switch_wireless_ip_address,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Last Active,sensor.taylor_s505_garage_light_switch_wireless_last_active,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Signal Strength,sensor.taylor_s505_garage_light_switch_wireless_signal_strength,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Download Rate,sensor.taylor_s505_garage_light_switch_wireless_download_rate,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Upload Rate,sensor.taylor_s505_garage_light_switch_wireless_upload_rate,sensor,Garage
+Taylor Dreo Office Fan (Wireless) IP Address,sensor.taylor_dreo_office_fan_wireless_ip_address,sensor,Office
+Taylor Dreo Office Fan (Wireless) Last Active,sensor.taylor_dreo_office_fan_wireless_last_active,sensor,Office
+Taylor Dreo Office Fan (Wireless) Signal Strength,sensor.taylor_dreo_office_fan_wireless_signal_strength,sensor,Office
+Taylor Dreo Office Fan (Wireless) Download Rate,sensor.taylor_dreo_office_fan_wireless_download_rate,sensor,Office
+Taylor Dreo Office Fan (Wireless) Upload Rate,sensor.taylor_dreo_office_fan_wireless_upload_rate,sensor,Office
+Taylor Ecobee Thermostat (Wireless) IP Address,sensor.taylor_ecobee_thermostat_wireless_ip_address,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Last Active,sensor.taylor_ecobee_thermostat_wireless_last_active,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Signal Strength,sensor.taylor_ecobee_thermostat_wireless_signal_strength,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Download Rate,sensor.taylor_ecobee_thermostat_wireless_download_rate,sensor,Unassigned
+Taylor Ecobee Thermostat (Wireless) Upload Rate,sensor.taylor_ecobee_thermostat_wireless_upload_rate,sensor,Unassigned
+Taylor S505 - Owner’s Bathroom Fan (Wireless) IP Address,sensor.taylor_s505_owners_bathroom_fan_wireless_ip_address,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Last Active,sensor.taylor_s505_owners_bathroom_fan_wireless_last_active,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Signal Strength,sensor.taylor_s505_owners_bathroom_fan_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Download Rate,sensor.taylor_s505_owners_bathroom_fan_wireless_download_rate,sensor,Main Bathroom
+Taylor S505 - Owner’s Bathroom Fan (Wireless) Upload Rate,sensor.taylor_s505_owners_bathroom_fan_wireless_upload_rate,sensor,Main Bathroom
+Taylor Anker (Wireless) IP Address,sensor.taylor_anker_wireless_ip_address,sensor,Unassigned
+Taylor Anker (Wireless) Last Active,sensor.taylor_anker_wireless_last_active,sensor,Unassigned
+Taylor Anker (Wireless) Signal Strength,sensor.taylor_anker_wireless_signal_strength,sensor,Unassigned
+Taylor Anker (Wireless) Download Rate,sensor.taylor_anker_wireless_download_rate,sensor,Unassigned
+Taylor Anker (Wireless) Upload Rate,sensor.taylor_anker_wireless_upload_rate,sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) IP Address,sensor.taylor_38_7c_76_ae_33_be_wired_ip_address,sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Last Active,sensor.taylor_38_7c_76_ae_33_be_wired_last_active,sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Download Rate,sensor.taylor_38_7c_76_ae_33_be_wired_download_rate,sensor,Unassigned
+Taylor 38:7c:76:ae:33:be (Wired) Upload Rate,sensor.taylor_38_7c_76_ae_33_be_wired_upload_rate,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) IP Address,sensor.taylor_ge_light_d9e1_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Last Active,sensor.taylor_ge_light_d9e1_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Signal Strength,sensor.taylor_ge_light_d9e1_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Download Rate,sensor.taylor_ge_light_d9e1_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_D9E1 (Wireless) Upload Rate,sensor.taylor_ge_light_d9e1_wireless_upload_rate,sensor,Unassigned
+Taylor Ring - Office (Wireless) IP Address,sensor.taylor_ring_office_wireless_ip_address,sensor,Office
+Taylor Ring - Office (Wireless) Last Active,sensor.taylor_ring_office_wireless_last_active,sensor,Office
+Taylor Ring - Office (Wireless) Signal Strength,sensor.taylor_ring_office_wireless_signal_strength,sensor,Office
+Taylor Ring - Office (Wireless) Download Rate,sensor.taylor_ring_office_wireless_download_rate,sensor,Office
+Taylor Ring - Office (Wireless) Upload Rate,sensor.taylor_ring_office_wireless_upload_rate,sensor,Office
+Taylor Homey Pro (Wireless) IP Address,sensor.taylor_homey_pro_wireless_ip_address,sensor,Unassigned
+Taylor Homey Pro (Wireless) Last Active,sensor.taylor_homey_pro_wireless_last_active,sensor,Unassigned
+Taylor Homey Pro (Wireless) Signal Strength,sensor.taylor_homey_pro_wireless_signal_strength,sensor,Unassigned
+Taylor Homey Pro (Wireless) Download Rate,sensor.taylor_homey_pro_wireless_download_rate,sensor,Unassigned
+Taylor Homey Pro (Wireless) Upload Rate,sensor.taylor_homey_pro_wireless_upload_rate,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) IP Address,sensor.taylor_ring_ac9fc343e974_wireless_ip_address,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Last Active,sensor.taylor_ring_ac9fc343e974_wireless_last_active,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Signal Strength,sensor.taylor_ring_ac9fc343e974_wireless_signal_strength,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Download Rate,sensor.taylor_ring_ac9fc343e974_wireless_download_rate,sensor,Unassigned
+Taylor Ring-AC9fC343E974 (Wireless) Upload Rate,sensor.taylor_ring_ac9fc343e974_wireless_upload_rate,sensor,Unassigned
+Taylor S505D - Deck Light 2 (Wireless) IP Address,sensor.taylor_s505d_deck_light_2_wireless_ip_address,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Last Active,sensor.taylor_s505d_deck_light_2_wireless_last_active,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Signal Strength,sensor.taylor_s505d_deck_light_2_wireless_signal_strength,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Download Rate,sensor.taylor_s505d_deck_light_2_wireless_download_rate,sensor,Deck
+Taylor S505D - Deck Light 2 (Wireless) Upload Rate,sensor.taylor_s505d_deck_light_2_wireless_upload_rate,sensor,Deck
+Taylor Plug - On Air Sign (Wireless) IP Address,sensor.taylor_plug_on_air_sign_wireless_ip_address,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Last Active,sensor.taylor_plug_on_air_sign_wireless_last_active,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Signal Strength,sensor.taylor_plug_on_air_sign_wireless_signal_strength,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Download Rate,sensor.taylor_plug_on_air_sign_wireless_download_rate,sensor,Unassigned
+Taylor Plug - On Air Sign (Wireless) Upload Rate,sensor.taylor_plug_on_air_sign_wireless_upload_rate,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) IP Address,sensor.taylor_nikki_iphone_wireless_ip_address,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Last Active,sensor.taylor_nikki_iphone_wireless_last_active,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Signal Strength,sensor.taylor_nikki_iphone_wireless_signal_strength,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Download Rate,sensor.taylor_nikki_iphone_wireless_download_rate,sensor,Unassigned
+Taylor Nikki iPhone (Wireless) Upload Rate,sensor.taylor_nikki_iphone_wireless_upload_rate,sensor,Unassigned
+Taylor HomePod - Owner’s Bedroom (Wireless) IP Address,sensor.taylor_homepod_owners_bedroom_wireless_ip_address,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Last Active,sensor.taylor_homepod_owners_bedroom_wireless_last_active,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Signal Strength,sensor.taylor_homepod_owners_bedroom_wireless_signal_strength,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Download Rate,sensor.taylor_homepod_owners_bedroom_wireless_download_rate,sensor,Owner's Bedroom
+Taylor HomePod - Owner’s Bedroom (Wireless) Upload Rate,sensor.taylor_homepod_owners_bedroom_wireless_upload_rate,sensor,Owner's Bedroom
+Taylor S505 - Basement Bathroom Fan (Wireless) IP Address,sensor.taylor_s505_basement_bathroom_fan_wireless_ip_address,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Last Active,sensor.taylor_s505_basement_bathroom_fan_wireless_last_active,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Signal Strength,sensor.taylor_s505_basement_bathroom_fan_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Download Rate,sensor.taylor_s505_basement_bathroom_fan_wireless_download_rate,sensor,Main Bathroom
+Taylor S505 - Basement Bathroom Fan (Wireless) Upload Rate,sensor.taylor_s505_basement_bathroom_fan_wireless_upload_rate,sensor,Main Bathroom
+Taylor KS230 - Kitchen Dining Light (Wireless) IP Address,sensor.taylor_ks230_kitchen_dining_light_wireless_ip_address,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Last Active,sensor.taylor_ks230_kitchen_dining_light_wireless_last_active,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Signal Strength,sensor.taylor_ks230_kitchen_dining_light_wireless_signal_strength,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Download Rate,sensor.taylor_ks230_kitchen_dining_light_wireless_download_rate,sensor,Kitchen
+Taylor KS230 - Kitchen Dining Light (Wireless) Upload Rate,sensor.taylor_ks230_kitchen_dining_light_wireless_upload_rate,sensor,Kitchen
+Taylor HomePod - Main Bathroom (Wireless) IP Address,sensor.taylor_homepod_main_bathroom_wireless_ip_address,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Last Active,sensor.taylor_homepod_main_bathroom_wireless_last_active,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Signal Strength,sensor.taylor_homepod_main_bathroom_wireless_signal_strength,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Download Rate,sensor.taylor_homepod_main_bathroom_wireless_download_rate,sensor,Main Bathroom
+Taylor HomePod - Main Bathroom (Wireless) Upload Rate,sensor.taylor_homepod_main_bathroom_wireless_upload_rate,sensor,Main Bathroom
+Taylor Genevieve’s Bedroom Fan (Wireless) IP Address,sensor.taylor_genevieves_bedroom_fan_wireless_ip_address,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Last Active,sensor.taylor_genevieves_bedroom_fan_wireless_last_active,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Signal Strength,sensor.taylor_genevieves_bedroom_fan_wireless_signal_strength,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Download Rate,sensor.taylor_genevieves_bedroom_fan_wireless_download_rate,sensor,Owner's Bedroom
+Taylor Genevieve’s Bedroom Fan (Wireless) Upload Rate,sensor.taylor_genevieves_bedroom_fan_wireless_upload_rate,sensor,Owner's Bedroom
+Taylor Elgato Key Light (Wireless) IP Address,sensor.taylor_elgato_key_light_wireless_ip_address,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Last Active,sensor.taylor_elgato_key_light_wireless_last_active,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Signal Strength,sensor.taylor_elgato_key_light_wireless_signal_strength,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Download Rate,sensor.taylor_elgato_key_light_wireless_download_rate,sensor,Unassigned
+Taylor Elgato Key Light (Wireless) Upload Rate,sensor.taylor_elgato_key_light_wireless_upload_rate,sensor,Unassigned
+Taylor S505D - Owner’s Bedroom Light (Wireless) IP Address,sensor.taylor_s505d_owners_bedroom_light_wireless_ip_address,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Last Active,sensor.taylor_s505d_owners_bedroom_light_wireless_last_active,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Signal Strength,sensor.taylor_s505d_owners_bedroom_light_wireless_signal_strength,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Download Rate,sensor.taylor_s505d_owners_bedroom_light_wireless_download_rate,sensor,Owner's Bedroom
+Taylor S505D - Owner’s Bedroom Light (Wireless) Upload Rate,sensor.taylor_s505d_owners_bedroom_light_wireless_upload_rate,sensor,Owner's Bedroom
+Taylor S505D - Kitchen Sink Light (Wireless) IP Address,sensor.taylor_s505d_kitchen_sink_light_wireless_ip_address,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Last Active,sensor.taylor_s505d_kitchen_sink_light_wireless_last_active,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Signal Strength,sensor.taylor_s505d_kitchen_sink_light_wireless_signal_strength,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Download Rate,sensor.taylor_s505d_kitchen_sink_light_wireless_download_rate,sensor,Kitchen
+Taylor S505D - Kitchen Sink Light (Wireless) Upload Rate,sensor.taylor_s505d_kitchen_sink_light_wireless_upload_rate,sensor,Kitchen
+Taylor Switch - Genevieve (Wireless) IP Address,sensor.taylor_switch_genevieve_wireless_ip_address,sensor,Genevieve's Room
+Taylor Switch - Genevieve (Wireless) Last Active,sensor.taylor_switch_genevieve_wireless_last_active,sensor,Genevieve's Room
+Taylor Switch - Genevieve (Wireless) Signal Strength,sensor.taylor_switch_genevieve_wireless_signal_strength,sensor,Genevieve's Room
+Taylor Switch - Genevieve (Wireless) Download Rate,sensor.taylor_switch_genevieve_wireless_download_rate,sensor,Genevieve's Room
+Taylor Switch - Genevieve (Wireless) Upload Rate,sensor.taylor_switch_genevieve_wireless_upload_rate,sensor,Genevieve's Room
+Taylor Aqara Smart Hub M3 (Wireless) IP Address,sensor.taylor_aqara_smart_hub_m3_wireless_ip_address,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Last Active,sensor.taylor_aqara_smart_hub_m3_wireless_last_active,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Signal Strength,sensor.taylor_aqara_smart_hub_m3_wireless_signal_strength,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Download Rate,sensor.taylor_aqara_smart_hub_m3_wireless_download_rate,sensor,Unassigned
+Taylor Aqara Smart Hub M3 (Wireless) Upload Rate,sensor.taylor_aqara_smart_hub_m3_wireless_upload_rate,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) IP Address,sensor.taylor_ge_light_93b5_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Last Active,sensor.taylor_ge_light_93b5_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Signal Strength,sensor.taylor_ge_light_93b5_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Download Rate,sensor.taylor_ge_light_93b5_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_93B5 (Wireless) Upload Rate,sensor.taylor_ge_light_93b5_wireless_upload_rate,sensor,Unassigned
+Taylor HA-Server (Wired) IP Address,sensor.taylor_ha_server_wired_ip_address,sensor,Unassigned
+Taylor HA-Server (Wired) Last Active,sensor.taylor_ha_server_wired_last_active,sensor,Unassigned
+Taylor HA-Server (Wired) Download Rate,sensor.taylor_ha_server_wired_download_rate,sensor,Unassigned
+Taylor HA-Server (Wired) Upload Rate,sensor.taylor_ha_server_wired_upload_rate,sensor,Unassigned
+Taylor S505D - Ulrich’s Light Switch (Wireless) IP Address,sensor.taylor_s505d_ulrichs_light_switch_wireless_ip_address,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Last Active,sensor.taylor_s505d_ulrichs_light_switch_wireless_last_active,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Signal Strength,sensor.taylor_s505d_ulrichs_light_switch_wireless_signal_strength,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Download Rate,sensor.taylor_s505d_ulrichs_light_switch_wireless_download_rate,sensor,Ulrich's Room
+Taylor S505D - Ulrich’s Light Switch (Wireless) Upload Rate,sensor.taylor_s505d_ulrichs_light_switch_wireless_upload_rate,sensor,Ulrich's Room
+Taylor GE_Light_E49F (Wireless) IP Address,sensor.taylor_ge_light_e49f_wireless_ip_address,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Last Active,sensor.taylor_ge_light_e49f_wireless_last_active,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Signal Strength,sensor.taylor_ge_light_e49f_wireless_signal_strength,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Download Rate,sensor.taylor_ge_light_e49f_wireless_download_rate,sensor,Unassigned
+Taylor GE_Light_E49F (Wireless) Upload Rate,sensor.taylor_ge_light_e49f_wireless_upload_rate,sensor,Unassigned
+Taylor Printer (Wireless) IP Address,sensor.taylor_printer_wireless_ip_address,sensor,Unassigned
+Taylor Printer (Wireless) Last Active,sensor.taylor_printer_wireless_last_active,sensor,Unassigned
+Taylor Printer (Wireless) Signal Strength,sensor.taylor_printer_wireless_signal_strength,sensor,Unassigned
+Taylor Printer (Wireless) Download Rate,sensor.taylor_printer_wireless_download_rate,sensor,Unassigned
+Taylor Printer (Wireless) Upload Rate,sensor.taylor_printer_wireless_upload_rate,sensor,Unassigned
+Taylor Office TV (Wired) IP Address,sensor.taylor_office_tv_wired_ip_address,sensor,Office
+Taylor Office TV (Wired) Last Active,sensor.taylor_office_tv_wired_last_active,sensor,Office
+Taylor Office TV (Wired) Download Rate,sensor.taylor_office_tv_wired_download_rate,sensor,Office
+Taylor Office TV (Wired) Upload Rate,sensor.taylor_office_tv_wired_upload_rate,sensor,Office
+Taylor Roborock Vacuum (Wireless) IP Address,sensor.taylor_roborock_vacuum_wireless_ip_address,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Last Active,sensor.taylor_roborock_vacuum_wireless_last_active,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Signal Strength,sensor.taylor_roborock_vacuum_wireless_signal_strength,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Download Rate,sensor.taylor_roborock_vacuum_wireless_download_rate,sensor,Unassigned
+Taylor Roborock Vacuum (Wireless) Upload Rate,sensor.taylor_roborock_vacuum_wireless_upload_rate,sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) IP Address,sensor.taylor_steves_mac_studio_2_wired_ip_address,sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Last Active,sensor.taylor_steves_mac_studio_2_wired_last_active,sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Download Rate,sensor.taylor_steves_mac_studio_2_wired_download_rate,sensor,Unassigned
+Taylor Steves-Mac-Studio-2 (Wired) Upload Rate,sensor.taylor_steves_mac_studio_2_wired_upload_rate,sensor,Unassigned
+Taylor S505D - Owner’s Bathroom Sink (Wireless) IP Address,sensor.taylor_s505d_owners_bathroom_sink_wireless_ip_address,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Last Active,sensor.taylor_s505d_owners_bathroom_sink_wireless_last_active,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Signal Strength,sensor.taylor_s505d_owners_bathroom_sink_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Download Rate,sensor.taylor_s505d_owners_bathroom_sink_wireless_download_rate,sensor,Main Bathroom
+Taylor S505D - Owner’s Bathroom Sink (Wireless) Upload Rate,sensor.taylor_s505d_owners_bathroom_sink_wireless_upload_rate,sensor,Main Bathroom
+Taylor Ring - Rec Room (Wireless) IP Address,sensor.taylor_ring_rec_room_wireless_ip_address,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Last Active,sensor.taylor_ring_rec_room_wireless_last_active,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Signal Strength,sensor.taylor_ring_rec_room_wireless_signal_strength,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Download Rate,sensor.taylor_ring_rec_room_wireless_download_rate,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Upload Rate,sensor.taylor_ring_rec_room_wireless_upload_rate,sensor,Rec Room
+Taylor Ring - Doorbell (Wireless) IP Address,sensor.taylor_ring_doorbell_wireless_ip_address,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Last Active,sensor.taylor_ring_doorbell_wireless_last_active,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Signal Strength,sensor.taylor_ring_doorbell_wireless_signal_strength,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Download Rate,sensor.taylor_ring_doorbell_wireless_download_rate,sensor,Unassigned
+Taylor Ring - Doorbell (Wireless) Upload Rate,sensor.taylor_ring_doorbell_wireless_upload_rate,sensor,Unassigned
+Taylor KS230 - Basement Steps Switch (Wireless) IP Address,sensor.taylor_ks230_basement_steps_switch_wireless_ip_address,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Last Active,sensor.taylor_ks230_basement_steps_switch_wireless_last_active,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Signal Strength,sensor.taylor_ks230_basement_steps_switch_wireless_signal_strength,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Download Rate,sensor.taylor_ks230_basement_steps_switch_wireless_download_rate,sensor,Basement
+Taylor KS230 - Basement Steps Switch (Wireless) Upload Rate,sensor.taylor_ks230_basement_steps_switch_wireless_upload_rate,sensor,Basement
+Taylor S505D - Main Bathroom Light (Wireless) IP Address,sensor.taylor_s505d_main_bathroom_light_wireless_ip_address,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Last Active,sensor.taylor_s505d_main_bathroom_light_wireless_last_active,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Signal Strength,sensor.taylor_s505d_main_bathroom_light_wireless_signal_strength,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Download Rate,sensor.taylor_s505d_main_bathroom_light_wireless_download_rate,sensor,Main Bathroom
+Taylor S505D - Main Bathroom Light (Wireless) Upload Rate,sensor.taylor_s505d_main_bathroom_light_wireless_upload_rate,sensor,Main Bathroom
+Taylor iPad - Genevieve? IP Address,sensor.taylor_ipad_genevieve_ip_address_2,sensor,Genevieve's Room
+Taylor iPad - Genevieve? Last Active,sensor.taylor_ipad_genevieve_last_active_2,sensor,Genevieve's Room
+Taylor iPad - Genevieve? Signal Strength,sensor.taylor_ipad_genevieve_signal_strength_2,sensor,Genevieve's Room
+Taylor iPad - Genevieve? Download Rate,sensor.taylor_ipad_genevieve_download_rate_2,sensor,Genevieve's Room
+Taylor iPad - Genevieve? Upload Rate,sensor.taylor_ipad_genevieve_upload_rate_2,sensor,Genevieve's Room
+Taylor Apple Watch - Steve (Wireless) IP Address,sensor.taylor_apple_watch_steve_wireless_ip_address,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Last Active,sensor.taylor_apple_watch_steve_wireless_last_active,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Signal Strength,sensor.taylor_apple_watch_steve_wireless_signal_strength,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Download Rate,sensor.taylor_apple_watch_steve_wireless_download_rate,sensor,Unassigned
+Taylor Apple Watch - Steve (Wireless) Upload Rate,sensor.taylor_apple_watch_steve_wireless_upload_rate,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) IP Address,sensor.taylor_eevees_laptop_wireless_ip_address,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Last Active,sensor.taylor_eevees_laptop_wireless_last_active,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Signal Strength,sensor.taylor_eevees_laptop_wireless_signal_strength,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Download Rate,sensor.taylor_eevees_laptop_wireless_download_rate,sensor,Unassigned
+Taylor Eevee’s Laptop (Wireless) Upload Rate,sensor.taylor_eevees_laptop_wireless_upload_rate,sensor,Unassigned
+Taylor TV - Great Room (Wired) IP Address,sensor.taylor_74_e6_b8_b7_83_68_wired_ip_address,sensor,Unassigned
+Taylor TV - Great Room (Wired) Last Active,sensor.taylor_74_e6_b8_b7_83_68_wired_last_active,sensor,Unassigned
+Taylor TV - Great Room (Wired) Download Rate,sensor.taylor_74_e6_b8_b7_83_68_wired_download_rate,sensor,Unassigned
+Taylor TV - Great Room (Wired) Upload Rate,sensor.taylor_74_e6_b8_b7_83_68_wired_upload_rate,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) IP Address,sensor.taylor_apple_watch_nikki_wireless_ip_address,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Last Active,sensor.taylor_apple_watch_nikki_wireless_last_active,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Signal Strength,sensor.taylor_apple_watch_nikki_wireless_signal_strength,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Download Rate,sensor.taylor_apple_watch_nikki_wireless_download_rate,sensor,Unassigned
+Taylor Apple Watch - Nikki (Wireless) Upload Rate,sensor.taylor_apple_watch_nikki_wireless_upload_rate,sensor,Unassigned
+Taylor RokuTV Basement (Wired) IP Address,sensor.taylor_rokutv_basement_wired_ip_address,sensor,Basement
+Taylor RokuTV Basement (Wired) Last Active,sensor.taylor_rokutv_basement_wired_last_active,sensor,Basement
+Taylor RokuTV Basement (Wired) Download Rate,sensor.taylor_rokutv_basement_wired_download_rate,sensor,Basement
+Taylor RokuTV Basement (Wired) Upload Rate,sensor.taylor_rokutv_basement_wired_upload_rate,sensor,Basement
+Taylor PS5 (Wireless) IP Address,sensor.taylor_ps5_wireless_ip_address,sensor,Unassigned
+Taylor PS5 (Wireless) Last Active,sensor.taylor_ps5_wireless_last_active,sensor,Unassigned
+Taylor PS5 (Wireless) Signal Strength,sensor.taylor_ps5_wireless_signal_strength,sensor,Unassigned
+Taylor PS5 (Wireless) Download Rate,sensor.taylor_ps5_wireless_download_rate,sensor,Unassigned
+Taylor PS5 (Wireless) Upload Rate,sensor.taylor_ps5_wireless_upload_rate,sensor,Unassigned
+Taylor Switch - Ulrich (Wireless) IP Address,sensor.taylor_switch_ulrich_wireless_ip_address,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Last Active,sensor.taylor_switch_ulrich_wireless_last_active,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Signal Strength,sensor.taylor_switch_ulrich_wireless_signal_strength,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Download Rate,sensor.taylor_switch_ulrich_wireless_download_rate,sensor,Ulrich's Room
+Taylor Switch - Ulrich (Wireless) Upload Rate,sensor.taylor_switch_ulrich_wireless_upload_rate,sensor,Ulrich's Room
+Taylor Mac Studio (Wireless) IP Address,sensor.taylor_mac_studio_wireless_ip_address,sensor,Unassigned
+Taylor Mac Studio (Wireless) Last Active,sensor.taylor_mac_studio_wireless_last_active,sensor,Unassigned
+Taylor Mac Studio (Wireless) Signal Strength,sensor.taylor_mac_studio_wireless_signal_strength,sensor,Unassigned
+Taylor Mac Studio (Wireless) Download Rate,sensor.taylor_mac_studio_wireless_download_rate,sensor,Unassigned
+Taylor Mac Studio (Wireless) Upload Rate,sensor.taylor_mac_studio_wireless_upload_rate,sensor,Unassigned
+Taylor linux (Wireless) IP Address,sensor.taylor_linux_wireless_ip_address,sensor,Unassigned
+Taylor linux (Wireless) Last Active,sensor.taylor_linux_wireless_last_active,sensor,Unassigned
+Taylor linux (Wireless) Signal Strength,sensor.taylor_linux_wireless_signal_strength,sensor,Unassigned
+Taylor linux (Wireless) Download Rate,sensor.taylor_linux_wireless_download_rate,sensor,Unassigned
+Taylor linux (Wireless) Upload Rate,sensor.taylor_linux_wireless_upload_rate,sensor,Unassigned
+Taylor KP125-2 (Wireless) IP Address,sensor.taylor_kp125_2_wireless_ip_address,sensor,Unassigned
+Taylor KP125-2 (Wireless) Last Active,sensor.taylor_kp125_2_wireless_last_active,sensor,Unassigned
+Taylor KP125-2 (Wireless) Signal Strength,sensor.taylor_kp125_2_wireless_signal_strength,sensor,Unassigned
+Taylor KP125-2 (Wireless) Download Rate,sensor.taylor_kp125_2_wireless_download_rate,sensor,Unassigned
+Taylor KP125-2 (Wireless) Upload Rate,sensor.taylor_kp125_2_wireless_upload_rate,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) IP Address,sensor.taylor_28_73_f6_f6_a5_3d_wireless_ip_address,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Last Active,sensor.taylor_28_73_f6_f6_a5_3d_wireless_last_active,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Signal Strength,sensor.taylor_28_73_f6_f6_a5_3d_wireless_signal_strength,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Download Rate,sensor.taylor_28_73_f6_f6_a5_3d_wireless_download_rate,sensor,Unassigned
+Taylor 28:73:f6:f6:a5:3d (Wireless) Upload Rate,sensor.taylor_28_73_f6_f6_a5_3d_wireless_upload_rate,sensor,Unassigned
+Taylor SonosZP (Sonos) IP Address,sensor.taylor_sonos_f0f6c154ce30_wireless_ip_address,sensor,Unassigned
+Taylor SonosZP (Sonos) Last Active,sensor.taylor_sonos_f0f6c154ce30_wireless_last_active,sensor,Unassigned
+Taylor SonosZP (Sonos) Download Rate,sensor.taylor_sonos_f0f6c154ce30_wireless_download_rate,sensor,Unassigned
+Taylor SonosZP (Sonos) Upload Rate,sensor.taylor_sonos_f0f6c154ce30_wireless_upload_rate,sensor,Unassigned
+Taylor Rec room smart tv (Wireless) IP Address,sensor.taylor_rec_room_smart_tv_wireless_ip_address,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Last Active,sensor.taylor_rec_room_smart_tv_wireless_last_active,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Signal Strength,sensor.taylor_rec_room_smart_tv_wireless_signal_strength,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Download Rate,sensor.taylor_rec_room_smart_tv_wireless_download_rate,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Upload Rate,sensor.taylor_rec_room_smart_tv_wireless_upload_rate,sensor,Rec Room
+Taylor SonosZP (Sonos) IP Address,sensor.taylor_sonoszp_sonos_ip_address,sensor,Unassigned
+Taylor SonosZP (Sonos) Last Active,sensor.taylor_sonoszp_sonos_last_active,sensor,Unassigned
+Taylor SonosZP (Sonos) Download Rate,sensor.taylor_sonoszp_sonos_download_rate,sensor,Unassigned
+Taylor SonosZP (Sonos) Upload Rate,sensor.taylor_sonoszp_sonos_upload_rate,sensor,Unassigned
+Front Porch Light Signal level,sensor.front_porch_light_signal_level,sensor,Unassigned
+Owner’s Closet Signal level,sensor.owners_closet_signal_level,sensor,Unassigned
+Owner’s Closet Auto-off at,sensor.owners_closet_auto_off_at,sensor,Unassigned
+Owner’s Bathroom Sink Lights Signal level,sensor.owner_s_bathroom_sink_lights_signal_level,sensor,Main Bathroom
+Genevieve’s Closet Signal level,sensor.genevieves_closet_signal_level,sensor,Genevieve's Room
+Genevieve’s Closet Auto-off at,sensor.genevieves_closet_auto_off_at,sensor,Genevieve's Room
+Owner’s Bathroom Fan Signal level,sensor.owner_s_bathroom_fan_signal_level,sensor,Main Bathroom
+Owner’s Bathroom Fan Auto-off at,sensor.owner_s_bathroom_fan_auto_off_at,sensor,Main Bathroom
+Ulrich’s Closet Signal level,sensor.ulrichs_closet_signal_level,sensor,Ulrich's Room
+Ulrich’s Closet Auto-off at,sensor.ulrichs_closet_auto_off_at,sensor,Ulrich's Room
+Ulrich Light Signal level,sensor.ulrich_light_signal_level,sensor,Ulrich's Room
+Office Light Signal level,sensor.office_light_signal_level,sensor,Office
+Genevieve’s Light Signal level,sensor.genevieves_light_signal_level,sensor,Genevieve's Room
+Kitchen Sink Light Signal level,sensor.kitchen_sink_light_signal_level,sensor,Kitchen
+Sonos Roam Battery,sensor.sonos_roam_battery,sensor,Unassigned
+On Air Sign Signal level,sensor.on_air_sign_signal_level,sensor,Unassigned
+On Air Sign Auto-off at,sensor.on_air_sign_auto_off_at,sensor,Unassigned
+Basement Bathroom Fan Signal level,sensor.basement_bathroom_fan_signal_level,sensor,Main Bathroom
+Basement Bathroom Fan Auto-off at,sensor.basement_bathroom_fan_auto_off_at,sensor,Main Bathroom
+Garage Light Signal level,sensor.garage_light_signal_level,sensor,Garage
+Garage Light Auto-off at,sensor.garage_light_auto_off_at,sensor,Garage
+Sonos Arc Audio input format,sensor.sonos_arc_audio_input_format,sensor,Unassigned
+Basement Bathroom Light Signal level,sensor.basement_bathroom_light_signal_level,sensor,Main Bathroom
+Lexmark B2236dw Uptime,sensor.lexmark_b2236dw_uptime,sensor,Unassigned
+Lexmark B2236dw Black,sensor.lexmark_b2236dw_black,sensor,Unassigned
+Lexmark B2236dw,sensor.lexmark_b2236dw,sensor,Unassigned
+My ecobee Current,sensor.my_ecobee_current_temperature,sensor,Unassigned
+My ecobee Current,sensor.my_ecobee_current_humidity,sensor,Unassigned
+Govee to MQTT Version,sensor.govee_to_mqtt_version,sensor,Unassigned
+TV Light Bars Status,sensor.tv_light_bars_status,sensor,Unassigned
+Floor Lamp Right Status,sensor.floor_lamp_right_status,sensor,Unassigned
+Floor Lamp Left Status,sensor.floor_lamp_left_status,sensor,Unassigned
+Current,sensor.ulrich_s_fan_current,sensor,Ulrich's Room
+Current consumption,sensor.ulrich_s_fan_current_consumption,sensor,Ulrich's Room
+This month's consumption,sensor.ulrich_s_fan_this_month_s_consumption,sensor,Ulrich's Room
+Today's consumption,sensor.ulrich_s_fan_today_s_consumption,sensor,Ulrich's Room
+Total consumption,sensor.ulrich_s_fan_total_consumption,sensor,Ulrich's Room
+Voltage,sensor.ulrich_s_fan_voltage,sensor,Ulrich's Room
+Unknown Device,sensor.kitchen_light_energy_cost,sensor,Kitchen
+Battery,sensor.sonos_move_battery,sensor,Unassigned
+Taylor OfficeTV (Wireless) IP Address,sensor.taylor_officetv_wireless_ip_address,sensor,Office
+Taylor OfficeTV (Wireless) Last Active,sensor.taylor_officetv_wireless_last_active,sensor,Office
+Taylor OfficeTV (Wireless) Signal Strength,sensor.taylor_officetv_wireless_signal_strength,sensor,Office
+Taylor OfficeTV (Wireless) Download Rate,sensor.taylor_officetv_wireless_download_rate,sensor,Office
+Taylor OfficeTV (Wireless) Upload Rate,sensor.taylor_officetv_wireless_upload_rate,sensor,Office
+Taylor iPhone (Wireless) IP Address,sensor.taylor_iphone_wireless_ip_address_2,sensor,Unassigned
+Taylor iPhone (Wireless) Last Active,sensor.taylor_iphone_wireless_last_active_2,sensor,Unassigned
+Taylor iPhone (Wireless) Signal Strength,sensor.taylor_iphone_wireless_signal_strength_2,sensor,Unassigned
+Taylor iPhone (Wireless) Download Rate,sensor.taylor_iphone_wireless_download_rate_2,sensor,Unassigned
+Taylor iPhone (Wireless) Upload Rate,sensor.taylor_iphone_wireless_upload_rate_2,sensor,Unassigned
+Upstairs Timer Remaining,sensor.upstairs_timer_remaining,sensor,Unassigned
+Downstairs Timer Remaining,sensor.downstairs_timer_remaining,sensor,Unassigned
+Genevieve Timer Remaining,sensor.genevieve_timer_remaining,sensor,Genevieve's Room
+Taylor Sonos-F0F6C154CE30 (Wireless) Signal Strength,sensor.taylor_sonos_f0f6c154ce30_wireless_signal_strength,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) IP Address,sensor.taylor_nikkis_ipad_pro_wireless_ip_address,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Last Active,sensor.taylor_nikkis_ipad_pro_wireless_last_active,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Signal Strength,sensor.taylor_nikkis_ipad_pro_wireless_signal_strength,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Download Rate,sensor.taylor_nikkis_ipad_pro_wireless_download_rate,sensor,Unassigned
+Taylor Nikkis-iPad-Pro (Wireless) Upload Rate,sensor.taylor_nikkis_ipad_pro_wireless_upload_rate,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) IP Address,sensor.taylor_iphone_wireless_ip_address_3,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Last Active,sensor.taylor_iphone_wireless_last_active_3,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Signal Strength,sensor.taylor_iphone_wireless_signal_strength_3,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Download Rate,sensor.taylor_iphone_wireless_download_rate_3,sensor,Unassigned
+Taylor Mikes-iPhone (Wireless) Upload Rate,sensor.taylor_iphone_wireless_upload_rate_3,sensor,Unassigned
+Taylor XBOX (Wireless) IP Address,sensor.taylor_xbox_wireless_ip_address,sensor,Unassigned
+Taylor XBOX (Wireless) Last Active,sensor.taylor_xbox_wireless_last_active,sensor,Unassigned
+Taylor XBOX (Wireless) Signal Strength,sensor.taylor_xbox_wireless_signal_strength,sensor,Unassigned
+Taylor XBOX (Wireless) Download Rate,sensor.taylor_xbox_wireless_download_rate,sensor,Unassigned
+Taylor XBOX (Wireless) Upload Rate,sensor.taylor_xbox_wireless_upload_rate,sensor,Unassigned
+Taylor coredrummodule (Wireless) IP Address,sensor.taylor_coredrummodule_wireless_ip_address,sensor,Unassigned
+Taylor coredrummodule (Wireless) Last Active,sensor.taylor_coredrummodule_wireless_last_active,sensor,Unassigned
+Taylor coredrummodule (Wireless) Signal Strength,sensor.taylor_coredrummodule_wireless_signal_strength,sensor,Unassigned
+Taylor coredrummodule (Wireless) Download Rate,sensor.taylor_coredrummodule_wireless_download_rate,sensor,Unassigned
+Taylor coredrummodule (Wireless) Upload Rate,sensor.taylor_coredrummodule_wireless_upload_rate,sensor,Unassigned
+Taylor iPad (Wireless) IP Address,sensor.taylor_ipad_wireless_ip_address,sensor,Unassigned
+Taylor iPad (Wireless) Last Active,sensor.taylor_ipad_wireless_last_active,sensor,Unassigned
+Taylor iPad (Wireless) Signal Strength,sensor.taylor_ipad_wireless_signal_strength,sensor,Unassigned
+Taylor iPad (Wireless) Download Rate,sensor.taylor_ipad_wireless_download_rate,sensor,Unassigned
+Taylor iPad (Wireless) Upload Rate,sensor.taylor_ipad_wireless_upload_rate,sensor,Unassigned
+Active app,sensor.rec_room_tv_active_app,sensor,Rec Room
+Active app ID,sensor.rec_room_tv_active_app_id,sensor,Rec Room

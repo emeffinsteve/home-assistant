@@ -1,0 +1,20 @@
+Device Name,Entity ID,Domain,Area
+Hallway Light Energy,sensor.hallway_light_energy,sensor,Hallway
+Hallway Light Power,sensor.hallway_light_power,sensor,Hallway
+Hallway Light Cloud connection,binary_sensor.hallway_light_cloud_connection,binary_sensor,Hallway
+Hallway,light.hallway_light,light,Hallway
+Hallway Light LED,switch.hallway_light_led,switch,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Connected,binary_sensor.taylor_ks230_hallway_light_switch_wireless_connected,binary_sensor,Hallway
+Taylor Back Hallway Reboot,button.taylor_back_hallway_reboot,button,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless),device_tracker.taylor_ks230_hallway_light_switch_wireless,device_tracker,Hallway
+Taylor Back Hallway Status,light.taylor_back_hallway_status_light,light,Hallway
+Taylor Back Hallway Connected Clients,sensor.taylor_back_hallway_connected_clients,sensor,Hallway
+Taylor Back Hallway Status,sensor.taylor_back_hallway_status,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) IP Address,sensor.taylor_ks230_hallway_light_switch_wireless_ip_address,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Last Active,sensor.taylor_ks230_hallway_light_switch_wireless_last_active,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Signal Strength,sensor.taylor_ks230_hallway_light_switch_wireless_signal_strength,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Download Rate,sensor.taylor_ks230_hallway_light_switch_wireless_download_rate,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Upload Rate,sensor.taylor_ks230_hallway_light_switch_wireless_upload_rate,sensor,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Paused,switch.taylor_ks230_hallway_light_switch_wireless_paused,switch,Hallway
+Taylor KS230 - Hallway Light Switch (Wireless) Allow Internet Backup,switch.taylor_ks230_hallway_light_switch_wireless_allow_internet_backup,switch,Hallway
+Taylor Back Hallway Firmware,update.taylor_back_hallway_firmware,update,Hallway

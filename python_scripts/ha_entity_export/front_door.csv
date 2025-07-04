@@ -1,0 +1,15 @@
+Device Name,Entity ID,Domain,Area
+Lock Front Door,script.lock_front_door,script,Front Door
+Unlock Front Door,script.unlock_front_door,script,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Connected,binary_sensor.taylor_s505d_front_door_outside_light_switch_wireless_connected,binary_sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless),device_tracker.taylor_s505d_front_door_outside_light_switch_wireless,device_tracker,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) IP Address,sensor.taylor_s505d_front_door_outside_light_switch_wireless_ip_address,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Last Active,sensor.taylor_s505d_front_door_outside_light_switch_wireless_last_active,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Signal Strength,sensor.taylor_s505d_front_door_outside_light_switch_wireless_signal_strength,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Download Rate,sensor.taylor_s505d_front_door_outside_light_switch_wireless_download_rate,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Upload Rate,sensor.taylor_s505d_front_door_outside_light_switch_wireless_upload_rate,sensor,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Paused,switch.taylor_s505d_front_door_outside_light_switch_wireless_paused,switch,Front Door
+Taylor S505D - Front Door Outside Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505d_front_door_outside_light_switch_wireless_allow_internet_backup,switch,Front Door
+Lock Front Door,automation.lock_front_door,automation,Front Door
+Unlock Front Door,automation.unlock_front_door,automation,Front Door
+Lock Front Door,automation.unlock_front_door_2,automation,Front Door

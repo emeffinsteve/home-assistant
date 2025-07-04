@@ -1,0 +1,44 @@
+Device Name,Entity ID,Domain,Area
+Owners Suite Lights,light.owners_suite_lights,light,Unassigned
+Ulrich Lights,light.ulrich_lights,light,Ulrich's Room
+Genevieve Lights,light.genevieve_lights,light,Genevieve's Room
+Basement Lights,light.basement_lights,light,Basement
+Outdoor All,light.outdoor_all,light,Unassigned
+Deck Lights,light.deck_lights,light,Deck
+Front Entrance Lights,light.front_entrance_lights,light,Unassigned
+Undercabinet,light.undercabinet,light,Unassigned
+Office Ambience,light.office_ambience,light,Office
+Living Space,light.living_space,light,Great Room
+Living Space All,light.living_space_all,light,Great Room
+UC5,light.uc5,light,Unassigned
+UC1,light.uc1,light,Unassigned
+UC6,light.uc6,light,Unassigned
+UC2,light.uc2,light,Unassigned
+UC4,light.uc4,light,Unassigned
+UC3,light.uc3,light,Unassigned
+Desk,light.desk_light,light,Unassigned
+Main Bathroom,light.main_bathroom_light,light,Main Bathroom
+Kitchen,light.kitchen_light,light,Kitchen
+Garage Coach Lights,light.garage_coach_lights,light,Garage
+Hallway,light.hallway_light,light,Hallway
+Great Room,light.great_room_light,light,Unassigned
+Basement Steps,light.basement_steps,light,Basement
+Deck Middle,light.deck_middle_light,light,Deck
+Owner’s Bedroom,light.owner_s_bedroom_light,light,Owner's Bedroom
+Owner's Bathroom Shower,light.owners_bathroom_shower_light,light,Main Bathroom
+Deck Outer Lights,light.deck_outer_lights,light,Deck
+Taylor Basement Status,light.taylor_basement_status_light,light,Basement
+Taylor Back Hallway Status,light.taylor_back_hallway_status_light,light,Hallway
+Taylor Foyer Status,light.taylor_foyer_status_light,light,Foyer
+Front Porch,light.front_porch_light,light,Unassigned
+Owner’s Bathroom Sink Lights,light.owner_s_bathroom_sink_lights,light,Main Bathroom
+Rec Room Lights,light.rec_room_lights,light,Rec Room
+Ulrich,light.ulrich_light,light,Ulrich's Room
+Office,light.office_light,light,Office
+Genevieve’s,light.genevieves_light,light,Genevieve's Room
+Kitchen Sink,light.kitchen_sink_light,light,Kitchen
+Basement Bathroom,light.basement_bathroom_light,light,Main Bathroom
+RGBIC TV Light Bars,light.rgbic_tv_light_bars,light,Unassigned
+TV Light Bars,light.tv_light_bars,light,Unassigned
+Floor Lamp Right,light.floor_lamp_right,light,Unassigned
+Floor Lamp Left,light.floor_lamp_left,light,Unassigned

@@ -1,0 +1,136 @@
+Device Name,Entity ID,Domain,Area
+Office Light Energy,sensor.office_light_energy,sensor,Office
+Office All Off,script.office_all_off,script,Office
+Office Ambience,light.office_ambience,light,Office
+Contact - Office Door Firmware,update.contact_office_door_firmware,update,Office
+Contact - Office Door Door,binary_sensor.contact_office_door_door,binary_sensor,Office
+Contact - Office Door Identify,button.contact_office_door_identify,button,Office
+Contact - Office Door Battery,sensor.contact_office_door_battery,sensor,Office
+Contact - Office Door Battery voltage,sensor.contact_office_door_voltage,sensor,Office
+Contact - Office Door Battery type,sensor.contact_office_door_battery_type,sensor,Office
+Office Light Power,sensor.office_light_power,sensor,Office
+Office Fan temperature,sensor.office_fan_temperature,sensor,Office
+Office Fan,fan.office_fan,fan,Office
+Office Fan Horizontally Oscillating,switch.office_fan_horizontally_oscillating,switch,Office
+Office Fan Vertically Oscillating,switch.office_fan_vertically_oscillating,switch,Office
+Office Fan Panel Sound,switch.office_fan_panel_sound,switch,Office
+Office TV Headphones connected,binary_sensor.office_tv_headphones_connected,binary_sensor,Office
+Office TV Supports AirPlay,binary_sensor.office_tv_supports_airplay,binary_sensor,Office
+Office TV Supports Ethernet,binary_sensor.office_tv_supports_ethernet,binary_sensor,Office
+Office TV Supports find remote,binary_sensor.office_tv_supports_find_remote,binary_sensor,Office
+Office TV,media_player.office_tv,media_player,Office
+Office TV,remote.office_tv,remote,Office
+Office TV Active app,sensor.office_tv_active_app,sensor,Office
+Office TV Active app ID,sensor.office_tv_active_app_id,sensor,Office
+Ring - Office Live view,camera.ring_office_live_view,camera,Office
+Ring - Office Motion,event.ring_office_motion,event,Office
+Ring - Office Volume,number.ring_office_volume,number,Office
+Ring - Office Battery,sensor.ring_office_battery,sensor,Office
+Ring - Office Last activity,sensor.ring_office_last_activity,sensor,Office
+Ring - Office Siren,siren.ring_office_siren,siren,Office
+Ring - Office Motion detection,switch.ring_office_motion_detection,switch,Office
+Taylor Office Block Apps,binary_sensor.taylor_office_block_apps,binary_sensor,Office
+Taylor Office Connected,binary_sensor.taylor_office_connected,binary_sensor,Office
+Taylor Office TV Lights (Wireless) Connected,binary_sensor.taylor_office_tv_lights_wireless_connected,binary_sensor,Office
+Taylor S505D - Office Light (Wireless) Connected,binary_sensor.taylor_s505d_office_light_wireless_connected,binary_sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Connected,binary_sensor.taylor_office_floor_lamp_left_wireless_connected,binary_sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Connected,binary_sensor.taylor_office_floor_lamp_right_wireless_connected,binary_sensor,Office
+Taylor Dreo Office Fan (Wireless) Connected,binary_sensor.taylor_dreo_office_fan_wireless_connected,binary_sensor,Office
+Taylor Ring - Office (Wireless) Connected,binary_sensor.taylor_ring_office_wireless_connected,binary_sensor,Office
+Taylor Office TV (Wired) Connected,binary_sensor.taylor_office_tv_wired_connected,binary_sensor,Office
+Taylor Office,device_tracker.taylor_office,device_tracker,Office
+Taylor Office TV Lights (Wireless),device_tracker.taylor_office_tv_lights_wireless,device_tracker,Office
+Taylor S505D - Office Light (Wireless),device_tracker.taylor_s505d_office_light_wireless,device_tracker,Office
+Taylor Office Floor Lamp Left (Wireless),device_tracker.taylor_office_floor_lamp_left_wireless,device_tracker,Office
+Taylor Office Floor Lamp Right (Wireless),device_tracker.taylor_office_floor_lamp_right_wireless,device_tracker,Office
+Taylor Dreo Office Fan (Wireless),device_tracker.taylor_dreo_office_fan_wireless,device_tracker,Office
+Taylor Ring - Office (Wireless),device_tracker.taylor_ring_office_wireless,device_tracker,Office
+Taylor Office TV (Wired),device_tracker.taylor_office_tv_wired,device_tracker,Office
+Taylor Office Connected Clients,sensor.taylor_office_connected_clients,sensor,Office
+Taylor Office Last Active,sensor.taylor_office_last_active,sensor,Office
+Taylor Office TV Lights (Wireless) IP Address,sensor.taylor_office_tv_lights_wireless_ip_address,sensor,Office
+Taylor Office TV Lights (Wireless) Last Active,sensor.taylor_office_tv_lights_wireless_last_active,sensor,Office
+Taylor Office TV Lights (Wireless) Signal Strength,sensor.taylor_office_tv_lights_wireless_signal_strength,sensor,Office
+Taylor Office TV Lights (Wireless) Download Rate,sensor.taylor_office_tv_lights_wireless_download_rate,sensor,Office
+Taylor Office TV Lights (Wireless) Upload Rate,sensor.taylor_office_tv_lights_wireless_upload_rate,sensor,Office
+Taylor S505D - Office Light (Wireless) IP Address,sensor.taylor_s505d_office_light_wireless_ip_address,sensor,Office
+Taylor S505D - Office Light (Wireless) Last Active,sensor.taylor_s505d_office_light_wireless_last_active,sensor,Office
+Taylor S505D - Office Light (Wireless) Signal Strength,sensor.taylor_s505d_office_light_wireless_signal_strength,sensor,Office
+Taylor S505D - Office Light (Wireless) Download Rate,sensor.taylor_s505d_office_light_wireless_download_rate,sensor,Office
+Taylor S505D - Office Light (Wireless) Upload Rate,sensor.taylor_s505d_office_light_wireless_upload_rate,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) IP Address,sensor.taylor_office_floor_lamp_left_wireless_ip_address,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Last Active,sensor.taylor_office_floor_lamp_left_wireless_last_active,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Signal Strength,sensor.taylor_office_floor_lamp_left_wireless_signal_strength,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Download Rate,sensor.taylor_office_floor_lamp_left_wireless_download_rate,sensor,Office
+Taylor Office Floor Lamp Left (Wireless) Upload Rate,sensor.taylor_office_floor_lamp_left_wireless_upload_rate,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) IP Address,sensor.taylor_office_floor_lamp_right_wireless_ip_address,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Last Active,sensor.taylor_office_floor_lamp_right_wireless_last_active,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Signal Strength,sensor.taylor_office_floor_lamp_right_wireless_signal_strength,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Download Rate,sensor.taylor_office_floor_lamp_right_wireless_download_rate,sensor,Office
+Taylor Office Floor Lamp Right (Wireless) Upload Rate,sensor.taylor_office_floor_lamp_right_wireless_upload_rate,sensor,Office
+Taylor Dreo Office Fan (Wireless) IP Address,sensor.taylor_dreo_office_fan_wireless_ip_address,sensor,Office
+Taylor Dreo Office Fan (Wireless) Last Active,sensor.taylor_dreo_office_fan_wireless_last_active,sensor,Office
+Taylor Dreo Office Fan (Wireless) Signal Strength,sensor.taylor_dreo_office_fan_wireless_signal_strength,sensor,Office
+Taylor Dreo Office Fan (Wireless) Download Rate,sensor.taylor_dreo_office_fan_wireless_download_rate,sensor,Office
+Taylor Dreo Office Fan (Wireless) Upload Rate,sensor.taylor_dreo_office_fan_wireless_upload_rate,sensor,Office
+Taylor Ring - Office (Wireless) IP Address,sensor.taylor_ring_office_wireless_ip_address,sensor,Office
+Taylor Ring - Office (Wireless) Last Active,sensor.taylor_ring_office_wireless_last_active,sensor,Office
+Taylor Ring - Office (Wireless) Signal Strength,sensor.taylor_ring_office_wireless_signal_strength,sensor,Office
+Taylor Ring - Office (Wireless) Download Rate,sensor.taylor_ring_office_wireless_download_rate,sensor,Office
+Taylor Ring - Office (Wireless) Upload Rate,sensor.taylor_ring_office_wireless_upload_rate,sensor,Office
+Taylor Office TV (Wired) IP Address,sensor.taylor_office_tv_wired_ip_address,sensor,Office
+Taylor Office TV (Wired) Last Active,sensor.taylor_office_tv_wired_last_active,sensor,Office
+Taylor Office TV (Wired) Download Rate,sensor.taylor_office_tv_wired_download_rate,sensor,Office
+Taylor Office TV (Wired) Upload Rate,sensor.taylor_office_tv_wired_upload_rate,sensor,Office
+Taylor Office Ad Blocking,switch.taylor_office_ad_blocking,switch,Office
+Taylor Office Gaming Content Filter,switch.taylor_office_gaming_content_filter,switch,Office
+Taylor Office Illegal or Criminal Content Filter,switch.taylor_office_illegal_or_criminal_content_filter,switch,Office
+Taylor Office Chat and Messaging Content Filter,switch.taylor_office_chat_and_messaging_content_filter,switch,Office
+Taylor Office Adult Content Filter,switch.taylor_office_adult_content_filter,switch,Office
+Taylor Office Shopping Content Filter,switch.taylor_office_shopping_content_filter,switch,Office
+Taylor Office Social Media Content Filter,switch.taylor_office_social_media_content_filter,switch,Office
+Taylor Office Streaming Content Filter,switch.taylor_office_streaming_content_filter,switch,Office
+Taylor Office Violent Content Filter,switch.taylor_office_violent_content_filter,switch,Office
+Taylor Office Paused,switch.taylor_office_paused,switch,Office
+Taylor Office SafeSearch Content Filter,switch.taylor_office_safesearch_content_filter,switch,Office
+Taylor Office YouTube Restricted Content Filter,switch.taylor_office_youtube_restricted_content_filter,switch,Office
+Taylor Office TV Lights (Wireless) Paused,switch.taylor_office_tv_lights_wireless_paused,switch,Office
+Taylor Office TV Lights (Wireless) Allow Internet Backup,switch.taylor_office_tv_lights_wireless_allow_internet_backup,switch,Office
+Taylor S505D - Office Light (Wireless) Paused,switch.taylor_s505d_office_light_wireless_paused,switch,Office
+Taylor S505D - Office Light (Wireless) Allow Internet Backup,switch.taylor_s505d_office_light_wireless_allow_internet_backup,switch,Office
+Taylor Office Floor Lamp Left (Wireless) Paused,switch.taylor_office_floor_lamp_left_wireless_paused,switch,Office
+Taylor Office Floor Lamp Left (Wireless) Allow Internet Backup,switch.taylor_office_floor_lamp_left_wireless_allow_internet_backup,switch,Office
+Taylor Office Floor Lamp Right (Wireless) Paused,switch.taylor_office_floor_lamp_right_wireless_paused,switch,Office
+Taylor Office Floor Lamp Right (Wireless) Allow Internet Backup,switch.taylor_office_floor_lamp_right_wireless_allow_internet_backup,switch,Office
+Taylor Dreo Office Fan (Wireless) Paused,switch.taylor_dreo_office_fan_wireless_paused,switch,Office
+Taylor Dreo Office Fan (Wireless) Allow Internet Backup,switch.taylor_dreo_office_fan_wireless_allow_internet_backup,switch,Office
+Taylor Ring - Office (Wireless) Paused,switch.taylor_ring_office_wireless_paused,switch,Office
+Taylor Ring - Office (Wireless) Allow Internet Backup,switch.taylor_ring_office_wireless_allow_internet_backup,switch,Office
+Taylor Office TV (Wired) Paused,switch.taylor_office_tv_wired_paused,switch,Office
+Taylor Office TV (Wired) Allow Internet Backup,switch.taylor_office_tv_wired_allow_internet_backup,switch,Office
+Office - Lights On,automation.office_lights_on,automation,Office
+Office - Lights Off,automation.office_lights_off,automation,Office
+Office - On Air Meeting Starts,automation.office_on_air_meetings,automation,Office
+Office - On Air Meeting Ends,automation.office_on_air_meeting_ends,automation,Office
+Office Fan On,automation.office_fan_on,automation,Office
+Office Fan Off,automation.office_fan_off,automation,Office
+Office Alarm,automation.office_alarm,automation,Office
+Office On Air Sign Control,automation.office_on_air_sign_automation,automation,Office
+Office Light Cloud connection,binary_sensor.office_light_cloud_connection,binary_sensor,Office
+Office Light Overheated,binary_sensor.office_light_overheated,binary_sensor,Office
+Office,light.office_light,light,Office
+Office Light Smooth on,number.office_light_smooth_on,number,Office
+Office Light Smooth off,number.office_light_smooth_off,number,Office
+Office Light Light preset,select.office_light_light_preset,select,Office
+Office Light Signal level,sensor.office_light_signal_level,sensor,Office
+Office Light Auto-update enabled,switch.office_light_auto_update_enabled,switch,Office
+Office Light LED,switch.office_light_led,switch,Office
+Taylor OfficeTV (Wireless) Connected,binary_sensor.taylor_officetv_wireless_connected,binary_sensor,Office
+Taylor OfficeTV (Wireless),device_tracker.taylor_officetv_wireless,device_tracker,Office
+Taylor OfficeTV (Wireless) IP Address,sensor.taylor_officetv_wireless_ip_address,sensor,Office
+Taylor OfficeTV (Wireless) Last Active,sensor.taylor_officetv_wireless_last_active,sensor,Office
+Taylor OfficeTV (Wireless) Signal Strength,sensor.taylor_officetv_wireless_signal_strength,sensor,Office
+Taylor OfficeTV (Wireless) Download Rate,sensor.taylor_officetv_wireless_download_rate,sensor,Office
+Taylor OfficeTV (Wireless) Upload Rate,sensor.taylor_officetv_wireless_upload_rate,sensor,Office
+Taylor OfficeTV (Wireless) Paused,switch.taylor_officetv_wireless_paused,switch,Office
+Taylor OfficeTV (Wireless) Allow Internet Backup,switch.taylor_officetv_wireless_allow_internet_backup,switch,Office

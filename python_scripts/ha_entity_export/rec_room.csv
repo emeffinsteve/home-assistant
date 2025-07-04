@@ -1,0 +1,50 @@
+Device Name,Entity ID,Domain,Area
+Rec Room Lights Energy,sensor.rec_room_lights_energy,sensor,Rec Room
+Weather Forecast Today High,input_number.weather_forecast_today_high,input_number,Rec Room
+Climate Weather Preconditioning Active,input_boolean.climate_weather_preconditioning_active,input_boolean,Rec Room
+Motion - Rec Room Firmware,update.motion_rec_room_firmware,update,Rec Room
+Motion - Rec Room Occupancy,binary_sensor.motion_rec_room_occupancy,binary_sensor,Rec Room
+Motion - Rec Room Identify (1),button.motion_rec_room_identify_1,button,Rec Room
+Motion - Rec Room Identify (2),button.motion_rec_room_identify_2,button,Rec Room
+Motion - Rec Room Illuminance,sensor.motion_rec_room_illuminance,sensor,Rec Room
+Motion - Rec Room Battery,sensor.motion_rec_room_battery,sensor,Rec Room
+Motion - Rec Room Battery voltage,sensor.motion_rec_room_voltage,sensor,Rec Room
+Motion - Rec Room Battery type,sensor.motion_rec_room_battery_type,sensor,Rec Room
+Rec Room Lights Power,sensor.rec_room_lights_power,sensor,Rec Room
+Weather Forecast Today High,sensor.weather_forecast_today_high,sensor,Rec Room
+Forecast Met.no,weather.forecast_met_no,weather,Rec Room
+Weather Precipitation,sensor.weather_precipitation,sensor,Rec Room
+Ring - Downstairs Doors PTZ Last recording,camera.ring_downstairs_doors_ptz_last_recording,camera,Rec Room
+Ring - Upstairs Last recording,camera.ring_upstairs_last_recording,camera,Rec Room
+Taylor Ring - Rec Room (Wireless) Connected,binary_sensor.taylor_ring_rec_room_wireless_connected,binary_sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Connected,binary_sensor.taylor_rec_room_smart_tv_wireless_connected,binary_sensor,Rec Room
+Taylor Ring - Rec Room (Wireless),device_tracker.taylor_ring_rec_room_wireless,device_tracker,Rec Room
+Taylor Rec room smart tv (Wireless),device_tracker.taylor_rec_room_smart_tv_wireless,device_tracker,Rec Room
+Taylor Ring - Rec Room (Wireless) IP Address,sensor.taylor_ring_rec_room_wireless_ip_address,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Last Active,sensor.taylor_ring_rec_room_wireless_last_active,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Signal Strength,sensor.taylor_ring_rec_room_wireless_signal_strength,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Download Rate,sensor.taylor_ring_rec_room_wireless_download_rate,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Upload Rate,sensor.taylor_ring_rec_room_wireless_upload_rate,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) IP Address,sensor.taylor_rec_room_smart_tv_wireless_ip_address,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Last Active,sensor.taylor_rec_room_smart_tv_wireless_last_active,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Signal Strength,sensor.taylor_rec_room_smart_tv_wireless_signal_strength,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Download Rate,sensor.taylor_rec_room_smart_tv_wireless_download_rate,sensor,Rec Room
+Taylor Rec room smart tv (Wireless) Upload Rate,sensor.taylor_rec_room_smart_tv_wireless_upload_rate,sensor,Rec Room
+Taylor Ring - Rec Room (Wireless) Paused,switch.taylor_ring_rec_room_wireless_paused,switch,Rec Room
+Taylor Ring - Rec Room (Wireless) Allow Internet Backup,switch.taylor_ring_rec_room_wireless_allow_internet_backup,switch,Rec Room
+Taylor Rec room smart tv (Wireless) Paused,switch.taylor_rec_room_smart_tv_wireless_paused,switch,Rec Room
+Taylor Rec room smart tv (Wireless) Allow Internet Backup,switch.taylor_rec_room_smart_tv_wireless_allow_internet_backup,switch,Rec Room
+Rec Room Lights Cloud connection,binary_sensor.rec_room_lights_cloud_connection,binary_sensor,Rec Room
+Rec Room Lights,light.rec_room_lights,light,Rec Room
+Rec Room Lights LED,switch.rec_room_lights_led,switch,Rec Room
+Weather Forecast Polling System,automation.weather_forecast_polling_system,automation,Rec Room
+Internet: Switch Recovery Monitor,automation.internet_switch_recovery_monitor,automation,Rec Room
+Headphones connected,binary_sensor.rec_room_tv_headphones_connected,binary_sensor,Rec Room
+Supports AirPlay,binary_sensor.rec_room_tv_supports_airplay,binary_sensor,Rec Room
+Supports Ethernet,binary_sensor.rec_room_tv_supports_ethernet,binary_sensor,Rec Room
+Supports find remote,binary_sensor.rec_room_tv_supports_find_remote,binary_sensor,Rec Room
+Unknown Device,media_player.rec_room_tv,media_player,Rec Room
+Unknown Device,remote.rec_room_tv,remote,Rec Room
+Active app,sensor.rec_room_tv_active_app,sensor,Rec Room
+Active app ID,sensor.rec_room_tv_active_app_id,sensor,Rec Room
+Weather Forecast Updater,automation.weather_forecast_updater,automation,Rec Room

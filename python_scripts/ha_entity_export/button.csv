@@ -1,0 +1,32 @@
+Device Name,Entity ID,Domain,Area
+UC5 Identify,button.uc5_identify,button,Unassigned
+UC1 Identify,button.uc1_identify,button,Unassigned
+UC6 Identify,button.uc6_identify,button,Unassigned
+Aqara Smart Lock U200 Identify,button.aqara_smart_lock_u200_identify,button,Unassigned
+UC2 Identify,button.uc2_identify,button,Unassigned
+UC4 Identify,button.uc4_identify,button,Unassigned
+UC3 Identify,button.uc3_identify,button,Unassigned
+Motion - Rec Room Identify (1),button.motion_rec_room_identify_1,button,Rec Room
+Motion - Rec Room Identify (2),button.motion_rec_room_identify_2,button,Rec Room
+Motion - Main Bathroom Identify (1),button.motion_main_bathroom_identify_1,button,Main Bathroom
+Motion - Main Bathroom Identify (2),button.motion_main_bathroom_identify_2,button,Main Bathroom
+Contact - Office Door Identify,button.contact_office_door_identify,button,Office
+Desk Light Identify,button.desk_light_identify,button,Unassigned
+Desk Light Restart,button.desk_light_restart,button,Unassigned
+Basement Steps Restart,button.basement_steps_restart,button,Basement
+Taylor Reboot,button.taylor_reboot,button,Unassigned
+Taylor Run Internet Backup Test,button.taylor_run_internet_backup_test,button,Unassigned
+Taylor Run Speed Test,button.taylor_run_speed_test,button,Unassigned
+Taylor Basement Reboot,button.taylor_basement_reboot,button,Basement
+Taylor Back Hallway Reboot,button.taylor_back_hallway_reboot,button,Hallway
+Taylor Foyer Reboot,button.taylor_foyer_reboot,button,Foyer
+Roborock Vacuum Reset sensor consumable,button.roborock_vacuum_reset_sensor_consumable,button,Unassigned
+Roborock Vacuum Reset air filter consumable,button.roborock_vacuum_reset_air_filter_consumable,button,Unassigned
+Roborock Vacuum Reset side brush consumable,button.roborock_vacuum_reset_side_brush_consumable,button,Unassigned
+Roborock Vacuum Reset main brush consumable,button.roborock_vacuum_reset_main_brush_consumable,button,Unassigned
+My ecobee Identify,button.my_ecobee_identify,button,Unassigned
+My ecobee Clear Hold,button.my_ecobee_clear_hold,button,Unassigned
+Govee to MQTT Purge Caches,button.govee_to_mqtt_purge_caches,button,Unassigned
+TV Light Bars Request Platform API State,button.tv_light_bars_request_platform_api_state,button,Unassigned
+Floor Lamp Right Request Platform API State,button.floor_lamp_right_request_platform_api_state,button,Unassigned
+Floor Lamp Left Request Platform API State,button.floor_lamp_left_request_platform_api_state,button,Unassigned

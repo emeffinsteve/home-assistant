@@ -1,0 +1,404 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2859
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red13\green107\blue151;\red252\green252\blue252;
+\red255\green255\blue255;\red31\green173\blue238;\red89\green160\blue214;\red225\green239\blue249;\red106\green120\blue135;
+\red0\green0\blue0;\red148\green108\blue71;\red255\green255\blue255;\red77\green80\blue81;\red41\green142\blue11;
+\red173\green173\blue173;\red217\green217\blue217;\red26\green125\blue169;\red64\green163\blue63;\red224\green242\blue229;
+\red232\green135\blue8;\red187\green24\blue34;}
+{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c0\c49804\c65882;\cssrgb\c99216\c99216\c99216;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c10196\c73725\c94902;\cssrgb\c41569\c69020\c87059;\cssrgb\c90588\c94902\c98039;\cssrgb\c49020\c54510\c60000;
+\cssrgb\c0\c0\c0;\cssrgb\c65098\c49804\c34902;\cssrgb\c100000\c100000\c100000\c50196;\cssrgb\c37255\c38824\c39216;\cssrgb\c18431\c61176\c3922;
+\cssrgb\c73333\c73333\c73333;\cssrgb\c87843\c87843\c87843\c20000;\cssrgb\c9804\c56471\c72157;\cssrgb\c29804\c68627\c31373;\cssrgb\c90196\c95686\c91765;
+\cssrgb\c93333\c60000\c0;\cssrgb\c78824\c17255\c17255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa480\partightenfactor0
+
+\f0\fs112 \cf2 \expnd0\expndtw0\kerning0
+Python Scripts\
+
+\fs44\fsmilli22400 This integration allows you to write Python scripts that are exposed as actions in Home Assistant. Each Python file created in the 
+\f1\fs35\fsmilli17920 \cf3 \cb4 <config>/python_scripts/
+\f0\fs44\fsmilli22400 \cf2 \cb1  folder will be exposed as an action. The content is not cached so you can easily develop: edit file, save changes, perform action. The scripts are run in a sandboxed environment. The following variables are available in the sandbox:\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12915\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\fs30\fsmilli15300 \cf2 \cb5 Name\cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \cb5 Description\cb1 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12915\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28\fsmilli14400 \cf3 \cb4 hass
+\f0\fs36 \cf2 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \cb5 The Home Assistant object. Access is only allowed to perform actions, set/remove states and fire events. {\field{\*\fldinst{HYPERLINK "https://developers.home-assistant.io/docs/dev_101_hass/"}}{\fldrslt \cf3 \ul \ulc3 API reference}}\cb1 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12915\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28\fsmilli14400 \cf3 \cb4 data
+\f0\fs36 \cf2 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \cb5 The data passed to the Python Script action.\cb1 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12915\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28\fsmilli14400 \cf3 \cb4 logger
+\f0\fs36 \cf2 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \cb5 A logger to allow you to log messages: 
+\f1\fs28\fsmilli14400 \cf3 \cb4 logger.info()
+\f0\fs36 \cf2 \cb5 , 
+\f1\fs28\fsmilli14400 \cf3 \cb4 logger.warning()
+\f0\fs36 \cf2 \cb5 , 
+\f1\fs28\fsmilli14400 \cf3 \cb4 logger.error()
+\f0\fs36 \cf2 \cb5 . {\field{\*\fldinst{HYPERLINK "https://docs.python.org/3.7/library/logging.html#logger-objects"}}{\fldrslt \cf3 \ul \ulc3 API reference}}\cb1 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12915\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28\fsmilli14400 \cf3 \cb4 time
+\f0\fs36 \cf2 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \cb5 The stdlib 
+\f1\fs28\fsmilli14400 \cf3 \cb4 time
+\f0\fs36 \cf2 \cb5  available as limited access.\cb1 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12915\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28\fsmilli14400 \cf3 \cb4 datetime
+\f0\fs36 \cf2 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \cb5 The stdlib 
+\f1\fs28\fsmilli14400 \cf3 \cb4 datetime
+\f0\fs36 \cf2 \cb5  available as limited access.\cb1 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12915\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28\fsmilli14400 \cf3 \cb4 dt_util
+\f0\fs36 \cf2 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \cb5 The 
+\f1\fs28\fsmilli14400 \cf3 \cb4 homeassistant.util.dt
+\f0\fs36 \cf2 \cb5  module.\cb1 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth2133\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth12915\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt240 \clpadl240 \clpadb240 \clpadr240 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f1\fs28\fsmilli14400 \cf3 \cb4 output
+\f0\fs36 \cf2 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 \cb5 An empty dictionary. Add items to return data as {\field{\*\fldinst{HYPERLINK "https://www.home-assistant.io/docs/scripts/perform-actions#use-templates-to-handle-response-data"}}{\fldrslt 
+\f1\fs28\fsmilli14400 \cf6 \cb4 \ul \ulc6 response_variable}}.\cb1 \cell \lastrow\row
+\pard\pardeftab720\sa480\partightenfactor0
+\cf2 Other imports like 
+\f1\fs28\fsmilli14400 \cf3 \cb4 min
+\f0\fs36 \cf2 \cb1 , 
+\f1\fs28\fsmilli14400 \cf3 \cb4 max
+\f0\fs36 \cf2 \cb1  are available as builtins. See the {\field{\*\fldinst{HYPERLINK "https://github.com/home-assistant/core/blob/dev/homeassistant/components/python_script/__init__.py"}}{\fldrslt \cf3 \ul \ulc3 python_script}} source code for up-to-date information on the available objects inside the script.\
+\cf7 \cb8 Note\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls1\ilvl0\cf2 \cb8 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+It is not possible to use Python imports with this integration. If you want to do more advanced scripts, you can take a look at {\field{\*\fldinst{HYPERLINK "https://appdaemon.readthedocs.io/en/latest/"}}{\fldrslt \cf3 \ul \ulc3 AppDaemon}} or {\field{\*\fldinst{HYPERLINK "https://github.com/custom-components/pyscript"}}{\fldrslt \cf3 \ul \ulc3 pyscript}}\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \cb8 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+It is not possible to include your script as a button on the dashboard. A workaround is to create a {\field{\*\fldinst{HYPERLINK "https://www.home-assistant.io/integrations/input_button/"}}{\fldrslt \cf3 \ul \ulc3 helper button}} and create automation to run your script when the button state changes.\cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs56 \cf2 Writing your first script, reading input and logging the activity\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs36 \cf2 This is a simplified example that does no real work. It is created as a first step, to help with:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Demonstrating how to setup the script\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+How to process the input data\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+How to log the script activity\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+How to troubleshoot / manually call the script.\
+\pard\pardeftab720\sa480\partightenfactor0
+\cf2 Start by enabling the Python Scripts integration and create the first script.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Add to 
+\f1\fs28\fsmilli14400 \cf3 \cb4 configuration.yaml
+\f0 \cf5 \cb6 The configuration.yaml file is the main configuration file for Home Assistant. It lists the integrations to be loaded and their specific configurations. In some cases, the configuration needs to be edited manually directly in the configuration.yaml file. Most integrations can be configured in the UI.{\field{\*\fldinst{HYPERLINK "https://www.home-assistant.io/docs/configuration/"}}{\fldrslt \ul  [Learn more]}}\uc0\u8232 
+\fs36 \cf2 \cb1 : 
+\f1\fs28\fsmilli14400 \cf3 \cb4 python_script:
+\f0\fs36 \cf2 \cb1 \
+\ls3\ilvl0\kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Create the folder 
+\f1\fs28\fsmilli14400 \cf3 \cb4 <config>/python_scripts
+\f0\fs36 \cf2 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Create a file 
+\f1\fs28\fsmilli14400 \cf3 \cb4 <config>/python_scripts/hello_world.py
+\f0\fs36 \cf2 \cb1  in the folder and give it this content:\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf9 \cb4 # `data` is available as builtin and is a dictionary with the input data.\cf2 \
+name \cf11 \cb12 =\cf2 \cb4  data\cf13 .\cf2 get\cf13 (\cf14 "name"\cf13 ,\cf2  \cf14 "world"\cf13 )\cf2 \
+\cf9 # `logger` and `time` are available as builtin without the need of explicit import.\cf2 \
+logger\cf13 .\cf2 info\cf13 (\cf14 "Hello \{\} at \{\}"\cf13 .\cf14 format\cf13 (\cf2 name\cf13 ,\cf2  time\cf13 .\cf2 time\cf13 ()))\cf0 \
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 Python
+\fs36 \cf2 \cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa160\partightenfactor0
+\ls4\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Start Home Assistant to reload the script configuration.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Call your new {\field{\*\fldinst{HYPERLINK "https://my.home-assistant.io/redirect/developer_call_service?service=python_script.hello_world"}}{\fldrslt 
+\f1\fs28\fsmilli14400 \cf6 \cb4 \ul \ulc6 python_script.hello_world}} action (with parameters) from the {\field{\*\fldinst{HYPERLINK "https://my.home-assistant.io/redirect/developer_services"}}{\fldrslt \cf3 \ul \ulc3 Actions}}, using the YAML mode.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf17 \cb4 action\cf13 :\cf2  python_script.hello_world\
+\cf17 data\cf13 :\cf2 \
+  \cf17 name\cf13 :\cf2  \cf14 "Input-Text"\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 YAML
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+\cf18 \cb19 Tip\cb1 \
+\cf2 \cb19 Running this script show absolutely no output on the screen, but it logs with level 
+\f1\fs28\fsmilli14400 \cf3 \cb4 info
+\f0\fs36 \cf2 \cb19 . You must have the {\field{\*\fldinst{HYPERLINK "https://www.home-assistant.io/integrations/logger/"}}{\fldrslt \cf3 \ul \ulc3 Logger}} enabled at least for level 
+\f1\fs28\fsmilli14400 \cf3 \cb4 info
+\f0\fs36 \cf2 \cb19 .\cb1 \
+\cb19 Your 
+\f1\fs28\fsmilli14400 \cf3 \cb4 configuration.yaml
+\f0 \cf5 \cb6 \
+The configuration.yaml file is the main configuration file for Home Assistant. It lists the integrations to be loaded and their specific configurations. In some cases, the configuration needs to be edited manually directly in the configuration.yaml file. Most integrations can be configured in the UI.{\field{\*\fldinst{HYPERLINK "https://www.home-assistant.io/docs/configuration/"}}{\fldrslt \ul  [Learn more]}}\
+
+\fs36 \cf2 \cb19 should include something like this.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf17 \cb4 logger\cf13 :\cf2 \
+  \cf17 default\cf13 :\cf2  info\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 YAML
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs56 \cf2 Triggering events\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs36 \cf2 The following example shows how to trigger a custom event over the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 hass.bus
+\f0\fs36 \cf2 \cb1 .\
+This example uses the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 hello_world.py
+\f0\fs36 \cf2 \cb1  from the previous example. Edit the file adding the code listed below to the end of the file. There is no need to reload the configuration or restart Home Assistant.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf2 \cb4 hass\cf13 .\cf2 bus\cf13 .\cf2 fire\cf13 (\cf14 "hello_world_event"\cf13 ,\cf2  \cf13 \{\cf14 "wow"\cf13 :\cf2  \cf14 "from a Python script!"\cf13 \})\cf0 \
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 Python
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+\cf2 This script doesn\'92t output anything. However, you can view the events being fired in the Developer tools.\
+From a separate browser window or tab, go to 
+\f1\fs28\fsmilli14400 \cf3 \cb4 Developer Tools -> Events
+\f0\fs36 \cf2 \cb1  and at 
+\f1\fs28\fsmilli14400 \cf3 \cb4 Listen to events
+\f0\fs36 \cf2 \cb1  type 
+\f1\fs28\fsmilli14400 \cf3 \cb4 hello_world_event
+\f0\fs36 \cf2 \cb1  and then press 
+\f1\fs28\fsmilli14400 \cf3 \cb4 Start listening
+\f0\fs36 \cf2 \cb1 . You should see something like this:\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf17 \cb4 event_type\cf13 :\cf2  hello_world_event\
+\cf17 data\cf13 :\cf2 \
+  \cf17 wow\cf13 :\cf2  from a Python script!\
+\cf17 origin\cf13 :\cf2  LOCAL\
+\cf17 time_fired\cf13 :\cf2  \cf14 "2022-09-19T16:15:39.613378+00:00"\cf2 \
+\cf17 context\cf13 :\cf2 \
+  \cf17 id\cf13 :\cf2  01GDB8H9JXJ1N23Q62SHX6PTBK\
+  \cf17 parent_id\cf13 :\cf2  \cf20 null\cf2 \
+  \cf17 user_id\cf13 :\cf2  \cf20 null\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 YAML
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs56 \cf2 Calling services\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs36 \cf2 The following example shows how to call a service from 
+\f1\fs28\fsmilli14400 \cf3 \cb4 python_script
+\f0\fs36 \cf2 \cb1 . This script takes two parameters: 
+\f1\fs28\fsmilli14400 \cf3 \cb4 entity_id
+\f0\fs36 \cf2 \cb1  (required), 
+\f1\fs28\fsmilli14400 \cf3 \cb4 rgb_color
+\f0\fs36 \cf2 \cb1  (optional) and calls 
+\f1\fs28\fsmilli14400 \cf3 \cb4 light.turn_on
+\f0\fs36 \cf2 \cb1  service by setting the brightness value to 
+\f1\fs28\fsmilli14400 \cf3 \cb4 255
+\f0\fs36 \cf2 \cb1 .\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf9 \cb4 # turn_on_light.py\cf2 \
+entity_id \cf11 \cb12 =\cf2 \cb4  data\cf13 .\cf2 get\cf13 (\cf14 "entity_id"\cf13 )\cf2 \
+rgb_color \cf11 \cb12 =\cf2 \cb4  data\cf13 .\cf2 get\cf13 (\cf14 "rgb_color"\cf13 ,\cf2  \cf13 [\cf21 255\cf13 ,\cf2  \cf21 255\cf13 ,\cf2  \cf21 255\cf13 ])\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf17 if\cf2  entity_id \cf17 is\cf2  \cf17 not\cf2  \cf21 None\cf13 :\cf2 \
+    service_data \cf11 \cb12 =\cf2 \cb4  \cf13 \{\cf14 "entity_id"\cf13 :\cf2  entity_id\cf13 ,\cf2  \cf14 "rgb_color"\cf13 :\cf2  rgb_color\cf13 ,\cf2  \cf14 "brightness"\cf13 :\cf2  \cf21 255\cf13 \}\cf2 \
+    hass\cf13 .\cf2 services\cf13 .\cf2 call\cf13 (\cf14 "light"\cf13 ,\cf2  \cf14 "turn_on"\cf13 ,\cf2  service_data\cf13 ,\cf2  \cf21 False\cf13 )\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 Python
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+\cf2 The above 
+\f1\fs28\fsmilli14400 \cf3 \cb4 python_script
+\f0\fs36 \cf2 \cb1  can be called using the following YAML as an input.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf13 \cb4 -\cf2  \cf17 action\cf13 :\cf2  python_script.turn_on_light\
+  \cf17 target\cf13 :\cf2 \
+    \cf17 entity_id\cf13 :\cf2  light.bedroom\
+  \cf17 data\cf13 :\cf2 \
+    \cf17 rgb_color\cf13 :\cf2  \cf13 [\cf21 255\cf13 ,\cf2  \cf21 0\cf13 ,\cf2  \cf21 0\cf13 ]\cf0 \
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 YAML
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+\cf2 Services can also respond with data. Retrieve this data in your Python script by setting the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 blocking
+\f0\fs36 \cf2 \cb1  and 
+\f1\fs28\fsmilli14400 \cf3 \cb4 return_response
+\f0\fs36 \cf2 \cb1  arguments of the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 hass.services.call
+\f0\fs36 \cf2 \cb1  function to 
+\f1\fs28\fsmilli14400 \cf3 \cb4 True
+\f0\fs36 \cf2 \cb1 . The example below retrieves the weather forecast and assigns it to the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 current_forecast
+\f0\fs36 \cf2 \cb1  variable:\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf9 \cb4 # get_forecast.py\cf2 \
+service_data \cf11 \cb12 =\cf2 \cb4  \cf13 \{\cf14 "type"\cf13 :\cf2  \cf14 "daily"\cf13 ,\cf2  \cf14 "entity_id"\cf13 :\cf2  \cf13 [\cf14 "weather.YOUR_HOME"\cf13 ,\cf2  \cf14 "weather.YOUR_SCHOOL"\cf13 ]\}\cf2 \
+current_forecast \cf11 \cb12 =\cf2 \cb4  hass\cf13 .\cf2 services\cf13 .\cf2 call\cf13 (\cf14 "weather"\cf13 ,\cf2  \cf14 "get_forecasts"\cf13 ,\cf2  service_data\cf13 ,\cf2  blocking\cf11 \cb12 =\cf21 \cb4 True\cf13 ,\cf2  return_response\cf11 \cb12 =\cf21 \cb4 True\cf13 )\cf0 \
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 Python
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs56 \cf2 Returning data\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs36 \cf2 Python script itself can respond with data. Just add items to the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 output
+\f0\fs36 \cf2 \cb1  variable in your 
+\f1\fs28\fsmilli14400 \cf3 \cb4 python_script
+\f0\fs36 \cf2 \cb1  and the whole dictionary will be returned. These can be used in automations to act upon the command results using {\field{\*\fldinst{HYPERLINK "https://www.home-assistant.io/docs/scripts/perform-actions#use-templates-to-handle-response-data"}}{\fldrslt 
+\f1\fs28\fsmilli14400 \cf6 \cb4 \ul \ulc6 response_variable}}.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf9 \cb4 # hello_world.py\cf2 \
+output\cf13 [\cf14 "hello"\cf13 ]\cf2  \cf11 \cb12 =\cf2 \cb4  \cf14 f"hello \cf13 \{\cf2 data\cf13 .\cf2 get\cf13 (\cf14 'name'\cf13 ,\cf2  \cf14 'world'\cf13 )\}\cf14 "\cf0 \
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 Python
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+\cf2 The above 
+\f1\fs28\fsmilli14400 \cf3 \cb4 python_script
+\f0\fs36 \cf2 \cb1  can be called using the following YAML and return a result to later steps.\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf13 \cb4 -\cf2  \cf17 action\cf13 :\cf2  python_script.hello_world\
+  \cf17 response_variable\cf13 :\cf2  python_script_output\
+\cf13 -\cf2  \cf17 action\cf13 :\cf2  notify.mobile_app_iphone\
+  \cf17 data\cf13 :\cf2 \
+    \cf17 message\cf13 :\cf2  \cf14 "\{\{ python_script_output['hello'] \}\}"\cf0 \
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 YAML
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs56 \cf2 Documenting your Python scripts\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs36 \cf2 You can add names and descriptions for your Python scripts that will be shown in the frontend. To do so, simply create a 
+\f1\fs28\fsmilli14400 \cf3 \cb4 services.yaml
+\f0\fs36 \cf2 \cb1  file in your 
+\f1\fs28\fsmilli14400 \cf3 \cb4 <config>/python_scripts
+\f0\fs36 \cf2 \cb1  folder. Using the above Python script as an example, the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 services.yaml
+\f0\fs36 \cf2 \cb1  file would look like:\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs25\fsmilli12750 \cf9 \cb4 # services.yaml\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf17 turn_on_light\cf13 :\cf2 \
+  \cf17 name\cf13 :\cf2  Turn on light\
+  \cf17 description\cf13 :\cf2  Turn on a specific light and set its color.\
+  \cf17 fields\cf13 :\cf2 \
+    \cf17 entity_id\cf13 :\cf2 \
+      \cf17 description\cf13 :\cf2  The light that will be turned on.\
+      \cf17 example\cf13 :\cf2  light.bedroom\
+    \cf17 rgb_color\cf13 :\cf2 \
+      \cf17 description\cf13 :\cf2  The color to which the light will be set.\
+      \cf17 example\cf13 :\cf2  \cf13 [\cf21 255\cf13 ,\cf2  \cf21 0\cf13 ,\cf2  \cf21 0\cf13 ]\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28\fsmilli14400 \cf15 \cb16 YAML
+\fs36 \cf2 \cb1 \
+\pard\pardeftab720\sa480\partightenfactor0
+\cf2 For more examples, visit the {\field{\*\fldinst{HYPERLINK "https://community.home-assistant.io/c/projects/scripts"}}{\fldrslt \cf3 \ul \ulc3 Scripts section}} in our forum.\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs56 \cf2 Actions\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs36 \cf2 Available actions: 
+\f1\fs28\fsmilli14400 \cf3 \cb4 reload
+\f0\fs36 \cf2 \cb1 .\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs44 \cf2 ACTION PYTHON_SCRIPT.RELOAD\
+\pard\pardeftab720\sa480\partightenfactor0
+
+\fs36 \cf2 Reload all available python_scripts from the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 <config>/python_scripts
+\f0\fs36 \cf2 \cb1  folder, as a quicker alternative to restarting Home Assistant.\
+Use this when creating a new Python script, or after updating the 
+\f1\fs28\fsmilli14400 \cf3 \cb4 <config>/python_scripts/services.yaml
+\f0\fs36 \cf2 \cb1  file.\
+You don\'92t have to call this service when you change an existing Python script.\
+This service takes no data attributes.}

@@ -1,0 +1,4 @@
+Device Name,Entity ID,Domain,Area
+Forecast Met.no,weather.forecast_met_no,weather,Rec Room
+Weather,weather.weather,weather,Unassigned
+KAKR,weather.kakr,weather,Unassigned

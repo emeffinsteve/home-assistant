@@ -1,0 +1,35 @@
+Device Name,Entity ID,Domain,Area
+Home Assistant Supervisor Update,update.home_assistant_supervisor_update,update,Unassigned
+Home Assistant Core Update,update.home_assistant_core_update,update,Unassigned
+Matter Server Update,update.matter_server_update,update,Unassigned
+Advanced SSH & Web Terminal Update,update.advanced_ssh_web_terminal_update,update,Unassigned
+Govee to MQTT Bridge Update,update.govee_to_mqtt_bridge_update,update,Unassigned
+Mosquitto broker Update,update.mosquitto_broker_update,update,Unassigned
+File editor Update,update.file_editor_update,update,Unassigned
+Claude Terminal Update,update.claude_terminal_update,update,Unassigned
+Home Assistant Operating System Update,update.home_assistant_operating_system_update,update,Unassigned
+UC5 Firmware,update.uc5_firmware,update,Unassigned
+UC1 Firmware,update.uc1_firmware,update,Unassigned
+UC6 Firmware,update.uc6_firmware,update,Unassigned
+Aqara Smart Lock U200 Firmware,update.aqara_smart_lock_u200_firmware,update,Unassigned
+UC2 Firmware,update.uc2_firmware,update,Unassigned
+UC4 Firmware,update.uc4_firmware,update,Unassigned
+UC3 Firmware,update.uc3_firmware,update,Unassigned
+Motion - Rec Room Firmware,update.motion_rec_room_firmware,update,Rec Room
+Motion - Main Bathroom Firmware,update.motion_main_bathroom_firmware,update,Main Bathroom
+Contact - Office Door Firmware,update.contact_office_door_firmware,update,Office
+slider-entity-row update,update.slider_entity_row_update,update,Unassigned
+Mushroom update,update.mushroom_update,update,Unassigned
+eero update,update.eero_update,update,Unassigned
+Dreo Smart Device Integration update,update.dreo_smart_device_integration_update,update,Unassigned
+govee update,update.govee_update,update,Unassigned
+Gradual Volume Control update,update.gradual_volume_control_update,update,Unassigned
+Bubble Card update,update.bubble_card_update,update,Unassigned
+Bubble update,update.bubble_update,update,Unassigned
+card-mod update,update.card_mod_update,update,Unassigned
+HACS update,update.hacs_update,update,Unassigned
+Mini Media Player update,update.mini_media_player_update,update,Unassigned
+Custom Features for Home Assistant Cards update,update.custom_features_for_home_assistant_cards_update,update,Unassigned
+Taylor Basement Firmware,update.taylor_basement_firmware,update,Basement
+Taylor Back Hallway Firmware,update.taylor_back_hallway_firmware,update,Hallway
+Taylor Foyer Firmware,update.taylor_foyer_firmware,update,Foyer

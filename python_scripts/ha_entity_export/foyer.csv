@@ -1,0 +1,15 @@
+Device Name,Entity ID,Domain,Area
+Foyer Light Battery,sensor.foyer_light_battery,sensor,Foyer
+Foyer,switch.foyer_light,switch,Foyer
+Ring - Foyer Live view,camera.ring_foyer_live_view,camera,Foyer
+Ring - Foyer Motion,event.ring_foyer_motion,event,Foyer
+Ring - Foyer Volume,number.ring_foyer_volume,number,Foyer
+Ring - Foyer Battery,sensor.ring_foyer_battery,sensor,Foyer
+Ring - Foyer Last activity,sensor.ring_foyer_last_activity,sensor,Foyer
+Ring - Foyer Siren,siren.ring_foyer_siren,siren,Foyer
+Ring - Foyer Motion detection,switch.ring_foyer_motion_detection,switch,Foyer
+Taylor Foyer Reboot,button.taylor_foyer_reboot,button,Foyer
+Taylor Foyer Status,light.taylor_foyer_status_light,light,Foyer
+Taylor Foyer Connected Clients,sensor.taylor_foyer_connected_clients,sensor,Foyer
+Taylor Foyer Status,sensor.taylor_foyer_status,sensor,Foyer
+Taylor Foyer Firmware,update.taylor_foyer_firmware,update,Foyer

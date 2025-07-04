@@ -1,0 +1,47 @@
+Device Name,Entity ID,Domain,Area
+Garage Coach Lights Energy,sensor.garage_coach_lights_energy,sensor,Garage
+Garage Coach Lights Power,sensor.garage_coach_lights_power,sensor,Garage
+Ring - Garage Live view,camera.ring_garage_live_view,camera,Garage
+Ring - Garage Motion,event.ring_garage_motion,event,Garage
+Ring - Garage Volume,number.ring_garage_volume,number,Garage
+Ring - Garage Battery,sensor.ring_garage_battery,sensor,Garage
+Ring - Garage Last activity,sensor.ring_garage_last_activity,sensor,Garage
+Ring - Garage Siren,siren.ring_garage_siren,siren,Garage
+Ring - Garage Motion detection,switch.ring_garage_motion_detection,switch,Garage
+Garage Coach Lights Cloud connection,binary_sensor.garage_coach_lights_cloud_connection,binary_sensor,Garage
+Garage Coach Lights Overheated,binary_sensor.garage_coach_lights_overheated,binary_sensor,Garage
+Garage Coach Lights,light.garage_coach_lights,light,Garage
+Garage Coach Lights Smooth on,number.garage_coach_lights_smooth_on,number,Garage
+Garage Coach Lights Smooth off,number.garage_coach_lights_smooth_off,number,Garage
+Garage Coach Lights Light preset,select.garage_coach_lights_light_preset,select,Garage
+Garage Coach Lights Signal level,sensor.garage_coach_lights_signal_level,sensor,Garage
+Garage Coach Lights Auto-update enabled,switch.garage_coach_lights_auto_update_enabled,switch,Garage
+Garage Coach Lights LED,switch.garage_coach_lights_led,switch,Garage
+Taylor Genie Garage Door Opener (Wireless) Connected,binary_sensor.taylor_genie_garage_door_opener_wireless_connected,binary_sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Connected,binary_sensor.taylor_s505_garage_light_switch_wireless_connected,binary_sensor,Garage
+Taylor Genie Garage Door Opener (Wireless),device_tracker.taylor_genie_garage_door_opener_wireless,device_tracker,Garage
+Taylor S505 - Garage Light Switch (Wireless),device_tracker.taylor_s505_garage_light_switch_wireless,device_tracker,Garage
+Taylor Genie Garage Door Opener (Wireless) IP Address,sensor.taylor_genie_garage_door_opener_wireless_ip_address,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Last Active,sensor.taylor_genie_garage_door_opener_wireless_last_active,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Signal Strength,sensor.taylor_genie_garage_door_opener_wireless_signal_strength,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Download Rate,sensor.taylor_genie_garage_door_opener_wireless_download_rate,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Upload Rate,sensor.taylor_genie_garage_door_opener_wireless_upload_rate,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) IP Address,sensor.taylor_s505_garage_light_switch_wireless_ip_address,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Last Active,sensor.taylor_s505_garage_light_switch_wireless_last_active,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Signal Strength,sensor.taylor_s505_garage_light_switch_wireless_signal_strength,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Download Rate,sensor.taylor_s505_garage_light_switch_wireless_download_rate,sensor,Garage
+Taylor S505 - Garage Light Switch (Wireless) Upload Rate,sensor.taylor_s505_garage_light_switch_wireless_upload_rate,sensor,Garage
+Taylor Genie Garage Door Opener (Wireless) Paused,switch.taylor_genie_garage_door_opener_wireless_paused,switch,Garage
+Taylor Genie Garage Door Opener (Wireless) Allow Internet Backup,switch.taylor_genie_garage_door_opener_wireless_allow_internet_backup,switch,Garage
+Taylor S505 - Garage Light Switch (Wireless) Paused,switch.taylor_s505_garage_light_switch_wireless_paused,switch,Garage
+Taylor S505 - Garage Light Switch (Wireless) Allow Internet Backup,switch.taylor_s505_garage_light_switch_wireless_allow_internet_backup,switch,Garage
+Garage Light Cloud connection,binary_sensor.garage_light_cloud_connection,binary_sensor,Garage
+Garage Light Overheated,binary_sensor.garage_light_overheated,binary_sensor,Garage
+Garage Light Turn off in,number.garage_light_turn_off_in,number,Garage
+Garage Light Signal level,sensor.garage_light_signal_level,sensor,Garage
+Garage Light Auto-off at,sensor.garage_light_auto_off_at,sensor,Garage
+Garage,switch.garage_light,switch,Garage
+Garage Light Auto-off enabled,switch.garage_light_auto_off_enabled,switch,Garage
+Garage Light Auto-update enabled,switch.garage_light_auto_update_enabled,switch,Garage
+Garage Light LED,switch.garage_light_led,switch,Garage
+Garage Door,cover.garage_door,cover,Garage
