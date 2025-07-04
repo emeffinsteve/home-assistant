@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "image",
+  "data": {
+    "items": [
+      {
+        "id": "9655a5215c67f5ca3129e12202bf031f",
+        "filesize": 112360,
+        "content_type": "image/jpeg",
+        "name": "bg.jpeg",
+        "uploaded_at": "2025-06-08T17:44:19.932888+00:00"
+      },
+      {
+        "id": "424f5bfbca1e8f567e3e7808d8f5db6e",
+        "filesize": 3478921,
+        "content_type": "image/png",
+        "name": "8.png",
+        "uploaded_at": "2025-06-08T17:53:08.262788+00:00"
+      },
+      {
+        "id": "84141af091b937734339c3560789e726",
+        "filesize": 1088963,
+        "content_type": "image/png",
+        "name": "1.png",
+        "uploaded_at": "2025-06-08T17:53:58.309989+00:00"
+      },
+      {
+        "id": "9b5dc1569238b7b589dd1f5606e56c47",
+        "filesize": 1469444,
+        "content_type": "image/png",
+        "name": "2.png",
+        "uploaded_at": "2025-06-08T17:54:22.082853+00:00"
+      },
+      {
+        "id": "531cb956c8e2a3bb4fc0ae4d857c2821",
+        "filesize": 939775,
+        "content_type": "image/png",
+        "name": "3.png",
+        "uploaded_at": "2025-06-08T17:55:03.305325+00:00"
+      },
+      {
+        "id": "e57c1d8a695a087ab11d24b6c982542b",
+        "filesize": 1474209,
+        "content_type": "image/png",
+        "name": "4.png",
+        "uploaded_at": "2025-06-08T17:55:23.320498+00:00"
+      },
+      {
+        "id": "715eaf389df088e26815524bb6107c59",
+        "filesize": 783995,
+        "content_type": "image/png",
+        "name": "5.png",
+        "uploaded_at": "2025-06-08T17:55:40.742510+00:00"
+      },
+      {
+        "id": "b173a9c74a3738208445e8bea88faaa5",
+        "filesize": 1792090,
+        "content_type": "image/png",
+        "name": "7.png",
+        "uploaded_at": "2025-06-08T17:55:59.114892+00:00"
+      }
+    ]
+  }
+}

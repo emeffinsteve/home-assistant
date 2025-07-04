@@ -1,0 +1,183 @@
+# COMPREHENSIVE INTERNET MANAGEMENT SYSTEM TEST
+# Copy into Developer Tools → Template for complete system verification
+
+INTERNET MANAGEMENT SYSTEM - COMPREHENSIVE STATUS
+==================================================
+
+=== CORE SWITCHES (Eero Profile Controls) ===
+Upstairs Paused: {{ states('switch.taylor_ex_upstairs_paused') }}{% if states('switch.taylor_ex_upstairs_paused') == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+Downstairs Paused: {{ states('switch.taylor_ex_downstairs_paused') }}{% if states('switch.taylor_ex_downstairs_paused') == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+Genevieve Paused: {{ states('switch.taylor_genevieve_paused') }}{% if states('switch.taylor_genevieve_paused') == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+Ulrich Paused: {{ states('switch.taylor_ulrich_paused') }}{% if states('switch.taylor_ulrich_paused') == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+
+=== DEVICE SWITCHES (Individual Devices) ===
+Apple TV Office: {{ states('switch.apple_tv_office') }}
+Echo Dot Office: {{ states('switch.echo_dot_office') }}
+Steve Office Computer: {{ states('switch.steve_office_computer') }}
+Sony PlayStation 5: {{ states('switch.sony_playstation_5_paused') }}
+Roku Ultra: {{ states('switch.roku_ultra_paused') }}
+Chromecast TV: {{ states('switch.chromecast_tv_paused') }}
+Echo Dot Kitchen: {{ states('switch.echo_dot_kitchen_paused') }}
+Genevieve MacBook: {{ states('switch.genevieve_macbook_paused') }}
+Genevieve iPhone: {{ states('switch.genevieve_iphone_paused') }}
+Ulrich Devices: {{ states('switch.ulrich_devices_paused') }}
+
+=== OVERRIDE MODE SELECTORS ===
+Upstairs Override: {{ states('input_select.upstairs_internet_override_mode') }}
+Downstairs Override: {{ states('input_select.downstairs_internet_override_mode') }}
+Genevieve Override: {{ states('input_select.genevieve_internet_override_mode') }}
+
+=== TEMPORARY OVERRIDE SWITCHES ===
+Upstairs Temp Override: {{ states('input_boolean.upstairs_temp_override') }}
+Downstairs Temp Override: {{ states('input_boolean.downstairs_temp_override') }}
+Genevieve Temp Override: {{ states('input_boolean.genevieve_temp_override') }}
+
+=== TASK COMPLETION TRACKING ===
+Genevieve Dog Walked Today: {{ states('input_boolean.genevieve_dog_walked_today') }}
+Genevieve Chores Done Today: {{ states('input_boolean.genevieve_chores_done_today') }}
+Ulrich Dog Walked Today: {{ states('input_boolean.ulrich_dog_walked_today') }}
+Ulrich Chores Done Today: {{ states('input_boolean.ulrich_chores_done_today') }}
+Ulrich Internet Paused: {{ states('input_boolean.ulrich_internet_paused') }}
+
+=== CUSTOM STATUS SENSORS ===
+Upstairs Internet Status: {{ states('sensor.upstairs_internet_status') }}
+Downstairs Internet Status: {{ states('sensor.downstairs_internet_status') }}
+Genevieve Internet Status: {{ states('sensor.genevieve_internet_status') }}
+Ulrich Internet Status: {{ states('sensor.ulrich_internet_status') }}
+Genevieve Task Status: {{ states('sensor.genevieve_task_status') }}
+Ulrich Task Status: {{ states('sensor.ulrich_task_status') }}
+Upstairs Next Schedule Change: {{ states('sensor.upstairs_next_schedule_change') }}
+Downstairs Next Schedule Change: {{ states('sensor.downstairs_next_schedule_change') }}
+
+=== SCHEDULE AUTOMATIONS ===
+{% set schedule_automations = [
+  'automation.upstairs_downstairs_pause_12pm',
+  'automation.upstairs_downstairs_resume_5pm',
+  'automation.upstairs_downstairs_pause_10pm',
+  'automation.upstairs_downstairs_resume_7am'
+] %}
+{% for auto in schedule_automations %}
+{{ auto.split('.')[1].replace('_', ' ').title() }}: {{ states(auto) }}{% if states(auto) == 'unknown' %} ⚠️ UNKNOWN{% elif states(auto) == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+{% endfor %}
+
+=== OVERRIDE HANDLER AUTOMATIONS ===
+{% set override_automations = [
+  'automation.upstairs_override_handler',
+  'automation.downstairs_override_handler', 
+  'automation.genevieve_override_handler',
+  'automation.clear_temp_overrides_schedule_changes'
+] %}
+{% for auto in override_automations %}
+{{ auto.split('.')[1].replace('_', ' ').title() }}: {{ states(auto) }}{% if states(auto) == 'unknown' %} ⚠️ UNKNOWN{% elif states(auto) == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+{% endfor %}
+
+=== TASK-BASED AUTOMATIONS ===
+{% set task_automations = [
+  'automation.internet_genevieve_dog_walk_check',
+  'automation.internet_genevieve_chores_check',
+  'automation.internet_ulrich_chores_check_10am_mon_sat',
+  'automation.internet_ulrich_dog_walk_check_8pm_daily',
+  'automation.internet_ulrich_task_completion_handler'
+] %}
+{% for auto in task_automations %}
+{{ auto.split('.')[1].replace('_', ' ').title() }}: {{ states(auto) }}{% if states(auto) == 'unknown' %} ⚠️ UNKNOWN{% elif states(auto) == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+{% endfor %}
+
+=== VERIFICATION AUTOMATIONS ===
+{% set verification_automations = [
+  'automation.verify_upstairs_pause',
+  'automation.verify_upstairs_resume',
+  'automation.verify_downstairs_pause',
+  'automation.verify_downstairs_resume',
+  'automation.verify_genevieve_pause',
+  'automation.verify_genevieve_resume',
+  'automation.hourly_profile_verification'
+] %}
+{% for auto in verification_automations %}
+{{ auto.split('.')[1].replace('_', ' ').title() }}: {{ states(auto) }}{% if states(auto) == 'unknown' %} ⚠️ UNKNOWN{% elif states(auto) == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+{% endfor %}
+
+=== UTILITY AUTOMATIONS ===
+{% set utility_automations = [
+  'automation.daily_task_reset',
+  'automation.tv_kill_switch'
+] %}
+{% for auto in utility_automations %}
+{{ auto.split('.')[1].replace('_', ' ').title() }}: {{ states(auto) }}{% if states(auto) == 'unknown' %} ⚠️ UNKNOWN{% elif states(auto) == 'unavailable' %} ⚠️ UNAVAILABLE{% endif %}
+{% endfor %}
+
+=== CURRENT TIME & SCHEDULE STATUS ===
+Current Time: {{ now().strftime('%H:%M') }} ({{ now().strftime('%A') }})
+Current Hour: {{ now().hour }}
+Weekday Number: {{ now().weekday() }} (0=Monday, 6=Sunday)
+Is Weekend: {{ 'Yes' if now().weekday() >= 5 else 'No' }}
+
+=== SCHEDULE LOGIC EVALUATION ===
+Should Be Paused (12PM-5PM): {{ 'YES' if now().hour >= 12 and now().hour < 17 else 'NO' }}
+Should Be Paused (10PM-7AM): {{ 'YES' if now().hour >= 22 or now().hour < 7 else 'NO' }}
+Overall Should Be Paused: {{ 'YES' if (now().hour >= 12 and now().hour < 17) or (now().hour >= 22 or now().hour < 7) else 'NO' }}
+
+=== TASK REQUIREMENTS CHECK ===
+Genevieve Dog Walk Time (12PM): {{ 'REQUIRED' if now().hour == 12 and states('input_boolean.genevieve_dog_walked_today') == 'off' else 'Not Required' }}
+Genevieve Chores Time (3PM Weekdays): {{ 'REQUIRED' if now().hour == 15 and now().weekday() < 5 and states('input_boolean.genevieve_chores_done_today') == 'off' else 'Not Required' }}
+Ulrich Chores Time (10AM Mon-Sat): {{ 'REQUIRED' if now().hour >= 10 and now().weekday() < 6 and states('input_boolean.ulrich_chores_done_today') == 'off' else 'Not Required' }}
+Ulrich Dog Walk Time (8PM Daily): {{ 'REQUIRED' if now().hour >= 20 and states('input_boolean.ulrich_dog_walked_today') == 'off' else 'Not Required' }}
+
+=== OVERRIDE ANALYSIS ===
+{% set upstairs_override = states('input_select.upstairs_internet_override_mode') %}
+{% set downstairs_override = states('input_select.downstairs_internet_override_mode') %}
+{% set genevieve_override = states('input_select.genevieve_internet_override_mode') %}
+Upstairs Override Active: {{ 'YES' if upstairs_override != 'Normal Schedule' else 'NO' }}
+Downstairs Override Active: {{ 'YES' if downstairs_override != 'Normal Schedule' else 'NO' }}
+Genevieve Override Active: {{ 'YES' if genevieve_override != 'Normal Schedule' else 'NO' }}
+Any Temp Overrides Active: {{ 'YES' if states('input_boolean.upstairs_temp_override') == 'on' or states('input_boolean.downstairs_temp_override') == 'on' or states('input_boolean.genevieve_temp_override') == 'on' else 'NO' }}
+
+=== SYSTEM HEALTH CHECK ===
+{% set all_critical_entities = [
+  'switch.taylor_ex_upstairs_paused',
+  'switch.taylor_ex_downstairs_paused',
+  'switch.taylor_genevieve_paused',
+  'switch.taylor_ulrich_paused',
+  'sensor.upstairs_internet_status',
+  'sensor.downstairs_internet_status',
+  'sensor.genevieve_internet_status',
+  'sensor.ulrich_internet_status',
+  'input_select.upstairs_internet_override_mode',
+  'input_select.downstairs_internet_override_mode',
+  'input_select.genevieve_internet_override_mode'
+] %}
+{% set unavailable_entities = all_critical_entities | select('is_state', 'unavailable') | list %}
+{% set unknown_entities = all_critical_entities | select('is_state', 'unknown') | list %}
+
+Total Critical Entities: {{ all_critical_entities | length }}
+Available Entities: {{ (all_critical_entities | length) - (unavailable_entities | length) - (unknown_entities | length) }}
+Unavailable Entities: {{ unavailable_entities | length }}{% if unavailable_entities %} - {{ unavailable_entities | join(', ') }}{% endif %}
+Unknown Entities: {{ unknown_entities | length }}{% if unknown_entities %} - {{ unknown_entities | join(', ') }}{% endif %}
+
+{% if unavailable_entities or unknown_entities %}
+⚠️ SYSTEM HEALTH: DEGRADED
+{% else %}
+✅ SYSTEM HEALTH: OPTIMAL
+{% endif %}
+
+=== AUTOMATION COUNT SUMMARY ===
+{% set all_internet_automations = states.automation | selectattr('entity_id', 'search', 'upstairs_downstairs|internet_|verify_|daily_task|tv_kill|override_handler|clear_temp') | list %}
+Total Internet Management Automations: {{ all_internet_automations | length }}
+Active Automations: {{ all_internet_automations | selectattr('state', '==', 'on') | list | length }}
+Inactive/Unknown Automations: {{ all_internet_automations | selectattr('state', '!=', 'on') | list | length }}
+
+=== LAST ACTIVITY TRACKING ===
+{% set key_automations = [
+  'automation.upstairs_downstairs_pause_12pm',
+  'automation.upstairs_downstairs_resume_5pm',
+  'automation.internet_genevieve_dog_walk_check',
+  'automation.internet_ulrich_chores_check_10am_mon_sat'
+] %}
+{% for auto in key_automations %}
+{% set last_triggered = state_attr(auto, 'last_triggered') %}
+{{ auto.split('.')[1].replace('_', ' ').title() }} Last Triggered: {{ last_triggered.strftime('%m/%d %H:%M') if last_triggered else 'Never' }}
+{% endfor %}
+
+=== TIMESTAMP ===
+Report Generated: {{ now().strftime('%Y-%m-%d %H:%M:%S') }}
+Next Schedule Change: {{ states('sensor.upstairs_next_schedule_change') if states('sensor.upstairs_next_schedule_change') != 'unknown' else 'Unknown' }}

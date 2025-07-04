@@ -1,0 +1,163 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "repairs.issue_registry",
+  "data": {
+    "issues": [
+      {
+        "created": "2025-05-23T02:49:30.658184+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_312080478_tags/2025.1.1"
+      },
+      {
+        "created": "2025-05-24T06:33:37.372431+00:00",
+        "dismissed_version": null,
+        "domain": "hacs",
+        "is_persistent": false,
+        "issue_id": "restart_required_315447202_tags/20250429.01"
+      },
+      {
+        "created": "2025-06-04T11:42:44.287630+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.upstairs_main_control_logic_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.287699+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.upstairs_start_timer_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.287739+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.upstairs_add_time_to_timer_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.287776+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.upstairs_timer_expiry_check_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.287809+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.downstairs_main_control_logic_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.287839+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.downstairs_start_timer_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.287868+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.downstairs_add_time_to_timer_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.288146+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.downstairs_timer_expiry_check_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.288224+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.genevieve_main_control_logic_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.288278+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.genevieve_start_timer_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.288312+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.genevieve_add_time_to_timer_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.288343+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.genevieve_timer_expiry_check_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.288375+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.genevieve_reset_daily_tasks_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-04T11:42:44.288405+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.ulrich_manual_control_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-25T01:29:39.961964+00:00",
+        "dismissed_version": null,
+        "domain": "script",
+        "is_persistent": false,
+        "issue_id": "script.notification_kids_light_signal_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-25T01:29:39.962037+00:00",
+        "dismissed_version": null,
+        "domain": "script",
+        "is_persistent": false,
+        "issue_id": "script.notification_genevieve_light_signal_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-25T01:29:39.962083+00:00",
+        "dismissed_version": null,
+        "domain": "script",
+        "is_persistent": false,
+        "issue_id": "script.notification_ulrich_light_signal_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-25T04:13:35.232770+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.climate_resume_automation_button_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-25T04:35:32.433737+00:00",
+        "dismissed_version": "2025.6.1",
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.climate_system_monitor_validation_failed_schema"
+      },
+      {
+        "created": "2025-06-27T13:11:42.338648+00:00",
+        "dismissed_version": null,
+        "domain": "automation",
+        "is_persistent": false,
+        "issue_id": "automation.weather_forecast_polling_system_validation_failed_schema"
+      }
+    ]
+  }
+}

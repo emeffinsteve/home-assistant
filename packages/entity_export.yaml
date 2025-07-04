@@ -1,0 +1,78 @@
+# =================================================================
+# AUTOMATION: Entity Export System
+# VERSION: 1.0.0 (Major.Minor.Patch)
+# CREATED: 2025-06-30
+# LAST UPDATED: 2025-06-30
+# AUTHOR: Steve Taylor
+# TESTED_ON: HA Version 2024.12.0
+# DEPENDENCIES: file_editor, notify
+# 
+# CHANGELOG:
+# v1.0.0 - 2025-06-30 - Initial: Entity export functionality
+# 
+# DESCRIPTION: Export all entities with their states and attributes to CSV
+# FAILURE MODE: Continue - logs errors but continues operation
+# =================================================================
+
+template:
+  - sensor:
+      - name: "Entity Export Data"
+        unique_id: entity_export_data
+        state: "{{ states | count }}"
+        attributes:
+          export_data: >-
+            {% set entities = states | list %}
+            {% set header = "Entity ID,Domain,State,Last Changed,Last Updated,Friendly Name,Device Class,Unit of Measurement,Icon" %}
+            {% set lines = [header] %}
+            {% for entity in entities %}
+              {% set line = [
+                entity.entity_id,
+                entity.domain,
+                entity.state | replace(',', ';'),
+                entity.last_changed | string,
+                entity.last_updated | string,
+                (entity.attributes.friendly_name or '') | replace(',', ';'),
+                (entity.attributes.device_class or '') | replace(',', ';'),
+                (entity.attributes.unit_of_measurement or '') | replace(',', ';'),
+                (entity.attributes.icon or '') | replace(',', ';')
+              ] | join(',') %}
+              {% set lines = lines + [line] %}
+            {% endfor %}
+            {{ lines | join('\n') }}
+
+input_button:
+  export_entities:
+    name: "Export Entities"
+    icon: mdi:export
+
+automation:
+  - id: export_entities_to_file
+    alias: "Export Entities to File"
+    description: "Export all entities to CSV file when button pressed"
+    trigger:
+      - platform: state
+        entity_id: input_button.export_entities
+    action:
+      - action: logbook.log
+        data:
+          name: "ENTITY_EXPORT"
+          message: "START: Beginning entity export process"
+          domain: "automation"
+      
+      - action: file_editor.save
+        data:
+          filename: "/config/www/entities_export_{{ now().strftime('%Y%m%d_%H%M%S') }}.csv"
+          contents: "{{ state_attr('sensor.entity_export_data', 'export_data') }}"
+      
+      - action: logbook.log
+        data:
+          name: "ENTITY_EXPORT"
+          message: "SUCCESS: Entities exported to /config/www/entities_export_{{ now().strftime('%Y%m%d_%H%M%S') }}.csv"
+          domain: "automation"
+      
+      - action: notify.persistent_notification
+        continue_on_error: true
+        data:
+          title: "Entity Export Complete"
+          message: "Entities exported to /config/www/entities_export_{{ now().strftime('%Y%m%d_%H%M%S') }}.csv"
+          notification_id: "entity_export_complete"

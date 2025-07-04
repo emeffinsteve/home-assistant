@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_boolean",
+  "data": {
+    "items": [
+      {
+        "id": "client_automation_enabled",
+        "name": "Client Automation Enabled",
+        "icon": "mdi:thermostat"
+      },
+      {
+        "id": "climate_automation_enabled",
+        "name": "Climate Automation Enabled",
+        "icon": "mdi:thermostat"
+      },
+      {
+        "id": "climate_section_open",
+        "name": "Climate Section Open"
+      }
+    ]
+  }
+}

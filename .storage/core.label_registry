@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "core.label_registry",
+  "data": {
+    "labels": [
+      {
+        "color": "dark-grey",
+        "description": null,
+        "icon": "mdi:tools",
+        "label_id": "utility",
+        "name": "Utility",
+        "created_at": "2025-05-23T01:17:42.219737+00:00",
+        "modified_at": "2025-05-23T01:17:42.219744+00:00"
+      },
+      {
+        "color": "blue",
+        "description": null,
+        "icon": "mdi:access-point-network",
+        "label_id": "network_devices",
+        "name": "Network Devices",
+        "created_at": "2025-05-23T01:19:43.920196+00:00",
+        "modified_at": "2025-05-23T01:19:43.920202+00:00"
+      },
+      {
+        "color": "white",
+        "description": null,
+        "icon": "mdi:countertop",
+        "label_id": "living_space",
+        "name": "Living Space",
+        "created_at": "2025-05-23T01:45:54.263269+00:00",
+        "modified_at": "2025-05-23T01:45:54.263275+00:00"
+      },
+      {
+        "color": "red",
+        "description": null,
+        "icon": "mdi:account-cowboy-hat",
+        "label_id": "ulrich_s_lair",
+        "name": "Ulrich's Lair",
+        "created_at": "2025-05-23T01:47:21.422520+00:00",
+        "modified_at": "2025-05-23T01:47:21.422526+00:00"
+      },
+      {
+        "color": "yellow",
+        "description": null,
+        "icon": "mdi:human-female-girl",
+        "label_id": "genevieve_s_lair",
+        "name": "Genevieve's Lair",
+        "created_at": "2025-05-23T01:47:35.103869+00:00",
+        "modified_at": "2025-05-23T01:47:35.103874+00:00"
+      },
+      {
+        "color": "orange",
+        "description": null,
+        "icon": "mdi:bed-king-outline",
+        "label_id": "owner_s_suite",
+        "name": "Owner's Suite",
+        "created_at": "2025-05-23T01:48:24.570386+00:00",
+        "modified_at": "2025-05-23T01:48:24.570389+00:00"
+      },
+      {
+        "color": "black",
+        "description": null,
+        "icon": "mdi:speaker-multiple",
+        "label_id": "speakers",
+        "name": "Speakers",
+        "created_at": "2025-05-23T01:58:48.950432+00:00",
+        "modified_at": "2025-05-23T01:58:48.950441+00:00"
+      },
+      {
+        "color": "deep-purple",
+        "description": null,
+        "icon": "mdi:home-circle",
+        "label_id": "smart_home",
+        "name": "Smart Home",
+        "created_at": "2025-05-23T01:59:15.766421+00:00",
+        "modified_at": "2025-05-23T01:59:15.766427+00:00"
+      },
+      {
+        "color": "amber",
+        "description": null,
+        "icon": "mdi:lightbulb",
+        "label_id": "light_switches",
+        "name": "Light Switches",
+        "created_at": "2025-05-23T02:05:46.094700+00:00",
+        "modified_at": "2025-05-23T02:05:46.094707+00:00"
+      },
+      {
+        "color": "indigo",
+        "description": null,
+        "icon": "mdi:led-strip-variant",
+        "label_id": "mood_lighting",
+        "name": "Mood Lighting",
+        "created_at": "2025-05-23T02:46:02.338392+00:00",
+        "modified_at": "2025-05-23T02:46:02.338398+00:00"
+      },
+      {
+        "color": "pink",
+        "description": null,
+        "icon": "mdi:cctv",
+        "label_id": "cameras",
+        "name": "Cameras",
+        "created_at": "2025-05-23T03:32:39.584089+00:00",
+        "modified_at": "2025-05-23T03:32:39.584096+00:00"
+      },
+      {
+        "color": "green",
+        "description": null,
+        "icon": "mdi:border-outside",
+        "label_id": "outdoors",
+        "name": "Outdoors",
+        "created_at": "2025-05-24T01:16:16.181972+00:00",
+        "modified_at": "2025-05-24T01:16:16.182037+00:00"
+      },
+      {
+        "color": "blue-grey",
+        "description": null,
+        "icon": "mdi:home-floor-b",
+        "label_id": "basement",
+        "name": "Basement",
+        "created_at": "2025-05-24T01:17:52.642205+00:00",
+        "modified_at": "2025-05-24T01:17:52.642211+00:00"
+      },
+      {
+        "color": "teal",
+        "description": null,
+        "icon": "mdi:power-plug",
+        "label_id": "smart_plugs",
+        "name": "Smart Plugs",
+        "created_at": "2025-05-24T01:25:30.596471+00:00",
+        "modified_at": "2025-05-24T01:25:30.596477+00:00"
+      },
+      {
+        "color": "orange",
+        "description": null,
+        "icon": "mdi:youtube-tv",
+        "label_id": "entertainment",
+        "name": "Entertainment",
+        "created_at": "2025-05-24T01:30:40.556445+00:00",
+        "modified_at": "2025-05-24T01:30:40.556451+00:00"
+      },
+      {
+        "color": "indigo",
+        "description": null,
+        "icon": "mdi:motion-sensor",
+        "label_id": "motion_sensors",
+        "name": "Motion Sensors",
+        "created_at": "2025-05-26T22:39:57.915107+00:00",
+        "modified_at": "2025-05-26T22:39:57.915109+00:00"
+      },
+      {
+        "color": "pink",
+        "description": null,
+        "icon": "mdi:door-open",
+        "label_id": "contact_sensor",
+        "name": "Contact Sensor",
+        "created_at": "2025-05-26T22:42:26.237217+00:00",
+        "modified_at": "2025-05-26T22:42:26.237226+00:00"
+      },
+      {
+        "color": "light-blue",
+        "description": null,
+        "icon": "mdi:thermostat",
+        "label_id": "climate",
+        "name": "Climate",
+        "created_at": "2025-05-31T21:52:51.512117+00:00",
+        "modified_at": "2025-05-31T21:52:51.512125+00:00"
+      }
+    ]
+  }
+}

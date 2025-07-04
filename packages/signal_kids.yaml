@@ -1,0 +1,33 @@
+# =================================================================
+# PACKAGE: Kids Notification System
+# VERSION: 1.1.1 (Master System Version)
+# CREATED: 2025-06-24
+# LAST UPDATED: 2025-06-24
+# DEPENDENCIES: light entities, logbook integration
+# 
+# CHANGELOG:
+# v1.1.1 - 2025-06-24 - CRITICAL: Fixed Jinja2 scoping bug in availability template
+# v1.1.0 - 2025-06-24 - Simplified to on/off only, synchronized flashing for all
+# v1.0.1 - 2025-06-24 - Fixed template bug, renamed scripts, simplified overrides
+# v1.0.0 - 2025-06-24 - Initial package with all three scripts
+# 
+# DESCRIPTION: Light-based notification system for getting kids attention
+# COMPONENTS: 3 scripts, 4 override helpers
+# FAILURE MODE: Continue - individual scripts halt on failure, system continues
+# =================================================================
+
+# ============================= HELPERS ================================
+
+input_boolean:
+  signal_kids_override:
+    name: "Signal Kids Override"
+    icon: "mdi:lightbulb-off"
+  signal_genevieve_override:
+    name: "Signal Genevieve Override"
+    icon: "mdi:lightbulb-off"
+  signal_ulrich_override:
+    name: "Signal Ulrich Override"
+    icon: "mdi:lightbulb-off"
+  kids_notification_system_disabled:
+    name: "Kids Notification System Disabled"
+    icon: "mdi:bell-off"

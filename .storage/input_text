@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_text",
+  "data": {
+    "items": [
+      {
+        "id": "last_climate_action",
+        "name": "Last Climate Action",
+        "icon": "mdi:thermostat",
+        "max": 50,
+        "mode": "text",
+        "min": 0
+      }
+    ]
+  }
+}

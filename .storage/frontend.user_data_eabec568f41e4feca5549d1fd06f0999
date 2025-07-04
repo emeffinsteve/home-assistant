@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "frontend.user_data_eabec568f41e4feca5549d1fd06f0999",
+  "data": {
+    "language": {
+      "language": "en",
+      "number_format": "comma_decimal",
+      "time_format": "12",
+      "date_format": "language",
+      "time_zone": "local",
+      "first_weekday": "language"
+    },
+    "core": {
+      "showAdvanced": true,
+      "showEntityIdPicker": true
+    },
+    "sidebar": {
+      "panelOrder": [
+        "dashboard-steve",
+        "e498daa1_claude_terminal",
+        "a0d7b954_ssh",
+        "a0d7b954_vscode",
+        "core_configurator",
+        "hacs",
+        "logbook",
+        "history",
+        "calendar",
+        "developer-tools"
+      ],
+      "hiddenPanels": [
+        "map",
+        "dashboard-internet",
+        "dashboard-test",
+        "media-browser",
+        "energy",
+        "todo"
+      ]
+    }
+  }
+}

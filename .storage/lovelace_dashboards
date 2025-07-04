@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace_dashboards",
+  "data": {
+    "items": [
+      {
+        "id": "map",
+        "icon": "mdi:map",
+        "title": "Map",
+        "url_path": "map",
+        "mode": "storage",
+        "show_in_sidebar": true,
+        "require_admin": true
+      },
+      {
+        "id": "dashboard_steve",
+        "show_in_sidebar": true,
+        "icon": "mdi:monitor-dashboard",
+        "title": "Taylor Residence",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-steve"
+      },
+      {
+        "id": "dashboard_internet",
+        "show_in_sidebar": true,
+        "icon": "mdi:microsoft-internet-explorer",
+        "title": "Internet",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-internet"
+      },
+      {
+        "id": "dashboard_test",
+        "show_in_sidebar": true,
+        "title": "Test",
+        "require_admin": false,
+        "mode": "storage",
+        "url_path": "dashboard-test"
+      }
+    ]
+  }
+}

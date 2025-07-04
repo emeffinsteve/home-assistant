@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "minor_version": 8,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [
+          "Family Room"
+        ],
+        "floor_id": "basement",
+        "humidity_entity_id": null,
+        "icon": "mdi:sofa-single",
+        "id": "family_room",
+        "labels": [
+          "ulrich_s_lair",
+          "genevieve_s_lair"
+        ],
+        "name": "Rec Room",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T00:54:19.264793+00:00",
+        "modified_at": "2025-05-23T01:47:48.123620+00:00"
+      },
+      {
+        "aliases": [
+          "Living Room"
+        ],
+        "floor_id": "main_floor",
+        "humidity_entity_id": "sensor.my_ecobee_current_humidity",
+        "icon": "mdi:sofa",
+        "id": "living_room",
+        "labels": [
+          "living_space"
+        ],
+        "name": "Great Room",
+        "picture": null,
+        "temperature_entity_id": "sensor.my_ecobee_current_temperature",
+        "created_at": "2025-05-23T00:59:05.611806+00:00",
+        "modified_at": "2025-06-21T18:58:36.793539+00:00"
+      },
+      {
+        "aliases": [
+          "Kitchen Dining",
+          "Dining Room",
+          "Dining"
+        ],
+        "floor_id": "main_floor",
+        "humidity_entity_id": null,
+        "icon": "mdi:fridge",
+        "id": "kitchen",
+        "labels": [
+          "living_space"
+        ],
+        "name": "Kitchen",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T00:59:05.611860+00:00",
+        "modified_at": "2025-05-23T01:46:35.456799+00:00"
+      },
+      {
+        "aliases": [
+          "Master"
+        ],
+        "floor_id": "main_floor",
+        "humidity_entity_id": null,
+        "icon": "mdi:bed-king",
+        "id": "bedroom",
+        "labels": [
+          "owner_s_suite"
+        ],
+        "name": "Owner's Bedroom",
+        "picture": null,
+        "temperature_entity_id": "sensor.steves_fan_temperature",
+        "created_at": "2025-05-23T00:59:05.611873+00:00",
+        "modified_at": "2025-06-21T18:58:24.559946+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "main_floor",
+        "humidity_entity_id": null,
+        "icon": "mdi:desktop-classic",
+        "id": "office",
+        "labels": [],
+        "name": "Office",
+        "picture": null,
+        "temperature_entity_id": "sensor.office_fan_temperature",
+        "created_at": "2025-05-23T01:11:34.344060+00:00",
+        "modified_at": "2025-06-21T18:58:30.166439+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "basement",
+        "humidity_entity_id": null,
+        "icon": "mdi:package-variant",
+        "id": "storage",
+        "labels": [
+          "utility"
+        ],
+        "name": "Storage",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T01:17:47.002217+00:00",
+        "modified_at": "2025-05-23T01:17:47.002224+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "main_floor",
+        "humidity_entity_id": "sensor.owner_s_bathroom_sensor_humidity",
+        "icon": "mdi:toilet",
+        "id": "owner_s_bathroom",
+        "labels": [
+          "owner_s_suite"
+        ],
+        "name": "Owner's Bathroom",
+        "picture": null,
+        "temperature_entity_id": "sensor.owner_s_bathroom_sensor_temperature",
+        "created_at": "2025-05-23T01:48:51.393138+00:00",
+        "modified_at": "2025-06-21T18:58:07.302709+00:00"
+      },
+      {
+        "aliases": [
+          "Upstairs Bathroom"
+        ],
+        "floor_id": "main_floor",
+        "humidity_entity_id": null,
+        "icon": "mdi:toilet",
+        "id": "main_bathroom",
+        "labels": [
+          "ulrich_s_lair"
+        ],
+        "name": "Main Bathroom",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T01:49:10.283400+00:00",
+        "modified_at": "2025-05-23T01:54:20.207828+00:00"
+      },
+      {
+        "aliases": [
+          "Ulrich"
+        ],
+        "floor_id": "main_floor",
+        "humidity_entity_id": null,
+        "icon": "mdi:bed",
+        "id": "ulrich_s_room",
+        "labels": [
+          "ulrich_s_lair"
+        ],
+        "name": "Ulrich's Room",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T01:49:36.004717+00:00",
+        "modified_at": "2025-05-23T01:54:20.208102+00:00"
+      },
+      {
+        "aliases": [
+          "Genevieve",
+          "Eevee"
+        ],
+        "floor_id": "basement",
+        "humidity_entity_id": null,
+        "icon": "mdi:bed",
+        "id": "genevieve_s_room",
+        "labels": [
+          "genevieve_s_lair"
+        ],
+        "name": "Genevieve's Room",
+        "picture": null,
+        "temperature_entity_id": "sensor.genevieves_fan_temperature",
+        "created_at": "2025-05-23T01:50:11.366867+00:00",
+        "modified_at": "2025-06-21T19:00:42.175491+00:00"
+      },
+      {
+        "aliases": [
+          "Porch",
+          "Patio",
+          "Back Yard"
+        ],
+        "floor_id": "outside",
+        "humidity_entity_id": "sensor.outdoor_sensor_humidity",
+        "icon": "mdi:balcony",
+        "id": "deck",
+        "labels": [
+          "living_space"
+        ],
+        "name": "Deck",
+        "picture": null,
+        "temperature_entity_id": "sensor.outdoor_sensor_temperature",
+        "created_at": "2025-05-23T01:50:47.959245+00:00",
+        "modified_at": "2025-06-21T18:59:17.970788+00:00"
+      },
+      {
+        "aliases": [
+          "Front Yard"
+        ],
+        "floor_id": "outside",
+        "humidity_entity_id": null,
+        "icon": "mdi:door",
+        "id": "front_door",
+        "labels": [],
+        "name": "Front Door",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T01:51:13.543364+00:00",
+        "modified_at": "2025-05-23T01:55:08.808613+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "outside",
+        "humidity_entity_id": null,
+        "icon": "mdi:garage-variant",
+        "id": "garage",
+        "labels": [
+          "utility"
+        ],
+        "name": "Garage",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T01:51:41.342791+00:00",
+        "modified_at": "2025-05-23T01:55:08.811029+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "main_floor",
+        "humidity_entity_id": "sensor.meter_pro_21_humidity",
+        "icon": "mdi:door",
+        "id": "foyer",
+        "labels": [
+          "living_space"
+        ],
+        "name": "Foyer",
+        "picture": null,
+        "temperature_entity_id": "sensor.meter_pro_21_temperature",
+        "created_at": "2025-05-23T01:52:21.214714+00:00",
+        "modified_at": "2025-06-21T18:58:43.121048+00:00"
+      },
+      {
+        "aliases": [
+          "Downstairs Bathroom"
+        ],
+        "floor_id": "basement",
+        "humidity_entity_id": null,
+        "icon": "mdi:toilet",
+        "id": "basement_bathroom",
+        "labels": [
+          "genevieve_s_lair",
+          "utility"
+        ],
+        "name": "Basement Bathroom",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T01:53:01.040249+00:00",
+        "modified_at": "2025-05-23T01:53:41.691970+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "main_floor",
+        "humidity_entity_id": null,
+        "icon": "mdi:image-frame",
+        "id": "hallway",
+        "labels": [
+          "living_space"
+        ],
+        "name": "Hallway",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T02:06:12.309352+00:00",
+        "modified_at": "2025-05-23T02:06:12.309358+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": "main_floor",
+        "humidity_entity_id": null,
+        "icon": "mdi:washing-machine",
+        "id": "laundry_room",
+        "labels": [
+          "utility"
+        ],
+        "name": "Laundry Room",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-05-23T02:06:36.952905+00:00",
+        "modified_at": "2025-05-23T02:06:36.952908+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "basement",
+        "labels": [],
+        "name": "Basement",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-06-04T02:36:23.866083+00:00",
+        "modified_at": "2025-06-04T02:36:23.866085+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "humidity_entity_id": null,
+        "icon": null,
+        "id": "back_hallway",
+        "labels": [],
+        "name": "Back Hallway",
+        "picture": null,
+        "temperature_entity_id": null,
+        "created_at": "2025-06-04T02:36:23.867068+00:00",
+        "modified_at": "2025-06-04T02:36:23.867068+00:00"
+      }
+    ]
+  }
+}

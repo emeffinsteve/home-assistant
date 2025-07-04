@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "steve_taylor",
+        "name": "Steve Taylor",
+        "user_id": "eabec568f41e4feca5549d1fd06f0999",
+        "device_trackers": [
+          "device_tracker.iphone",
+          "device_tracker.ipad_2"
+        ]
+      },
+      {
+        "id": "nikki_taylor",
+        "name": "Nikki Taylor",
+        "device_trackers": [
+          "device_tracker.nikki_iphone"
+        ],
+        "user_id": "8e161368dc9548f5b7539eec0521a4ec",
+        "picture": null
+      }
+    ]
+  }
+}

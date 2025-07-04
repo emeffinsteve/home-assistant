@@ -1,0 +1,972 @@
+# =================================================================
+# AUTOMATION: Climate Management System with Sensor Resilience
+# VERSION: 2.5.1 (Major.Minor.Patch)
+# CREATED: 2025-06-21
+# LAST UPDATED: 2025-06-27
+# AUTHOR: Steve Taylor
+# TESTED_ON: HA Version 2025.6.0
+# DEPENDENCIES: climate.my_ecobee, sensor.outdoor_sensor_temperature (optional), weather.kakr (NWS)
+# COMPATIBILITY: HA 2024.X+ (minimum version)
+# 
+# CHANGELOG:
+# v2.5.1 - 2025-06-27 - CRITICAL FIX: Removed extra 'sequence:' wrapper in weather automation if/then blocks
+# v2.5.0 - 2025-06-27 - Complete YAML structure rewrite, fixed all indentation and nesting issues
+# v2.4.2 - 2025-06-25 - Fixed HA 2025.6 syntax compatibility (triggers/actions/conditions)
+# v2.4.1 - 2025-06-25 - Fixed weather automation YAML syntax, improved manual override detection
+# v2.4.0 - 2025-06-25 - MAJOR FIXES: Fixed monitor loop, added coordination, simplified templates
+# v2.3.2 - 2025-06-25 - Fixed weather forecast template logic, corrected Jinja2 scoping issues
+# v2.3.1 - 2025-06-24 - Added weather.get_forecasts polling system for reliable forecast data
+# v2.3.0 - 2025-06-24 - Switched to weather.kakr (NWS), removed broken AccuWeather dependency
+# 
+# DESCRIPTION: Resilient climate management with sensor fallback hierarchy:
+#              Primary outdoor sensor → Weather service (KAKR/NWS) → Indoor-only operation
+#              Fixed all YAML structure issues, proper indentation throughout
+# FAILURE MODE: Continue - System degrades gracefully, never halts completely
+# 
+# BUG FIXES IN v2.5.1:
+# - FIXED: "extra keys not allowed @ data['actions'][1]['then'][2]['sequence']" error
+# - FIXED: Weather automation now loads correctly in HA 2025.6
+# - FIXED: Removed unnecessary sequence wrappers in if/then blocks
+# =================================================================
+
+# =================================================================
+# COORDINATION HELPERS
+# =================================================================
+
+input_select:
+  climate_current_mode:
+    name: Climate Current Mode
+    options:
+      - "day"
+      - "night"
+      - "override"
+      - "weather"
+      - "indoor_only"
+      - "error"
+    initial: "day"
+
+  climate_outdoor_data_source:
+    name: Climate Outdoor Data Source
+    options:
+      - "primary_sensor"
+      - "weather_service"
+      - "indoor_only"
+      - "error"
+    initial: "primary_sensor"
+
+input_boolean:
+  climate_automation_enabled:
+    name: Climate Automation Enabled
+    initial: true
+    icon: mdi:home-automation
+
+  climate_manual_override_active:
+    name: Climate Manual Override Active
+    initial: false
+    icon: mdi:account-arrow-right-outline
+
+  climate_weather_preconditioning_active:
+    name: Climate Weather Preconditioning Active
+    initial: false
+    icon: mdi:weather-partly-cloudy
+
+  climate_outdoor_sensors_available:
+    name: Climate Outdoor Sensors Available
+    initial: true
+    icon: mdi:thermometer
+
+  climate_automation_coordination_lock:
+    name: Climate Automation Coordination Lock
+    initial: false
+    icon: mdi:lock
+
+input_text:
+  climate_priority_automation:
+    name: Climate Priority Automation
+    max: 100
+    initial: "none"
+
+  climate_logic_reason:
+    name: Climate Logic Reason
+    max: 200
+    initial: "System starting up"
+
+  last_climate_action:
+    name: Last Climate Action
+    max: 100
+    initial: "none"
+
+  climate_sensor_status:
+    name: Climate Sensor Status
+    max: 150
+    initial: "Checking sensors..."
+
+  weather_hot_days_ahead:
+    name: Weather Hot Days Ahead
+    max: 200
+    initial: "Checking forecast..."
+
+input_number:
+  climate_outdoor_temperature_best:
+    name: Climate Best Available Outdoor Temperature
+    min: -20
+    max: 130
+    step: 0.1
+    initial: 70
+    unit_of_measurement: "°F"
+    icon: mdi:thermometer
+
+  manual_override_hours:
+    name: Manual Override Hours
+    min: 0.5
+    max: 24
+    step: 0.5
+    initial: 3
+    unit_of_measurement: "hours"
+    icon: mdi:clock-outline
+
+  weather_forecast_today_high:
+    name: Weather Forecast Today High
+    min: -20
+    max: 130
+    step: 1
+    initial: 80
+    unit_of_measurement: "°F"
+    icon: mdi:thermometer-high
+
+input_datetime:
+  last_manual_thermostat_change:
+    name: Last Manual Thermostat Change
+    has_date: true
+    has_time: true
+
+  climate_last_outdoor_reading:
+    name: Climate Last Outdoor Reading
+    has_date: true
+    has_time: true
+
+input_button:
+  climate_resume_automation:
+    name: Resume Climate Automation
+    icon: mdi:home-automation
+
+  climate_force_day_schedule:
+    name: Force Day Schedule
+    icon: mdi:weather-sunny
+    
+  climate_force_night_schedule:
+    name: Force Night Schedule  
+    icon: mdi:weather-night
+    
+  climate_force_sensor_check:
+    name: Check Sensors Now
+    icon: mdi:thermometer-check
+
+# =================================================================
+# TEMPLATE SENSORS
+# =================================================================
+
+template:
+  - sensor:
+      - name: "Weather Forecast Today High"
+        unique_id: weather_forecast_today_high
+        state: >
+          {{ states('input_number.weather_forecast_today_high') | float(80) }}
+        unit_of_measurement: "°F"
+        icon: mdi:thermometer-high
+        attributes:
+          forecast_available: >
+            {{ states('input_number.weather_forecast_today_high') | float(0) > 0 }}
+          precool_needed: >
+            {{ states('input_number.weather_forecast_today_high') | float(0) >= 86 }}
+          hot_days_ahead: >
+            {{ states('input_text.weather_hot_days_ahead') }}
+          data_source: "KAKR Weather Service (Polled)"
+
+      - name: "Climate System Status"
+        unique_id: climate_system_status
+        state: >
+          {% if states('input_boolean.climate_manual_override_active') == 'on' %}
+            Manual Override
+          {% elif states('input_boolean.climate_weather_preconditioning_active') == 'on' %}
+            Pre-cooling
+          {% elif now().hour >= 6 and now().hour < 20 %}
+            Day Schedule
+          {% else %}
+            Night Schedule
+          {% endif %}
+        icon: >
+          {% if states('input_boolean.climate_manual_override_active') == 'on' %}
+            mdi:account-arrow-right
+          {% elif states('input_boolean.climate_weather_preconditioning_active') == 'on' %}
+            mdi:snowflake-alert
+          {% else %}
+            mdi:home-automation
+          {% endif %}
+        attributes:
+          outdoor_temp: "{{ states('input_number.climate_outdoor_temperature_best') }}°F"
+          data_source: "{{ states('input_select.climate_outdoor_data_source') }}"
+          logic_reason: "{{ states('input_text.climate_logic_reason') }}"
+          last_action: "{{ states('input_text.last_climate_action') }}"
+          sensors_available: "{{ states('input_boolean.climate_outdoor_sensors_available') }}"
+
+# =================================================================
+# AUTOMATIONS
+# =================================================================
+
+automation:
+  - alias: Weather Forecast Polling System
+    description: Polls KAKR weather service and extracts tomorrow's high temperature
+    id: weather_forecast_polling_system
+    triggers:
+      - platform: time_pattern
+        minutes: 30
+      - platform: homeassistant
+        event: start
+      - platform: state
+        entity_id: weather.kakr
+    conditions:
+      - condition: state
+        entity_id: input_boolean.climate_automation_enabled
+        state: "on"
+    actions:
+      - alias: Get KAKR Weather Forecast
+        service: weather.get_forecasts
+        target:
+          entity_id: weather.kakr
+        data:
+          type: twice_daily
+        response_variable: weather_data
+      - alias: Process Forecast Data
+        if:
+          - condition: template
+            value_template: >
+              {{ weather_data.get('weather.kakr', {}).get('forecast', [])|length > 0 }}
+        then:
+          - alias: Extract Tomorrow's High Temperature
+            variables:
+              forecast_list: "{{ weather_data['weather.kakr']['forecast'] }}"
+              tomorrow_str: "{{ (now() + timedelta(days=1)).strftime('%Y-%m-%d') }}"
+              tomorrow_high: >
+                {% for period in forecast_list %}
+                  {% if period.datetime.startswith(tomorrow_str) and period.get('is_daytime', true) %}
+                    {{ period.temperature }}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+          - alias: Update Tomorrow High Temperature
+            if:
+              - condition: template
+                value_template: "{{ tomorrow_high != '' and tomorrow_high | int(0) > 0 }}"
+            then:
+              - alias: Store Tomorrow's High
+                service: input_number.set_value
+                target:
+                  entity_id: input_number.weather_forecast_today_high
+                data:
+                  value: "{{ tomorrow_high }}"
+              - alias: Log Forecast Success
+                service: logbook.log
+                data:
+                  name: Weather Forecast Polling System
+                  message: >
+                    SUCCESS: Tomorrow's high updated to {{ tomorrow_high }}°F
+                    {% if tomorrow_high | int(0) >= 86 %}
+                    - PRE-COOLING WILL TRIGGER at 6 AM
+                    {% else %}
+                    - Normal day, no pre-cooling needed
+                    {% endif %}
+            else:
+              - alias: Log Forecast Failure
+                service: logbook.log
+                data:
+                  name: Weather Forecast Polling System
+                  message: "ERROR: Could not extract valid tomorrow high temperature from forecast data"
+          - alias: Calculate Hot Days List
+            variables:
+              hot_days_found: >
+                {% set hot_list = [] %}
+                {% for period in forecast_list %}
+                  {% if period.get('is_daytime', true) and period.temperature >= 86 %}
+                    {% set date_str = (period.datetime | as_datetime).strftime('%m/%d') %}
+                    {% set temp_str = period.temperature | string + '°F' %}
+                    {% set hot_list = hot_list + [date_str + ': ' + temp_str] %}
+                  {% endif %}
+                {% endfor %}
+                {{ hot_list[:5] | join(', ') if hot_list else 'No hot days in forecast' }}
+          - alias: Store Hot Days List
+            service: input_text.set_value
+            target:
+              entity_id: input_text.weather_hot_days_ahead
+            data:
+              value: "{{ hot_days_found }}"
+        else:
+          - alias: Log No Forecast Data
+            service: logbook.log
+            data:
+              name: Weather Forecast Polling System
+              message: "ERROR: No forecast data available from weather.kakr"
+    mode: single
+
+  - alias: Climate Sensor Manager
+    description: Manages outdoor temperature source priority
+    id: climate_sensor_manager
+    triggers:
+      - platform: state
+        entity_id: sensor.outdoor_sensor_temperature
+      - platform: state
+        entity_id: weather.kakr
+        attribute: temperature
+      - platform: time_pattern
+        minutes: 2
+      - platform: homeassistant
+        event: start
+    conditions:
+      - condition: state
+        entity_id: input_boolean.climate_automation_enabled
+        state: "on"
+    actions:
+      - alias: Evaluate Sensor Hierarchy
+        variables:
+          primary_temp_raw: "{{ states('sensor.outdoor_sensor_temperature') }}"
+          primary_available: >
+            {{ primary_temp_raw not in ['unknown', 'unavailable', 'none'] and 
+               primary_temp_raw | float(0) != 0 }}
+          primary_temp: "{{ primary_temp_raw | float(0) if primary_available else 0 }}"
+          primary_valid_range: "{{ primary_temp > 0 and primary_temp < 120 }}"
+          weather_temp_raw: "{{ state_attr('weather.kakr', 'temperature') }}"
+          weather_available: "{{ weather_temp_raw is not none and weather_temp_raw not in ['unknown', 'unavailable'] }}"
+          weather_temp: "{{ weather_temp_raw | float(0) if weather_available else 0 }}"
+          weather_valid_range: "{{ weather_temp > 0 and weather_temp < 120 }}"
+          indoor_temp: "{{ states('sensor.my_ecobee_current_temperature') | float(70) }}"
+          primary_usable: "{{ primary_available and primary_valid_range }}"
+      - alias: Determine Best Data Source
+        choose:
+          - conditions:
+              - condition: template
+                value_template: "{{ primary_usable }}"
+            sequence:
+              - alias: Use Primary Sensor
+                service: input_number.set_value
+                target:
+                  entity_id: input_number.climate_outdoor_temperature_best
+                data:
+                  value: "{{ primary_temp }}"
+              - alias: Set Primary Source
+                service: input_select.select_option
+                target:
+                  entity_id: input_select.climate_outdoor_data_source
+                data:
+                  option: "primary_sensor"
+              - alias: Set Sensors Available
+                service: input_boolean.turn_on
+                target:
+                  entity_id: input_boolean.climate_outdoor_sensors_available
+              - alias: Update Sensor Status
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_sensor_status
+                data:
+                  value: "Primary sensor: {{ primary_temp }}°F - OK"
+          - conditions:
+              - condition: template
+                value_template: "{{ weather_available and weather_valid_range }}"
+            sequence:
+              - alias: Use KAKR Weather Service
+                service: input_number.set_value
+                target:
+                  entity_id: input_number.climate_outdoor_temperature_best
+                data:
+                  value: "{{ weather_temp }}"
+              - alias: Set Weather Source
+                service: input_select.select_option
+                target:
+                  entity_id: input_select.climate_outdoor_data_source
+                data:
+                  option: "weather_service"
+              - alias: Set Sensors Available
+                service: input_boolean.turn_on
+                target:
+                  entity_id: input_boolean.climate_outdoor_sensors_available
+              - alias: Update Sensor Status
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_sensor_status
+                data:
+                  value: "KAKR weather: {{ weather_temp }}°F - Primary sensor issue"
+        default:
+          - alias: Use Indoor-Only Mode
+            service: input_number.set_value
+            target:
+              entity_id: input_number.climate_outdoor_temperature_best
+            data:
+              value: "{{ indoor_temp }}"
+          - alias: Set Indoor Only Source
+            service: input_select.select_option
+            target:
+              entity_id: input_select.climate_outdoor_data_source
+            data:
+              option: "indoor_only"
+          - alias: Set Sensors Unavailable
+            service: input_boolean.turn_off
+            target:
+              entity_id: input_boolean.climate_outdoor_sensors_available
+          - alias: Update Sensor Status
+            service: input_text.set_value
+            target:
+              entity_id: input_text.climate_sensor_status
+            data:
+              value: "Indoor-only mode: {{ indoor_temp }}°F - All outdoor sources failed"
+      - alias: Update Last Reading Time
+        service: input_datetime.set_datetime
+        target:
+          entity_id: input_datetime.climate_last_outdoor_reading
+        data:
+          datetime: "{{ now() }}"
+    mode: single
+
+  - alias: Climate Day Schedule
+    description: Manages daytime temperature with coordination
+    id: climate_day_schedule
+    triggers:
+      - platform: state
+        entity_id: input_number.climate_outdoor_temperature_best
+      - platform: time_pattern
+        minutes: 0
+    conditions:
+      - condition: state
+        entity_id: input_boolean.climate_automation_enabled
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.climate_manual_override_active
+        state: "off"
+      - condition: state
+        entity_id: input_boolean.climate_automation_coordination_lock
+        state: "off"
+      - condition: template
+        value_template: >
+          {{ now().hour >= 6 and now().hour < 20 }}
+    actions:
+      - alias: Set Coordination Lock
+        service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.climate_automation_coordination_lock
+      - alias: Update Priority Automation
+        service: input_text.set_value
+        target:
+          entity_id: input_text.climate_priority_automation
+        data:
+          value: "day_schedule"
+      - alias: Calculate Variables
+        variables:
+          outdoor_temp: "{{ states('input_number.climate_outdoor_temperature_best') | float(70) }}"
+          data_source: "{{ states('input_select.climate_outdoor_data_source') }}"
+          indoor_temp: "{{ states('sensor.my_ecobee_current_temperature') | float(70) }}"
+          outdoor_available: "{{ states('input_boolean.climate_outdoor_sensors_available') == 'on' }}"
+          last_action: "{{ states('input_text.last_climate_action') }}"
+          cool_trigger: "{{ 72 if data_source == 'indoor_only' else 69 }}"
+          heat_trigger: "{{ 65 if data_source == 'indoor_only' else 60 }}"
+      - alias: Execute Day Schedule Logic
+        choose:
+          - conditions:
+              - condition: template
+                value_template: "{{ outdoor_temp < heat_trigger and last_action != 'day_heated_to_68' }}"
+            sequence:
+              - alias: Set Heat Mode
+                service: climate.set_temperature
+                target:
+                  entity_id: climate.my_ecobee
+                data:
+                  temperature: 68
+                  hvac_mode: heat
+              - alias: Update Last Action
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.last_climate_action
+                data:
+                  value: day_heated_to_68
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Day Schedule: {{ outdoor_temp }}°F < {{ heat_trigger }}°F → Heat to 68°F ({{ data_source }})"
+              - alias: Log Day Heat Action
+                service: logbook.log
+                data:
+                  name: Climate Day Schedule
+                  message: "HEAT: Set to 68°F - Outdoor {{ outdoor_temp }}°F via {{ data_source }}"
+          - conditions:
+              - condition: template
+                value_template: >
+                  {% if outdoor_available %}
+                    {{ outdoor_temp >= 60 and outdoor_temp <= 69 }}
+                  {% else %}
+                    {{ indoor_temp >= 68 and indoor_temp <= 71 }}
+                  {% endif %}
+            sequence:
+              - alias: Set HVAC Off
+                service: climate.set_hvac_mode
+                target:
+                  entity_id: climate.my_ecobee
+                data:
+                  hvac_mode: "off"
+              - alias: Update Last Action
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.last_climate_action
+                data:
+                  value: day_nice_weather
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Day Schedule: Comfortable {{ outdoor_temp }}°F → Climate off ({{ data_source }})"
+              - alias: Log Day Off Action
+                service: logbook.log
+                data:
+                  name: Climate Day Schedule
+                  message: "OFF: Comfortable weather - {{ outdoor_temp }}°F via {{ data_source }}"
+          - conditions:
+              - condition: template
+                value_template: "{{ outdoor_temp > cool_trigger and last_action != 'day_cooled_to_70' }}"
+            sequence:
+              - alias: Set Cool Mode
+                service: climate.set_temperature
+                target:
+                  entity_id: climate.my_ecobee
+                data:
+                  temperature: 70
+                  hvac_mode: cool
+              - alias: Update Last Action
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.last_climate_action
+                data:
+                  value: day_cooled_to_70
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Day Schedule: {{ outdoor_temp }}°F > {{ cool_trigger }}°F → Cool to 70°F ({{ data_source }})"
+              - alias: Log Day Cool Action
+                service: logbook.log
+                data:
+                  name: Climate Day Schedule
+                  message: "COOL: Set to 70°F - Outdoor {{ outdoor_temp }}°F via {{ data_source }}"
+      - alias: Release Coordination Lock
+        service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.climate_automation_coordination_lock
+    mode: single
+
+  - alias: Climate Night Schedule
+    description: Manages nighttime temperature with coordination
+    id: climate_night_schedule
+    triggers:
+      - platform: time
+        at:
+          - "20:30:00"
+          - "21:30:00"
+          - "05:00:00"
+          - "06:00:00"
+      - platform: state
+        entity_id: input_number.climate_outdoor_temperature_best
+    conditions:
+      - condition: state
+        entity_id: input_boolean.climate_automation_enabled
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.climate_manual_override_active
+        state: "off"
+      - condition: state
+        entity_id: input_boolean.climate_automation_coordination_lock
+        state: "off"
+      - condition: template
+        value_template: >
+          {{ now().hour >= 20 or now().hour < 6 }}
+    actions:
+      - alias: Set Coordination Lock
+        service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.climate_automation_coordination_lock
+      - alias: Update Priority Automation
+        service: input_text.set_value
+        target:
+          entity_id: input_text.climate_priority_automation
+        data:
+          value: "night_schedule"
+      - alias: Calculate Variables
+        variables:
+          outdoor_temp: "{{ states('input_number.climate_outdoor_temperature_best') | float(70) }}"
+          indoor_temp: "{{ states('sensor.my_ecobee_current_temperature') | float(70) }}"
+          data_source: "{{ states('input_select.climate_outdoor_data_source') }}"
+          outdoor_available: "{{ states('input_boolean.climate_outdoor_sensors_available') == 'on' }}"
+          last_action: "{{ states('input_text.last_climate_action') }}"
+          cool_trigger: "{{ 71 if data_source == 'indoor_only' else 69 }}"
+          heat_trigger: "{{ 64 if data_source == 'indoor_only' else 59 }}"
+      - alias: Execute Night Schedule Logic
+        choose:
+          - conditions:
+              - condition: template
+                value_template: "{{ outdoor_temp < heat_trigger and last_action != 'night_heated_to_67' }}"
+            sequence:
+              - alias: Set Heat Mode
+                service: climate.set_temperature
+                target:
+                  entity_id: climate.my_ecobee
+                data:
+                  temperature: 67
+                  hvac_mode: heat
+              - alias: Update Last Action
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.last_climate_action
+                data:
+                  value: night_heated_to_67
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Night Schedule: {{ outdoor_temp }}°F < {{ heat_trigger }}°F → Heat to 67°F ({{ data_source }})"
+              - alias: Log Night Heat Action
+                service: logbook.log
+                data:
+                  name: Climate Night Schedule
+                  message: "HEAT: Set to 67°F - Outdoor {{ outdoor_temp }}°F via {{ data_source }}"
+          - conditions:
+              - condition: template
+                value_template: "{{ outdoor_temp > cool_trigger and last_action != 'night_cooled_to_67' }}"
+            sequence:
+              - alias: Set Cool Mode
+                service: climate.set_temperature
+                target:
+                  entity_id: climate.my_ecobee
+                data:
+                  temperature: 67
+                  hvac_mode: cool
+              - alias: Update Last Action
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.last_climate_action
+                data:
+                  value: night_cooled_to_67
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Night Schedule: {{ outdoor_temp }}°F > {{ cool_trigger }}°F → Cool to 67°F ({{ data_source }})"
+              - alias: Log Night Cool Action
+                service: logbook.log
+                data:
+                  name: Climate Night Schedule
+                  message: "COOL: Set to 67°F - Outdoor {{ outdoor_temp }}°F via {{ data_source }}"
+          - conditions:
+              - condition: template
+                value_template: >
+                  {% if outdoor_available %}
+                    {{ outdoor_temp >= heat_trigger and outdoor_temp <= cool_trigger }}
+                  {% else %}
+                    {{ indoor_temp >= 66 and indoor_temp <= 70 }}
+                  {% endif %}
+            sequence:
+              - alias: Set HVAC Off
+                service: climate.set_hvac_mode
+                target:
+                  entity_id: climate.my_ecobee
+                data:
+                  hvac_mode: "off"
+              - alias: Update Last Action
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.last_climate_action
+                data:
+                  value: night_off
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Night Schedule: Comfortable {{ outdoor_temp }}°F → Climate off ({{ data_source }})"
+              - alias: Log Night Off Action
+                service: logbook.log
+                data:
+                  name: Climate Night Schedule
+                  message: "OFF: Comfortable weather - {{ outdoor_temp }}°F via {{ data_source }}"
+      - alias: Release Coordination Lock
+        service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.climate_automation_coordination_lock
+    mode: single
+
+  - alias: Climate Weather Intelligence
+    description: Pre-cooling for hot days (6AM if forecast >86°F)
+    id: climate_weather_intelligence
+    triggers:
+      - platform: time
+        at: "06:00:00"
+      - platform: state
+        entity_id: sensor.weather_forecast_today_high
+    conditions:
+      - condition: state
+        entity_id: input_boolean.climate_automation_enabled
+        state: "on"
+      - condition: state
+        entity_id: input_boolean.climate_manual_override_active
+        state: "off"
+      - condition: state
+        entity_id: input_boolean.climate_automation_coordination_lock
+        state: "off"
+    actions:
+      - alias: Set Coordination Lock
+        service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.climate_automation_coordination_lock
+      - alias: Update Priority Automation
+        service: input_text.set_value
+        target:
+          entity_id: input_text.climate_priority_automation
+        data:
+          value: "weather_intelligence"
+      - alias: Calculate Weather Variables
+        variables:
+          outdoor_temp: "{{ states('input_number.climate_outdoor_temperature_best') | float(70) }}"
+          current_hour: "{{ now().hour }}"
+          today_high: "{{ states('sensor.weather_forecast_today_high') | float(80) }}"
+          is_preconditioning_time: "{{ current_hour == 6 and today_high >= 86 and outdoor_temp < 75 }}"
+          last_action: "{{ states('input_text.last_climate_action') }}"
+      - alias: Execute Weather Intelligence Logic
+        choose:
+          - conditions:
+              - condition: template
+                value_template: "{{ is_preconditioning_time }}"
+              - condition: template
+                value_template: "{{ last_action != 'precooled_to_65' }}"
+            sequence:
+              - alias: Set Preconditioning Active
+                service: input_boolean.turn_on
+                target:
+                  entity_id: input_boolean.climate_weather_preconditioning_active
+              - alias: Pre-cool to 65F
+                service: climate.set_temperature
+                target:
+                  entity_id: climate.my_ecobee
+                data:
+                  temperature: 65
+                  hvac_mode: cool
+              - alias: Update Last Action
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.last_climate_action
+                data:
+                  value: precooled_to_65
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Weather Intelligence: Pre-cooling for {{ today_high }}°F day → Cool to 65°F"
+              - alias: Log Weather Intelligence Action
+                service: logbook.log
+                data:
+                  name: Climate Weather Intelligence
+                  message: "PRE-COOL: Set to 65°F for {{ today_high }}°F forecast - Hot days: {{ states('input_text.weather_hot_days_ahead') }}"
+          - conditions:
+              - condition: template
+                value_template: "{{ current_hour > 8 and states('input_boolean.climate_weather_preconditioning_active') == 'on' }}"
+            sequence:
+              - alias: Turn Off Preconditioning
+                service: input_boolean.turn_off
+                target:
+                  entity_id: input_boolean.climate_weather_preconditioning_active
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Weather Intelligence: Pre-cooling period ended, resuming normal schedule"
+              - alias: Log Preconditioning End
+                service: logbook.log
+                data:
+                  name: Climate Weather Intelligence
+                  message: "PRE-COOL END: Returning to normal schedule after morning pre-cooling"
+      - alias: Release Coordination Lock
+        service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.climate_automation_coordination_lock
+    mode: single
+
+  - alias: Climate System Monitor
+    description: Monitors manual overrides and system health - FIXED VERSION
+    id: climate_system_monitor
+    triggers:
+      - platform: state
+        entity_id: climate.my_ecobee
+        attribute: temperature
+      - platform: state
+        entity_id: climate.my_ecobee
+        attribute: hvac_mode
+      - platform: time_pattern
+        minutes: 5
+    conditions:
+      - condition: state
+        entity_id: input_boolean.climate_automation_enabled
+        state: "on"
+    actions:
+      - alias: Manual Override Detection
+        if:
+          - condition: template
+            value_template: "{{ trigger.platform == 'state' and trigger.entity_id == 'climate.my_ecobee' }}"
+          - condition: template
+            value_template: >
+              {{ states('input_text.climate_priority_automation') == 'none' and
+                 states('input_boolean.climate_automation_coordination_lock') == 'off' }}
+        then:
+          - alias: Set Manual Override Active
+            service: input_boolean.turn_on
+            target:
+              entity_id: input_boolean.climate_manual_override_active
+          - alias: Update Last Manual Change Time
+            service: input_datetime.set_datetime
+            target:
+              entity_id: input_datetime.last_manual_thermostat_change
+            data:
+              datetime: "{{ now() }}"
+          - alias: Update Logic Reason
+            service: input_text.set_value
+            target:
+              entity_id: input_text.climate_logic_reason
+            data:
+              value: "Manual Override: User changed thermostat settings"
+          - alias: Log Manual Override
+            service: logbook.log
+            data:
+              name: Climate System Monitor
+              message: "OVERRIDE: Manual thermostat change detected - automation paused for {{ states('input_number.manual_override_hours') }} hours"
+      - alias: Check Override Expiration
+        if:
+          - condition: state
+            entity_id: input_boolean.climate_manual_override_active
+            state: "on"
+          - condition: template
+            value_template: >
+              {% set last_manual = states('input_datetime.last_manual_thermostat_change') %}
+              {% if last_manual not in ['unknown', 'unavailable'] %}
+                {% set override_hours = states('input_number.manual_override_hours') | float(3) %}
+                {% set override_seconds = override_hours * 3600 %}
+                {% set last_timestamp = (last_manual | as_datetime).timestamp() %}
+                {% set current_timestamp = now().timestamp() %}
+                {% set time_diff = current_timestamp - last_timestamp %}
+                {{ time_diff > override_seconds }}
+              {% else %}
+                false
+              {% endif %}
+        then:
+          - alias: Clear Manual Override
+            service: input_boolean.turn_off
+            target:
+              entity_id: input_boolean.climate_manual_override_active
+          - alias: Update Logic Reason
+            service: input_text.set_value
+            target:
+              entity_id: input_text.climate_logic_reason
+            data:
+              value: "Override Expired: Resuming normal automation control"
+          - alias: Log Override Expiration
+            service: logbook.log
+            data:
+              name: Climate System Monitor
+              message: "OVERRIDE EXPIRED: Resuming normal climate automation control"
+      - alias: Clear Priority Automation
+        if:
+          - condition: template
+            value_template: "{{ states('input_text.climate_priority_automation') != 'none' }}"
+        then:
+          - delay:
+              seconds: 5
+          - alias: Reset Priority Automation
+            service: input_text.set_value
+            target:
+              entity_id: input_text.climate_priority_automation
+            data:
+              value: "none"
+    mode: single
+
+  - alias: Climate Dashboard Controls
+    description: Handle manual trigger buttons from dashboard
+    id: climate_dashboard_controls
+    triggers:
+      - platform: state
+        entity_id: input_button.climate_force_day_schedule
+      - platform: state
+        entity_id: input_button.climate_force_night_schedule
+      - platform: state
+        entity_id: input_button.climate_force_sensor_check
+      - platform: state
+        entity_id: input_button.climate_resume_automation
+    actions:
+      - alias: Determine Button Pressed
+        choose:
+          - conditions:
+              - condition: template
+                value_template: "{{ trigger.entity_id == 'input_button.climate_force_day_schedule' }}"
+            sequence:
+              - alias: Force Day Schedule
+                service: automation.trigger
+                target:
+                  entity_id: automation.climate_day_schedule
+              - alias: Log Manual Day Trigger
+                service: logbook.log
+                data:
+                  name: Climate Dashboard Controls
+                  message: "MANUAL TRIGGER: Day schedule forced via dashboard"
+          - conditions:
+              - condition: template
+                value_template: "{{ trigger.entity_id == 'input_button.climate_force_night_schedule' }}"
+            sequence:
+              - alias: Force Night Schedule
+                service: automation.trigger
+                target:
+                  entity_id: automation.climate_night_schedule
+              - alias: Log Manual Night Trigger
+                service: logbook.log
+                data:
+                  name: Climate Dashboard Controls
+                  message: "MANUAL TRIGGER: Night schedule forced via dashboard"
+          - conditions:
+              - condition: template
+                value_template: "{{ trigger.entity_id == 'input_button.climate_force_sensor_check' }}"
+            sequence:
+              - alias: Force Sensor Manager
+                service: automation.trigger
+                target:
+                  entity_id: automation.climate_sensor_manager
+              - alias: Log Manual Sensor Check
+                service: logbook.log
+                data:
+                  name: Climate Dashboard Controls
+                  message: "MANUAL TRIGGER: Sensor check forced via dashboard"
+          - conditions:
+              - condition: template
+                value_template: "{{ trigger.entity_id == 'input_button.climate_resume_automation' }}"
+            sequence:
+              - alias: Clear Manual Override
+                service: input_boolean.turn_off
+                target:
+                  entity_id: input_boolean.climate_manual_override_active
+              - alias: Update Logic Reason
+                service: input_text.set_value
+                target:
+                  entity_id: input_text.climate_logic_reason
+                data:
+                  value: "Manual Resume: User resumed automation control via dashboard"
+              - alias: Log Manual Resume
+                service: logbook.log
+                data:
+                  name: Climate Dashboard Controls
+                  message: "MANUAL RESUME: Climate automation resumed via dashboard button"
+    mode: single

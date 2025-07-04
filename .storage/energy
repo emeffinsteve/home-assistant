@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "energy",
+  "data": {
+    "energy_sources": [],
+    "device_consumption": [
+      {
+        "stat_consumption": "sensor.basement_bathroom_fan_energy"
+      },
+      {
+        "stat_consumption": "sensor.deck_outer_lights_energy"
+      },
+      {
+        "stat_consumption": "sensor.front_porch_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.garage_coach_lights_energy"
+      },
+      {
+        "stat_consumption": "sensor.great_room_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.hallway_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.kitchen_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.kitchen_sink_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.main_bathroom_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.office_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.owner_s_bathroom_fan_energy"
+      },
+      {
+        "stat_consumption": "sensor.owner_s_bathroom_sink_lights_energy"
+      },
+      {
+        "stat_consumption": "sensor.owner_s_bedroom_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.rec_room_lights_energy"
+      },
+      {
+        "stat_consumption": "sensor.storage_light_energy"
+      },
+      {
+        "stat_consumption": "sensor.uc1_energy"
+      },
+      {
+        "stat_consumption": "sensor.uc2_energy"
+      },
+      {
+        "stat_consumption": "sensor.uc3_energy"
+      },
+      {
+        "stat_consumption": "sensor.uc4_energy"
+      },
+      {
+        "stat_consumption": "sensor.uc5_energy"
+      },
+      {
+        "stat_consumption": "sensor.uc6_energy"
+      },
+      {
+        "stat_consumption": "sensor.ulrich_light_energy"
+      }
+    ]
+  }
+}

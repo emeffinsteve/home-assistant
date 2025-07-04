@@ -1,0 +1,777 @@
+restart_home_assistant:
+  sequence:
+  - action: homeassistant.restart
+    metadata: {}
+    data: {}
+  alias: Restart Home Assistant
+  description: ''
+lock_front_door:
+  alias: Lock Front Door
+  description: Locks the front door
+  mode: single
+  sequence:
+  - target:
+      entity_id: lock.aqara_smart_lock_u200
+    action: lock.lock
+unlock_front_door:
+  alias: Unlock Front Door
+  description: Unlocks the front door
+  mode: single
+  sequence:
+  - target:
+      entity_id: lock.aqara_smart_lock_u200
+    action: lock.unlock
+  icon: mdi:lock-open
+toggle_upstairs_temp_override:
+  alias: Toggle Upstairs Temp Override
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_boolean.upstairs_temp_override
+        state: 'on'
+      sequence:
+      - entity_id: input_boolean.upstairs_temp_override
+        action: input_boolean.turn_off
+    default:
+    - data:
+        entity_id: input_select.upstairs_internet_override_mode
+        option: Normal Schedule
+      action: input_select.select_option
+    - entity_id: input_boolean.upstairs_temp_override
+      action: input_boolean.turn_on
+  description: ''
+toggle_upstairs_pause_indefinitely:
+  alias: Toggle Upstairs Pause Indefinitely
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_select.upstairs_internet_override_mode
+        state: Paused Indefinitely
+      sequence:
+      - data:
+          entity_id: input_select.upstairs_internet_override_mode
+          option: Normal Schedule
+        action: input_select.select_option
+    default:
+    - entity_id: input_boolean.upstairs_temp_override
+      action: input_boolean.turn_off
+    - data:
+        entity_id: input_select.upstairs_internet_override_mode
+        option: Paused Indefinitely
+      action: input_select.select_option
+  description: ''
+toggle_upstairs_enable_indefinitely:
+  alias: Toggle Upstairs Enable Indefinitely
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_select.upstairs_internet_override_mode
+        state: Enabled Indefinitely
+      sequence:
+      - data:
+          entity_id: input_select.upstairs_internet_override_mode
+          option: Normal Schedule
+        action: input_select.select_option
+    default:
+    - entity_id: input_boolean.upstairs_temp_override
+      action: input_boolean.turn_off
+    - data:
+        entity_id: input_select.upstairs_internet_override_mode
+        option: Enabled Indefinitely
+      action: input_select.select_option
+  description: ''
+toggle_downstairs_temp_override:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_boolean.downstairs_temp_override
+        state: 'on'
+      sequence:
+      - target:
+          entity_id: input_boolean.downstairs_temp_override
+        action: input_boolean.turn_off
+    default:
+    - target:
+        entity_id: input_select.downstairs_internet_override_mode
+      data:
+        option: Normal Schedule
+      action: input_select.select_option
+    - target:
+        entity_id: input_boolean.downstairs_temp_override
+      action: input_boolean.turn_on
+  alias: Toggle Downstairs Temp Override
+  description: ''
+toggle_downstairs_pause_indefinitely:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_select.downstairs_internet_override_mode
+        state: Paused Indefinitely
+      sequence:
+      - target:
+          entity_id: input_select.downstairs_internet_override_mode
+        data:
+          option: Normal Schedule
+        action: input_select.select_option
+    default:
+    - target:
+        entity_id: input_boolean.downstairs_temp_override
+      action: input_boolean.turn_off
+    - target:
+        entity_id: input_select.downstairs_internet_override_mode
+      data:
+        option: Paused Indefinitely
+      action: input_select.select_option
+  alias: Toggle Downstairs Pause Indefinitely
+  description: ''
+toggle_downstairs_enable_indefinitely:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_select.downstairs_internet_override_mode
+        state: Enabled Indefinitely
+      sequence:
+      - target:
+          entity_id: input_select.downstairs_internet_override_mode
+        data:
+          option: Normal Schedule
+        action: input_select.select_option
+    default:
+    - target:
+        entity_id: input_boolean.downstairs_temp_override
+      action: input_boolean.turn_off
+    - target:
+        entity_id: input_select.downstairs_internet_override_mode
+      data:
+        option: Enabled Indefinitely
+      action: input_select.select_option
+  alias: Toggle Downstairs Enable Indefinitely
+  description: ''
+toggle_genevieve_temp_override:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_boolean.genevieve_temp_override
+        state: 'on'
+      sequence:
+      - target:
+          entity_id: input_boolean.genevieve_temp_override
+        action: input_boolean.turn_off
+    default:
+    - target:
+        entity_id: input_select.genevieve_internet_override_mode
+      data:
+        option: Normal Schedule
+      action: input_select.select_option
+    - target:
+        entity_id: input_boolean.genevieve_temp_override
+      action: input_boolean.turn_on
+  alias: Toggle Genevieve Temp Override
+  description: ''
+toggle_genevieve_pause_indefinitely:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_select.genevieve_internet_override_mode
+        state: Paused Indefinitely
+      sequence:
+      - target:
+          entity_id: input_select.genevieve_internet_override_mode
+        data:
+          option: Normal Schedule
+        action: input_select.select_option
+    default:
+    - target:
+        entity_id: input_boolean.genevieve_temp_override
+      action: input_boolean.turn_off
+    - target:
+        entity_id: input_select.genevieve_internet_override_mode
+      data:
+        option: Paused Indefinitely
+      action: input_select.select_option
+  alias: Toggle Genevieve Pause Indefinitely
+  description: ''
+toggle_genevieve_enable_indefinitely:
+  sequence:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: input_select.genevieve_internet_override_mode
+        state: Enabled Indefinitely
+      sequence:
+      - target:
+          entity_id: input_select.genevieve_internet_override_mode
+        data:
+          option: Normal Schedule
+        action: input_select.select_option
+    default:
+    - target:
+        entity_id: input_boolean.genevieve_temp_override
+      action: input_boolean.turn_off
+    - target:
+        entity_id: input_select.genevieve_internet_override_mode
+      data:
+        option: Enabled Indefinitely
+      action: input_select.select_option
+  alias: Toggle Genevieve Enable Indefinitely
+  description: ''
+owners_suite_all_off:
+  alias: Owner's Suite All Off
+  sequence:
+  - service: light.turn_off
+    entity_id: light.owners_suite_lights
+  - service: switch.turn_off
+    entity_id: switch.owners_closet
+  - service: switch.turn_off
+    entity_id: switch.owner_s_bathroom_fan
+  - service: fan.turn_off
+    entity_id: fan.steves_fan
+office_all_off:
+  alias: Office All Off
+  sequence:
+  - service: light.turn_off
+    entity_id: light.office_light
+  - service: light.turn_off
+    entity_id: light.desk_light
+  - service: switch.turn_off
+    entity_id: switch.on_air_sign
+  - service: fan.turn_off
+    entity_id: fan.office_fan
+ulrich_area_all_off:
+  alias: Ulrich Area All Off
+  sequence:
+  - service: light.turn_off
+    entity_id: light.ulrich_lights
+  - service: switch.turn_off
+    entity_id: switch.ulrichs_closet
+  - service: switch.turn_off
+    entity_id: switch.ulrich_s_fan
+genevieve_area_all_off:
+  alias: Genevieve Area All Off
+  sequence:
+  - service: light.turn_off
+    entity_id: light.genevieve_lights
+  - service: switch.turn_off
+    entity_id: switch.genevieves_closet
+  - service: fan.turn_off
+    entity_id: fan.genevieves_fan
+
+# =================================================================
+# SIGNAL SCRIPTS: Kids Notification System (from signal_kids package)
+# VERSION: 1.1.1
+# CREATED: 2025-06-24
+# AUTHOR: Steve Taylor
+# DEPENDENCIES: light entities, logbook integration
+# 
+# DESCRIPTION: Light-based notification system for getting kids attention
+# =================================================================
+
+# =================================================================
+# SCRIPT: Signal Kids
+# VERSION: 1.1.1
+# DESCRIPTION: Flash all kids lights synchronously (both children)
+# ENTITIES: 5 lights total
+# FAILURE MODE: Halt - stops if no lights available
+# =================================================================
+signal_kids:
+  alias: Signal Kids
+  description: Flash all kids lights synchronously to get both children's attention
+  mode: single
+  max_exceeded: silent
+  sequence:
+    # Check system and script overrides
+    - if:
+        - condition: or
+          conditions:
+            - condition: state
+              entity_id: input_boolean.kids_notification_system_disabled
+              state: "on"
+            - condition: state
+              entity_id: input_boolean.signal_kids_override
+              state: "on"
+      then:
+        - service: logbook.log
+          data:
+            name: Signal Kids
+            message: "OVERRIDE: System or script override active - script disabled"
+        - stop: "Override is active"
+
+    # Initialize variables
+    - variables:
+        light_entities:
+          - light.genevieves_light
+          - light.basement_bathroom_light
+          - light.main_bathroom_light
+          - light.ulrich_light
+          - light.rec_room_lights
+
+    # Log script start
+    - service: logbook.log
+      data:
+        name: Signal Kids
+        message: "START: Checking {{ light_entities | length }} light entities for availability"
+
+    # Build list of available entities (FIXED TEMPLATE)
+    - variables:
+        available_entities: "{{ light_entities | reject('is_state', 'unavailable') | list }}"
+
+    # Log availability check results
+    - service: logbook.log
+      data:
+        name: Signal Kids
+        message: "CONDITION: {{ available_entities | length }} of {{ light_entities | length }} lights available: {{ available_entities | join(', ') if available_entities else 'NONE' }}"
+
+    # Halt if no lights available
+    - if:
+        - condition: template
+          value_template: "{{ available_entities | length == 0 }}"
+      then:
+        - service: logbook.log
+          data:
+            name: Signal Kids
+            message: "ERROR: No lights available - check device connections"
+        - service: persistent_notification.create
+          data:
+            title: "Signal Kids Failed"
+            message: "No lights available - check device connections"
+            notification_id: "signal_kids_failed"
+        - stop: "No available lights to signal with"
+
+    # Capture original on/off states only
+    - variables:
+        original_states: >-
+          {% set states_dict = {} %}
+          {% for entity in available_entities %}
+            {% set states_dict = dict(states_dict, **{entity: states(entity)}) %}
+          {% endfor %}
+          {{ states_dict }}
+
+    # Log decision to proceed
+    - service: logbook.log
+      data:
+        name: Signal Kids
+        message: "DECISION: Proceeding with {{ available_entities | length }} lights - captured original states"
+
+    # Sync all lights to ON state
+    - service: logbook.log
+      data:
+        name: Signal Kids
+        message: "STATE: Syncing all lights to ON state"
+    - repeat:
+        for_each: "{{ available_entities }}"
+        sequence:
+          - service: light.turn_on
+            target:
+              entity_id: "{{ repeat.item }}"
+            continue_on_error: true
+
+    # Delay after sync-up
+    - delay: "00:00:01"
+
+    # Execute synchronized flash sequence (5 cycles = 10 seconds)
+    - service: logbook.log
+      data:
+        name: Signal Kids
+        message: "DECISION: Starting synchronized flash sequence (5 cycles, 10 seconds total)"
+    - repeat:
+        count: 5
+        sequence:
+          # Turn all lights OFF
+          - repeat:
+              for_each: "{{ available_entities }}"
+              sequence:
+                - service: light.turn_off
+                  target:
+                    entity_id: "{{ repeat.item }}"
+                  continue_on_error: true
+          
+          # Hold OFF state for 1 second
+          - delay: "00:00:01"
+          
+          # Turn all lights ON
+          - repeat:
+              for_each: "{{ available_entities }}"
+              sequence:
+                - service: light.turn_on
+                  target:
+                    entity_id: "{{ repeat.item }}"
+                  continue_on_error: true
+          
+          # Hold ON state for 1 second (except last cycle)
+          - if:
+              - condition: template
+                value_template: "{{ repeat.index < 5 }}"
+            then:
+              - delay: "00:00:01"
+
+    # Restore original states
+    - service: logbook.log
+      data:
+        name: Signal Kids
+        message: "STATE: Restoring original light states"
+    - repeat:
+        for_each: "{{ available_entities }}"
+        sequence:
+          - variables:
+              entity: "{{ repeat.item }}"
+              original_state: "{{ original_states[entity] }}"
+          - if:
+              - condition: template
+                value_template: "{{ original_state == 'on' }}"
+            then:
+              - service: light.turn_on
+                target:
+                  entity_id: "{{ entity }}"
+                continue_on_error: true
+            else:
+              - service: light.turn_off
+                target:
+                  entity_id: "{{ entity }}"
+                continue_on_error: true
+
+    # Log successful completion
+    - service: logbook.log
+      data:
+        name: Signal Kids
+        message: "SUCCESS: Flash sequence completed - {{ available_entities | length }} lights signaled and restored"
+
+# =================================================================
+# SCRIPT: Signal Genevieve
+# VERSION: 1.1.1
+# DESCRIPTION: Flash Genevieve's lights synchronously
+# ENTITIES: 2 lights (bedroom + bathroom)
+# FAILURE MODE: Halt - stops if no lights available
+# =================================================================
+signal_genevieve:
+  alias: Signal Genevieve
+  description: Flash Genevieve's lights synchronously to get her attention
+  mode: single
+  max_exceeded: silent
+  sequence:
+    # Check system and script overrides
+    - if:
+        - condition: or
+          conditions:
+            - condition: state
+              entity_id: input_boolean.kids_notification_system_disabled
+              state: "on"
+            - condition: state
+              entity_id: input_boolean.signal_genevieve_override
+              state: "on"
+      then:
+        - service: logbook.log
+          data:
+            name: Signal Genevieve
+            message: "OVERRIDE: System or script override active - script disabled"
+        - stop: "Override is active"
+
+    # Initialize variables
+    - variables:
+        light_entities:
+          - light.genevieves_light
+          - light.basement_bathroom_light
+
+    # Log script start
+    - service: logbook.log
+      data:
+        name: Signal Genevieve
+        message: "START: Checking {{ light_entities | length }} light entities for availability"
+
+    # Build list of available entities (FIXED TEMPLATE)
+    - variables:
+        available_entities: "{{ light_entities | reject('is_state', 'unavailable') | list }}"
+
+    # Log availability check results
+    - service: logbook.log
+      data:
+        name: Signal Genevieve
+        message: "CONDITION: {{ available_entities | length }} of {{ light_entities | length }} lights available: {{ available_entities | join(', ') if available_entities else 'NONE' }}"
+
+    # Halt if no lights available
+    - if:
+        - condition: template
+          value_template: "{{ available_entities | length == 0 }}"
+      then:
+        - service: logbook.log
+          data:
+            name: Signal Genevieve
+            message: "ERROR: No lights available - check device connections"
+        - service: persistent_notification.create
+          data:
+            title: "Signal Genevieve Failed"
+            message: "No lights available - check device connections"
+            notification_id: "signal_genevieve_failed"
+        - stop: "No available lights to signal with"
+
+    # Capture original on/off states only
+    - variables:
+        original_states: >-
+          {% set states_dict = {} %}
+          {% for entity in available_entities %}
+            {% set states_dict = dict(states_dict, **{entity: states(entity)}) %}
+          {% endfor %}
+          {{ states_dict }}
+
+    # Log decision to proceed
+    - service: logbook.log
+      data:
+        name: Signal Genevieve
+        message: "DECISION: Proceeding with {{ available_entities | length }} lights - captured original states"
+
+    # Sync all lights to ON state
+    - service: logbook.log
+      data:
+        name: Signal Genevieve
+        message: "STATE: Syncing all lights to ON state"
+    - repeat:
+        for_each: "{{ available_entities }}"
+        sequence:
+          - service: light.turn_on
+            target:
+              entity_id: "{{ repeat.item }}"
+            continue_on_error: true
+
+    # Delay after sync-up
+    - delay: "00:00:01"
+
+    # Execute synchronized flash sequence (5 cycles = 10 seconds)
+    - service: logbook.log
+      data:
+        name: Signal Genevieve
+        message: "DECISION: Starting synchronized flash sequence (5 cycles, 10 seconds total)"
+    - repeat:
+        count: 5
+        sequence:
+          # Turn all lights OFF
+          - repeat:
+              for_each: "{{ available_entities }}"
+              sequence:
+                - service: light.turn_off
+                  target:
+                    entity_id: "{{ repeat.item }}"
+                  continue_on_error: true
+          
+          # Hold OFF state for 1 second
+          - delay: "00:00:01"
+          
+          # Turn all lights ON
+          - repeat:
+              for_each: "{{ available_entities }}"
+              sequence:
+                - service: light.turn_on
+                  target:
+                    entity_id: "{{ repeat.item }}"
+                  continue_on_error: true
+          
+          # Hold ON state for 1 second (except last cycle)
+          - if:
+              - condition: template
+                value_template: "{{ repeat.index < 5 }}"
+            then:
+              - delay: "00:00:01"
+
+    # Restore original states
+    - service: logbook.log
+      data:
+        name: Signal Genevieve
+        message: "STATE: Restoring original light states"
+    - repeat:
+        for_each: "{{ available_entities }}"
+        sequence:
+          - variables:
+              entity: "{{ repeat.item }}"
+              original_state: "{{ original_states[entity] }}"
+          - if:
+              - condition: template
+                value_template: "{{ original_state == 'on' }}"
+            then:
+              - service: light.turn_on
+                target:
+                  entity_id: "{{ entity }}"
+                continue_on_error: true
+            else:
+              - service: light.turn_off
+                target:
+                  entity_id: "{{ entity }}"
+                continue_on_error: true
+
+    # Log successful completion
+    - service: logbook.log
+      data:
+        name: Signal Genevieve
+        message: "SUCCESS: Flash sequence completed - {{ available_entities | length }} lights signaled and restored"
+
+# =================================================================
+# SCRIPT: Signal Ulrich
+# VERSION: 1.1.1
+# DESCRIPTION: Flash Ulrich's lights synchronously
+# ENTITIES: 3 lights (bedroom + bathroom + rec room)
+# FAILURE MODE: Halt - stops if no lights available
+# =================================================================
+signal_ulrich:
+  alias: Signal Ulrich
+  description: Flash Ulrich's lights synchronously to get his attention
+  mode: single
+  max_exceeded: silent
+  sequence:
+    # Check system and script overrides
+    - if:
+        - condition: or
+          conditions:
+            - condition: state
+              entity_id: input_boolean.kids_notification_system_disabled
+              state: "on"
+            - condition: state
+              entity_id: input_boolean.signal_ulrich_override
+              state: "on"
+      then:
+        - service: logbook.log
+          data:
+            name: Signal Ulrich
+            message: "OVERRIDE: System or script override active - script disabled"
+        - stop: "Override is active"
+
+    # Initialize variables
+    - variables:
+        light_entities:
+          - light.main_bathroom_light
+          - light.ulrich_light
+          - light.rec_room_lights
+
+    # Log script start
+    - service: logbook.log
+      data:
+        name: Signal Ulrich
+        message: "START: Checking {{ light_entities | length }} light entities for availability"
+
+    # Build list of available entities (FIXED TEMPLATE)
+    - variables:
+        available_entities: "{{ light_entities | reject('is_state', 'unavailable') | list }}"
+
+    # Log availability check results
+    - service: logbook.log
+      data:
+        name: Signal Ulrich
+        message: "CONDITION: {{ available_entities | length }} of {{ light_entities | length }} lights available: {{ available_entities | join(', ') if available_entities else 'NONE' }}"
+
+    # Halt if no lights available
+    - if:
+        - condition: template
+          value_template: "{{ available_entities | length == 0 }}"
+      then:
+        - service: logbook.log
+          data:
+            name: Signal Ulrich
+            message: "ERROR: No lights available - check device connections"
+        - service: persistent_notification.create
+          data:
+            title: "Signal Ulrich Failed"
+            message: "No lights available - check device connections"
+            notification_id: "signal_ulrich_failed"
+        - stop: "No available lights to signal with"
+
+    # Capture original on/off states only
+    - variables:
+        original_states: >-
+          {% set states_dict = {} %}
+          {% for entity in available_entities %}
+            {% set states_dict = dict(states_dict, **{entity: states(entity)}) %}
+          {% endfor %}
+          {{ states_dict }}
+
+    # Log decision to proceed
+    - service: logbook.log
+      data:
+        name: Signal Ulrich
+        message: "DECISION: Proceeding with {{ available_entities | length }} lights - captured original states"
+
+    # Sync all lights to ON state
+    - service: logbook.log
+      data:
+        name: Signal Ulrich
+        message: "STATE: Syncing all lights to ON state"
+    - repeat:
+        for_each: "{{ available_entities }}"
+        sequence:
+          - service: light.turn_on
+            target:
+              entity_id: "{{ repeat.item }}"
+            continue_on_error: true
+
+    # Delay after sync-up
+    - delay: "00:00:01"
+
+    # Execute synchronized flash sequence (5 cycles = 10 seconds)
+    - service: logbook.log
+      data:
+        name: Signal Ulrich
+        message: "DECISION: Starting synchronized flash sequence (5 cycles, 10 seconds total)"
+    - repeat:
+        count: 5
+        sequence:
+          # Turn all lights OFF
+          - repeat:
+              for_each: "{{ available_entities }}"
+              sequence:
+                - service: light.turn_off
+                  target:
+                    entity_id: "{{ repeat.item }}"
+                  continue_on_error: true
+          
+          # Hold OFF state for 1 second
+          - delay: "00:00:01"
+          
+          # Turn all lights ON
+          - repeat:
+              for_each: "{{ available_entities }}"
+              sequence:
+                - service: light.turn_on
+                  target:
+                    entity_id: "{{ repeat.item }}"
+                  continue_on_error: true
+          
+          # Hold ON state for 1 second (except last cycle)
+          - if:
+              - condition: template
+                value_template: "{{ repeat.index < 5 }}"
+            then:
+              - delay: "00:00:01"
+
+    # Restore original states
+    - service: logbook.log
+      data:
+        name: Signal Ulrich
+        message: "STATE: Restoring original light states"
+    - repeat:
+        for_each: "{{ available_entities }}"
+        sequence:
+          - variables:
+              entity: "{{ repeat.item }}"
+              original_state: "{{ original_states[entity] }}"
+          - if:
+              - condition: template
+                value_template: "{{ original_state == 'on' }}"
+            then:
+              - service: light.turn_on
+                target:
+                  entity_id: "{{ entity }}"
+                continue_on_error: true
+            else:
+              - service: light.turn_off
+                target:
+                  entity_id: "{{ entity }}"
+                continue_on_error: true
+
+    # Log successful completion
+    - service: logbook.log
+      data:
+        name: Signal Ulrich
+        message: "SUCCESS: Flash sequence completed - {{ available_entities | length }} lights signaled and restored"

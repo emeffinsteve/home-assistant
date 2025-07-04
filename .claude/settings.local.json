@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(grep:*)",
+      "Bash(ha core:*)",
+      "Bash(> /config/recent-logs.txt)",
+      "Bash(rg:*)",
+      "Bash(ls:*)",
+      "Bash(> /config/recent-errors.txt)",
+      "Bash(sed:*)",
+      "Bash(curl:*)",
+      "Bash(ha-cli:*)",
+      "Bash(# Verify config files exist and have content; touch /tmp/config_check.log; echo \"Climate package size:\" && wc -l /config/packages/climate_management.yaml; echo \"Automations size:\" && wc -l /config/automations.yaml)",
+      "Bash(ha state get:*)",
+      "WebFetch(domain:www.home-assistant.io)",
+      "Bash(cat:*)",
+      "Bash(ha:*)",
+      "WebFetch(domain:community.home-assistant.io)"
+    ],
+    "deny": []
+  }
+}

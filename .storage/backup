@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "minor_version": 7,
+  "key": "backup",
+  "data": {
+    "backups": [
+      {
+        "backup_id": "b9d72d9e",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      },
+      {
+        "backup_id": "39bb0d4f",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      },
+      {
+        "backup_id": "204eafd8",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      },
+      {
+        "backup_id": "2256f025",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      },
+      {
+        "backup_id": "a9169c97",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      },
+      {
+        "backup_id": "ea9018e4",
+        "failed_addons": [],
+        "failed_agent_ids": [],
+        "failed_folders": []
+      }
+    ],
+    "config": {
+      "agents": {
+        "hassio.local": {
+          "protected": true,
+          "retention": {
+            "copies": 1,
+            "days": null
+          }
+        }
+      },
+      "automatic_backups_configured": true,
+      "create_backup": {
+        "agent_ids": [
+          "cloud.cloud"
+        ],
+        "include_addons": [],
+        "include_all_addons": true,
+        "include_database": true,
+        "include_folders": null,
+        "name": null,
+        "password": "9QU1-9SQP-TOXC-7Q2C-770F-V9UB-H01I"
+      },
+      "last_attempted_automatic_backup": "2025-07-04T14:13:04.437760-04:00",
+      "last_completed_automatic_backup": "2025-07-04T14:15:53.786969-04:00",
+      "retention": {
+        "copies": 3,
+        "days": null
+      },
+      "schedule": {
+        "days": [
+          "mon"
+        ],
+        "recurrence": "custom_days",
+        "state": "never",
+        "time": null
+      }
+    }
+  }
+}

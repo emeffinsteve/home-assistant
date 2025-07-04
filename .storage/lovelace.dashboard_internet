@@ -1,0 +1,307 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_internet",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Home",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Upstairs Internet Profile",
+                  "heading_style": "title"
+                },
+                {
+                  "type": "vertical-stack",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: transparent !important;\n  box-shadow: none !important;\n  border: none !important;\n}\n"
+                  },
+                  "cards": [
+                    {
+                      "type": "entity",
+                      "entity": "sensor.upstairs_internet_status",
+                      "name": "Upstairs Internet",
+                      "icon": "mdi:wifi",
+                      "card_mod": {
+                        "style": "ha-card {\n  {% set status = states('sensor.upstairs_internet_status') %}\n  background: rgba(255, 255, 255, 0.08) !important;\n  backdrop-filter: blur(40px) saturate(180%) !important;\n  -webkit-backdrop-filter: blur(40px) saturate(180%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.15) !important;\n  border-radius: 24px !important;\n  box-shadow: \n    0 8px 32px rgba(0, 0, 0, 0.25),\n    0 2px 8px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n  padding: 24px !important;\n  margin: 8px !important;\n  color: white !important;\n  font-weight: 600 !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if 'Normal - Internet Allowed' in status or 'Temp Override - Enabled' in status %}\n    background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(69, 160, 73, 0.1) 100%);\n  {% elif 'Scheduled Pause' in status %}\n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.15) 0%, rgba(211, 47, 47, 0.1) 100%);\n  {% elif 'Manually Paused' in status %}\n    background: linear-gradient(135deg, rgba(139, 0, 0, 0.2) 0%, rgba(102, 0, 0, 0.15) 100%);\n  {% elif 'Manually Enabled' in status %}\n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.1) 100%);\n  {% elif 'Temp Override' in status %}\n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.15) 0%, rgba(25, 118, 210, 0.1) 100%);\n  {% endif %}\n  border-radius: 24px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.01) !important;\n  box-shadow: \n    0 12px 40px rgba(0, 0, 0, 0.3),\n    0 4px 12px rgba(0, 0, 0, 0.2),\n    inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;\n}\n.info, .name {\n  color: white !important;\n  position: relative !important;\n  z-index: 1 !important;\n}\n.name {\n  font-weight: 700 !important;\n  font-size: 16px !important;\n}\n.info {\n  font-weight: 500 !important;\n  opacity: 0.9 !important;\n  font-size: 13px !important;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "entity",
+                      "entity": "sensor.upstairs_next_schedule_change",
+                      "name": "Next Change",
+                      "icon": "mdi:clock-outline",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: rgba(255, 255, 255, 0.1) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 20px !important;\n  box-shadow: \n    0 4px 20px rgba(0, 0, 0, 0.2),\n    0 1px 4px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;\n  margin: 8px !important;\n  padding: 12px !important;\n  color: rgba(255, 255, 255, 0.95) !important;\n  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n}\nha-card:hover {\n  transform: translateY(-1px) !important;\n  background: rgba(255, 255, 255, 0.15) !important;\n  box-shadow: \n    0 6px 24px rgba(0, 0, 0, 0.18),\n    0 2px 6px rgba(0, 0, 0, 0.12),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n}\n.info, .name {\n  color: rgba(255, 255, 255, 0.95) !important;\n  font-weight: 500 !important;\n}\n.info {\n  font-size: 14px !important;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent !important;\n  box-shadow: none !important;\n  margin: 8px !important;\n}\n"
+                      },
+                      "cards": [
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_upstairs_temp_override"
+                          },
+                          "name": "Temp Override",
+                          "icon": "mdi:clock-fast",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_boolean.upstairs_temp_override') == 'on' %}\n    color: rgba(33, 150, 243, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_boolean.upstairs_temp_override') == 'on' %}\n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.12) 0%, rgba(25, 118, 210, 0.08) 100%);\n    animation: visionos-pulse-blue 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 20px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-blue {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.12) 0%, rgba(25, 118, 210, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.18) 0%, rgba(25, 118, 210, 0.12) 100%);\n  }\n}\n"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_upstairs_pause_indefinitely"
+                          },
+                          "name": "Pause Indefinitely",
+                          "icon": "mdi:pause",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_select.upstairs_internet_override_mode') == 'Paused Indefinitely' %}\n    color: rgba(244, 67, 54, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_select.upstairs_internet_override_mode') == 'Paused Indefinitely' %}\n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.12) 0%, rgba(211, 47, 47, 0.08) 100%);\n    animation: visionos-pulse-red 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 20px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-red {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.12) 0%, rgba(211, 47, 47, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.18) 0%, rgba(211, 47, 47, 0.12) 100%);\n  }\n}\n"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_upstairs_enable_indefinitely"
+                          },
+                          "name": "Enable Indefinitely",
+                          "icon": "mdi:play",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_select.upstairs_internet_override_mode') == 'Enabled Indefinitely' %}\n    color: rgba(255, 193, 7, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_select.upstairs_internet_override_mode') == 'Enabled Indefinitely' %}\n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 152, 0, 0.08) 100%);\n    animation: visionos-pulse-yellow 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 20px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-yellow {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 152, 0, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.18) 0%, rgba(255, 152, 0, 0.12) 100%);\n  }\n}\n"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "icon": "",
+                  "heading_style": "title",
+                  "heading": "Downstairs Internet Profile",
+                  "grid_options": {
+                    "columns": "full",
+                    "rows": 2
+                  }
+                },
+                {
+                  "type": "vertical-stack",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: transparent !important;\n  box-shadow: none !important;\n  border: none !important;\n}\n"
+                  },
+                  "cards": [
+                    {
+                      "type": "entity",
+                      "entity": "sensor.downstairs_internet_status",
+                      "name": "Downstairs Internet",
+                      "icon": "mdi:wifi",
+                      "card_mod": {
+                        "style": "ha-card {\n  {% set status = states('sensor.downstairs_internet_status') %}\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(40px) saturate(180%) !important;\n  -webkit-backdrop-filter: blur(40px) saturate(180%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.25) !important;\n  border-radius: 24px !important;\n  box-shadow: \n    0 8px 32px rgba(0, 0, 0, 0.25),\n    0 2px 8px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n  padding: 24px !important;\n  margin: 8px !important;\n  color: white !important;\n  font-weight: 600 !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if 'Normal - Internet Allowed' in status or 'Temp Override - Enabled' in status %}\n    background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(69, 160, 73, 0.1) 100%);\n  {% elif 'Scheduled Pause' in status %}\n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.15) 0%, rgba(211, 47, 47, 0.1) 100%);\n  {% elif 'Manually Paused' in status %}\n    background: linear-gradient(135deg, rgba(139, 0, 0, 0.2) 0%, rgba(102, 0, 0, 0.15) 100%);\n  {% elif 'Manually Enabled' in status %}\n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.1) 100%);\n  {% elif 'Temp Override' in status %}\n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.15) 0%, rgba(25, 118, 210, 0.1) 100%);\n  {% endif %}\n  border-radius: 24px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.01) !important;\n  box-shadow: \n    0 12px 40px rgba(0, 0, 0, 0.3),\n    0 4px 12px rgba(0, 0, 0, 0.2),\n    inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;\n}\n.info, .name {\n  color: white !important;\n  position: relative !important;\n  z-index: 1 !important;\n}\n.name {\n  font-weight: 700 !important;\n  font-size: 16px !important;\n}\n.info {\n  font-weight: 500 !important;\n  opacity: 0.9 !important;\n  font-size: 13px !important;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "entity",
+                      "entity": "sensor.downstairs_next_schedule_change",
+                      "name": "Next Change",
+                      "icon": "mdi:clock-outline",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: rgba(255, 255, 255, 0.1) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 20px !important;\n  box-shadow: \n    0 4px 20px rgba(0, 0, 0, 0.2),\n    0 1px 4px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;\n  margin: 8px !important;\n  padding: 12px !important;\n  color: rgba(255, 255, 255, 0.95) !important;\n  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n}\nha-card:hover {\n  transform: translateY(-1px) !important;\n  background: rgba(255, 255, 255, 0.15) !important;\n  box-shadow: \n    0 6px 24px rgba(0, 0, 0, 0.18),\n    0 2px 6px rgba(0, 0, 0, 0.12),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n}\n.info, .name {\n  color: rgba(255, 255, 255, 0.95) !important;\n  font-weight: 500 !important;\n}\n.info {\n  font-size: 14px !important;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent !important;\n  box-shadow: none !important;\n  margin: 8px !important;\n}\n"
+                      },
+                      "cards": [
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_downstairs_temp_override"
+                          },
+                          "name": "Temp Override",
+                          "icon": "mdi:clock-fast",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_boolean.downstairs_temp_override') == 'on' %}\n    color: rgba(33, 150, 243, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_boolean.downstairs_temp_override') == 'on' %}\n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.12) 0%, rgba(25, 118, 210, 0.08) 100%);\n    animation: visionos-pulse-blue 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 16px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-blue {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.12) 0%, rgba(25, 118, 210, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.18) 0%, rgba(25, 118, 210, 0.12) 100%);\n  }\n}\n"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_downstairs_pause_indefinitely"
+                          },
+                          "name": "Pause Indefinitely",
+                          "icon": "mdi:pause",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_select.downstairs_internet_override_mode') == 'Paused Indefinitely' %}\n    color: rgba(244, 67, 54, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_select.downstairs_internet_override_mode') == 'Paused Indefinitely' %}\n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.12) 0%, rgba(211, 47, 47, 0.08) 100%);\n    animation: visionos-pulse-red 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 16px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-red {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.12) 0%, rgba(211, 47, 47, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.18) 0%, rgba(211, 47, 47, 0.12) 100%);\n  }\n}\n"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_downstairs_enable_indefinitely"
+                          },
+                          "name": "Enable Indefinitely",
+                          "icon": "mdi:play",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_select.downstairs_internet_override_mode') == 'Enabled Indefinitely' %}\n    color: rgba(255, 193, 7, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_select.downstairs_internet_override_mode') == 'Enabled Indefinitely' %}\n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 152, 0, 0.08) 100%);\n    animation: visionos-pulse-yellow 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 16px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-yellow {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 152, 0, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.18) 0%, rgba(255, 152, 0, 0.12) 100%);\n  }\n}\n"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "heading",
+                  "icon": "",
+                  "heading_style": "title",
+                  "heading": "Genevieve’s Internet Profile",
+                  "grid_options": {
+                    "columns": "full",
+                    "rows": 2
+                  }
+                },
+                {
+                  "type": "vertical-stack",
+                  "card_mod": {
+                    "style": "ha-card {\n  background: transparent !important;\n  box-shadow: none !important;\n  border: none !important;\n}\n"
+                  },
+                  "cards": [
+                    {
+                      "type": "entity",
+                      "entity": "sensor.genevieve_internet_status",
+                      "name": "Genevieve Internet",
+                      "icon": "mdi:wifi",
+                      "card_mod": {
+                        "style": "ha-card {\n  {% set status = states('sensor.genevieve_internet_status') %}\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(40px) saturate(180%) !important;\n  -webkit-backdrop-filter: blur(40px) saturate(180%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.25) !important;\n  border-radius: 24px !important;\n  box-shadow: \n    0 8px 32px rgba(0, 0, 0, 0.25),\n    0 2px 8px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n  padding: 24px !important;\n  margin: 8px !important;\n  color: white !important;\n  font-weight: 600 !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if 'Normal - Internet Allowed' in status or 'Temp Override - Enabled' in status %}\n    background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(69, 160, 73, 0.1) 100%);\n  {% elif 'Scheduled Pause' in status or 'Dog Walk' in status or 'Chores' in status %}\n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.15) 0%, rgba(211, 47, 47, 0.1) 100%);\n  {% elif 'Manually Paused' in status %}\n    background: linear-gradient(135deg, rgba(139, 0, 0, 0.2) 0%, rgba(102, 0, 0, 0.15) 100%);\n  {% elif 'Manually Enabled' in status %}\n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 152, 0, 0.1) 100%);\n  {% elif 'Temp Override' in status %}\n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.15) 0%, rgba(25, 118, 210, 0.1) 100%);\n  {% endif %}\n  border-radius: 24px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.01) !important;\n  box-shadow: \n    0 12px 40px rgba(0, 0, 0, 0.3),\n    0 4px 12px rgba(0, 0, 0, 0.2),\n    inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;\n}\n.info, .name {\n  color: white !important;\n  position: relative !important;\n  z-index: 1 !important;\n}\n.name {\n  font-weight: 700 !important;\n  font-size: 16px !important;\n}\n.info {\n  font-weight: 500 !important;\n  opacity: 0.9 !important;\n  font-size: 13px !important;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "entity",
+                      "entity": "sensor.genevieve_task_status",
+                      "name": "Task Status",
+                      "icon": "mdi:checkbox-multiple-marked-circle",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: rgba(255, 255, 255, 0.1) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 20px !important;\n  box-shadow: \n    0 4px 20px rgba(0, 0, 0, 0.2),\n    0 1px 4px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;\n  margin: 8px !important;\n  padding: 12px !important;\n  color: rgba(255, 255, 255, 0.95) !important;\n  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n}\nha-card:hover {\n  transform: translateY(-1px) !important;\n  background: rgba(255, 255, 255, 0.15) !important;\n  box-shadow: \n    0 6px 24px rgba(0, 0, 0, 0.18),\n    0 2px 6px rgba(0, 0, 0, 0.12),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n}\n.info, .name {\n  color: rgba(255, 255, 255, 0.95) !important;\n  font-weight: 500 !important;\n}\n.info {\n  font-size: 14px !important;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent !important;\n  box-shadow: none !important;\n  margin: 8px !important;\n}\n"
+                      },
+                      "cards": [
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_genevieve_temp_override"
+                          },
+                          "name": "Temp Override",
+                          "icon": "mdi:clock-fast",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_boolean.genevieve_temp_override') == 'on' %}\n    color: rgba(33, 150, 243, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_boolean.genevieve_temp_override') == 'on' %}\n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.12) 0%, rgba(25, 118, 210, 0.08) 100%);\n    animation: visionos-pulse-blue 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 16px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-blue {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.12) 0%, rgba(25, 118, 210, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(33, 150, 243, 0.18) 0%, rgba(25, 118, 210, 0.12) 100%);\n  }\n}\n"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_genevieve_pause_indefinitely"
+                          },
+                          "name": "Pause Indefinitely",
+                          "icon": "mdi:pause",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_select.genevieve_internet_override_mode') == 'Paused Indefinitely' %}\n    color: rgba(244, 67, 54, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_select.genevieve_internet_override_mode') == 'Paused Indefinitely' %}\n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.12) 0%, rgba(211, 47, 47, 0.08) 100%);\n    animation: visionos-pulse-red 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 16px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-red {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.12) 0%, rgba(211, 47, 47, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(244, 67, 54, 0.18) 0%, rgba(211, 47, 47, 0.12) 100%);\n  }\n}\n"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "script.toggle_genevieve_enable_indefinitely"
+                          },
+                          "name": "Enable Indefinitely",
+                          "icon": "mdi:play",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 2px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_select.genevieve_internet_override_mode') == 'Enabled Indefinitely' %}\n    color: rgba(255, 193, 7, 1) !important;\n    font-weight: 700 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.9) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_select.genevieve_internet_override_mode') == 'Enabled Indefinitely' %}\n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 152, 0, 0.08) 100%);\n    animation: visionos-pulse-yellow 2s infinite;\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 16px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n@keyframes visionos-pulse-yellow {\n  0%, 100% { \n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 152, 0, 0.08) 100%);\n  }\n  50% { \n    background: linear-gradient(135deg, rgba(255, 193, 7, 0.18) 0%, rgba(255, 152, 0, 0.12) 100%);\n  }\n}\n"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "card_mod": {
+                        "style": "ha-card {\n  background: transparent !important;\n  box-shadow: none !important;\n  margin: 8px !important;\n}\n"
+                      },
+                      "cards": [
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "input_boolean.toggle",
+                            "service_data": {
+                              "entity_id": "input_boolean.genevieve_dog_walked_today"
+                            }
+                          },
+                          "name": "Dog Walk",
+                          "icon": "{% if states('input_boolean.genevieve_dog_walked_today') == 'on' %}\n  mdi:check-circle\n{% else %}\n  mdi:close-circle\n{% endif %}\n",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 4px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_boolean.genevieve_dog_walked_today') == 'on' %}\n    color: rgba(76, 175, 80, 1) !important;\n    font-weight: 600 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.7) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_boolean.genevieve_dog_walked_today') == 'on' %}\n    background: linear-gradient(135deg, rgba(76, 175, 80, 0.08) 0%, rgba(69, 160, 73, 0.05) 100%);\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 16px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n"
+                          }
+                        },
+                        {
+                          "type": "button",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "input_boolean.toggle",
+                            "service_data": {
+                              "entity_id": "input_boolean.genevieve_chores_done_today"
+                            }
+                          },
+                          "name": "Chores",
+                          "icon": "{% if states('input_boolean.genevieve_chores_done_today') == 'on' %}\n  mdi:check-circle\n{% else %}\n  mdi:close-circle\n{% endif %}\n",
+                          "card_mod": {
+                            "style": "ha-card {\n  background: rgba(255, 255, 255, 0.12) !important;\n  backdrop-filter: blur(20px) saturate(150%) !important;\n  -webkit-backdrop-filter: blur(20px) saturate(150%) !important;\n  border: 1px solid rgba(255, 255, 255, 0.2) !important;\n  border-radius: 16px !important;\n  box-shadow: \n    0 4px 16px rgba(0, 0, 0, 0.15),\n    0 1px 3px rgba(0, 0, 0, 0.1),\n    inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;\n  margin: 8px 4px !important;\n  padding: 12px 8px !important;\n  min-height: 60px !important;\n  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;\n  position: relative !important;\n  overflow: hidden !important;\n  {% if states('input_boolean.genevieve_chores_done_today') == 'on' %}\n    color: rgba(76, 175, 80, 1) !important;\n    font-weight: 600 !important;\n  {% else %}\n    color: rgba(255, 255, 255, 0.7) !important;\n    font-weight: 500 !important;\n  {% endif %}\n  font-size: 13px !important;\n}\nha-card::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  {% if states('input_boolean.genevieve_chores_done_today') == 'on' %}\n    background: linear-gradient(135deg, rgba(76, 175, 80, 0.08) 0%, rgba(69, 160, 73, 0.05) 100%);\n  {% else %}\n    background: transparent;\n  {% endif %}\n  border-radius: 16px;\n  pointer-events: none;\n}\nha-card:hover {\n  transform: translateY(-2px) scale(1.02) !important;\n  background: rgba(255, 255, 255, 0.18) !important;\n  box-shadow: \n    0 8px 24px rgba(0, 0, 0, 0.2),\n    0 2px 6px rgba(0, 0, 0, 0.15),\n    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;\n}\nha-card:active {\n  transform: translateY(-1px) scale(0.98) !important;\n  transition: all 0.1s ease !important;\n}\n"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "column_span": 2
+            }
+          ],
+          "background": {
+            "opacity": 100,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "no-repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/b173a9c74a3738208445e8bea88faaa5/original"
+          },
+          "cards": [],
+          "type": "sections",
+          "max_columns": 1,
+          "theme": "Graphite Auto"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "input_number",
+  "data": {
+    "items": [
+      {
+        "id": "manual_override_duration_hours",
+        "min": 0.0,
+        "max": 24.0,
+        "name": "Manual Override Duration (Hours)",
+        "icon": "mdi:thermostat",
+        "step": 0.5,
+        "mode": "slider"
+      }
+    ]
+  }
+}

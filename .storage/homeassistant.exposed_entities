@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "homeassistant.exposed_entities",
+  "data": {
+    "assistants": {},
+    "exposed_entities": {
+      "conversation.home_assistant": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "zone.home": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sun.sun": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "govee.state": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_sim_2": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_battery_level": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_battery_state": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_storage": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_sim_1": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_ssid": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_bssid": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_connection_type": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_last_update_trigger": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_geocoded_location": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_app_version": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_location_permission": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.iphone_audio_output": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "automation.test": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "input_datetime.summer": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "input_select.view_selector": {
+        "assistants": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.great_room_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.rec_room_lights_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.kitchen_sink_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.front_porch_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.owner_s_bedroom_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.office_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.genevieve_s_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.ulrich_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.hallway_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.main_bathroom_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.uc1_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.uc2_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.uc3_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.uc4_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.uc5_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.uc6_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.owner_s_bathroom_sink_lights_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.owner_s_bathroom_fan_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.basement_bathroom_fan_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.storage_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.garage_coach_lights_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.deck_outer_lights_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "sensor.kitchen_light_energy": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      },
+      "light.owners_suite_lights": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "light.ulrich_lights": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "light.genevieve_lights": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "light.basement_lights": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "light.outdoor_all": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "light.deck_lights": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "light.front_entrance_lights": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "light.living_space_all": {
+        "assistants": {
+          "conversation": {
+            "should_expose": true
+          }
+        }
+      },
+      "sensor.bubble_card_modules": {
+        "assistants": {
+          "conversation": {
+            "should_expose": false
+          }
+        }
+      }
+    }
+  }
+}

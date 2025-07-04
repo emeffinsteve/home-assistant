@@ -1,0 +1,1877 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace.dashboard_steve",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "title": "Living Space",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "clock_size": "large",
+                  "show_seconds": true,
+                  "type": "clock",
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 3.9
+                  }
+                },
+                {
+                  "type": "thermostat",
+                  "entity": "climate.my_ecobee",
+                  "show_current_as_primary": false,
+                  "features": [
+                    {
+                      "style": "icons",
+                      "type": "climate-fan-modes"
+                    },
+                    {
+                      "style": "icons",
+                      "type": "climate-hvac-modes",
+                      "hvac_modes": [
+                        "off",
+                        "cool",
+                        "heat"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "custom:hourly-weather",
+                  "entity": "weather.forecast_home",
+                  "offset": "0",
+                  "label_spacing": "2",
+                  "show_wind": "false",
+                  "show_date": "false",
+                  "show_precipitation_amounts": true,
+                  "show_precipitation_probability": true,
+                  "grid_options": {
+                    "columns": 12,
+                    "rows": 3
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "input_boolean.climate_automation_enabled",
+                  "icon": "mdi:thermostat-auto",
+                  "show_state": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "icon_height": "48px",
+                  "card_mod": {
+                    "style": "ha-card {\n  --card-mod-icon-color: {% if is_state('input_boolean.climate_automation_enabled', 'on') %} green {% else %} red {% endif %};\n  background: {% if is_state('input_boolean.climate_automation_enabled', 'on') %} rgba(0,255,0,0.1) {% else %} rgba(255,0,0,0.1) {% endif %};\n}\n"
+                  }
+                }
+              ],
+              "column_span": 2
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading_style": "title",
+                  "heading": "Eating Space",
+                  "icon": "mdi:food",
+                  "badges": [
+                    {
+                      "type": "entity",
+                      "show_state": false,
+                      "show_icon": true,
+                      "entity": "light.kitchen_light"
+                    },
+                    {
+                      "type": "entity",
+                      "show_state": true,
+                      "show_icon": true,
+                      "entity": "sensor.ring_upstairs_last_activity",
+                      "tap_action": {
+                        "action": "more-info"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "light",
+                  "entity": "light.kitchen_light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "name": "Kitchen"
+                },
+                {
+                  "type": "light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "name": "Sink",
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "light.kitchen_sink_light"
+                },
+                {
+                  "type": "light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "name": "Undercabinets",
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "light.undercabinet"
+                },
+                {
+                  "type": "custom:mini-media-player",
+                  "entity": "media_player.homepod_kitchen",
+                  "group": true
+                },
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [
+                    {
+                      "entity": "sensor.backup_next_scheduled_automatic_backup"
+                    }
+                  ],
+                  "camera_image": "camera.ring_upstairs_live_view"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Great Room",
+                  "heading_style": "title",
+                  "icon": "mdi:sofa",
+                  "badges": [
+                    {
+                      "type": "entity",
+                      "show_state": false,
+                      "show_icon": true,
+                      "entity": "light.great_room_light"
+                    }
+                  ]
+                },
+                {
+                  "type": "light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "name": "Great Room",
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "light.great_room_light"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.foyer_light",
+                  "show_state": false,
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "name": "Foyer",
+                  "icon_height": "48px",
+                  "hold_action": {
+                    "action": "none"
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "icon_height": "48px",
+                  "type": "button",
+                  "entity": "switch.laundry_light",
+                  "show_state": false,
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "name": "Laundry",
+                  "hold_action": {
+                    "action": "none"
+                  }
+                },
+                {
+                  "type": "light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "name": "Main Bathroom",
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "light.main_bathroom_light"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "icon_height": "48px",
+                  "type": "light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "light.hallway_light",
+                  "name": "Hallway"
+                },
+                {
+                  "type": "custom:mini-media-player",
+                  "group": true,
+                  "entity": "media_player.sonos_arc",
+                  "artwork": "cover-fit"
+                },
+                {
+                  "type": "heading",
+                  "heading_style": "title",
+                  "heading": "Other",
+                  "icon": "mdi:arrow-oscillating",
+                  "badges": [
+                    {
+                      "type": "entity",
+                      "show_state": false,
+                      "show_icon": true,
+                      "entity": "switch.foyer_light"
+                    },
+                    {
+                      "type": "entity",
+                      "entity": "sensor.ring_foyer_last_activity"
+                    }
+                  ],
+                  "grid_options": {
+                    "columns": "full",
+                    "rows": 1
+                  }
+                }
+              ],
+              "column_span": 1
+            }
+          ],
+          "badges": [
+            {
+              "type": "entity",
+              "show_name": true,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "lock.aqara_smart_lock_u200",
+              "show_entity_picture": false,
+              "tap_action": {
+                "action": "toggle"
+              },
+              "name": "Front Door Lock"
+            },
+            {
+              "type": "entity",
+              "show_name": false,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "climate.my_ecobee"
+            }
+          ],
+          "type": "sections",
+          "max_columns": 2,
+          "theme": "Caule Black Gray",
+          "cards": [],
+          "icon": "mdi:sofa",
+          "header": {
+            "card": {
+              "type": "markdown",
+              "content": "## Living Space",
+              "text_only": true
+            }
+          },
+          "background": {
+            "opacity": 100,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "no-repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/9b5dc1569238b7b589dd1f5606e56c47/original"
+          }
+        },
+        {
+          "type": "sections",
+          "max_columns": 1,
+          "title": "Owner’s Suite",
+          "path": "owner-s-suite",
+          "icon": "mdi:chess-king",
+          "theme": "ios-dark-mode-orange-alternative",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "clock_size": "medium",
+                  "show_seconds": true,
+                  "type": "clock",
+                  "grid_options": {
+                    "columns": "full",
+                    "rows": 1
+                  }
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "slider",
+                  "entity": "light.owner_s_bedroom_light",
+                  "show_icon": true,
+                  "force_icon": false,
+                  "show_name": true,
+                  "show_state": true,
+                  "slider_live_update": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 1
+                  }
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "switch",
+                  "show_icon": true,
+                  "force_icon": false,
+                  "show_name": true,
+                  "show_state": true,
+                  "slider_live_update": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "grid_options": {
+                    "0": "c",
+                    "1": "o",
+                    "2": "l",
+                    "3": "u",
+                    "4": "m",
+                    "5": "n",
+                    "6": "s",
+                    "7": ":",
+                    "8": "1",
+                    "9": "2",
+                    "columns": 6,
+                    "rows": 1
+                  },
+                  "entity": "switch.owners_closet",
+                  "card_layout": "large-2-rows"
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "slider",
+                  "show_icon": true,
+                  "force_icon": false,
+                  "show_name": true,
+                  "show_state": true,
+                  "slider_live_update": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "grid_options": {
+                    "0": "c",
+                    "1": "o",
+                    "2": "l",
+                    "3": "u",
+                    "4": "m",
+                    "5": "n",
+                    "6": "s",
+                    "7": ":",
+                    "8": "1",
+                    "9": "2",
+                    "columns": 6,
+                    "rows": 1
+                  },
+                  "entity": "fan.steves_fan"
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "switch",
+                  "show_icon": true,
+                  "force_icon": false,
+                  "show_name": true,
+                  "show_state": true,
+                  "slider_live_update": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "grid_options": {
+                    "0": "c",
+                    "1": "o",
+                    "2": "l",
+                    "3": "u",
+                    "4": "m",
+                    "5": "n",
+                    "6": "s",
+                    "7": ":",
+                    "8": "1",
+                    "9": "2",
+                    "columns": 6,
+                    "rows": 1
+                  },
+                  "entity": "switch.owner_s_bathroom_fan",
+                  "card_layout": "large-2-rows"
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "slider",
+                  "show_icon": true,
+                  "force_icon": false,
+                  "show_name": true,
+                  "show_state": true,
+                  "slider_live_update": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "grid_options": {
+                    "columns": 6,
+                    "rows": 1
+                  },
+                  "entity": "light.owner_s_bathroom_sink_lights"
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "slider",
+                  "show_icon": true,
+                  "force_icon": false,
+                  "show_name": true,
+                  "show_state": true,
+                  "slider_live_update": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "grid_options": {
+                    "0": "c",
+                    "1": "o",
+                    "2": "l",
+                    "3": "u",
+                    "4": "m",
+                    "5": "n",
+                    "6": "s",
+                    "7": ":",
+                    "8": "1",
+                    "9": "2",
+                    "columns": 6,
+                    "rows": 1
+                  },
+                  "entity": "light.owners_bathroom_shower_light"
+                }
+              ],
+              "column_span": 2
+            }
+          ],
+          "cards": [],
+          "badges": [
+            {
+              "type": "entity",
+              "show_name": true,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "climate.my_ecobee",
+              "name": "Ecobee",
+              "show_entity_picture": false
+            },
+            {
+              "type": "entity",
+              "show_name": true,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "sensor.owner_s_bathroom_sensor_temperature",
+              "name": "Bathroom"
+            },
+            {
+              "type": "entity",
+              "show_name": true,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "sensor.owner_s_bathroom_sensor_humidity",
+              "name": "Bathroom"
+            }
+          ],
+          "header": {
+            "card": {
+              "type": "markdown",
+              "text_only": true,
+              "content": "## Owner's Suite"
+            }
+          },
+          "background": {
+            "opacity": 100,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "no-repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/531cb956c8e2a3bb4fc0ae4d857c2821/original"
+          }
+        },
+        {
+          "type": "sections",
+          "title": "Office",
+          "cards": [],
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "clock_size": "medium",
+                  "show_seconds": true,
+                  "type": "clock",
+                  "grid_options": {
+                    "columns": "full",
+                    "rows": 1
+                  }
+                },
+                {
+                  "type": "light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "light.office_light"
+                },
+                {
+                  "type": "light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "hold_action": {
+                    "action": "more-info"
+                  },
+                  "entity": "light.desk_light",
+                  "name": "Key Light"
+                },
+                {
+                  "type": "button",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "fan.office_fan"
+                },
+                {
+                  "type": "light",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "light.office_ambience"
+                },
+                {
+                  "type": "button",
+                  "grid_options": {
+                    "columns": 4,
+                    "rows": 3
+                  },
+                  "hold_action": {
+                    "action": "none"
+                  },
+                  "entity": "switch.on_air_sign"
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "button",
+                  "button_type": "slider",
+                  "entity": "fan.office_fan",
+                  "show_icon": true,
+                  "force_icon": false,
+                  "show_name": true,
+                  "show_state": true,
+                  "slider_live_update": true,
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "grid_options": {
+                    "columns": 8,
+                    "rows": 1
+                  }
+                },
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [],
+                  "camera_image": "camera.ring_office_live_view",
+                  "grid_options": {
+                    "columns": "full"
+                  }
+                }
+              ],
+              "column_span": 2
+            }
+          ],
+          "max_columns": 2,
+          "theme": "ios-dark-mode-dark-blue-alternative",
+          "icon": "mdi:briefcase",
+          "header": {
+            "card": {
+              "type": "markdown",
+              "text_only": true,
+              "content": "## Office"
+            }
+          },
+          "badges": [
+            {
+              "type": "entity",
+              "show_name": false,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "climate.my_ecobee"
+            }
+          ],
+          "background": {
+            "opacity": 100,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "no-repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/84141af091b937734339c3560789e726/original"
+          }
+        },
+        {
+          "type": "sections",
+          "max_columns": 2,
+          "title": "Kids",
+          "path": "kids",
+          "icon": "mdi:teddy-bear",
+          "theme": "ios-dark-mode",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Ulrich",
+                  "heading_style": "title",
+                  "icon": "mdi:human-male"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.ulrich_light",
+                  "icon_height": "48px",
+                  "show_state": true,
+                  "grid_options": {
+                    "columns": "full"
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.ulrichs_closet",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.ulrich_s_fan",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.main_bathroom_light",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.foyer_light",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [],
+                  "camera_image": "camera.ring_foyer_live_view"
+                },
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [],
+                  "camera_image": "camera.ring_downstairs_sofa_live_view"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "heading",
+                  "heading": "Genevieve",
+                  "heading_style": "title",
+                  "icon": "mdi:human-female"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.genevieves_light",
+                  "icon_height": "48px",
+                  "show_state": true,
+                  "grid_options": {
+                    "columns": "full"
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.basement_bathroom_light",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.basement_bathroom_fan",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.genevieves_closet",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "fan.genevieves_fan",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [],
+                  "camera_image": "camera.ring_downstairs_doors_ptz_live_view"
+                },
+                {
+                  "type": "heading",
+                  "heading": "Basement",
+                  "heading_style": "title",
+                  "icon": "mdi:human-female"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.rec_room_lights",
+                  "icon_height": "48px",
+                  "show_state": true,
+                  "grid_options": {
+                    "columns": "full"
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.basement_steps",
+                  "icon_height": "48px",
+                  "show_state": true
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.storage_light",
+                  "icon_height": "48px",
+                  "show_state": true
+                }
+              ]
+            }
+          ],
+          "header": {
+            "card": {
+              "type": "markdown",
+              "text_only": true,
+              "content": "## Kids"
+            }
+          },
+          "badges": [
+            {
+              "type": "entity",
+              "show_name": false,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "climate.my_ecobee"
+            }
+          ],
+          "background": {
+            "opacity": 100,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "no-repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/e57c1d8a695a087ab11d24b6c982542b/original"
+          },
+          "cards": []
+        },
+        {
+          "type": "sections",
+          "max_columns": 2,
+          "title": "Outside",
+          "path": "outside",
+          "icon": "mdi:pine-tree",
+          "theme": "Graphite Nightshade",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "custom:button-card",
+                  "entity": "cover.garage_door",
+                  "name": "Garage Door",
+                  "icon": "[[[\n  if (entity.state === 'open') return 'mdi:garage-open-variant';\n  if (entity.state === 'closed') return 'mdi:garage-variant';\n  return 'mdi:garage-alert-variant';\n]]]\n",
+                  "show_state": true,
+                  "show_icon": true,
+                  "show_name": true,
+                  "icon_height": "48px",
+                  "tap_action": {
+                    "action": "toggle"
+                  }
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "switch.garage_light",
+                  "icon_height": "48px"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.garage_coach_lights",
+                  "icon_height": "48px"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.front_porch_light",
+                  "icon_height": "48px"
+                },
+                {
+                  "show_name": true,
+                  "show_icon": true,
+                  "type": "button",
+                  "entity": "light.deck_middle_light",
+                  "icon_height": "48px",
+                  "name": "Deck Lights"
+                },
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [],
+                  "camera_image": "camera.ring_doorbell_live_view"
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [],
+                  "camera_image": "camera.ring_garage_live_view"
+                },
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [],
+                  "camera_image": "camera.ring_front_live_view"
+                },
+                {
+                  "camera_view": "live",
+                  "fit_mode": "cover",
+                  "type": "picture-glance",
+                  "image": "https://demo.home-assistant.io/stub_config/kitchen.png",
+                  "entities": [],
+                  "camera_image": "camera.ring_backyard_live_view"
+                }
+              ]
+            }
+          ],
+          "cards": [],
+          "header": {
+            "card": {
+              "type": "markdown",
+              "text_only": true,
+              "content": "## Outside"
+            }
+          },
+          "badges": [
+            {
+              "type": "entity",
+              "show_name": true,
+              "show_state": true,
+              "show_icon": true,
+              "entity": "lock.aqara_smart_lock_u200",
+              "tap_action": {
+                "action": "toggle"
+              },
+              "name": "Front Door Lock"
+            }
+          ],
+          "background": {
+            "opacity": 100,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "no-repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/715eaf389df088e26815524bb6107c59/original"
+          }
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "title": "Internet",
+          "path": "internet",
+          "icon": "mdi:web",
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "entities",
+                      "title": "🏠 Upstairs",
+                      "entities": [
+                        {
+                          "entity": "sensor.upstairs_internet_status",
+                          "name": "Current Status",
+                          "icon": "mdi:television"
+                        },
+                        {
+                          "entity": "sensor.upstairs_timer_remaining",
+                          "name": "Timer Remaining",
+                          "icon": "mdi:timer-sand"
+                        },
+                        {
+                          "entity": "sensor.upstairs_next_schedule_change",
+                          "name": "Next Change",
+                          "icon": "mdi:clock-outline"
+                        }
+                      ],
+                      "state_color": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  border-left: 5px solid \n    {% if is_state('switch.taylor_ex_upstairs_paused', 'on') %} \n      #F44336\n    {% else %} \n      #4CAF50\n    {% endif %};\n  background: \n    {% if is_state('switch.taylor_ex_upstairs_paused', 'on') %} \n      linear-gradient(135deg, rgba(244,67,54,0.05), rgba(244,67,54,0.1))\n    {% else %} \n      linear-gradient(135deg, rgba(76,175,80,0.05), rgba(76,175,80,0.1))\n    {% endif %};\n}\n.card-header {\n  color: \n    {% if is_state('switch.taylor_ex_upstairs_paused', 'on') %} \n      #D32F2F !important\n    {% else %} \n      #388E3C !important\n    {% endif %};\n  font-weight: bold;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "entities",
+                      "title": "Upstairs Controls",
+                      "entities": [
+                        {
+                          "entity": "input_select.upstairs_internet_override_mode",
+                          "name": "Override Mode"
+                        },
+                        {
+                          "entity": "input_select.upstairs_internet_timer_duration",
+                          "name": "Start Timer"
+                        },
+                        {
+                          "entity": "input_select.upstairs_internet_add_time",
+                          "name": "Add Time"
+                        }
+                      ],
+                      "state_color": true
+                    }
+                  ]
+                },
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "entities",
+                      "title": "🏠 Downstairs",
+                      "entities": [
+                        {
+                          "entity": "sensor.downstairs_internet_status",
+                          "name": "Current Status",
+                          "icon": "mdi:television"
+                        },
+                        {
+                          "entity": "sensor.downstairs_timer_remaining",
+                          "name": "Timer Remaining",
+                          "icon": "mdi:timer-sand"
+                        },
+                        {
+                          "entity": "sensor.downstairs_next_schedule_change",
+                          "name": "Next Change",
+                          "icon": "mdi:clock-outline"
+                        }
+                      ],
+                      "state_color": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  border-left: 5px solid \n    {% if is_state('switch.taylor_ex_downstairs_paused', 'on') %} \n      #F44336\n    {% else %} \n      #4CAF50\n    {% endif %};\n  background: \n    {% if is_state('switch.taylor_ex_downstairs_paused', 'on') %} \n      linear-gradient(135deg, rgba(244,67,54,0.05), rgba(244,67,54,0.1))\n    {% else %} \n      linear-gradient(135deg, rgba(76,175,80,0.05), rgba(76,175,80,0.1))\n    {% endif %};\n}\n.card-header {\n  color: \n    {% if is_state('switch.taylor_ex_downstairs_paused', 'on') %} \n      #D32F2F !important\n    {% else %} \n      #388E3C !important\n    {% endif %};\n  font-weight: bold;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "entities",
+                      "title": "Downstairs Controls",
+                      "entities": [
+                        {
+                          "entity": "input_select.downstairs_internet_override_mode",
+                          "name": "Override Mode"
+                        },
+                        {
+                          "entity": "input_select.downstairs_internet_timer_duration",
+                          "name": "Start Timer"
+                        },
+                        {
+                          "entity": "input_select.downstairs_internet_add_time",
+                          "name": "Add Time"
+                        }
+                      ],
+                      "state_color": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "entities",
+                      "title": "Genevieve",
+                      "entities": [
+                        {
+                          "entity": "sensor.genevieve_internet_status",
+                          "name": "Current Status",
+                          "icon": "mdi:account-child"
+                        },
+                        {
+                          "entity": "sensor.genevieve_timer_remaining",
+                          "name": "Timer Remaining",
+                          "icon": "mdi:timer-sand"
+                        },
+                        {
+                          "entity": "sensor.genevieve_task_status",
+                          "name": "Task Status",
+                          "icon": "mdi:checkbox-multiple-marked-circle"
+                        }
+                      ],
+                      "state_color": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  border-left: 5px solid \n    {% if is_state('switch.taylor_genevieve_paused', 'on') %} \n      #F44336\n    {% else %} \n      #4CAF50\n    {% endif %};\n  background: \n    {% if is_state('switch.taylor_genevieve_paused', 'on') %} \n      linear-gradient(135deg, rgba(244,67,54,0.05), rgba(244,67,54,0.1))\n    {% else %} \n      linear-gradient(135deg, rgba(76,175,80,0.05), rgba(76,175,80,0.1))\n    {% endif %};\n}\n.card-header {\n  color: \n    {% if is_state('switch.taylor_genevieve_paused', 'on') %} \n      #D32F2F !important\n    {% else %} \n      #388E3C !important\n    {% endif %};\n  font-weight: bold;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "entities",
+                      "title": "Genevieve Controls",
+                      "entities": [
+                        {
+                          "entity": "input_select.genevieve_internet_override_mode",
+                          "name": "Override Mode"
+                        },
+                        {
+                          "entity": "input_select.genevieve_internet_timer_duration",
+                          "name": "Start Timer"
+                        },
+                        {
+                          "entity": "input_select.genevieve_internet_add_time",
+                          "name": "Add Time"
+                        }
+                      ],
+                      "state_color": true
+                    },
+                    {
+                      "type": "entities",
+                      "title": "Task Completion",
+                      "entities": [
+                        {
+                          "entity": "input_boolean.genevieve_dog_walked_today",
+                          "name": "✅ Dog Walked Today",
+                          "icon": "mdi:dog-walking"
+                        },
+                        {
+                          "entity": "input_boolean.genevieve_chores_done_today",
+                          "name": "✅ Chores Done Today",
+                          "icon": "mdi:broom"
+                        },
+                        {
+                          "entity": "input_boolean.genevieve_manual_resume",
+                          "name": "▶️ Resume Internet Now",
+                          "icon": "mdi:play-circle"
+                        }
+                      ],
+                      "state_color": true,
+                      "card_mod": {
+                        "style": "ha-card {\n  background: linear-gradient(135deg, rgba(33,150,243,0.05), rgba(33,150,243,0.1));\n  border-left: 3px solid #2196F3;\n}\n"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "entities",
+                  "title": "👦 Ulrich",
+                  "entities": [
+                    {
+                      "entity": "sensor.ulrich_internet_status",
+                      "name": "Current Status",
+                      "icon": "mdi:account-child"
+                    },
+                    {
+                      "entity": "input_boolean.ulrich_internet_paused",
+                      "name": "Pause Internet",
+                      "icon": "mdi:pause-circle"
+                    }
+                  ],
+                  "state_color": true,
+                  "card_mod": {
+                    "style": "ha-card {\n  border-left: 5px solid \n    {% if is_state('switch.taylor_ulrich_paused', 'on') %} \n      #F44336\n    {% else %} \n      #4CAF50\n    {% endif %};\n  background: \n    {% if is_state('switch.taylor_ulrich_paused', 'on') %} \n      linear-gradient(135deg, rgba(244,67,54,0.05), rgba(244,67,54,0.1))\n    {% else %} \n      linear-gradient(135deg, rgba(76,175,80,0.05), rgba(76,175,80,0.1))\n    {% endif %};\n}\n.card-header {\n  color: \n    {% if is_state('switch.taylor_ulrich_paused', 'on') %} \n      #D32F2F !important\n    {% else %} \n      #388E3C !important\n    {% endif %};\n  font-weight: bold;\n}\n"
+                  }
+                }
+              ]
+            }
+          ],
+          "background": {
+            "opacity": 100,
+            "alignment": "center",
+            "size": "cover",
+            "repeat": "no-repeat",
+            "attachment": "fixed",
+            "image": "/api/image/serve/b173a9c74a3738208445e8bea88faaa5/original"
+          },
+          "cards": []
+        },
+        {
+          "type": "sections",
+          "max_columns": 4,
+          "title": "Test",
+          "path": "test",
+          "card_mod": {
+            "style": "* {\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif !important;\n}\n\n/* Extra targeting for stubborn elements */\n.bubble-name,\n.bubble-state,\n.bubble-sub-button-name,\nha-card *,\nmushroom-template-card * {\n  font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif !important;\n}\n"
+          },
+          "sections": [
+            {
+              "type": "grid",
+              "cards": [
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "pop-up",
+                      "hash": "#living-space",
+                      "button_type": "name",
+                      "name": "Living Space",
+                      "icon": "mdi:sofa",
+                      "show_name": true,
+                      "card_layout": "large",
+                      "sub_button": [
+                        {
+                          "icon": "mdi:close",
+                          "state_background": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "custom:mushroom-template-card",
+                      "primary": "{{ now().strftime('%I:%M %p') }}",
+                      "secondary": "{{ now().strftime('%A, %B %d, %Y') }}",
+                      "icon": "none",
+                      "tap_action": {
+                        "action": "none"
+                      },
+                      "card_mod": {
+                        "style": "ha-card {\n  --ha-card-box-shadow: none;\n  --ha-card-background: rgba(var(--rgb-primary-color), 0.05);\n  text-align: center;\n}\n.primary {\n  font-size: 2.2em !important;\n  font-weight: 300 !important;\n}\n.secondary {\n  font-size: 1.1em !important;\n  opacity: 0.7;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "button",
+                      "button_type": "slider",
+                      "entity": "light.living_space_all",
+                      "name": "All Living Space Lights",
+                      "show_icon": true,
+                      "show_name": true,
+                      "show_state": true,
+                      "slider_live_update": true,
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "icon": "mdi:lightbulb-group"
+                    },
+                    {
+                      "type": "custom:mushroom-template-card",
+                      "primary": "Front Door",
+                      "secondary": "{{ states('lock.aqara_smart_lock_u200') | title }}",
+                      "icon": "{% if is_state('lock.aqara_smart_lock_u200', 'locked') %}\n  mdi:lock\n{% else %}\n  mdi:lock-open\n{% endif %}\n",
+                      "icon_color": "{% if is_state('lock.aqara_smart_lock_u200', 'locked') %}\n  green\n{% else %}\n  red\n{% endif %}\n",
+                      "tap_action": {
+                        "action": "toggle",
+                        "entity": "lock.aqara_smart_lock_u200"
+                      },
+                      "modules": [
+                        "transparent_badge"
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "separator",
+                      "name": "Climate Control",
+                      "icon": "mdi:thermostat",
+                      "card_layout": "large",
+                      "modules": [
+                        "separator"
+                      ]
+                    },
+                    {
+                      "type": "custom:mushroom-template-card",
+                      "primary": "Indoor",
+                      "secondary": "{{ states('sensor.my_ecobee_current_temperature') | round(0) }}°F • {{ states('sensor.my_ecobee_current_humidity') | round(0) }}% humidity",
+                      "icon": "mdi:home-thermometer",
+                      "icon_color": "{% set hvac_action = state_attr('climate.my_ecobee', 'hvac_action') %} {% if hvac_action == 'heating' %}\n  orange\n{% elif hvac_action == 'cooling' %}\n  blue\n{% elif hvac_action == 'idle' %}\n  green\n{% else %}\n  grey\n{% endif %}\n",
+                      "tap_action": {
+                        "action": "more-info",
+                        "entity": "climate.my_ecobee"
+                      },
+                      "modules": [
+                        "transparent_badge"
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "climate",
+                      "entity": "climate.my_ecobee",
+                      "name": "Thermostat",
+                      "show_state": true,
+                      "climate_options": [
+                        "temperature",
+                        "state"
+                      ],
+                      "sub_button": [
+                        {
+                          "entity": "climate.my_ecobee",
+                          "attribute": "fan_mode",
+                          "name": "Fan",
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "climate.set_fan_mode",
+                            "service_data": {
+                              "entity_id": "climate.my_ecobee",
+                              "fan_mode": "{% if state_attr('climate.my_ecobee', 'fan_mode') == 'auto' %} on {% else %} auto {% endif %}\n"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "button",
+                      "entity": "input_text.climate_logic_reason",
+                      "name": "Why This Setting?",
+                      "show_state": true,
+                      "tap_action": {
+                        "action": "more-info"
+                      },
+                      "icon": "mdi:lightbulb-on-outline"
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "button",
+                      "entity": "input_boolean.climate_manual_override_active",
+                      "name": "Manual Override",
+                      "show_state": true,
+                      "tap_action": {
+                        "action": "call-service",
+                        "service": "input_button.press",
+                        "service_data": {
+                          "entity_id": "input_button.climate_resume_automation"
+                        }
+                      },
+                      "icon": "mdi:account-arrow-right-outline"
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "separator",
+                      "name": "Eating Space",
+                      "icon": "mdi:silverware-fork-knife",
+                      "card_layout": "large",
+                      "modules": [
+                        "separator"
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "button",
+                      "button_type": "slider",
+                      "entity": "light.kitchen_light",
+                      "name": "Kitchen Main Lights",
+                      "show_icon": true,
+                      "show_name": true,
+                      "show_state": true,
+                      "slider_live_update": true,
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "icon": "mdi:ceiling-light"
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "cards": [
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "button_type": "slider",
+                          "entity": "light.kitchen_sink_light",
+                          "name": "Sink Light",
+                          "show_icon": true,
+                          "show_name": true,
+                          "show_state": true,
+                          "slider_live_update": true,
+                          "tap_action": {
+                            "action": "toggle"
+                          },
+                          "icon": "mdi:lightbulb"
+                        },
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "button_type": "slider",
+                          "entity": "light.undercabinet",
+                          "name": "Under Cabinet",
+                          "show_icon": true,
+                          "show_name": true,
+                          "show_state": true,
+                          "slider_live_update": true,
+                          "tap_action": {
+                            "action": "toggle"
+                          },
+                          "double_tap_action": {
+                            "action": "more-info"
+                          },
+                          "hold_action": {
+                            "action": "more-info",
+                            "haptic": "medium"
+                          },
+                          "icon": "mdi:led-strip-variant",
+                          "icon_action": {
+                            "hold_action": {
+                              "action": "more-info",
+                              "haptic": "medium"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "media-player",
+                      "entity": "media_player.homepod_kitchen",
+                      "name": "Kitchen HomePod",
+                      "icon": "mdi:speaker",
+                      "hide": {
+                        "power_button": false,
+                        "volume_button": false
+                      }
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "separator",
+                      "name": "Great Room",
+                      "icon": "mdi:television",
+                      "card_layout": "large",
+                      "modules": [
+                        "separator"
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "button",
+                      "button_type": "slider",
+                      "entity": "light.great_room_light",
+                      "name": "Great Room Light",
+                      "show_icon": true,
+                      "show_name": true,
+                      "show_state": true,
+                      "slider_live_update": true,
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "icon": "mdi:ceiling-light"
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "media-player",
+                      "entity": "media_player.sonos_arc",
+                      "name": "Sonos Arc",
+                      "icon": "mdi:speaker"
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "media-player",
+                      "entity": "media_player.sonos_move",
+                      "name": "Sonos Move",
+                      "icon": "mdi:speaker-wireless"
+                    },
+                    {
+                      "type": "conditional",
+                      "conditions": [
+                        {
+                          "entity": "media_player.great_room",
+                          "state_not": "off"
+                        }
+                      ],
+                      "card": {
+                        "type": "horizontal-stack",
+                        "cards": [
+                          {
+                            "type": "custom:bubble-card",
+                            "card_type": "button",
+                            "entity": "media_player.great_room",
+                            "name": "LG TV",
+                            "show_state": true,
+                            "tap_action": {
+                              "action": "call-service",
+                              "service": "media_player.toggle",
+                              "service_data": {
+                                "entity_id": "media_player.great_room"
+                              }
+                            },
+                            "double_tap_action": {
+                              "action": "more-info"
+                            },
+                            "icon": "mdi:television"
+                          },
+                          {
+                            "type": "custom:bubble-card",
+                            "card_type": "button",
+                            "entity": "remote.apple_tv_living_room",
+                            "name": "Apple TV",
+                            "show_state": true,
+                            "tap_action": {
+                              "action": "more-info"
+                            },
+                            "icon": "mdi:apple"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "separator",
+                      "name": "Other Rooms",
+                      "icon": "mdi:home-outline",
+                      "card_layout": "large",
+                      "modules": [
+                        "separator"
+                      ]
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "cards": [
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "button_type": "slider",
+                          "entity": "light.main_bathroom_light",
+                          "name": "Main Bath",
+                          "show_icon": true,
+                          "show_name": true,
+                          "show_state": true,
+                          "slider_live_update": true,
+                          "tap_action": {
+                            "action": "toggle"
+                          },
+                          "icon": "mdi:shower"
+                        },
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "entity": "switch.foyer_light",
+                          "name": "Foyer Light",
+                          "show_state": false,
+                          "tap_action": {
+                            "action": "call-service",
+                            "service": "switch.toggle",
+                            "service_data": {
+                              "entity_id": "switch.foyer_light"
+                            }
+                          },
+                          "icon": "mdi:lightbulb-outline"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "cards": [
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "entity": "switch.laundry_light",
+                          "name": "Laundry Light",
+                          "show_state": true,
+                          "tap_action": {
+                            "action": "toggle"
+                          },
+                          "icon": "mdi:washing-machine"
+                        },
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "button_type": "slider",
+                          "entity": "light.hallway_light",
+                          "name": "Hallway",
+                          "show_icon": true,
+                          "show_name": true,
+                          "show_state": true,
+                          "slider_live_update": true,
+                          "tap_action": {
+                            "action": "toggle"
+                          },
+                          "double_tap_action": {
+                            "action": "none"
+                          },
+                          "hold_action": {
+                            "action": "none"
+                          },
+                          "icon": "mdi:lightbulb"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "media-player",
+                      "entity": "media_player.homepod_main_bathroom",
+                      "name": "Bathroom HomePod",
+                      "icon": "mdi:speaker",
+                      "hide": {
+                        "power_button": false,
+                        "volume_button": false
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "horizontal-buttons-stack",
+                  "button": [
+                    {
+                      "name": "Living Space",
+                      "icon": "mdi:sofa",
+                      "tap_action": {
+                        "action": "navigate",
+                        "navigation_path": "#living-space"
+                      }
+                    },
+                    {
+                      "name": "Internet",
+                      "icon": "mdi:wifi",
+                      "tap_action": {
+                        "action": "navigate",
+                        "navigation_path": "#internet"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "vertical-stack",
+                  "cards": [
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "pop-up",
+                      "hash": "#owners-suite",
+                      "button_type": "name",
+                      "name": "Owners Suite",
+                      "icon": "mdi:bed-king",
+                      "show_name": true,
+                      "card_layout": "large",
+                      "sub_button": [
+                        {
+                          "icon": "mdi:close",
+                          "state_background": true
+                        }
+                      ]
+                    },
+                    {
+                      "type": "custom:mushroom-template-card",
+                      "primary": "{{ now().strftime('%I:%M %p') }}",
+                      "secondary": "{{ now().strftime('%A, %B %d, %Y') }}",
+                      "icon": "none",
+                      "tap_action": {
+                        "action": "none"
+                      },
+                      "card_mod": {
+                        "style": "ha-card {\n  --ha-card-box-shadow: none;\n  --ha-card-background: rgba(var(--rgb-primary-color), 0.05);\n  text-align: center;\n}\n.primary {\n  font-size: 2.2em !important;\n  font-weight: 300 !important;\n}\n.secondary {\n  font-size: 1.1em !important;\n  opacity: 0.7;\n}\n"
+                      }
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "separator",
+                      "name": "Bedroom",
+                      "icon": "mdi:bed-king-outline",
+                      "card_layout": "large",
+                      "modules": [
+                        "separator"
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "button",
+                      "button_type": "slider",
+                      "entity": "light.owner_s_bedroom_light",
+                      "name": "Bedroom Light",
+                      "show_icon": true,
+                      "show_name": true,
+                      "show_state": true,
+                      "slider_live_update": true,
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "icon": "mdi:ceiling-light"
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "cards": [
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "entity": "switch.owners_closet",
+                          "name": "Closet Light",
+                          "show_state": true,
+                          "tap_action": {
+                            "action": "toggle"
+                          },
+                          "icon": "mdi:hanger"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "button",
+                      "entity": "fan.steves_fan",
+                      "name": "Steve's Fan",
+                      "show_state": true,
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "icon": "mdi:fan"
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "separator",
+                      "name": "Owners Bathroom",
+                      "icon": "mdi:shower",
+                      "card_layout": "large",
+                      "modules": [
+                        "separator"
+                      ]
+                    },
+                    {
+                      "type": "horizontal-stack",
+                      "cards": [
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "button_type": "slider",
+                          "entity": "light.owner_s_bathroom_sink_lights",
+                          "name": "Sink Lights",
+                          "show_icon": true,
+                          "show_name": true,
+                          "show_state": true,
+                          "slider_live_update": true,
+                          "tap_action": {
+                            "action": "toggle"
+                          },
+                          "icon": "mdi:vanity-light"
+                        },
+                        {
+                          "type": "custom:bubble-card",
+                          "card_type": "button",
+                          "button_type": "slider",
+                          "entity": "light.owners_bathroom_shower_light",
+                          "name": "Shower Light",
+                          "show_icon": true,
+                          "show_name": true,
+                          "show_state": true,
+                          "slider_live_update": true,
+                          "tap_action": {
+                            "action": "toggle"
+                          },
+                          "icon": "mdi:shower-head"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "custom:bubble-card",
+                      "card_type": "button",
+                      "entity": "switch.owner_s_bathroom_fan",
+                      "name": "Bathroom Fan",
+                      "show_state": true,
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "icon": "mdi:fan"
+                    }
+                  ]
+                },
+                {
+                  "type": "custom:bubble-card",
+                  "card_type": "horizontal-buttons-stack",
+                  "1_link": "#living-space",
+                  "1_name": "Living Space",
+                  "1_icon": "mdi:sofa",
+                  "2_link": "#internet",
+                  "2_name": "Internet",
+                  "2_icon": "mdi:wifi",
+                  "3_link": "#owners-suite",
+                  "3_name": "Owner's Suite",
+                  "3_icon": "mdi:bed",
+                  "4_link": "#office",
+                  "4_name": "Office",
+                  "4_icon": "mdi:desk",
+                  "5_link": "#kids",
+                  "5_name": "Kids",
+                  "5_icon": "mdi:account-multiple",
+                  "6_link": "#outdoors",
+                  "6_name": "Outdoors",
+                  "6_icon": "mdi:tree"
+                }
+              ]
+            }
+          ],
+          "badges": [
+            {
+              "type": "custom:mushroom-template-card",
+              "primary": "{{ now().strftime('%I:%M %p') }}",
+              "secondary": "{{ now().strftime('%A, %b %d') }}",
+              "icon": "mdi:clock-outline",
+              "icon_color": "blue",
+              "tap_action": {
+                "action": "none"
+              },
+              "card_mod": {
+                "style": "ha-card {\n  --ha-card-box-shadow: none;\n  --ha-card-background: transparent;\n}\n"
+              }
+            },
+            {
+              "type": "custom:mushroom-template-card",
+              "primary": "Front Door",
+              "secondary": "{{ states('lock.aqara_smart_lock_u200') | title }}",
+              "icon": "{% if is_state('lock.aqara_smart_lock_u200', 'locked') %}\n  mdi:lock\n{% else %}\n  mdi:lock-open\n{% endif %}\n",
+              "icon_color": "{% if is_state('lock.aqara_smart_lock_u200', 'locked') %}\n  green\n{% else %}\n  red\n{% endif %}\n",
+              "tap_action": {
+                "action": "toggle",
+                "entity": "lock.aqara_smart_lock_u200"
+              },
+              "card_mod": {
+                "style": "ha-card {\n  --ha-card-box-shadow: none;\n  --ha-card-background: transparent;\n}\n"
+              }
+            },
+            {
+              "type": "custom:mushroom-template-card",
+              "primary": "Indoor",
+              "secondary": "{{ states('sensor.my_ecobee_current_temperature') | round(0) }}°F",
+              "icon": "mdi:home-thermometer",
+              "icon_color": "{% set hvac_action = state_attr('climate.my_ecobee', 'hvac_action') %} {% if hvac_action == 'heating' %}\n  orange\n{% elif hvac_action == 'cooling' %}\n  blue\n{% elif hvac_action == 'idle' %}\n  green\n{% else %}\n  grey\n{% endif %}\n",
+              "tap_action": {
+                "action": "more-info",
+                "entity": "climate.my_ecobee"
+              },
+              "card_mod": {
+                "style": "ha-card {\n  --ha-card-box-shadow: none;\n  --ha-card-background: transparent;\n}\n"
+              }
+            },
+            {
+              "type": "custom:mushroom-template-card",
+              "primary": "Outdoor",
+              "secondary": "{{ states('sensor.outdoor_sensor_temperature') | round(0) }}°F",
+              "icon": "mdi:thermometer",
+              "icon_color": "{% set outdoor_temp = states('sensor.outdoor_sensor_temperature') | float(70) %} {% if outdoor_temp >= 60 and outdoor_temp <= 69 %}\n  green\n{% elif outdoor_temp < 60 %}\n  blue\n{% else %}\n  orange\n{% endif %}\n",
+              "tap_action": {
+                "action": "more-info",
+                "entity": "sensor.outdoor_sensor_temperature"
+              },
+              "card_mod": {
+                "style": "ha-card {\n  --ha-card-box-shadow: none;\n  --ha-card-background: transparent;\n}\n"
+              }
+            }
+          ],
+          "cards": [],
+          "header": {
+            "layout": "center",
+            "badges_position": "bottom",
+            "badges_wrap": "scroll"
+          }
+        }
+      ]
+    }
+  }
+}

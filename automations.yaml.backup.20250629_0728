@@ -1,0 +1,1620 @@
+- id: '1748045557247'
+  alias: Kitchen - Lights On
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 4622f5c5c19a9c24a85fe68c2b6c80a8
+    entity_id: 10ba4804abd4d277f0a5a5ccdabb66c2
+    domain: light
+    trigger: device
+  conditions:
+  - condition: and
+    conditions: []
+  actions:
+  - type: turn_on
+    device_id: fc3f31d6cf205b913704d5fabb2319b3
+    entity_id: eb4507fc18d89959be666356716fb696
+    domain: light
+  mode: single
+- id: '1748045682531'
+  alias: Kitchen - Light Off
+  description: ''
+  triggers:
+  - type: turned_off
+    device_id: 4622f5c5c19a9c24a85fe68c2b6c80a8
+    entity_id: 10ba4804abd4d277f0a5a5ccdabb66c2
+    domain: light
+    trigger: device
+  conditions: []
+  actions:
+  - parallel:
+    - action: light.turn_off
+      metadata: {}
+      data: {}
+      target:
+        device_id:
+        - fc3f31d6cf205b913704d5fabb2319b3
+        - f1d2e9132c3e028a392f7f2fbe5a811e
+        - 1369576c3c5f8b43809ca4632dfbff50
+        - 3d6d3b57f50ec60d025ac1374b2f43b2
+        - 7f5b06d185b59b0f5f2495db60366e11
+        - b8f90e03f1627c7a374bcb0cdde60e30
+        - 7802964202dfed7061e7d5570032186b
+  mode: single
+- id: '1748045996074'
+  alias: Outside Lights
+  description: ''
+  triggers:
+  - trigger: sun
+    event: sunset
+    offset: 00:10:00
+  conditions: []
+  actions:
+  - parallel:
+    - type: turn_on
+      device_id: 931e5521c62ddf123f576a80525581eb
+      entity_id: bfbf8dbffb40fa17741982300c98b8cb
+      domain: light
+      brightness_pct: 18
+    - type: turn_on
+      device_id: 99f20630afc474efaad55187c7caa694
+      entity_id: b4108361a2ee1866216e0f949abe9d84
+      domain: light
+      brightness_pct: 18
+    - type: turn_on
+      device_id: 09c0526e56119412f6c49d87826797a8
+      entity_id: 23cffb7944b12274ce663a21a4618e9f
+      domain: light
+      brightness_pct: 50
+    - type: turn_on
+      device_id: 853871d9822afbbedce88f4ada17f753
+      entity_id: b014788d82e11c57f645598c426d3b0d
+      domain: light
+      brightness_pct: 35
+  - delay:
+      hours: 5
+      minutes: 0
+      seconds: 0
+      milliseconds: 0
+  - parallel:
+    - type: turn_off
+      device_id: 931e5521c62ddf123f576a80525581eb
+      entity_id: bfbf8dbffb40fa17741982300c98b8cb
+      domain: light
+    - type: turn_off
+      device_id: 99f20630afc474efaad55187c7caa694
+      entity_id: b4108361a2ee1866216e0f949abe9d84
+      domain: light
+    - type: turn_off
+      device_id: 09c0526e56119412f6c49d87826797a8
+      entity_id: 23cffb7944b12274ce663a21a4618e9f
+      domain: light
+    - type: turn_off
+      device_id: 853871d9822afbbedce88f4ada17f753
+      entity_id: b014788d82e11c57f645598c426d3b0d
+      domain: light
+  mode: single
+- id: '1748046513068'
+  alias: Ulrich - School Night Lights
+  description: ''
+  triggers:
+  - trigger: time
+    at: '22:15:00'
+  conditions:
+  - condition: time
+    weekday:
+    - thu
+    - wed
+    - tue
+    - mon
+    - sun
+  actions:
+  - parallel:
+    - type: turn_off
+      device_id: eb65058a7d6f73b656677c896d0736d9
+      entity_id: 990ae60f235b9c46b03f070bdbbc5c3d
+      domain: switch
+    - type: turn_off
+      device_id: 99d4677537141e7fb1ac1fa3ddf07ce6
+      entity_id: b0a8da3ccba9fb86a642dad7c9f8c2f3
+      domain: light
+  mode: single
+- id: '1748046592492'
+  alias: Ulrich - Weekend Nights
+  description: ''
+  triggers:
+  - trigger: time
+    at: '23:15:00'
+  conditions:
+  - condition: time
+    weekday:
+    - fri
+    - sat
+  actions:
+  - parallel:
+    - type: turn_off
+      device_id: eb65058a7d6f73b656677c896d0736d9
+      entity_id: 990ae60f235b9c46b03f070bdbbc5c3d
+      domain: switch
+    - type: turn_off
+      device_id: 99d4677537141e7fb1ac1fa3ddf07ce6
+      entity_id: b0a8da3ccba9fb86a642dad7c9f8c2f3
+      domain: light
+  mode: single
+- id: '1748047749815'
+  alias: Lights Out
+  description: ''
+  triggers:
+  - trigger: time
+    at: 00:45:00
+  conditions:
+  - condition: time
+    weekday:
+    - sat
+    - thu
+    - wed
+    - tue
+    - mon
+    - sun
+    - fri
+    enabled: false
+  actions:
+  - parallel:
+    - action: light.turn_off
+      metadata: {}
+      data: {}
+      target:
+        area_id:
+        - living_room
+        - ulrich_s_room
+        - kitchen
+        - office
+        - main_bathroom
+        - garage
+    - action: switch.turn_off
+      metadata: {}
+      data: {}
+      target:
+        area_id:
+        - storage
+        - hallway
+        - laundry_room
+  mode: single
+# =================================================================
+# AUTOMATION: Battery Level Monitor
+# VERSION: 2.0.0 (Major.Minor.Patch)
+# CREATED: 2025-01-01
+# LAST UPDATED: 2025-06-29
+# AUTHOR: Steve Taylor
+# TESTED_ON: HA Version 2025.6.0
+# DEPENDENCIES: Battery-powered devices with battery sensors
+# 
+# CHANGELOG:
+# v2.0.0 - 2025-06-29 - Added: Standard header, Enhanced: Entity list with correct sensors
+# v1.0.0 - 2025-01-01 - Initial battery monitoring automation
+# 
+# DESCRIPTION: Monitors battery levels across all devices and sends notifications when low
+# FAILURE MODE: Continue - missing sensors won't break automation
+# =================================================================
+
+- id: '1748051790880'
+  alias: Battery Level Monitor
+  description: 'Monitors battery levels and sends persistent notifications when any battery drops below 20%'
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - sensor.aqara_smart_lock_u200_battery
+    below: 20
+    alias: "Smart Lock Battery Low"
+  - trigger: numeric_state
+    entity_id:
+    - sensor.meter_pro_21_battery
+    below: 20
+    alias: "Front Door Meter Battery Low"
+  - trigger: numeric_state
+    entity_id:
+    - sensor.foyer_light_battery
+    below: 20
+    alias: "Foyer Light Switch Battery Low"
+  - trigger: numeric_state
+    entity_id:
+    - sensor.outdoor_sensor_battery
+    below: 20
+    alias: "Outdoor Weather Sensor Battery Low"
+  - trigger: numeric_state
+    entity_id:
+    - sensor.owner_s_bathroom_sensor_battery
+    below: 20
+    alias: "Owner's Bathroom Sensor Battery Low"
+  - trigger: numeric_state
+    entity_id:
+    - sensor.roborock_vacuum_battery
+    below: 20
+    alias: "Vacuum Battery Low"
+  conditions: []
+  actions:
+  - action: logbook.log
+    alias: "Log Battery Alert"
+    data:
+      name: "BATTERY MONITOR"
+      message: "START: {{ trigger.to_state.name }} battery low alert triggered ({{ trigger.to_state.state }}%)"
+  - action: notify.persistent_notification
+    alias: "Send Battery Notification"
+    metadata: {}
+    data:
+      message: '{{ trigger.to_state.name }} battery is low ({{ trigger.to_state.state }}%)'
+      title: "Low Battery Alert"
+  - action: logbook.log
+    alias: "Log Notification Sent"
+    data:
+      name: "BATTERY MONITOR"
+      message: "SUCCESS: Notification sent for {{ trigger.to_state.name }} ({{ trigger.to_state.state }}%)"
+  mode: single
+- id: '1748055833501'
+  alias: Restart HA on Sundays
+  description: Automatically restart Home Assistant every Sunday at 3:00 AM
+  triggers:
+  - at: 03:00:00
+    trigger: time
+  actions:
+  - choose:
+    - conditions:
+      - condition: time
+        weekday:
+        - sun
+      sequence:
+      - data:
+          name: Scheduled Restart
+          message: Restarting Home Assistant (weekly maintenance)
+        action: logbook.log
+      - action: homeassistant.restart
+    default:
+    - data:
+        name: Restart Skipped
+        message: It's not Sunday — no restart triggered.
+      action: logbook.log
+  mode: single
+- id: '1748055959742'
+  alias: Lock Front Door
+  description: ''
+  triggers:
+  - trigger: time
+    at: '21:00:00'
+  - trigger: time
+    at: '22:00:00'
+  conditions:
+  - condition: device
+    device_id: ef8c17c1738c67e0cbbd6af4dafa6a2f
+    domain: lock
+    entity_id: ff596cdc0c26313383c7455ae072a39b
+    type: is_unlocked
+  actions:
+  - device_id: ef8c17c1738c67e0cbbd6af4dafa6a2f
+    domain: lock
+    entity_id: ff596cdc0c26313383c7455ae072a39b
+    type: lock
+  mode: single
+- id: '1748065177524'
+  alias: Office - Lights On
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 8464309fa8485fcfd6420a2a7e49f85c
+    entity_id: 59eea9e4e6f2ec56345fe471bf94ac20
+    domain: light
+    trigger: device
+  conditions:
+  - condition: time
+    after: 08:00:00
+    before: '19:00:00'
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+    enabled: false
+  actions:
+  - parallel:
+    - action: light.turn_on
+      metadata: {}
+      data:
+        rgb_color:
+        - 65
+        - 53
+        - 115
+        brightness_pct: 75
+        transition: 1
+      target:
+        device_id:
+        - 55c6993ae63bf30a92055f3fa115c571
+        - cf4b2fdb388caf45e9dadabd1b6b9d02
+        - 535c568e02c694fdf5457235b6155105
+  mode: single
+- id: '1748065383185'
+  alias: Office - Lights Off
+  description: ''
+  triggers:
+  - type: turned_off
+    device_id: 8464309fa8485fcfd6420a2a7e49f85c
+    entity_id: 59eea9e4e6f2ec56345fe471bf94ac20
+    domain: light
+    trigger: device
+  conditions: []
+  actions:
+  - parallel:
+    - action: light.turn_off
+      metadata: {}
+      data: {}
+      target:
+        device_id:
+        - 55c6993ae63bf30a92055f3fa115c571
+        - cf4b2fdb388caf45e9dadabd1b6b9d02
+        - 535c568e02c694fdf5457235b6155105
+  mode: single
+- id: '1748065596465'
+  alias: Office - On Air Meetings
+  description: ''
+  triggers:
+  - trigger: calendar
+    entity_id: calendar.stevet_alternativepayments_io
+    event: start
+    offset: -0:2:0
+  conditions:
+  - condition: time
+    after: 09:00:00
+    before: '17:15:00'
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  actions:
+  - action: switch.turn_on
+    metadata: {}
+    data: {}
+    target:
+      device_id: c0b93296025a792aa6a480c1d8d29aa9
+  mode: single
+- id: '1748065667569'
+  alias: Office - On Air Meeting Ends
+  description: ''
+  triggers:
+  - trigger: calendar
+    entity_id: calendar.stevet_alternativepayments_io
+    event: end
+    offset: 0:2:0
+  conditions:
+  - condition: time
+    after: 09:00:00
+    before: '18:15:00'
+    weekday:
+    - mon
+    - tue
+    - wed
+    - thu
+    - fri
+  actions:
+  - action: switch.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id: c0b93296025a792aa6a480c1d8d29aa9
+  mode: single
+- id: '1748179918478'
+  alias: Basement Bathroom Fan - Auto off
+  description: ''
+  triggers:
+  - type: turned_off
+    device_id: 6aa58eb92f0a84ad85075bf2eaa1c523
+    entity_id: eba378646a39d91bf1cf657574222495
+    domain: light
+    trigger: device
+  conditions:
+  - condition: device
+    type: is_on
+    device_id: a3ff3354a8ecb2818d8545f5096615ab
+    entity_id: 9aef25ab1270b24c94637c6a166fd3af
+    domain: switch
+  actions:
+  - type: turn_off
+    device_id: a3ff3354a8ecb2818d8545f5096615ab
+    entity_id: 9aef25ab1270b24c94637c6a166fd3af
+    domain: switch
+  mode: single
+- id: '1748186794254'
+  alias: Bathroom Sink Lights - Night Brightness
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 457b1290d64e20dc20ddcd4b324fd38c
+    entity_id: 3b3b599185884051a52472202ec3f695
+    domain: light
+    trigger: device
+  conditions:
+  - condition: time
+    after: '21:00:00'
+    before: 05:00:00
+  actions:
+  - action: light.turn_on
+    metadata: {}
+    data:
+      brightness_pct: 10
+    target:
+      device_id: 457b1290d64e20dc20ddcd4b324fd38c
+  mode: single
+- id: '1748187658822'
+  alias: Bathroom Sink Lights - Day Brightness
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 457b1290d64e20dc20ddcd4b324fd38c
+    entity_id: 3b3b599185884051a52472202ec3f695
+    domain: light
+    trigger: device
+  conditions:
+  - condition: time
+    after: 05:00:00
+    before: '21:00:00'
+  actions:
+  - action: light.turn_on
+    metadata: {}
+    data:
+      brightness_pct: 70
+    target:
+      device_id: 457b1290d64e20dc20ddcd4b324fd38c
+  mode: single
+- id: '1748188109934'
+  alias: Owners Bathroom Shower Lights - Night Light On
+  description: ''
+  triggers:
+  - trigger: sun
+    event: sunset
+    offset: 0
+  conditions: []
+  actions:
+  - action: light.turn_on
+    metadata: {}
+    data:
+      brightness_pct: 35
+    target:
+      device_id: b81d45c92188d84647b5aefe504d569a
+  - parallel:
+    - action: light.turn_on
+      metadata: {}
+      data:
+        brightness_pct: 40
+      target:
+        device_id: b81d45c92188d84647b5aefe504d569a
+    - type: turn_on
+      device_id: dd7bb662d2c006b59a5a0dd6aee83e35
+      entity_id: 2ec6521461b254645f440ef3ae4c40ae
+      domain: switch
+  mode: single
+- id: '1748188230684'
+  alias: Owners Bathroom Shower Light - Night Light On
+  description: ''
+  triggers:
+  - trigger: time
+    at: 00:00:00
+  conditions: []
+  actions:
+  - parallel:
+    - type: turn_off
+      device_id: dd7bb662d2c006b59a5a0dd6aee83e35
+      entity_id: 2ec6521461b254645f440ef3ae4c40ae
+      domain: switch
+    - action: light.turn_off
+      metadata: {}
+      data: {}
+      target:
+        device_id: b81d45c92188d84647b5aefe504d569a
+  mode: single
+- id: '1748215912641'
+  alias: Kitchen - Sync Brightness
+  description: ''
+  triggers:
+  - entity_id: light.kitchen_light
+    attribute: brightness
+    trigger: state
+  actions:
+  - target:
+      entity_id:
+      - light.kitchen_sink_light
+      - light.uc1
+      - light.uc2
+      - light.uc3
+      - light.uc4
+      - light.uc5
+      - light.uc6
+    data:
+      brightness: '{{ state_attr(''light.kitchen_light'', ''brightness'') }}'
+    action: light.turn_on
+  mode: restart
+- id: '1748298511316'
+  alias: Steve’s Fan Off
+  description: ''
+  triggers:
+  - trigger: time
+    at: 09:00:00
+  conditions: []
+  actions:
+  - action: fan.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id: 74e9b51f9953716d1657b3c82aad1d82
+  mode: single
+- id: '1748298590091'
+  alias: Steve’s Fan On
+  description: ''
+  triggers:
+  - trigger: time
+    at: '20:00:00'
+  conditions: []
+  actions:
+  - action: fan.turn_on
+    metadata: {}
+    data: {}
+    target:
+      device_id: 74e9b51f9953716d1657b3c82aad1d82
+  mode: single
+- id: '1748298657657'
+  alias: Office Fan On
+  description: ''
+  triggers:
+  - trigger: time
+    at: 08:00:00
+  conditions:
+  - condition: time
+    weekday:
+    - fri
+    - thu
+    - wed
+    - tue
+    - mon
+  actions:
+  - action: fan.turn_on
+    metadata: {}
+    data:
+      percentage: 5
+    target:
+      device_id: 4cfcec7ca9b15a1e6530c995fe1dff4d
+  mode: single
+- id: '1748298708199'
+  alias: Office Fan Off
+  description: ''
+  triggers:
+  - trigger: time
+    at: '18:00:00'
+  conditions:
+  - condition: time
+    weekday:
+    - fri
+    - thu
+    - wed
+    - tue
+    - mon
+  actions:
+  - action: fan.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id: 4cfcec7ca9b15a1e6530c995fe1dff4d
+  mode: single
+- id: '1748299761204'
+  alias: Office Alarm
+  description: ''
+  triggers:
+  - type: opened
+    device_id: f85823fcd1cca60d5b1ad26ab8b3b792
+    entity_id: 0476636bae9d382767b612b915021851
+    domain: binary_sensor
+    metadata:
+      secondary: false
+    trigger: device
+  conditions:
+  - condition: or
+    conditions:
+    - condition: time
+      after: '21:00:00'
+      before: 07:00:00
+      weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+    - condition: time
+      after: 00:00:00
+      before: '11:59:59'
+      weekday:
+      - sun
+      - sat
+  actions:
+  - action: siren.turn_on
+    metadata: {}
+    data: {}
+    target:
+      device_id:
+      - cae42d216c4abd335b017493f1683f50
+      - f27249ac282fb103d1b9e317b1484586
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - action: siren.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id:
+      - cae42d216c4abd335b017493f1683f50
+      - f27249ac282fb103d1b9e317b1484586
+  mode: single
+- id: '1748301569388'
+  alias: Office On Air Sign Control
+  description: Controls on-air sign based on calendar events with smart exclusions
+  triggers:
+  - entity_id: calendar.stevet_alternativepayments_io
+    event: start
+    offset: -0:0:9
+    trigger: calendar
+    id: event_start
+  - entity_id: calendar.stevet_alternativepayments_io
+    event: end
+    trigger: calendar
+    id: event_end
+  conditions:
+  - condition: template
+    value_template: '{{ trigger.calendar_event.summary is defined }}'
+    alias: Calendar event has summary
+  actions:
+  - data:
+      name: Office On Air Sign Control
+      message: 'START: {{ event_type }} event ''{{ event_summary }}'' (ID: {{ trigger_id
+        }})'
+    alias: Log automation start
+    action: logbook.log
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ trigger_id == ''event_start'' }}'
+        alias: Event is starting
+      sequence:
+      - choose:
+        - conditions:
+          - condition: template
+            value_template: "{{\n  (event_summary | regex_match('^OOO', ignorecase=True))
+              or\n  (event_summary | regex_match('^Focus time$', ignorecase=True))
+              or\n  (event_summary | regex_search('C&N', ignorecase=True))\n}}"
+          alias: Event matches exclusion patterns
+          sequence:
+          - data:
+              name: Office On Air Sign Control
+              message: 'DECISION: Excluded event ''{{ event_summary }}'' - matches
+                exclusion pattern'
+            alias: Log exclusion decision
+            action: logbook.log
+        default:
+        - data:
+            name: Office On Air Sign Control
+            message: 'DECISION: Starting 9-second flash sequence for event ''{{ event_summary
+              }}'''
+          alias: Log flash sequence start
+          action: logbook.log
+        - repeat:
+            count: 4
+            sequence:
+            - target:
+                device_id: c0b93296025a792aa6a480c1d8d29aa9
+              data: {}
+              alias: Flash on
+              action: switch.turn_on
+            - delay:
+                seconds: 1
+              alias: Flash on delay
+            - target:
+                device_id: c0b93296025a792aa6a480c1d8d29aa9
+              data: {}
+              alias: Flash off
+              action: switch.turn_off
+            - delay:
+                seconds: 1
+              alias: Flash off delay
+          alias: 8-second flash sequence
+        - target:
+            device_id: c0b93296025a792aa6a480c1d8d29aa9
+          data: {}
+          alias: Final flash on
+          action: switch.turn_on
+        - delay:
+            seconds: 1
+          alias: Final flash delay
+        - data:
+            name: Office On Air Sign Control
+            message: 'SUCCESS: On-air sign completed 9-second flash sequence and is
+              now solid ON for event ''{{ event_summary }}'''
+          alias: Log sign activation
+          action: logbook.log
+    - conditions:
+      - condition: template
+        value_template: '{{ trigger_id == ''event_end'' }}'
+        alias: Event is ending
+      sequence:
+      - target:
+          device_id: c0b93296025a792aa6a480c1d8d29aa9
+        data: {}
+        alias: Turn off on-air sign
+        action: switch.turn_off
+      - data:
+          name: Office On Air Sign Control
+          message: 'SUCCESS: On-air sign turned OFF after event ''{{ event_summary
+            }}'''
+        alias: Log sign deactivation
+        action: logbook.log
+    default:
+    - data:
+        name: Office On Air Sign Control
+        message: 'ERROR: Unexpected trigger state - ID: {{ trigger_id }}, Event: {{
+          event_type }}'
+      alias: Log unexpected trigger
+      action: logbook.log
+  variables:
+    event_summary: '{{ trigger.calendar_event.summary | default(''Unknown Event'')
+      }}'
+    event_type: '{{ trigger.event }}'
+    trigger_id: '{{ trigger.id }}'
+  mode: single
+- id: '1748302145377'
+  alias: Owner's Closet and Shower Light Schedule
+  description: Turn lights on at sunset and off at midnight or 1am depending on day.
+  triggers:
+  - event: sunset
+    offset: '0'
+    id: sunset
+    trigger: sun
+  - at: 00:00:00
+    id: midnight
+    trigger: time
+  - at: 01:00:00
+    id: late_night
+    trigger: time
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: sunset
+      sequence:
+      - target:
+          entity_id: switch.owners_closet
+        action: switch.turn_on
+        data: {}
+      - target:
+          entity_id: light.owners_bathroom_shower_light
+        action: light.turn_on
+        data: {}
+    - conditions:
+      - condition: and
+        conditions:
+        - condition: trigger
+          id: midnight
+        - condition: template
+          value_template: '{{ now().weekday() != 5 }}'
+      sequence:
+      - target:
+          entity_id: switch.owners_closet
+        action: switch.turn_off
+        data: {}
+      - target:
+          entity_id: light.owners_bathroom_shower_light
+        action: light.turn_off
+        data: {}
+    - conditions:
+      - condition: and
+        conditions:
+        - condition: trigger
+          id: late_night
+        - condition: template
+          value_template: '{{ now().weekday() == 5 }}'
+      sequence:
+      - target:
+          entity_id: switch.owners_closet
+        action: switch.turn_off
+        data: {}
+      - target:
+          entity_id: light.owners_bathroom_shower_light
+        action: light.turn_off
+        data: {}
+  mode: single
+- id: '1748303006330'
+  alias: Owner’s Bathroom Sink Lights - Adaptive Brightness with Ramps
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: 457b1290d64e20dc20ddcd4b324fd38c
+    entity_id: 3b3b599185884051a52472202ec3f695
+    domain: light
+    trigger: device
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: time
+        after: 05:00:00
+        before: 09:00:00
+      sequence:
+      - target:
+          device_id: 457b1290d64e20dc20ddcd4b324fd38c
+        data:
+          brightness_pct: 50
+        action: light.turn_on
+    - conditions:
+      - condition: numeric_state
+        entity_id: sun.sun
+        attribute: elevation
+        above: 20
+      sequence:
+      - target:
+          device_id: 457b1290d64e20dc20ddcd4b324fd38c
+        data:
+          brightness_pct: 70
+        action: light.turn_on
+    - conditions:
+      - condition: numeric_state
+        entity_id: sun.sun
+        attribute: elevation
+        above: 5
+        below: 20
+      sequence:
+      - target:
+          device_id: 457b1290d64e20dc20ddcd4b324fd38c
+        data:
+          brightness_pct: 50
+        action: light.turn_on
+    - conditions:
+      - condition: numeric_state
+        entity_id: sun.sun
+        attribute: elevation
+        above: 0
+        below: 5
+      sequence:
+      - target:
+          device_id: 457b1290d64e20dc20ddcd4b324fd38c
+        data:
+          brightness_pct: 40
+        action: light.turn_on
+    - conditions:
+      - condition: numeric_state
+        entity_id: sun.sun
+        attribute: elevation
+        below: 0
+      sequence:
+      - target:
+          device_id: 457b1290d64e20dc20ddcd4b324fd38c
+        data:
+          brightness_pct: 25
+        action: light.turn_on
+  mode: single
+- id: '1748394669833'
+  alias: Unlock Front Door
+  description: Unlocks the front door
+  triggers: []
+  conditions: []
+  actions:
+  - target:
+      entity_id: lock.aqara_smart_lock_u200
+    action: lock.unlock
+  mode: single
+- id: '1748394717732'
+  alias: Lock Front Door
+  description: Locks the front door
+  triggers: []
+  conditions: []
+  actions:
+  - target:
+      entity_id: lock.aqara_smart_lock_u200
+    action: lock.lock
+    data: {}
+  mode: single
+- id: owners_closet_auto_off_timer
+  alias: Owner’s Closet Auto-Off Timer
+  description: Turn off closet light after 20 minutes unless during evening hours
+  triggers:
+  - entity_id: switch.owners_closet
+    to: 'on'
+    trigger: state
+  conditions:
+  - condition: not
+    conditions:
+    - condition: sun
+      after: sunset
+    - condition: time
+      before: 02:00:00
+  actions:
+  - if:
+    - condition: template
+      value_template: '{% set entities = [''switch.owners_closet'', ''sun.sun''] %}
+        {{ entities | select(''is_state'', ''unavailable'') | list | count > 0 }}
+
+        '
+    then:
+    - data:
+        title: 'Automation Error: Owners Closet Timer'
+        message: 'Switch or sun entity unavailable. Check: {{ [''switch.owners_closet'',
+          ''sun.sun''] | select(''is_state'', ''unavailable'') | list | join('', '')
+          }}'
+      action: persistent_notification.create
+    - data:
+        message: 'Owners Closet Timer failed - unavailable entities: {{ [''switch.owners_closet'',
+          ''sun.sun''] | select(''is_state'', ''unavailable'') | list }}'
+        level: warning
+      action: system_log.write
+    - stop: Stopping due to unavailable entities
+  - delay: 00:00:15
+  - condition: state
+    entity_id: switch.owners_closet
+    state: 'on'
+  - wait_for_trigger:
+    - entity_id: switch.owners_closet
+      to: 'off'
+      trigger: state
+    - event: sunset
+      trigger: sun
+    - at: 02:00:00
+      trigger: time
+    timeout: 00:20:00
+    continue_on_timeout: true
+  - if:
+    - condition: template
+      value_template: '{{ wait.trigger is none }}'
+    then:
+    - condition: state
+      entity_id: switch.owners_closet
+      state: 'on'
+    - target:
+        entity_id: switch.owners_closet
+      action: switch.turn_off
+    - wait_template: '{{ is_state(''switch.owners_closet'', ''off'') }}'
+      timeout: 00:00:05
+      continue_on_timeout: true
+    - data:
+        title: 'Auto-Off: Owners Closet'
+        message: Closet light automatically turned off after 20 minutes at {{ now().strftime('%I:%M
+          %p') }}
+      action: persistent_notification.create
+    - data:
+        message: Owners Closet auto-off timer completed successfully at {{ now() }}
+        level: info
+      action: system_log.write
+  mode: restart
+  max_exceeded: silent
+- id: climate_manual_override_detection
+  alias: Climate Manual Override Detection
+  description: Detects manual thermostat changes and pauses automation
+  triggers:
+  - entity_id: climate.my_ecobee
+    trigger: state
+  conditions:
+  - condition: state
+    entity_id: input_boolean.climate_automation_enabled
+    state: 'on'
+  - condition: template
+    value_template: "{% set last_manual = states('input_datetime.last_manual_thermostat_change')
+      %} {% if last_manual not in ['unavailable', 'unknown', ''] %}\n  {% set manual_timestamp
+      = last_manual | as_datetime | as_timestamp %}\n  {% set current_timestamp =
+      now().timestamp() %}\n  {% set time_diff = current_timestamp - manual_timestamp
+      %}\n  {{ time_diff > 30 }}\n{% else %}\n  true\n{% endif %}\n"
+  actions:
+  - alias: Log Override Detection Start
+    action: logbook.log
+    data:
+      name: Climate Manual Override Detection
+      message: 'START: Thermostat state change detected from {{ trigger.from_state.state
+        }}  to {{ trigger.to_state.state }}, context: {{ trigger.to_state.context.user_id
+        or ''system'' }}
+
+        '
+  - alias: Check if Change is Manual
+    if:
+    - condition: template
+      value_template: "{% set user_id = trigger.to_state.context.user_id %} {% set
+        parent_id = trigger.to_state.context.parent_id %} # Manual if user_id exists
+        OR parent_id is not from automation {{ user_id is not none or (parent_id is
+        not none and \n   'automation.intelligent_weather_based_climate_control' not
+        in (parent_id | string)) }}\n"
+    then:
+    - alias: Log Manual Override Detected
+      action: logbook.log
+      data:
+        name: Climate Manual Override Detection
+        message: 'DECISION: Manual change confirmed - User: {{ trigger.to_state.context.user_id
+          or ''Unknown'' }},  Parent: {{ trigger.to_state.context.parent_id or ''None''
+          }}
+
+          '
+    - alias: Update Last Manual Change Time
+      action: input_datetime.set_datetime
+      target:
+        entity_id: input_datetime.last_manual_thermostat_change
+      data:
+        datetime: '{{ now() }}'
+    - alias: Calculate Override End Time
+      variables:
+        override_hours: '{{ states(''input_number.manual_override_hours'') | float(3)
+          }}
+
+          '
+        override_end: '{{ (now() + timedelta(hours=override_hours)) }}
+
+          '
+        override_end_formatted: '{{ override_end.strftime(''%H:%M on %m/%d'') }}
+
+          '
+    - alias: Create Override Notification
+      action: persistent_notification.create
+      data:
+        title: Climate Control Override
+        message: 'Manual thermostat change detected at {{ now().strftime(''%H:%M'')
+          }}.  Climate automation paused for {{ override_hours }} hours until {{ override_end_formatted
+          }}. Change: {{ trigger.from_state.state }}°F → {{ trigger.to_state.state
+          }}°F
+
+          '
+    - alias: Log Override Details
+      action: system_log.write
+      data:
+        message: 'Climate Manual Override Detection - SUCCESS: Override activated
+          until {{ override_end_formatted }},  temp change: {{ trigger.from_state.state
+          }}°F → {{ trigger.to_state.state }}°F
+
+          '
+        level: info
+    - alias: Log Override State
+      action: logbook.log
+      data:
+        name: Climate Manual Override Detection
+        message: 'STATE: Manual override active until {{ override_end_formatted }}
+
+          '
+    else:
+    - alias: Log Automation Change Ignored
+      action: logbook.log
+      data:
+        name: Climate Manual Override Detection
+        message: 'DECISION: Change from automation ignored - Context: {{ trigger.to_state.context.parent_id
+          or ''system'' }}
+
+          '
+  mode: single
+  max_exceeded: silent
+- id: smart_bathroom_fan_owners
+  alias: Smart Bathroom Fan - Owner's Bathroom
+  description: Comprehensive humidity control with shower detection and error handling
+  triggers:
+  - entity_id: sensor.owner_s_bathroom_meter_humidity
+    id: humidity_change
+    trigger: state
+  - entity_id: switch.owner_s_bathroom_fan
+    id: fan_manual_change
+    trigger: state
+  - minutes: /5
+    id: periodic_check
+    trigger: time_pattern
+  - entity_id: sensor.owner_s_bathroom_meter_humidity
+    to: unavailable
+    id: sensor_unavailable
+    trigger: state
+  conditions:
+  - condition: template
+    value_template: '{{ states(''sensor.owner_s_bathroom_meter_humidity'') not in
+      [''unknown'', ''unavailable''] }}'
+  actions:
+  - data:
+      message: 'Bathroom Fan Automation triggered by: {{ trigger.id }} at {{ now().strftime(''%H:%M:%S'')
+        }}'
+      level: info
+    action: system_log.write
+  - if:
+    - condition: template
+      value_template: '{% set entities = [''sensor.owner_s_bathroom_meter_humidity'',
+        ''switch.owner_s_bathroom_fan''] %} {{ entities | select(''is_state'', ''unavailable'')
+        | list | count > 0 }}
+
+        '
+    then:
+    - data:
+        title: "\U0001F6A8 Bathroom Fan Error"
+        message: 'Critical devices offline at {{ now().strftime(''%H:%M'') }}: {{
+          [''sensor.owner_s_bathroom_meter_humidity'', ''switch.owner_s_bathroom_fan'']
+          | select(''is_state'', ''unavailable'') | list | join('', '') }}
+
+          '
+        notification_id: bathroom_fan_error
+      action: persistent_notification.create
+    - data:
+        message: 'Bathroom Fan automation stopped - unavailable entities: {{ [''sensor.owner_s_bathroom_meter_humidity'',
+          ''switch.owner_s_bathroom_fan''] | select(''is_state'', ''unavailable'')
+          | list }}'
+        level: warning
+      action: system_log.write
+    - stop: Stopping due to unavailable entities
+  - variables:
+      current_humidity: '{{ states(''sensor.owner_s_bathroom_meter_humidity'') | float(0)
+        }}'
+      fan_state: '{{ states(''switch.owner_s_bathroom_fan'') }}'
+      current_time: '{{ now().hour }}'
+      is_sleep_time: '{{ current_time >= 22 or current_time < 6 }}'
+      target_humidity: '{{ 60 if is_sleep_time else 45 }}'
+      high_humidity_threshold: '{{ 65 if is_sleep_time else 50 }}'
+      humidity_15min_ago: '{% set timestamp_15min = (now() - timedelta(minutes=15)).isoformat()
+        %} {% set history = states.sensor.owner_s_bathroom_meter_humidity.history(hours=1)
+        %} {% set old_state = history | selectattr(''last_changed'', ''lt'', timestamp_15min)
+        | list | last %} {{ old_state.state | float(current_humidity) if old_state
+        else current_humidity }}
+
+        '
+      humidity_change_15min: '{{ current_humidity - humidity_15min_ago }}'
+      sensor_last_update: '{{ (now() - states.sensor.owner_s_bathroom_meter_humidity.last_changed).total_seconds()
+        }}'
+      sensor_responsive: '{{ sensor_last_update < 1800 }}'
+  - data:
+      message: 'Bathroom Fan Status: Humidity={{ current_humidity }}%, Fan={{ fan_state
+        }},  Target={{ target_humidity }}%, Sleep={{ is_sleep_time }},  15min Change={{
+        humidity_change_15min | round(1) }}%,  Sensor Age={{ (sensor_last_update/60)
+        | round(1) }}min
+
+        '
+      level: info
+    action: system_log.write
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ current_humidity > 80 }}'
+      sequence:
+      - target:
+          entity_id: switch.owner_s_bathroom_fan
+        data: {}
+        action: switch.turn_on
+      - data:
+          title: "\U0001F4A8 Emergency Fan Activation"
+          message: Humidity {{ current_humidity }}% detected at {{ now().strftime('%H:%M')
+            }} - Fan activated for safety
+          notification_id: bathroom_fan_emergency
+        action: persistent_notification.create
+      - data:
+          message: 'EMERGENCY: Fan activated due to {{ current_humidity }}% humidity'
+          level: warning
+        action: system_log.write
+      - wait_template: '{{ is_state(''switch.owner_s_bathroom_fan'', ''on'') }}'
+        timeout: 00:00:10
+        continue_on_timeout: true
+    - conditions:
+      - condition: template
+        value_template: '{{ humidity_change_15min >= 5 and current_humidity > target_humidity
+          }}'
+      sequence:
+      - target:
+          entity_id: switch.owner_s_bathroom_fan
+        data: {}
+        action: switch.turn_on
+      - data:
+          title: "\U0001F6BF Shower Detected"
+          message: 'Humidity rose {{ humidity_change_15min | round(1) }}% to {{ current_humidity
+            }}% -  Fan will run until {{ target_humidity }}%
+
+            '
+          notification_id: bathroom_fan_shower
+        action: persistent_notification.create
+      - data:
+          message: 'SHOWER DETECTED: {{ humidity_change_15min | round(1) }}% rise
+            - Fan activated'
+          level: info
+        action: system_log.write
+    - conditions:
+      - condition: template
+        value_template: '{{ trigger.id == ''fan_manual_change'' and fan_state == ''on''
+          }}'
+      - condition: template
+        value_template: '{{ current_humidity > high_humidity_threshold }}'
+      sequence:
+      - data:
+          message: 'SWITCH RECOVERY: Fan returned online with {{ current_humidity
+            }}% humidity - maintaining operation'
+          level: info
+        action: system_log.write
+      - data:
+          title: "\U0001F504 Fan Recovery Mode"
+          message: Fan reconnected at {{ current_humidity }}% humidity - will run
+            for 30min minimum
+          notification_id: bathroom_fan_recovery
+        action: persistent_notification.create
+      - delay: 00:30:00
+    - conditions:
+      - condition: template
+        value_template: '{{ trigger.id == ''fan_manual_change'' and fan_state == ''off''
+          }}'
+      - condition: template
+        value_template: '{{ current_humidity > 60 }}'
+      sequence:
+      - data:
+          message: 'MANUAL OVERRIDE: Fan turned off at {{ current_humidity }}% - waiting
+            5min before override'
+          level: info
+        action: system_log.write
+      - delay: 00:05:00
+      - if:
+        - condition: template
+          value_template: '{{ states(''sensor.owner_s_bathroom_meter_humidity'') |
+            float(0) > 60 }}'
+        then:
+        - target:
+            entity_id: switch.owner_s_bathroom_fan
+          data: {}
+          action: switch.turn_on
+        - data:
+            title: ⚠️ Fan Override Protection
+            message: Fan reactivated - humidity still {{ states('sensor.owner_s_bathroom_meter_humidity')
+              }}% after manual shutoff
+            notification_id: bathroom_fan_override
+          action: persistent_notification.create
+        - data:
+            message: 'OVERRIDE PROTECTION: Fan reactivated due to {{ states(''sensor.owner_s_bathroom_meter_humidity'')
+              }}% humidity'
+            level: warning
+          action: system_log.write
+    - conditions:
+      - condition: template
+        value_template: '{{ trigger.id == ''fan_manual_change'' and fan_state == ''on''
+          }}'
+      - condition: template
+        value_template: '{{ current_humidity <= target_humidity + 5 }}'
+      sequence:
+      - data:
+          message: 'MANUAL FAN: 30-minute auto-off timer started at {{ current_humidity
+            }}% humidity'
+          level: info
+        action: system_log.write
+      - delay: 00:30:00
+      - if:
+        - condition: template
+          value_template: '{% set current = states(''sensor.owner_s_bathroom_meter_humidity'')
+            | float(0) %} {% set change = current - current_humidity %} {{ change
+            < 5 and current <= (target_humidity + 10) }}
+
+            '
+        then:
+        - target:
+            entity_id: switch.owner_s_bathroom_fan
+          data: {}
+          action: switch.turn_off
+        - data:
+            title: "\U0001F4A9 PoopFan Auto-Off"
+            message: 30-minute timer expired - PoopFan turned off automatically
+            notification_id: bathroom_fan_autooff
+          action: persistent_notification.create
+        - data:
+            message: 'MANUAL AUTO-OFF: 30-minute timer completed, fan turned off'
+            level: info
+          action: system_log.write
+    - conditions:
+      - condition: template
+        value_template: '{{ fan_state == ''on'' and current_humidity <= target_humidity
+          }}'
+      - condition: template
+        value_template: '{{ sensor_responsive }}'
+      sequence:
+      - data:
+          message: 'TARGET REACHED: {{ current_humidity }}% <= {{ target_humidity
+            }}% - starting 20min buffer period'
+          level: info
+        action: system_log.write
+      - delay: 00:20:00
+      - if:
+        - condition: template
+          value_template: '{{ states(''sensor.owner_s_bathroom_meter_humidity'') |
+            float(0) <= target_humidity }}'
+        then:
+        - target:
+            entity_id: switch.owner_s_bathroom_fan
+          data: {}
+          action: switch.turn_off
+        - data:
+            title: ✅ Fan Safely Turned Off
+            message: Humidity {{ states('sensor.owner_s_bathroom_meter_humidity')
+              }}% - target {{ target_humidity }}% maintained
+            notification_id: bathroom_fan_complete
+          action: persistent_notification.create
+        - data:
+            message: 'NORMAL SHUTDOWN: Target humidity maintained, fan turned off'
+            level: info
+          action: system_log.write
+    - conditions:
+      - condition: template
+        value_template: '{{ fan_state == ''on'' }}'
+      - condition: template
+        value_template: '{{ sensor_responsive }}'
+      sequence:
+      - data:
+          message: 'SAFETY MONITORING: Fan running with responsive sensor - 6hr safety
+            timeout active'
+          level: info
+        action: system_log.write
+      - delay: 06:00:00
+      - if:
+        - condition: template
+          value_template: '{{ states(''switch.owner_s_bathroom_fan'') == ''on'' }}'
+        then:
+        - target:
+            entity_id: switch.owner_s_bathroom_fan
+          data: {}
+          action: switch.turn_off
+        - data:
+            title: ⏰ Safety Timeout
+            message: Fan automatically turned off after 6 hours - check humidity sensor
+            notification_id: bathroom_fan_timeout
+          action: persistent_notification.create
+        - data:
+            message: 'SAFETY TIMEOUT: Fan turned off after 6 hours of operation'
+            level: warning
+          action: system_log.write
+    - conditions:
+      - condition: template
+        value_template: '{{ not sensor_responsive }}'
+      sequence:
+      - target:
+          entity_id: switch.owner_s_bathroom_fan
+        data: {}
+        action: switch.turn_off
+      - data:
+          title: "\U0001F6A8 Sensor Failure Detected"
+          message: Humidity sensor unresponsive for {{ (sensor_last_update/60) | round(0)
+            }} minutes - fan stopped for safety
+          notification_id: bathroom_fan_sensor_fail
+        action: persistent_notification.create
+      - data:
+          message: 'SENSOR FAILURE: No updates for {{ (sensor_last_update/60) | round(0)
+            }} minutes - automation stopped'
+          level: error
+        action: system_log.write
+      - stop: Sensor unresponsive - stopping automation for safety
+    default:
+    - data:
+        message: 'MONITORING: No action needed - Humidity={{ current_humidity }}%,  Fan={{
+          fan_state }}, Target={{ target_humidity }}%,  Change15min={{ humidity_change_15min
+          | round(1) }}%
+
+          '
+        level: debug
+      action: system_log.write
+  mode: single
+  max_exceeded: silent
+- id: '1749937317615'
+  alias: Lighting Ulrich Bedroom Auto Timeout
+  description: Automatically timeout Ulrich's bedroom lights based on time of day
+  triggers:
+  - entity_id:
+    - light.ulrich_light
+    - switch.ulrichs_closet
+    to: 'on'
+    id: light_turned_on
+    trigger: state
+  - event_type: timer.finished
+    event_data:
+      entity_id: timer.ulrich_light_timeout
+    id: ulrich_light_timer_finished
+    trigger: event
+  - event_type: timer.finished
+    event_data:
+      entity_id: timer.ulrichs_closet_timeout
+    id: ulrichs_closet_timer_finished
+    trigger: event
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: light_turned_on
+      sequence:
+      - data:
+          name: Lighting Ulrich Bedroom Auto Timeout
+          message: 'START: {{ trigger.entity_id }} turned on at {{ now().strftime(''%H:%M:%S'')
+            }}'
+        alias: Log trigger start
+        action: logbook.log
+      - variables:
+          current_hour: '{{ now().hour }}'
+          current_minute: '{{ now().minute }}'
+          time_minutes: '{{ (current_hour | int * 60) + (current_minute | int) }}'
+          morning_start: 330
+          morning_end: 540
+          day_end: 1080
+          evening_end: 1320
+          entity_timer: "{% if trigger.entity_id == 'light.ulrich_light' %}\n  timer.ulrich_light_timeout\n{%
+            else %}\n  timer.ulrichs_closet_timeout\n{% endif %}"
+        alias: Set time variables
+      - data:
+          name: Lighting Ulrich Bedroom Auto Timeout
+          message: 'DECISION: Current time {{ current_hour }}:{{ ''%02d''|format(current_minute)
+            }}  ({{ time_minutes }} minutes), entity {{ trigger.entity_id }}'
+        alias: Log time calculation
+        action: logbook.log
+      - choose:
+        - conditions:
+          - condition: template
+            value_template: '{{ time_minutes >= morning_start and time_minutes < morning_end
+              }}'
+          sequence:
+          - target:
+              entity_id: '{{ entity_timer }}'
+            data:
+              duration: 00:45:00
+            alias: Start 45 minute timer
+            action: timer.start
+          - data:
+              name: Lighting Ulrich Bedroom Auto Timeout
+              message: 'STATE: Morning period - started 45 minute timer for {{ trigger.entity_id
+                }}'
+            alias: Log morning timer start
+            action: logbook.log
+        - conditions:
+          - condition: template
+            value_template: '{{ time_minutes >= morning_end and time_minutes < day_end
+              }}'
+          sequence:
+          - target:
+              entity_id: '{{ entity_timer }}'
+            data:
+              duration: 00:15:00
+            alias: Start 15 minute timer
+            action: timer.start
+          - data:
+              name: Lighting Ulrich Bedroom Auto Timeout
+              message: 'STATE: Day period - started 15 minute timer for {{ trigger.entity_id
+                }}'
+            alias: Log day timer start
+            action: logbook.log
+        - conditions:
+          - condition: template
+            value_template: '{{ time_minutes >= day_end and time_minutes < evening_end
+              }}'
+          sequence:
+          - target:
+              entity_id: '{{ entity_timer }}'
+            data:
+              duration: 01:00:00
+            alias: Start 60 minute timer
+            action: timer.start
+          - data:
+              name: Lighting Ulrich Bedroom Auto Timeout
+              message: 'STATE: Evening period - started 60 minute timer for {{ trigger.entity_id
+                }}'
+            alias: Log evening timer start
+            action: logbook.log
+        - conditions:
+          - condition: template
+            value_template: '{{ time_minutes >= evening_end or time_minutes < morning_start
+              }}'
+          sequence:
+          - target:
+              entity_id: '{{ entity_timer }}'
+            data:
+              duration: 00:00:15
+            alias: Start 15 second timer
+            action: timer.start
+          - data:
+              name: Lighting Ulrich Bedroom Auto Timeout
+              message: 'STATE: Night period - started 15 second timer for {{ trigger.entity_id
+                }}'
+            alias: Log night timer start
+            action: logbook.log
+        default:
+        - data:
+            name: Lighting Ulrich Bedroom Auto Timeout
+            message: 'ERROR: Unable to determine time period for {{ trigger.entity_id
+              }}'
+          alias: Log time period error
+          action: logbook.log
+        - data:
+            title: Ulrich Bedroom Lighting Error
+            message: Failed to determine time period for {{ trigger.entity_id }}  at
+              {{ now().strftime('%H:%M:%S') }}
+          alias: Create error notification
+          action: persistent_notification.create
+    - conditions:
+      - condition: trigger
+        id:
+        - ulrich_light_timer_finished
+        - ulrichs_closet_timer_finished
+      sequence:
+      - variables:
+          target_entity: "{% if trigger.id == 'ulrich_light_timer_finished' %}\n  light.ulrich_light\n{%
+            else %}\n  switch.ulrichs_closet\n{% endif %}"
+        alias: Set target entity
+      - data:
+          name: Lighting Ulrich Bedroom Auto Timeout
+          message: 'DECISION: Timer finished for {{ target_entity }}, checking if
+            still on'
+        alias: Log timer finished
+        action: logbook.log
+      - condition: template
+        value_template: '{{ states(target_entity) == ''on'' }}'
+        alias: Check if light still on
+      - choose:
+        - conditions:
+          - condition: template
+            value_template: '{{ target_entity.startswith(''light.'') }}'
+          sequence:
+          - target:
+              entity_id: '{{ target_entity }}'
+            alias: Turn off light
+            action: light.turn_off
+        - conditions:
+          - condition: template
+            value_template: '{{ target_entity.startswith(''switch.'') }}'
+          sequence:
+          - target:
+              entity_id: '{{ target_entity }}'
+            alias: Turn off switch
+            action: switch.turn_off
+        default:
+        - data:
+            name: Lighting Ulrich Bedroom Auto Timeout
+            message: 'ERROR: Unknown entity type {{ target_entity }}'
+          alias: Log entity type error
+          action: logbook.log
+        - data:
+            title: Ulrich Bedroom Lighting Error
+            message: Unknown entity type {{ target_entity }} in automation
+          alias: Create entity type error notification
+          action: persistent_notification.create
+      - data:
+          name: Lighting Ulrich Bedroom Auto Timeout
+          message: 'SUCCESS: {{ target_entity }} automatically turned off after timeout'
+        alias: Log successful shutoff
+        action: logbook.log
+    default:
+    - data:
+        name: Lighting Ulrich Bedroom Auto Timeout
+        message: 'ERROR: Unknown trigger condition {{ trigger.id if trigger.id is
+          defined else ''undefined'' }}'
+      alias: Log unknown trigger error
+      action: logbook.log
+    - data:
+        title: Ulrich Bedroom Lighting Error
+        message: Unknown trigger condition in automation at {{ now().strftime('%H:%M:%S')
+          }}
+      alias: Create unknown trigger notification
+      action: persistent_notification.create
+  mode: parallel
+  max: 10
+
+# Minimal test automation to verify structure
+- id: test_simple_schedule
+  alias: "Test Simple Schedule"
+  description: "Simple test automation"
+  trigger:
+    - platform: time
+      at: "23:59:00"
+  action:
+    - service: logbook.log
+      data:
+        name: "TEST"
+        message: "Test automation triggered"
+  mode: single
+
+# Minimal test of schedule automation structure  
+- id: test_minimal_schedule_12pm
+  alias: "Test Minimal Schedule 12PM"
+  description: "Test if basic schedule automation works"
+  trigger:
+    - platform: time
+      at: "12:00:00"
+  action:
+    - service: logbook.log
+      data:
+        name: "TEST_SCHEDULE"
+        message: "Test schedule automation triggered at 12PM"
+  mode: single

@@ -1,0 +1,160 @@
+- platform: integration
+  source: sensor.kitchen_light_power
+  name: Kitchen Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.great_room_light_power
+  name: Great Room Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.rec_room_lights_power
+  name: Rec Room Lights Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.kitchen_sink_light_power
+  name: Kitchen Sink Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.front_porch_light_power
+  name: Front Porch Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.owner_s_bedroom_light_power
+  name: Owner's Bedroom Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.office_light_power
+  name: Office Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.genevieves_light_power
+  name: Genevieve's Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.ulrich_light_power
+  name: Ulrich Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.hallway_light_power
+  name: Hallway Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.main_bathroom_light_power
+  name: Main Bathroom Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.uc1_power
+  name: UC1 Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.uc2_power
+  name: UC2 Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.uc3_power
+  name: UC3 Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.uc4_power
+  name: UC4 Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.uc5_power
+  name: UC5 Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.uc6_power
+  name: UC6 Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.owner_s_bathroom_sink_lights_power
+  name: Owner's Bathroom Sink Lights Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.owner_s_bathroom_fan_power
+  name: Owner's Bathroom Fan Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.basement_bathroom_fan_power
+  name: Basement Bathroom Fan Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.storage_light_power
+  name: Storage Light Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.garage_coach_lights_power
+  name: Garage Coach Lights Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal
+
+- platform: integration
+  source: sensor.deck_outer_lights_power
+  name: Deck Outer Lights Energy
+  unit_prefix: k
+  round: 2
+  method: trapezoidal

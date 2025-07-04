@@ -1,0 +1,249 @@
+# =================================================================
+# TEST SCRIPTS: Internet Management System Testing
+# VERSION: 1.0.0
+# CREATED: 2025-06-29
+# AUTHOR: Steve Taylor
+# TESTED_ON: HA Version 2025.6.0
+# DEPENDENCIES: Internet Management Package, logbook integration
+# 
+# DESCRIPTION: Test scripts for internet management system validation
+# =================================================================
+
+test_upstairs_override_modes:
+  alias: "Test Upstairs Override Modes"
+  sequence:
+    - service: logbook.log
+      data:
+        name: "TEST_UPSTAIRS_OVERRIDE"
+        message: "START: Testing upstairs override mode changes"
+        domain: "script"
+    
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.upstairs_internet_override_mode
+        option: "Paused Indefinitely"
+    
+    - delay: "00:00:05"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_UPSTAIRS_OVERRIDE"
+        message: "PAUSED_MODE: Switch state={{ states('switch.taylor_ex_upstairs_paused') }}, Status={{ states('sensor.upstairs_internet_status') }}"
+        domain: "script"
+    
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.upstairs_internet_override_mode
+        option: "Enabled Indefinitely"
+    
+    - delay: "00:00:05"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_UPSTAIRS_OVERRIDE"
+        message: "ENABLED_MODE: Switch state={{ states('switch.taylor_ex_upstairs_paused') }}, Status={{ states('sensor.upstairs_internet_status') }}"
+        domain: "script"
+    
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.upstairs_internet_override_mode
+        option: "Normal Schedule"
+    
+    - delay: "00:00:05"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_UPSTAIRS_OVERRIDE"
+        message: "SUCCESS: Normal mode restored - Switch={{ states('switch.taylor_ex_upstairs_paused') }}, Status={{ states('sensor.upstairs_internet_status') }}"
+        domain: "script"
+
+test_genevieve_task_system:
+  alias: "Test Genevieve Task System"
+  sequence:
+    - service: logbook.log
+      data:
+        name: "TEST_GENEVIEVE_TASKS"
+        message: "START: Testing Genevieve task-based internet control"
+        domain: "script"
+    
+    - service: input_boolean.turn_off
+      target:
+        entity_id:
+          - input_boolean.genevieve_dog_walked_today
+          - input_boolean.genevieve_chores_done_today
+    
+    - service: logbook.log
+      data:
+        name: "TEST_GENEVIEVE_TASKS"
+        message: "RESET: Tasks cleared - Dog={{ states('input_boolean.genevieve_dog_walked_today') }}, Chores={{ states('input_boolean.genevieve_chores_done_today') }}"
+        domain: "script"
+    
+    - delay: "00:00:02"
+    
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.genevieve_dog_walked_today
+    
+    - delay: "00:00:03"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_GENEVIEVE_TASKS"
+        message: "DOG_WALKED: Task status={{ states('sensor.genevieve_task_status') }}, Internet status={{ states('sensor.genevieve_internet_status') }}"
+        domain: "script"
+    
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.genevieve_chores_done_today
+    
+    - delay: "00:00:03"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_GENEVIEVE_TASKS"
+        message: "SUCCESS: All tasks complete - Task status={{ states('sensor.genevieve_task_status') }}, Internet={{ states('sensor.genevieve_internet_status') }}"
+        domain: "script"
+
+test_ulrich_task_system:
+  alias: "Test Ulrich Task System"
+  sequence:
+    - service: logbook.log
+      data:
+        name: "TEST_ULRICH_TASKS"
+        message: "START: Testing Ulrich task-based internet control"
+        domain: "script"
+    
+    - service: input_boolean.turn_off
+      target:
+        entity_id:
+          - input_boolean.ulrich_dog_walked_today
+          - input_boolean.ulrich_chores_done_today
+          - input_boolean.ulrich_internet_paused
+    
+    - service: logbook.log
+      data:
+        name: "TEST_ULRICH_TASKS"
+        message: "RESET: Tasks cleared - Dog={{ states('input_boolean.ulrich_dog_walked_today') }}, Chores={{ states('input_boolean.ulrich_chores_done_today') }}"
+        domain: "script"
+    
+    - delay: "00:00:02"
+    
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.ulrich_dog_walked_today
+    
+    - delay: "00:00:03"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_ULRICH_TASKS"
+        message: "DOG_WALKED: Task status={{ states('sensor.ulrich_task_status') }}, Internet status={{ states('sensor.ulrich_internet_status') }}"
+        domain: "script"
+    
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.ulrich_chores_done_today
+    
+    - delay: "00:00:03"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_ULRICH_TASKS"
+        message: "SUCCESS: All tasks complete - Task status={{ states('sensor.ulrich_task_status') }}, Internet={{ states('sensor.ulrich_internet_status') }}"
+        domain: "script"
+
+test_temp_override_system:
+  alias: "Test Temporary Override System"
+  sequence:
+    - service: logbook.log
+      data:
+        name: "TEST_TEMP_OVERRIDE"
+        message: "START: Testing temporary override functionality"
+        domain: "script"
+    
+    - service: input_boolean.turn_off
+      target:
+        entity_id:
+          - input_boolean.upstairs_temp_override
+          - input_boolean.downstairs_temp_override
+          - input_boolean.genevieve_temp_override
+    
+    - service: logbook.log
+      data:
+        name: "TEST_TEMP_OVERRIDE"
+        message: "RESET: All overrides cleared"
+        domain: "script"
+    
+    - delay: "00:00:02"
+    
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.upstairs_temp_override
+    
+    - delay: "00:00:05"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_TEMP_OVERRIDE"
+        message: "UPSTAIRS_OVERRIDE: Status={{ states('sensor.upstairs_internet_status') }}, Switch={{ states('switch.taylor_ex_upstairs_paused') }}"
+        domain: "script"
+    
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.genevieve_temp_override
+    
+    - delay: "00:00:05"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_TEMP_OVERRIDE"
+        message: "SUCCESS: Genevieve override={{ states('sensor.genevieve_internet_status') }}, Switch={{ states('switch.taylor_genevieve_paused') }}"
+        domain: "script"
+
+test_entity_availability:
+  alias: "Test Entity Availability"
+  sequence:
+    - service: logbook.log
+      data:
+        name: "TEST_ENTITY_AVAILABILITY"
+        message: "START: Checking critical entity availability"
+        domain: "script"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_ENTITY_AVAILABILITY"
+        message: "SWITCHES: Upstairs={{ states('switch.taylor_ex_upstairs_paused') }}, Downstairs={{ states('switch.taylor_ex_downstairs_paused') }}, Genevieve={{ states('switch.taylor_genevieve_paused') }}, Ulrich={{ states('switch.taylor_ulrich_paused') }}"
+        domain: "script"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_ENTITY_AVAILABILITY"
+        message: "SENSORS: Upstairs status={{ states('sensor.upstairs_internet_status') }}, Genevieve task={{ states('sensor.genevieve_task_status') }}, Ulrich task={{ states('sensor.ulrich_task_status') }}"
+        domain: "script"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_ENTITY_AVAILABILITY"
+        message: "SUCCESS: Entity availability check complete"
+        domain: "script"
+
+test_schedule_logic:
+  alias: "Test Schedule Logic"
+  sequence:
+    - service: logbook.log
+      data:
+        name: "TEST_SCHEDULE_LOGIC"
+        message: "START: Testing schedule-based logic at current time {{ now().strftime('%H:%M') }}"
+        domain: "script"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_SCHEDULE_LOGIC"
+        message: "CURRENT_SCHEDULE: Hour={{ now().hour }}, Upstairs next change={{ states('sensor.upstairs_next_schedule_change') }}"
+        domain: "script"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_SCHEDULE_LOGIC"
+        message: "SCHEDULE_STATUS: Upstairs={{ states('sensor.upstairs_internet_status') }}, Downstairs={{ states('sensor.downstairs_internet_status') }}"
+        domain: "script"
+    
+    - service: logbook.log
+      data:
+        name: "TEST_SCHEDULE_LOGIC"
+        message: "SUCCESS: Schedule logic verification complete"
+        domain: "script"
